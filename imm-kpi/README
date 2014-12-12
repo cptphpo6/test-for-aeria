@@ -1,0 +1,18 @@
+Immortalis
+==========
+
+Welcome to Immortalis, Aeria's greatest mobile success. 
+
+Immortalis is a multiplayer mobile card game originally developed by a Japanese game company called “Pokelabo”. It is currently deployed in 4 territories.
+
+# About this repository
+
+This repo will contain the KPI tool which pulls information from live DBs, processes the data and presents the information via a web-page
+
+# Engineering contacts
+
+- robert.stangel@aeriagames.com - Robert Stangel
+- matjaz.trcek@aeriagames.com - Matjaz Trcek
+- vitalii.bondarenko@aeriagames.com - Vitaliy Bondarenko
+- joao.pereira@aeriagames.com - João Pereira
+- oleg.fischer@aeriagames.com - Oleg Fischer

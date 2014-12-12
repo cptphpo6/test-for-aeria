@@ -1,0 +1,384 @@
+login_bonus:
+  text: "%GP%召喚Pと\n%VM%ギルをプレゼント！\nプレゼントボックスから\n受け取ってね♪\n%MP%MP回復したよ♪"
+  text_trade: "%GP%召喚P、\n%VM%ギル、\n%MP%MP、\nトレードチケットをプレゼント！"
+  normal:
+    gacha_p: 300
+    virtual_money: 3000
+    mp: 100
+  ragnarok:
+    gacha_p: 1000
+    virtual_money: 10000
+    mp: 100
+  special:
+    # この日の次の日から(↓は含まない)
+    start: 2012/08/1
+    # この日まで(↓の日付を含む)
+    end: 2012/08/05
+    normal:
+      gacha_p: 1000
+      virtual_money: 3000
+      mp: 50
+    ragnarok:
+      gacha_p: 1500
+      virtual_money: 10000
+      mp: 50
+
+special_hello_comeback__bonus:
+    # Time
+    start_date: '2014-06-15 00:00:00'
+    end_date: '2014-07-30 23:59:59'
+    valid_start_date: '2014-06-15 00:00:00'
+    valid_end_date: '2014-07-30 23:59:59'
+    max_day: 7
+    special_hello_present_list:
+      1:
+        # HR Ticket
+        -
+         type: "item"
+         num: 1
+         id: 7
+         label: "Ticket Rare TR ou supérieur garanti "
+         detail: "Immortel TR ou supérieur garanti pour 1 invocation de maître. "
+         src: '/img/item/s/21.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item "
+         num: 1
+         id: 4
+         label: "Potion d'Endurance [Liée] "
+         detail: "Potion qui fait récupérer toute l'Endurance. "
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.1
+        -
+         type: "card"
+         num: 1
+         id: 612
+         label: "Gemme Sacrée Niv. 1 "
+         detail: "Gemme spéciale qui permet de renforcer les Immortels. "
+         src: '/img/item/s/17.jpg'
+      2:
+        # Rare Ticket
+        -
+         type: "item"
+         num: 1
+         id: 1
+         label: "Ticket Rare "
+         detail: "Ticket qui garantit l'obtention d'un Immortel rare ou supérieur. "
+         src: '/img/item/s/7.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 1
+         id: 4
+         label: "Potion d'Endurance [Liée] "
+         detail: "Potion qui fait récupérer toute l'Endurance. "
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.1
+        -
+         type: "card"
+         num: 1
+         id: 612
+         label: "Gemme Sacrée Niv. 1 "
+         detail: "Gemme spéciale qui permet de renforcer les Immortels. "
+         src: '/img/item/s/17.jpg'
+      3:
+        # Rare Ticket
+        -
+         type: "item"
+         num: 3
+         id: 1
+         label: "Ticket Rare "
+         detail: "Ticket qui garantit l'obtention d'un Immortel rare ou supérieur. "
+         src: '/img/item/s/7.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 3
+         id: 4
+         label: "Potion d'Endurance [Liée] "
+         detail: "Potion qui fait récupérer toute l'Endurance. "
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.3
+        -
+         type: "card"
+         num: 1
+         id: 614
+         label: "Gemme Sacrée Niv. 3 "
+         detail: "Gemme spéciale qui permet de renforcer les Immortels. "
+         src: '/img/item/s/19.jpg'
+      4:
+        # HR or Higher Ticket
+        -
+         type: "item"
+         num: 1
+         id: 7
+         label: "Ticket TR ou supérieur "
+         detail: "Ticket qui garantit l'obtention d'un Immortel TR ou supérieur. "
+         src: '/img/item/s/21.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 1
+         id: 4
+         label: "Potion d'Endurance [Liée] "
+         detail: "Potion qui fait récupérer toute l'Endurance. "
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.1
+        -
+         type: "card"
+         num: 1
+         id: 612
+         label: "Gemme Sacrée Niv. 1 "
+         detail: "Gemme spéciale qui permet de renforcer les Immortels. "
+         src: '/img/item/s/17.jpg'
+      5:
+        # Rare Ticket
+        -
+         type: "item"
+         num: 1
+         id: 1
+         label: "Ticket Rare "
+         detail: "Ticket qui garantit l'obtention d'un Immortel rare ou supérieur. "
+         src: '/img/item/s/7.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 1
+         id: 4
+         label: "Potion d'Endurance [Liée] "
+         detail: "Potion qui fait récupérer toute l'Endurance. "
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.1
+        -
+         type: "card"
+         num: 1
+         id: 612
+         label: "Gemme Sacrée Niv. 1"
+         detail: "Gemme spéciale qui permet de renforcer les Immortels. "
+         src: '/img/item/s/17.jpg'
+      6:
+        # Rare Ticket
+        -
+         type: "item"
+         num: 1
+         id: 1
+         label: "Ticket Rare "
+         detail: "Ticket qui garantit l'obtention d'un Immortel rare ou supérieur. "
+         src: '/img/item/s/7.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 1
+         id: 4
+         label: "Potion d'Endurance [Liée] "
+         detail: "Potion qui fait récupérer toute l'Endurance. "
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.1
+        -
+         type: "card"
+         num: 1
+         id: 612
+         label: "Gemme Sacrée Niv. 1 "
+         detail: "Gemme spéciale qui permet de renforcer les Immortels. "
+         src: '/img/item/s/17.jpg'
+      7:
+        # SR or Higher Ticket
+        -
+         type: "item"
+         num: 1
+         id: 8
+         label: "Ticket SR ou supérieur "
+         detail: "Ticket qui garantit l'obtention d'un Immortel SR ou supérieur. "
+         src: '/img/item/s/22.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 3
+         id: 4
+         label: "Potion d'Endurance [Liée] "
+         detail: "Potion qui fait récupérer toute l'Endurance. "
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.2
+        -
+         type: "card"
+         num: 1
+         id: 613
+         label: "Gemme Sacrée Niv. 2 "
+         detail: "Gemme spéciale qui permet de renforcer les Immortels. "
+         src: '/img/item/s/18.jpg'
+    special_comeback_present_list:
+      1:
+        # HR or Higher Ticket
+        -
+         type: "item"
+         num: 1
+         id: 7
+         label: "Ticket TR ou supérieur "
+         detail: "Ticket qui garantit l'obtention d'un Immortel TR ou supérieur. "
+         src: '/img/item/s/21.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 3
+         id: 4
+         label: "Potion d'Endurance [Liée] "
+         detail: "Potion qui fait récupérer toute l'Endurance. "
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.3
+        -
+         type: "card"
+         num: 1
+         id: 614
+         label: "Gemme Sacrée Niv. 3 "
+         detail: "Gemme spéciale qui permet de renforcer les Immortels. "
+         src: '/img/item/s/19.jpg'
+      2:
+        # Rare Ticket
+        -
+         type: "item"
+         num: 3
+         id: 1
+         label: "Ticket Rare "
+         detail: "Ticket qui garantit l'obtention d'un Immortel rare ou supérieur. "
+         src: '/img/item/s/7.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 3
+         id: 4
+         label: "Potion d'Endurance [Liée] "
+         detail: "Potion qui fait récupérer toute l'Endurance. "
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.3
+        -
+         type: "card"
+         num: 1
+         id: 614
+         label: "Gemme Sacrée Niv. 3"
+         detail: "Gemme spéciale qui permet de renforcer les Immortels. "
+         src: '/img/item/s/19.jpg'
+      3:
+        # Rare Ticket
+        -
+         type: "item"
+         num: 3
+         id: 1
+         label: "Ticket Rare "
+         detail: "Ticket qui garantit l'obtention d'un Immortel rare ou supérieur. "
+         src: '/img/item/s/7.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 3
+         id: 4
+         label: "Potion d'Endurance [Liée] "
+         detail: "Potion qui fait récupérer toute l'Endurance. "
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.3
+        -
+         type: "card"
+         num: 1
+         id: 614
+         label: "Gemme Sacrée Niv. 3"
+         detail: "Gemme spéciale qui permet de renforcer les Immortels. "
+         src: '/img/item/s/19.jpg'
+      4:
+        # HR or Higher Ticket
+        -
+         type: "item"
+         num: 1
+         id: 7
+         label: "Ticket TR ou supérieur "
+         detail: "Ticket qui garantit l'obtention d'un Immortel TR ou supérieur. "
+         src: '/img/item/s/21.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 3
+         id: 4
+         label: "Potion d'Endurance [Liée] "
+         detail: "Potion qui fait récupérer toute l'Endurance. "
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.3
+        -
+         type: "card"
+         num: 1
+         id: 614
+         label: "Gemme Sacrée Niv. 3"
+         detail: "Gemme spéciale qui permet de renforcer les Immortels. "
+         src: '/img/item/s/19.jpg'
+      5:
+        # Rare Ticket
+        -
+         type: "item"
+         num: 3
+         id: 1
+         label: "Ticket Rare "
+         detail: "Ticket qui garantit l'obtention d'un Immortel rare ou supérieur. "
+         src: '/img/item/s/7.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 3
+         id: 4
+         label: "Potion d'Endurance [Liée] "
+         detail: "Potion qui fait récupérer toute l'Endurance. "
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.3
+        -
+         type: "card"
+         num: 1
+         id: 614
+         label: "Gemme Sacrée Niv. 3"
+         detail: "Gemme spéciale qui permet de renforcer les Immortels. "
+         src: '/img/item/s/19.jpg'
+      6:
+        # Rare Ticket
+        -
+         type: "item"
+         num: 3
+         id: 1
+         label: "Ticket Rare "
+         detail: "Ticket qui garantit l'obtention d'un Immortel rare ou supérieur. "
+         src: '/img/item/s/7.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 3
+         id: 4
+         label: "Potion d'Endurance [Liée] "
+         detail: "Potion qui fait récupérer toute l'Endurance. "
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.3
+        -
+         type: "card"
+         num: 1
+         id: 614
+         label: "Gemme Sacrée Niv. 3"
+         detail: "Gemme spéciale qui permet de renforcer les Immortels. "
+         src: '/img/item/s/19.jpg'
+      7:
+        # SR or Higher Ticket
+        -
+         type: "item"
+         num: 1
+         id: 8
+         label: "Ticket SR ou supérieur "
+         detail: "Ticket qui garantit l'obtention d'un Immortel SR ou supérieur. "
+         src: '/img/item/s/22.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 5
+         id: 4
+         label: "Potion d'Endurance [Liée] "
+         detail: "Potion qui fait récupérer toute l'Endurance. "
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.3
+        -
+         type: "card"
+         num: 1
+         id: 614
+         label: "Gemme Sacrée Niv. 3"
+         detail: "Gemme spéciale qui permet de renforcer les Immortels. "
+         src: '/img/item/s/19.jpg'

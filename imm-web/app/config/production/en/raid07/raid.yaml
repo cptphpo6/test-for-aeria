@@ -1,0 +1,281 @@
+# memchash_key変更しろよー
+conf:
+  # 開始時間&終了時間
+  start: 2013/06/21 00:00:01
+  end:   2013/06/30 23:59:59
+  second_period_start: 2013/06/26 00:00:01
+
+  # 残りスタミナによるエンカウント補正閾値
+  # 残りスタミナ割合（空=0　～　満タン=1）
+  # 段階で数値の低い順に書いてください。
+  # 現状３つまで指定可能
+  # これより小さい場合にそれぞれの補正を適用
+  last_stamina_encount_rate:
+    # stamina_appear_rate0
+    - 0.1
+    # stamina_appear_rate1
+    - 0.3
+    # stamina_appear_rate2
+    - 0.5
+  # ポイントランキングを使うか？
+  use_point_ranking: 1
+
+  # レイド専用アイテム　イベント期間外は
+  raid_item:
+    # 勇士の結晶
+    -  318
+
+# カード紹介に乗せるリスト
+special_cards:
+  # Ancient Guardian Inhoudey Max 10x Character
+  - 260138
+  # Hastur Max 4x Character
+  - 350143
+  # Abyssal Priestess Max 4x Character
+  - 140133
+  # Bringer of the End Max 2x Character
+  - 330142
+
+# 特定ボスの出現開始時間制御
+# ここで設定されているボスは、start 時間を過ぎるまで出てこないよ
+boss_appear_limit:
+  type:
+    - 4
+  #start: '2013/04/29 17:00:00'
+  start: '2013/03/29 17:00:00'
+
+raid_battle:
+  # クリティカル係数
+  critical_fact:
+    1.5
+  # 神水フラグ
+  usable_special_item:
+    1
+  # 使用可能期間は↓のショップ定義と連動させました
+  shinsui_shop_def: shinsui_sell
+  # 神水係数
+  item_fact:
+    1.5
+  # 使用冒Pリスト
+  stamina:
+    - 20
+    - 40
+    - 60
+  # 冒P補正
+  stamina_correct:
+    - 0.3
+    - 0.7
+    - 1.3
+  # 逃亡時使用冒険P
+  escape_cost: 20
+  # 協力攻撃ボーナス係数
+  # 他人が発見したボスを殴った時獲得ポイント係数
+  cooperation_damage_bonus:
+    1.2
+
+  # 対レイドボス特殊カード
+  special_card:
+    # 結果ポイント補正
+    type_result_point:
+#      1226: 1.2
+#      1227: 1.2
+#      1228: 1.2
+#      1229: 1.2
+#      # ラビリンス
+#      1354: 1.5
+#      1355: 1.5
+#      1356: 1.5
+#      1357: 1.5
+#      # ターリア
+#      1358: 1.2
+#      1359: 1.2
+#      1360: 1.2
+#      1361: 1.2
+    # Damage Multiplier
+    type_damage:
+
+      260138: 3
+      261138: 5
+      262138: 10
+      263138: 20
+
+      350143: 2
+      351143: 4
+      352143: 6
+      359143: 12
+
+      140133: 1.5
+      141133: 3
+      142133: 4.5
+      149133: 9
+
+      330142: 1.2
+      331142: 2
+      332142: 3
+      339142: 6
+
+      360141: 3
+      361141: 5
+      362141: 10
+      363141: 20
+
+      250136: 2
+      251136: 4
+      252136: 6
+      259136: 12
+
+    # クリティカル○倍
+    #今回は使用しないけど、値が入ってないとエラーになるのでダミーカードを他カードと同じ1倍で設定
+#    type_critical:
+#      # パンプキン・プリンセス
+#      1181: 1
+#      1182: 1
+#      1183: 1
+#      1184: 1
+
+# Rewards
+reward:
+  # MP Restoration (Amount Restored: Probability)
+  recover_mp:
+    10: 90
+    20: 9
+    30: 1
+  # Stamina Restoration (Stamina Used Exceeds X: Y is Restored)
+  recover_stamina:
+    0: 0
+    60: 20
+    180: 40
+  # Special Victory Reward
+  smash_bonus:
+    disp_name: 'Reward Boss'
+    # Counted Boss Types
+    type:
+      - 1
+      - 2
+      - 3
+#Boss Victory Rewards
+    array:
+      5:
+        type: item
+        id: 4
+        cnt: 1
+      10:
+        type: item
+        id: 22
+        cnt: 1
+      15:
+        type: item
+        id: 22
+        cnt: 1
+      20:
+        type: card
+        id: 612
+        cnt: 1
+      25:
+        type: item
+        id: 22
+        cnt: 1
+      30:
+        type: item
+        id: 22
+        cnt: 1
+      35:
+        type: item
+        id: 4
+        cnt: 1
+      40:
+        type: item
+        id: 22
+        cnt: 1
+      45:
+        type: item
+        id: 4
+        cnt: 2
+      50:
+        type: item
+        id: 22
+        cnt: 1
+      55:
+        type: item
+        id: 22
+        cnt: 1
+      60:
+        type: item
+        id: 22
+        cnt: 1
+      65:
+        type: item
+        id: 4
+        cnt: 2
+      70:
+        type: card
+        id: 613
+        cnt: 1
+      75:
+        type: item
+        id: 22
+        cnt: 1
+      80:
+        type: card
+        id: 614
+        cnt: 1
+      85:
+        type: item
+        id: 4
+        cnt: 2
+      90:
+        type: item
+        id: 22
+        cnt: 3
+    repeat:
+      start: 100
+      interval: 10
+      reward:
+        type: item
+        id: 4
+        cnt: 3
+
+
+## Floor n Reached Reward:　Kerapy (R) 330082
+#  quest_boss:
+#    25:
+#      comment: 'Frozen Tower　Floor 25 Reward'
+#      reward:
+#        -
+#          type: card
+#          id: 330082
+#          cnt: 1
+#    50:
+#      comment: 'Frozen Tower　Floor 50 Reward'
+#      reward:
+#        -
+#          type: card
+#          id: 330082
+#          cnt: 1
+#    75:
+#      comment: 'Frozen Tower　Floor 75 Reward'
+#      reward:
+#        -
+#          type: card
+#          id: 330082
+#          cnt: 1
+#    100:
+#      comment: 'Frozen Tower　Floor 100 Reward'
+#      reward:
+#        -
+#          type: card
+#          id: 330082
+#          cnt: 1
+#  # Boss Victory Thanks
+#  present_send:
+#    comment: 'Thank you for your help.'
+#    list:
+#      -
+#        type: card
+#        id: 612
+#        cnt: 1
+# Default thanks message.
+greet:
+  default_message:
+    # Multiple configurations are possible; select at random.
+    - 'Thank you for joining the battle.'

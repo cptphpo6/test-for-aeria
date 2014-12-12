@@ -1,0 +1,399 @@
+#####################################
+###########<<  総合報酬  >>############
+#####################################
+
+# レイド報酬有効？
+enable: 1
+
+# 配布番号
+# 【注意点】：後半のキーとかぶっちゃだめよ！
+compensation:
+  # 総合個人ランキング
+  type_personal_ranker: 171114115
+  # 総合個人キリ番
+  type_personal_just: 171110116
+  # 総合騎士団ランキング
+  type_guild_ranker: 171110117
+  # 神水変換
+  type_item_change: 171111118
+  # 受け取り有効期間
+  valid_time: '2014/11/01 00:00:00'
+display_card_ids:
+  # 大陸警備団長トゥナイト(SSR)
+  - 350276
+display_card_ids_personal:
+  # 大陸警備団長トゥナイト(SSR)
+  - 350276
+display_card_ids_guild:
+  # 大陸警備団長トゥナイト(SSR)
+  - 350276
+
+# 報酬配布時コメントの置換に使用
+event_name: 'Mission: Jage die Deserteure!'
+
+# 総合個人
+personal:
+  ranker:
+    # 1~10位
+    10:
+      rank_title: 'Belohnung für Rang 1-10'
+      subject: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 1-10'
+      body: 'Prämie - Mission: Jage die Deserteure! <br/>Eigenrang 1-10'
+      comment: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 1-10'
+      items:
+        # MR Choice Box Total
+        - type: item
+          id: 2328
+          cnt: 1
+        # Munk
+        - type: card
+          id: 350276
+          cnt: 1
+        # Lucky Box MR Total
+        - type: item
+          id: 2329
+          cnt: 1
+
+    # 11-50位
+    50:
+      rank_title: 'Belohnung für Rang 11-50'
+      subject: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 11-50'
+      body: 'Prmie - Mission: Jage die Deserteure! <br/>Eigenrang 11-50'
+      comment: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 11-50'
+      items:
+        # MR Lucky Box Total
+        - type: item
+          id: 2329
+          cnt: 1
+        # Munk
+        - type: card
+          id: 350276
+          cnt: 1
+        # HR Ticket
+        - type: item
+          id: 7
+          cnt: 1
+    # 51-150位
+    150:
+      rank_title: 'Belohnung für Rang 51-150'
+      subject: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 51-150'
+      body: 'Prmie - Mission: Jage die Deserteure! <br/>Eigenrang 51-150'
+      comment: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 51-150'
+      items:
+        # Munk
+        - type: card
+          id: 350276
+          cnt: 1
+        # HR Ticket
+        - type: item
+          id: 7
+          cnt: 1
+    # 151-500位
+    500:
+      rank_title: 'Belohnung für Rang 151-500'
+      subject: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 151-500'
+      body: 'Prmie - Mission: Jage die Deserteure! <br/>Eigenrang 151-500'
+      comment: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 151-500'
+      items:
+        # Munk
+        - type: card
+          id: 350276
+          cnt: 1
+        # R ticket
+        - type: item
+          id: 1
+          cnt: 1
+    # 501-1500位
+    1500:
+      rank_title: 'Belohnung für Rang 501-1500'
+      subject: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 501-1500'
+      body: 'Prmie - Mission: Jage die Deserteure! <br/>Eigenrang 501-1500'
+      comment: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 501-1500'
+      items:
+        # HR Ticket
+        - type: item
+          id: 7
+          cnt: 1
+        # R Ticket
+        - type: item
+          id: 1
+          cnt: 1
+    # 1501-5000
+    5000:
+      rank_title: 'Belohnung für Rang 1501-5000'
+      subject: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 1501-5000'
+      body: 'Prmie - Mission: Jage die Deserteure! <br/>Eigenrang 1501-5000'
+      comment: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 1501-5000'
+      items:
+        # R Ticket
+        - type: item
+          id: 1
+          cnt: 1
+#     # 2001位以下
+#    -1:
+#      rank_title: 'Above 2001'
+#      subject: 'Nightmare Circus  Reward for 2001 or higher Place in Total Personal Ranking'
+#      body: 'Nightmare Circus  Reward for 2001 or higher Place in Total Personal Ranking.'
+#      comment: 'Nightmare Circus  Reward for 2001 or higher Place in Total Personal Ranking.'
+#      items:
+#        # ギル
+#        - type: virtual_money
+#          id : 0
+#          cnt : 10000
+
+#総合個人ランキング キリ番
+  just:
+    333:
+      subject: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 333 - Glücksbonus'
+      body: 'Prämie - Mission: Jage die Deserteure! <br/>Eigenrang 333 - Glücksbonus'
+      comment: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 333 - Glücksbonus'
+      items:
+        # SSR以上確定レアチケ
+        - type: card
+          id: 350276
+          cnt: 1
+    555:
+      subject: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 555 - Glücksbonus'
+      body: 'Prämie - Mission: Jage die Deserteure! <br/>Eigenrang 555 - Glücksbonus'
+      comment: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 555 - Glücksbonus'
+      items:
+        # SSR以上確定レアチケ
+        - type: card
+          id: 350276
+          cnt: 1
+    1111:
+      subject: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 1111 - Glücksbonus'
+      body: 'Prämie - Mission: Jage die Deserteure! <br/>Eigenrang 1111 - Glücksbonus'
+      comment: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 1111 - Glücksbonus'
+      items:
+        # SSR以上確定レアチケ
+        - type: card
+          id: 350276
+          cnt: 1
+    2222:
+      subject: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 2222 - Glücksbonus'
+      body: 'Prämie - Mission: Jage die Deserteure! <br/>Eigenrang 2222 - Glücksbonus'
+      comment: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 2222 - Glücksbonus'
+      items:
+        # SSR以上確定レアチケ
+        - type: card
+          id: 350276
+          cnt: 1
+    3333:
+      subject: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 3333 - Glücksbonus'
+      body: 'Prämie - Mission: Jage die Deserteure! <br/>Eigenrang 3333 - Glücksbonus'
+      comment: 'Prämie - Mission: Jage die Deserteure!: Eigenrang 3333 - Glücksbonus'
+      items:
+        # SSR以上確定レアチケ
+        - type: card
+          id: 350276
+          cnt: 1
+# クラン
+guild:
+  ranker:
+    # 1位
+    1:
+      bottom: 100000
+      rank_title: 'Belohnung für Rang 1'
+      subject: 'Prämie - Mission: Jage die Deserteure!: Gildenrang 1'
+      body: 'Prämie - Mission: Jage die Deserteure! <br/>Gildenrang 1'
+      comment: 'Prämie - Mission: Jage die Deserteure!: Gildenrang 1'
+      items:
+        # MR Choice Box Total
+        - type: item
+          id: 2328
+          cnt: 1
+    # 2~4位
+    4:
+      bottom: 100000
+      rank_title: 'Belohnung für Rang 2-4'
+      subject: 'Prämie - Mission: Jage die Deserteure!: Gildenrang 2-4'
+      body: 'Prämie - Mission: Jage die Deserteure! <br/>Gildenrang 2-4'
+      comment: 'Prämie - Mission: Jage die Deserteure!: Gildenrang 2-4'
+      items:
+        # MR Lucky Total
+        - type: item
+          id: 2329
+          cnt: 1
+    # 5~50位
+    50:
+      bottom: 100000
+      rank_title: 'Belohnung für Rang 5-50'
+      subject: 'Prämie - Mission: Jage die Deserteure!: Gildenrang 5-50'
+      body: 'Prämie - Mission: Jage die Deserteure! <br/>Gildenrang 5-50'
+      comment: 'Prämie - Mission: Jage die Deserteure!: Gildenrang 5-50'
+      items:
+        # Van Gogh
+        - type: card
+          id: 350276
+          cnt: 1
+    # 51~300位
+    300:
+      bottom: 1000
+      rank_title: 'Belohnung für Rang 51-300'
+      subject: 'Prämie - Mission: Jage die Deserteure!: Gildenrang 51-300'
+      body: 'Prämie - Mission: Jage die Deserteure! <br/>Gildenrang 51-300'
+      comment: 'Prämie - Mission: Jage die Deserteure!: Gildenrang 51-300'
+      items:
+        # Sorrowful Lily Leone
+        - type: card
+          id: 140265
+          cnt: 1
+#    # 301〜
+#    -1:
+#      rank_title: 'Above 301'
+#      subject: 'Nightmare Circus  Reward for 301 or higher Place in Total Guild Ranking'
+#      body: 'Nightmare Circus  Reward for 301 or higher Place in Total Guild Ranking'
+#      comment: 'Nightmare Circus  Reward for 301 and higher Place in Total Guild Ranking'
+#      items:
+#        # レアチケ
+#        - type: item
+#          id: 1
+#          cnt: 1
+
+#秘薬を霊水へ変更
+change:
+  subject: 'Tausch: Elektromagnetisches Supernetz gegen Ausdauertrank'
+  body: 'Elektromagnetisches Supernetz gegen Ausdauertrank getauscht.'
+  comment: 'Elektromagnetisches Supernetz gegen Ausdauertrank getauscht.'
+  items:
+    - type: item
+      id: 2
+      cnt: 1
+      # cnt を入れるべし
+
+#宝箱が作られてないユーザーの一括報酬配布
+trouble_reward:
+  reward_mst: 
+    #boss_type:0 レアボス
+    0:
+      #reward_type:1 最多ダメージ
+      1:
+        type: item
+        id: 5
+        cnt: 1
+      #reward_type:2 攻撃者
+      2:
+        type: card
+        id: 612
+        cnt: 1
+      #reward_type:3 発見者
+      3:
+        type: item
+        id: 5
+        cnt: 1
+      #reward_type:4 撃破者
+      4:
+        type: item
+        id: 6
+        cnt: 1
+    #boss_type:1 ノーマルボス
+    1:
+      #reward_type:1 最多ダメージ
+      1:
+        type: item
+        id: 5
+        cnt: 1
+      #reward_type:2 攻撃者
+      2:
+        type: gacha_p
+        id: 0
+        cnt: 200
+      #reward_type:3 発見者
+      3:
+        type: virtual_money
+        id: 0
+        cnt: 2000
+      #reward_type:4 撃破者
+      4:
+        type: item
+        id: 6
+        cnt: 1
+    #boss_type:2 ノーマルボス
+    2:
+      #reward_type:1 最多ダメージ
+      1:
+        type: item
+        id: 5
+        cnt: 1
+      #reward_type:2 攻撃者
+      2:
+        type: gacha_p
+        id: 0
+        cnt: 200
+      #reward_type:3 発見者
+      3:
+        type: virtual_money
+        id: 0
+        cnt: 2000
+      #reward_type:4 撃破者
+      4:
+        type: item
+        id: 6
+        cnt: 1
+    #boss_type:3 ノーマルボス
+    3:
+      #reward_type:1 最多ダメージ
+      1:
+        type: item
+        id: 5
+        cnt: 1
+      #reward_type:2 攻撃者
+      2:
+        type: gacha_p
+        id: 0
+        cnt: 200
+      #reward_type:3 発見者
+      3:
+        type: virtual_money
+        id: 0
+        cnt: 2000
+      #reward_type:4 撃破者
+      4:
+        type: item
+        id: 6
+        cnt: 1
+    #boss_type:4 裏ボス
+    4:
+      #reward_type:1 最多ダメージ
+      1:
+        type: item
+        id: 7
+        cnt: 1
+      #reward_type:2 攻撃者
+      2:
+        type: card
+        id: 613
+        cnt: 1
+      #reward_type:3 発見者
+      3:
+        type: item
+        id: 4
+        cnt: 1
+      #reward_type:4 撃破者
+      4:
+        type: item
+        id: 36
+        cnt: 1
+    #boss_type:5 ボーナスボス
+    5:
+      #reward_type:1 最多ダメージ
+      1:
+        type: item
+        id: 1
+        cnt: 1
+      #reward_type:2 攻撃者
+      2:
+        type: card
+        id: 612
+        cnt: 1
+      #reward_type:3 発見者
+      3:
+        type: item
+        id: 5
+        cnt: 1
+      #reward_type:4 撃破者
+      4:
+        type: item
+        id: 6
+        cnt: 1

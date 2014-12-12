@@ -1,0 +1,191 @@
+grow_event:
+
+  reward_list:
+    # 成長報酬
+    grow_reward:
+      category_type: 1
+      reward_comment: 'Growth (Evolved into $chara_name) Reward'
+      disp_card_mst_id: 130123
+      reward:
+        once:
+          # 育成キャラLv
+          # ヌトスLV40
+          40:
+            -
+              type: virtual_money
+              id: 0
+              cnt: 30000
+              img: 9
+              title: 'Newborn Netosa +'
+              color: red
+          # ヌトス+LV40
+          80:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Newborn Netosa ++'
+              color: red
+          # ヌトス++LV40
+          120:
+            -
+              type: gacha_p
+              id: 0
+              cnt: 5000
+              img: 10
+              title: 'Newborn Netosa +3'
+              color: red
+          # ヌトス+3LV40
+          160:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Newborn Netosa +4'
+              color: red
+          # ヌトス+4LV40
+          200:
+            -
+              type: item
+              id: 4
+              cnt: 1
+              img: 1
+              title: 'Dame Netosa'
+              color: red
+          # エウカリス・ヌトスLV50
+          250:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Dame Netosa +'
+              color: green
+          # エウカリス・ヌトス+LV50
+          300:
+            -
+              type: item
+              id: 22
+              cnt: 1
+              img: 5
+              title: 'Dame Netosa ++'
+              color: green
+          # エウカリス・ヌトス++LV50
+          350:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Dame Netosa +3'
+              color: green
+          # エウカリス・ヌトス+3LV50
+          400:
+            -
+              type: item
+              id: 4
+              cnt: 2
+              img: 2
+              title: 'Dame Netosa +4'
+              color: green
+          # エウカリス・ヌトス+4LV50
+          450:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Chevalier Netosa'
+              color: green
+          # シュヴァリエ・ヌトスLV60
+          510:
+            -
+              type: item
+              id: 22
+              cnt: 3
+              img: 6
+              title: 'Chevalier Netosa +'
+              color: purple
+          # シュヴァリエ・ヌトス+LV60
+          570:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Chevalier Netosa ++'
+              color: purple
+          # シュヴァリエ・ヌトス++LV60
+          630:
+            -
+              type: item
+              id: 4
+              cnt: 3
+              img: 3
+              title: 'Chevalier Netosa +3'
+              color: purple
+          # シュヴァリエ・ヌトス+3LV60
+          690:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Chevalier Netosa +4'
+              color: purple
+          # シュヴァリエ・ヌトス+4LV60
+          750:
+            -
+              type: item
+              id: 22
+              cnt: 3
+              img: 7
+              title: 'Chevalier Netosa +5'
+              color: purple
+          # シュヴァリエ・ヌトス+5LV60
+          810:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Chevalier Netosa +6'
+              color: purple
+          # シュヴァリエ・ヌトス+6LV60
+          870:
+            -
+              type: item
+              id: 4
+              cnt: 4
+              img: 4
+              title: 'Chevalier Netosa +7'
+              color: purple
+          # シュヴァリエ・ヌトス+7LV60
+          930:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 8
+              title: 'Valkyrie Netosa'
+              color: purple
+            -
+              type: item
+              id: 7
+              cnt: 1
+              img: 8
+              title: 'Valkyrie Netosa'
+              color: purple
+
+        repeat:
+          # インターバル:
+          interval: 30
+          items:
+            -
+              type: item
+              id: 22
+              cnt: 1
+              img: 6
+              title: 'Valkyrie Netosa'

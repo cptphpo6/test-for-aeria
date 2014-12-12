@@ -1,0 +1,529 @@
+login_bonus:
+  text: "%GP% Conjure Mana, \n%VM% SP, \n%MP% MP will be your presents!"
+  text_trade: "%GP% Conjure Mana, \n%VM% SP, \n%MP% MP, \nand Trade Tickets will be your presents!"
+  normal:
+    gacha_p: 300
+    virtual_money: 3000
+    mp: 50
+  ragnarok:
+    gacha_p: 1000
+    virtual_money: 10000
+    mp: 50
+  gacha:
+    start: "2013-11-20 00:00:00"
+    end: "2013-12-31 16:59:59"
+    item:
+       comment: 'Login Bonus'
+       list:
+          22: 1
+  campaign: #Valentine's Day Chocolate
+    start: "2013-01-23 00:00:00"
+    end: "2013-02-18 23:59:59"
+    item:
+       comment: 'Login Bonus'
+       id: 26
+       cnt: 1
+       name: "Valentine's Day Chocolate"
+       img: 40
+       css: 'pink-style'
+  
+#  special:
+#    # From day after this date(Not including below date)
+#    start: 2012/08/1
+#    # Until this date (Including below date)
+#    end: 2012/08/05
+#    normal:
+#      gacha_p: 1000
+#      virtual_money: 3000
+#      mp: 50
+#    ragnarok:
+#      gacha_p: 1500
+#      virtual_money: 10000
+#      mp: 50
+login_movie_real:
+  - type: 3 #1st Half - 3rd Day
+    start: "2013-12-23 00:00:00"
+    end: "2013-12-23 23:59:59"
+  - type: 4 #1st Half - 4th Day
+    start: "2013-12-24 00:00:00"
+    end: "2013-12-24 10:59:59"
+  - type: 5 #1st Half - 5th Day
+    start: "2013-12-25 00:00:00"
+    end: "2013-12-25 10:59:59"
+  - type: 6 #1st Half - 6th Day_Final
+    start: "2013-12-26 00:00:00"
+    end: "2013-12-26 16:59:59"
+  - type: 7 #2nd Half - 1st Day
+    start: "2013-12-26 17:00:00"
+    end: "2013-11-26 23:59:59"
+  - type: 8 #2nd Half - 2nd Day
+    start: "2013-11-27 00:00:00"
+    end: "2013-11-27 23:59:59"
+  - type: 9 #2nd Half - 3rd Day
+    start: "2013-11-28 00:00:00"
+    end: "2013-11-28 21:59:59"
+  - type: 10 #2nd Half - 4th Day
+    start: "2013-11-29 00:00:00"
+    end: "2013-11-29 21:59:59"
+  - type: 11 #2nd Half - 5th Day_Final
+    start: "2013-11-30 00:00:00"
+    end: "2013-11-30 21:59:59"
+login_movie:
+  - type: 3 #1st Half - 3rd Day
+    start: "2013-12-23 00:00:00"
+    end: "2013-12-23 23:59:59"
+  - type: 4 #1st Half - 4th Day
+    start: "2013-12-24 00:00:00"
+    end: "2013-12-24 23:59:59"
+  - type: 5 #1st Half - 5th Day
+    start: "2013-12-25 00:00:00"
+    end: "2013-12-25 23:59:59"
+  - type: 6 #1st Half - 6th Day_Final
+    start: "2013-12-26 00:00:00"
+    end: "2013-12-26 16:59:59"
+  - type: 7 #2nd Half - 1st Day
+    start: "2013-12-26 17:00:00"
+    end: "2013-12-26 23:59:59"
+  - type: 8 #2nd Half - 2nd Day
+    start: "2013-12-27 00:00:00"
+    end: "2013-12-27 23:59:59"
+  - type: 9 #2nd Half - 3rd Day
+    start: "2013-12-28 00:00:00"
+    end: "2013-12-28 23:59:59"
+  - type: 10 #2nd Half - 4th Day
+    start: "2013-12-29 00:00:00"
+    end: "2013-12-29 23:59:59"
+  - type: 11 #2nd Half - 5th Day_Final
+    start: "2013-12-30 00:00:00"
+    end: "2013-12-30 18:59:59"
+campaign_event_movie:
+  - type: 5 #Beginning of January
+    start: "2013-12-25 00:00:00"
+#    start: "2014-01-01 00:00:00"
+    end: "2014-01-07 23:59:59"
+campaign_annually_vote_result_movie:
+  - type: 1 # Final Election Result
+    start: "2013-12-27 10:00:00"
+    end: "2014-01-17 14:59:59"
+comeback_bonus:
+    # No Dates
+    start_date: '2013-02-18 00:00:00'
+    #end_date: '2099-03-14 23:59:59'
+
+    # Gift Comment
+    comeback_comment : "Received Comeback Rewards!"
+
+    # Sampling data for guilds hacing average of 10 combos within 7 days from today. After that it's the sampling probabilities. 
+    #seven_days : -7
+    #avg_combo_num: 10
+    #guild_select_rate: 50
+    seven_days : -700
+    avg_combo_num: 0
+    guild_select_rate: 0
+
+    comeback_present_list:
+        # Rare Ticket
+        1:
+         type: "item"
+         num: 3
+         id: 1
+         label: "Rare Ticket"
+         detail: "A ticket that guarantees rare or higher immortals."
+         src: '/img/item/s/7.jpg'
+        # Stamina Potion [Bound]
+        2:
+         type: "item"
+         num: 3
+         id: 4
+         label: "Stamina Potion [Bound]"
+         detail: "Fully recovers Stamina."
+         src: '/img/item/s/1.jpg'
+        # Hourglass [Bound]
+        3:
+         type: "item"
+         num: 3
+         id: 6
+         label: "Hourglass [Bound]"
+         detail: "Shortens Lucky Egg hatch time by 1 hour."
+         src: '/img/item/s/3.jpg'
+    comeback_card_list:
+        # card
+        1:
+         src: '/img/card/s/110040.jpg'
+        2:
+         src: '/img/card/s/110041.jpg'
+        3:
+         src: '/img/card/s/110042.jpg'
+        4:
+         src: '/img/card/s/110043.jpg'
+        5:
+         src: '/img/card/s/110044.jpg'
+        6:
+         src: '/img/card/s/110045.jpg'
+        7:
+         src: '/img/card/s/110046.jpg'
+        8:
+         src: '/img/card/s/110047.jpg'
+        9:
+         src: '/img/card/s/110048.jpg'
+        10:
+         src: '/img/card/s/110049.jpg'
+special_hello_comeback__bonus:
+    # Time
+    start_date: '2014-04-01 00:00:00'
+    end_date: '2014-06-30 23:59:59'
+    valid_start_date: '2014-04-01 00:00:00'
+    valid_end_date: '2014-07-31 23:59:59'
+    max_day: 7
+    special_hello_present_list:
+      1:
+        # HR Ticket
+        -
+         type: "item"
+         num: 1
+         id: 7
+         label: "HR or Higher Guaranteed Rare Ticket"
+         detail: "HR or higher immortals guaranteed for 1 Advanced Conjuring."
+         src: '/img/item/s/21.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 1
+         id: 4
+         label: "Stamina Potion [Bound]"
+         detail: "Fully recovers Stamina."
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.1
+        -
+         type: "card"
+         num: 1
+         id: 612
+         label: "Power Crystal Lv.1"
+         detail: "Special Crystal that can strengthen the immortals."
+         src: '/img/item/s/17.jpg'
+      2:
+        # Rare Ticket
+        -
+         type: "item"
+         num: 1
+         id: 1
+         label: "Rare Ticket"
+         detail: "A ticket that guarantees a rare or higher immortal."
+         src: '/img/item/s/7.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 1
+         id: 4
+         label: "Stamina Potion [Bound]"
+         detail: "Fully recovers Stamina."
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.1
+        -
+         type: "card"
+         num: 1
+         id: 612
+         label: "Power Crystal Lv.1"
+         detail: "Special Crystal that can strengthen the immortals."
+         src: '/img/item/s/17.jpg'
+      3:
+        # Rare Ticket
+        -
+         type: "item"
+         num: 3
+         id: 1
+         label: "Rare Ticket"
+         detail: "A ticket that guarantees a rare or higher immortal."
+         src: '/img/item/s/7.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 3
+         id: 4
+         label: "Stamina Potion [Bound]"
+         detail: "Fully recovers Stamina."
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.3
+        -
+         type: "card"
+         num: 1
+         id: 614
+         label: "Power Crystal Lv.3"
+         detail: "Special Crystal that can strengthen the immortals."
+         src: '/img/item/s/19.jpg'
+      4:
+        # HR or Higher Ticket
+        -
+         type: "item"
+         num: 1
+         id: 7
+         label: "HR or Higher Ticket"
+         detail: "A ticket that guarantees a HR or higher immortal."
+         src: '/img/item/s/21.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 1
+         id: 4
+         label: "Stamina Potion [Bound]"
+         detail: "Fully recovers Stamina."
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.1
+        -
+         type: "card"
+         num: 1
+         id: 612
+         label: "Power Crystal Lv.1"
+         detail: "Special Crystal that can strengthen the immortals."
+         src: '/img/item/s/17.jpg'
+      5:
+        # Rare Ticket
+        -
+         type: "item"
+         num: 1
+         id: 1
+         label: "Rare Ticket"
+         detail: "A ticket that guarantees a rare or higher immortal."
+         src: '/img/item/s/7.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 1
+         id: 4
+         label: "Stamina Potion [Bound]"
+         detail: "Fully recovers Stamina."
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.1
+        -
+         type: "card"
+         num: 1
+         id: 612
+         label: "Power Crystal Lv.1"
+         detail: "Special Crystal that can strengthen the immortals."
+         src: '/img/item/s/17.jpg'
+      6:
+        # Rare Ticket
+        -
+         type: "item"
+         num: 1
+         id: 1
+         label: "Rare Ticket"
+         detail: "A ticket that guarantees a rare or higher immortal."
+         src: '/img/item/s/7.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 1
+         id: 4
+         label: "Stamina Potion [Bound]"
+         detail: "Fully recovers Stamina."
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.1
+        -
+         type: "card"
+         num: 1
+         id: 612
+         label: "Power Crystal Lv.1"
+         detail: "Special Crystal that can strengthen the immortals."
+         src: '/img/item/s/17.jpg'
+      7:
+        # SR or Higher Ticket
+        -
+         type: "item"
+         num: 1
+         id: 8
+         label: "SR or Higher Ticket"
+         detail: "A ticket that guarantees a SR or higher immortal."
+         src: '/img/item/s/22.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 3
+         id: 4
+         label: "Stamina Potion [Bound]"
+         detail: "Fully recovers Stamina."
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.2
+        -
+         type: "card"
+         num: 1
+         id: 613
+         label: "Power Crystal Lv.2"
+         detail: "Special Crystal that can strengthen the immortals."
+         src: '/img/item/s/18.jpg'
+    special_comeback_present_list:
+      1:
+        # HR or Higher Ticket
+        -
+         type: "item"
+         num: 1
+         id: 7
+         label: "HR or Higher Ticket"
+         detail: "A ticket that guarantees a HR or higher immortal."
+         src: '/img/item/s/21.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 3
+         id: 4
+         label: "Stamina Potion [Bound]"
+         detail: "Fully recovers Stamina."
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.3
+        -
+         type: "card"
+         num: 1
+         id: 614
+         label: "Power Crystal Lv.3"
+         detail: "Special Crystal that can strengthen the immortals."
+         src: '/img/item/s/19.jpg'
+      2:
+        # Rare Ticket
+        -
+         type: "item"
+         num: 3
+         id: 1
+         label: "Rare Ticket"
+         detail: "A ticket that guarantees a rare or higher immortal."
+         src: '/img/item/s/7.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 3
+         id: 4
+         label: "Stamina Potion [Bound]"
+         detail: "Fully recovers Stamina."
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.3
+        -
+         type: "card"
+         num: 1
+         id: 614
+         label: "Power Crystal Lv.3"
+         detail: "Special Crystal that can strengthen the immortals."
+         src: '/img/item/s/19.jpg'
+      3:
+        # Rare Ticket
+        -
+         type: "item"
+         num: 3
+         id: 1
+         label: "Rare Ticket"
+         detail: "A ticket that guarantees a rare or higher immortal."
+         src: '/img/item/s/7.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 3
+         id: 4
+         label: "Stamina Potion [Bound]"
+         detail: "Fully recovers Stamina."
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.3
+        -
+         type: "card"
+         num: 1
+         id: 614
+         label: "Power Crystal Lv.3"
+         detail: "Special Crystal that can strengthen the immortals."
+         src: '/img/item/s/19.jpg'
+      4:
+        # HR or Higher Ticket
+        -
+         type: "item"
+         num: 1
+         id: 7
+         label: "HR or Higher Ticket"
+         detail: "A ticket that guarantees a HR or higher immortal."
+         src: '/img/item/s/21.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 3
+         id: 4
+         label: "Stamina Potion [Bound]"
+         detail: "Fully recovers Stamina."
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.3
+        -
+         type: "card"
+         num: 1
+         id: 614
+         label: "Power Crystal Lv.3"
+         detail: "Special Crystal that can strengthen the immortals."
+         src: '/img/item/s/19.jpg'
+      5:
+        # Rare Ticket
+        -
+         type: "item"
+         num: 3
+         id: 1
+         label: "Rare Ticket"
+         detail: "A ticket that guarantees a rare or higher immortal."
+         src: '/img/item/s/7.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 3
+         id: 4
+         label: "Stamina Potion [Bound]"
+         detail: "Fully recovers Stamina."
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.3
+        -
+         type: "card"
+         num: 1
+         id: 614
+         label: "Power Crystal Lv.3"
+         detail: "Special Crystal that can strengthen the immortals."
+         src: '/img/item/s/19.jpg'
+      6:
+        # Rare Ticket
+        -
+         type: "item"
+         num: 3
+         id: 1
+         label: "Rare Ticket"
+         detail: "A ticket that guarantees a rare or higher immortal."
+         src: '/img/item/s/7.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 3
+         id: 4
+         label: "Stamina Potion [Bound]"
+         detail: "Fully recovers Stamina."
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.3
+        -
+         type: "card"
+         num: 1
+         id: 614
+         label: "Power Crystal Lv.3"
+         detail: "Special Crystal that can strengthen the immortals."
+         src: '/img/item/s/19.jpg'
+      7:
+        # SR or Higher Ticket
+        -
+         type: "item"
+         num: 1
+         id: 8
+         label: "SR or Higher Ticket"
+         detail: "A ticket that guarantees a SR or higher immortal."
+         src: '/img/item/s/22.jpg'
+        # Stamina Potion [Bound]
+        -
+         type: "item"
+         num: 5
+         id: 4
+         label: "Stamina Potion [Bound]"
+         detail: "Fully recovers Stamina."
+         src: '/img/item/s/1.jpg'
+        # Power Crystal Lv.3
+        -
+         type: "card"
+         num: 1
+         id: 614
+         label: "Power Crystal Lv.3"
+         detail: "Special Crystal that can strengthen the immortals."
+         src: '/img/item/s/19.jpg'

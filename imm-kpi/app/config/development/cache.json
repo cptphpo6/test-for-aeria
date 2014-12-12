@@ -1,0 +1,37 @@
+{
+	"cache" :
+	{
+		"default" :
+		{
+			"engine" : "Apc"
+			"setting" :
+			{
+				"ttl" : 3600
+			}
+		},
+		"memcache" :
+		{
+			"engine" : "Memcache",
+			"setting":
+			{
+				"ttl" : 3600,
+				"hosts":
+				[
+					{ "host" : "localhost", "port" : "11211" }
+				]
+			}
+		},
+		"dbaccess_cache" :
+		{
+			"engine" : "Apc",
+			"setting":
+			{
+				"ttl" : 3600,
+				"hosts":
+				[
+					{ "host" : "localhost", "port" : "12001" }
+				]
+			}
+		}
+	}
+}

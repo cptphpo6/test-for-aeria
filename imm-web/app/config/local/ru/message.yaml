@@ -1,0 +1,374 @@
+---
+error:
+  PAYMENT_API_ERROR: |
+    決済情報の登録に失敗しました｡
+    再度試しても同様の問題が発生する場合は､カスタマーサポートまでご連絡ください
+  PEOPLE_API_ERROR: |
+    ゲーム情報を取得できませんでした｡
+    もう一度操作していただいても解消されないようでしたらカスタマーサポートまでお問い合わせください｡
+  DB_REGIST_ERROR: |
+    データ登録に失敗しました｡
+    再度試しても同様の問題が発生する場合は､カスタマーサポートまでご連絡ください
+  GACHALOT_ERROR: |
+    データ登録に失敗しました｡
+    カスタマーサポートまでご連絡ください
+  UNSELECTABLE_CHAPTER: |
+    章を表示できません｡
+  SET_INVALID_CURRENT_MISSION: |
+    SET_INVALID_CURRENT_MISSION
+  SET_INVALID_SELECTABLE_MISSION: |
+    SET_INVALID_SELECTABLE_MISSION
+  INJUSTICE_ACCESS: |
+    不正なアクセスです｡
+  SAME_CARD: |
+    同じカードです｡
+  NOT_SELECT_CARD: |
+    カードが選択されていません｡
+  NOT_SELECT_BASE_CARD: |
+    ベースカードが選択されていません｡
+  NOT_SELECT_ITEM: |
+    アイテムを選択してください｡
+  NOT_SELECT_USER: |
+    ユーザｰが選択されていません｡
+  MAIN_CARD: |
+    リーダーカードは使用できません｡
+  FAILED_MAIN_CARD: |
+    リーダーカードに設定できませんでした｡
+  ORVER_DECK: |
+    これ以上登録できません｡
+  UNKNOWN_CARD: |
+    カード情報が存在しません｡
+  UNKNOWN_GUILD: |
+    騎士団情報が存在しません｡
+  UNKNOWN_ITEM: |
+    アイテム情報が存在しません｡
+  UNKNOWN_CANDIDATE: |
+    対象者が存在しません｡
+  INVALID_PURCHASE_NUM: |
+    購入数が正しくありません｡(%s個)
+  NO_ITEM: |
+    アイテムを持っていません｡
+  CANNOT_USE_ITEM: |
+    このアイテムは使用できません｡
+  GVG_CARD_SETTING: |
+    ガーディアンバトル使用中のカードは売却できません｡
+  MAIN_NOT_SELL: |
+    リーダーカードは売却できません｡
+  NOT_SELECT_CARD: |
+    カードが選択されていません｡
+  SHORTAGE_VIRTUAL_MONEY: |
+    ギルが不足しています｡
+  SHORTAGE_PURCHASE_MONEY: |
+    GCが不足しています｡
+  SHORTAGE_PURCHASE_MEDAL: |
+    クリスタルが不足しています｡
+  INVALID_PRESENT_DATA: |
+    贈り物データに不正な情報が登録されています｡
+    カスタマーサポートまでご連絡ください｡
+  NEEDS_PRESENT_ITEM_NUM: |
+    アイテムの個数にゼロ以下を指定することはできません｡
+  NEEDS_PRESENT_VIRTUAL_MONEY_NUM: |
+    ギルが正しく指定されていません。
+  NEEDS_PRESENT_DATA_IDS: |
+    贈り物が選択されていません｡
+  PRESENT_IS_ALREADY_RECEIVED: |
+    その贈り物は既に受取済みです｡
+  OVER_GACHA_POINT_LIMIT: |
+    召喚Pの所持限界(10000)です。
+  OVER_CARD_LIMIT: |
+    カードの所持限界(%s枚)です｡
+  OVER_GIFT_LIMIT_IN_A_DAY: |
+    贈り物は一日に%s回まで可能です｡
+    回数は毎日0:00時にリセットされます｡
+  UNENABLE_GIFT: |
+    プレゼントを贈ることができません｡
+  LIMIT_OVER_TARGET_GIFT: |
+    贈り先がいっぱいのため贈ることができません。
+  ERR_VIRTUAL_MONEY_TO_GIFT: |
+    ゼロ以下を指定することはできません。
+  NOT_ENOUGH_VIRTUAL_MONEY_TO_GIFT: |
+    贈るギルが不足しています｡
+  NOT_ENOUGH_PURCHASE_MONEY_TO_GIFT: |
+    贈るGCが不足しています｡
+  NOT_ENOUGH_GACHA_POINT_TO_GIFT: |
+    贈る召喚Pが不足しています｡
+  NOT_ENOUGH_ITEM_TO_GIFT: |
+    贈るアイテムが不足しています｡
+  UNENABLE_ITEM_TO_GIFT: |
+    このアイテムを贈ることはできません｡
+  UNENABLE_CARD_TO_GIFT: |
+    このカードを贈ることはできません｡
+  NOT_GIFT_MAIN_CARD: |
+    リーダーカードは贈ることができません。
+  NOT_GIFT_PROTECT_CARD: |
+    保護されているカードは贈ることができません。
+  NOT_GIFT_GVG_CARD: |
+    ガーディアンバトルに使用中のカードは贈ることができません。
+  NOT_SELECT_GIFT_TARGET: |
+    贈り物・交換の相手が選択されていません｡
+  NOT_SELECT_GIFT: |
+    贈り物・交換品が選択されていません｡
+  BLACK_LIST: |
+    許可されていません
+  NOT_INPUT_TEXT: |
+    未入力です｡
+  INJUSTICE_WORD: |
+    禁止されている単語が含まれています。
+  OVER_INPUT_TEXT_LIMIT: |
+    入力文字数が(%s)を超えています。
+  NOT_MERG_CARD: |
+    このカードは強化させることができません｡
+  NOT_EVOLUTION: |
+    このカードは進化させることができません｡
+  NO_PROTECT_CARD: |
+    保護しているカードは選択できません。
+  NOT_ENOUGH_GACHA_POINT: |
+    召喚Pが足りません。
+  NOT_ENOUGH_GACHA_TICKET: |
+    召喚チケットが足りません。
+  NO_GACHA: |
+    召喚に失敗しました。
+  NOT_TIME_GACHA: |
+    召喚時間外で、引けませんでした。
+  NOT_GACHA_RESULT: |
+    召喚結果の表示に失敗しました。
+  NOT_COUNT_GACHA: |
+    残り回数が０のため引くことができませんでした。
+  # ガーディアンバトル
+  GVG_NOT_GUILD_PARTICIPATE: |
+    騎士団に所属していないため<br />ガーディアンバトルに参加することが<br />できません｡
+  GVG_NOT_PARTICIPATE: |
+    クリスタルウォーに参加するには騎士団に所属<br />している必要があります｡<br />
+    騎士団に所属してから再度お越しください｡
+  GVG_ALREADY_USED: |
+    選択したカードは既に使用したカードか<br />所持していないカードです｡
+  GVG_NOT_POSSESS_MP: |
+    MPが足りません｡
+  GVG_NOT_SELECT_CARD: |
+    カードが選択されてません｡
+  ALREADY_GVG_LIFE_MAX: |
+    HPは既に全回復しています｡
+  NOT_GVG_LIFE: |
+    HPが0のため<br />攻撃することができません。
+  NOT_CHARGED: |
+    まだ使用可能なカードがあるため<br />チャージできません｡
+  NOT_RECEIVE_GVG_CARD_DATA: |
+    対戦相手を正しく取得できませんでした。<br />もう一度攻撃してみてください。
+  NOT_GUILD_MEMBER: |
+    選択したユーザーは騎士団メンバーではありません。
+  ALREADY_GVG_ENCOURAGE10: |
+    1日にエールできる回数の上限に達したためエールできません。
+  ALREADY_GUILD_MEMBER_ENCOURAGE: |
+    選択したユーザーはエール済みです。
+  NOT_ALL_GUILD_MEMBER_DEAD_ATTACKED: |
+    GPが優勢のため、気絶相手に<br />攻撃できません。
+  # 騎士団
+  NO_GUILD_BATTLE: |
+    ガーディアンバトルが開催されていません。
+  NO_RAGNA_BATTLE: |
+    クリスタルウォーが開催されていません。
+  GUILD_ERROR_CAUTION: |
+    正しくアクセスできませんでした。騎士団ページへ戻ってからもう一度アクセスしてください。
+  OVER_MAX_GUILD_BBS: |
+    掲示板への書き込みは100文字以内で設定してください。
+  UNDER_MIN_GUILD_BBS: |
+    文章が短すぎます。掲示板への投稿は2文字以上から設定してください。
+  EMPTY_GUILD_BBS: |
+    掲示板への書き込みが入力されていません
+  NGWORD_GUILD_BBS: |
+    書き込んではいけない言葉が含まれています。
+  OVER_MAX_GUILD_NAME: |
+    騎士団名は8文字以内で設定してください。
+  UNDER_MIN_GUILD_NAME: |
+    騎士団名の書き込みは2文字以上から設定してください。
+  EMPTY_GUILD_NAME: |
+    騎士団名への書き込みが入力されていません
+  NGWORD_GUILD_NAME: |
+    騎士団名に書き込んではいけない言葉が含まれています。
+  DUPLICATE_GUILD_NAME: |
+    Guild name is taken.
+  GUILD_NOT_RECEIVE_USER: |
+    相手ユーザーが正しく選択されていません。騎士団メンバー一覧に戻って再度騎士団メンバーを選択してください。
+  GUILD_NOT_AUTHORITY_USER: |
+    相手ユーザーが正しく選択されていません。もう一度騎士団マスター権限を移行させたい騎士団メンバーを選択してください。
+  GUILD_NOT_AUTHORITY_GUILD: |
+    既に脱退しているか、最初から所属していない騎士団です。
+  GUILD_NOT_REMOVE_MINE: |
+    自分自身を除名することはできません。
+  GUILD_NOT_REMOVE_MASTER: |
+    騎士団マスターを除名することはできません。
+  GUILD_NOT_GUILD_JOINED: |
+    選択したユーザーは騎士団に所属していません。
+  GUILD_NOT_GUILD_ROLE: |
+    選択したユーザーは役職が設定されていません。
+  GUILD_NOT_GUILD_SHOGO: |
+    称号が正しく選択されていません。
+  GUILD_NOT_GUILD_SELECT: |
+    騎士団が正しく選択されませんでした。
+  GUILD_NOT_USER_SELECT: |
+    ユーザーが正しく選択されませんでした。
+  GUILD_NOT_SCOUT_GUILD_MASTER_USER: |
+    あなたは現在所属騎士団の騎士団マスターの為、他の騎士団に加入することはできません。
+  GUILD_ALREADY_JOINED_GUILD: |
+    現在所属している騎士団を選択することはできません。
+  GUILD_NOT_JOINED_GUILD_MASTER_USER: |
+    他の騎士団に加入したい場合は、現在所属している騎士団の所属人数を1人にするか、一度脱退して独立してから申請を行ってください。
+  GUILD_NOT_JOINED_GUILD_MEMBER_OTHERS: |
+    選択したユーザーは独立していないため、加入申請を承認することができません。
+  GUILD_SELECTED_GUILD_COMPATIBILITY_ERROR: |
+    選択したユーザーからは加入申請は届いていません。
+  GUILD_ALREADY_JOINING_SUBSC_GUILD_ERROR: |
+    選択した騎士団は加入申請中です。
+  GUILD_MAX_MEMBER_NUM: |
+    所属人数が上限まで達しています。
+  OTHER_GUILD_MAX_MEMBER_NUM: |
+    選択した騎士団の所属人数が上限まで達しています。
+  GUILD_SELECT_NON_MEMBER_NUM: |
+    選択した騎士団は所属している人がいません。
+  GUILD_NOT_GUILD_MASTER_ON_SCOUT_BOARD_SETUP: |
+    騎士団マスターでないのでスカウト勧誘設定ができません。
+  GUILD_NOT_GUILD_MASTER_ROLE_SETTING: |
+    騎士団マスターを設定変更することはできません。
+  GUILD_ALREADY_SCOUT_SUBSC_GUILD_ERROR: |
+    選択した騎士団は勧誘申請中です。
+  GUILD_SELECTED_GUILD_SCOUT_ERROR: |
+    選択した騎士団からは勧誘申請は届いていません。
+  GUILD_OTHER_USER_GUILD_JOINED_NOW: |
+    他のユーザーが騎士団メンバーで所属している為、勧誘設定ができません。
+  GUILD_OTHER_USER_NOT_GUILD_JOINED: |
+    複数人所属する騎士団のメンバーは勧誘できません。騎士団を脱退して独立してもらってください。
+  GUILD_OTHER_USER_NOT_GUILD_JOINED_COMMIT: |
+    騎士団に所属しているため他の騎士団からの勧誘を受けられません。退団し、独立騎士団になってから承認をしてください。
+  GUILD_NOT_SCOUT_MINE: |
+    自分自身を勧誘することはできません。
+  GUILD_NOT_GREETING_MEMBER: |
+    挨拶できるユーザーはいませんでした。
+  EMPTY_GREETING: |
+    挨拶が入力されていません。
+  OVER_MAX_GREETING: |
+    挨拶の書き込みは50文字までです。
+  NGWORD_GREETING_COMMENT: |
+    挨拶に書き込んではいけない言葉が含まれています。
+  NOT_GUILDCHANGED_SETTINGS: |
+    ガーディアンバトル開催中は、他の騎士団に加入したり脱退することはできません。
+  NOT_GUILDCHANGED_SETTINGS_MATCHING: |
+    ガーディアンバトルのマッチング期間中のため、他の騎士団に加入したり脱退することはできません。
+  NOT_WITHDRAWAL_GUILD_BY_RAGNAROK: |
+    あなたが所属している騎士団は<br />クリスタルウォーに選出されましたので、<br />本日は脱退することができません。
+  NOT_JOINED_GUILD_BY_RAGNAROK: |
+    あなたが所属している騎士団はクリスタルウォーに選出されましたので、本日は加入申請を承認することができません。
+  NOT_SCOUT_GUILD_BY_RAGNAROK: |
+    あなたが所属している騎士団はクリスタルウォーに選出されましたので、本日は勧誘することができません。
+  SELECTED_GUILD_BY_RAGNAROK: |
+    選択した騎士団はクリスタルウォーに選出されましたので、本日は加入することができません。
+  SELECTED_SCOUT_GUILD_BY_RAGNAROK: |
+    勧誘してきた騎士団はクリスタルウォーに選出されましたので、本日は加入することができません。
+  # デッキ
+  DECK_ERROR_CAUTION: |
+    正しくアクセスできませんでした。デッキTOPへ戻ってからもう一度アクセスしてください。
+  NOT_DECK_COPY: |
+    全てのデッキが設定されている為、複製できません。
+  NOT_DECK_NO_ONE_CARD: |
+    デッキにカードが1枚も設定されていないため、このデッキをガーディアンバトルで使用することはできません。
+  NOT_SELECTED_DECK: |
+    デッキが正しく選択されませんでした。
+  DECK_SETTING: |
+    デッキにセット中のカードは売却できません｡
+  NOT_DECK_SETTINGS: |
+    ガーディアンバトル開催中は<br />デッキの変更はできません。
+  USED_DECK_CARD_NOTHING: |
+    使用中のデッキにあるカードを0枚にすることはできません。
+  NOT_DECK_SETTINGS_MATCHING: |
+    ガーディアンバトルのマッチング期間中のため、デッキの変更はできません。
+  OVER_MAX_DECK_NAME: |
+    デッキ名は20文字以内で設定してください。
+  UNDER_MIN_DECK_NAME: |
+    デッキ名は3文字以上から設定してください。
+  EMPTY_DECK_NAME: |
+    デッキ名が入力されていません
+  NGWORD_DECK_NAME: |
+    設定してはいけない言葉が含まれています。
+  OVER_MAX_GUILD_COMMENT: |
+    マスターコメントは50文字以内で設定してください。
+  UNDER_MIN_GUILD_COMMENT: |
+    マスターコメントの書き込みは2文字以上から設定してください。
+  EMPTY_GUILD_COMMENT: |
+    マスターコメントへの書き込みが入力されていません
+  NGWORD_GUILD_COMMENT: |
+    マスターコメントに書き込んではいけない言葉が含まれています。
+  OVER_TOPIC_LIMIT_IN_A_DAY: |
+    トピック作成は一日に%s回まで可能です｡
+  OVER_REPLY_LIMIT_IN_A_DAY: |
+    掲示板への書き込みは一日に%s回まで可能です｡
+  OVER_REPLY_LIMIT: |
+    掲示板への書き込みは%s回までになります｡
+  OVER_BBS_BODY_LENGTH: |
+    本文が長すぎます。
+  OVER_BBS_TITLE_LENGTH: |
+    タイトルが長すぎます。
+  OVER_BBS_BODY_EMPTY: |
+    本文が入力されていません。
+  OVER_BBS_TITLE_EMPTY: |
+    タイトルが入力されていません。
+  BBS_DELETE_MISS: |
+    削除に失敗しました。
+  UNKNOWN_TOPIC: |
+    データの取得に失敗しました。
+  OVER_MEDAL_CHANGE_LIMIT: |
+    交換可能上限数を超えています。
+  CLOSED_MEDAL_SHOP: |
+    現在交換所は利用いただけません。
+  # ラグナロクBETシステム
+  RAGNAROK_BET_OVERTIME: |
+    BET期間外だよ♪クリスタルウォー開催の日まで待ってね！
+  RAGNAROK_BETTED_STONE: |
+    すでに予想しているよ！当たるといいね♪
+  RAGNAROK_BETTED_FREE: |
+    すでに無料で予想しているよ！当たるといいね♪
+  RAGNAROK_BET_DATA_ERR: |
+    あれー？データが不正みたい。もう一度正しく選択してみてね！  
+  TRADE_CANCEL_MISS: |
+    キャンセルに失敗しました。
+  TRADE_WISH_DEL_MISS: |
+    削除に失敗しました。
+  TRADE_WISH_REGIST_MISS: |
+    登録に失敗しました。
+  TRADE_WISH_REGIST_OVER: |
+    ほしいものは一人5枚まで!
+  TRADE_CLIP_DEL_MISS: |
+    削除に失敗しました。
+  TRADE_CLIP_REGIST_MISS: |
+    登録に失敗しました。
+  TRADE_CLIP_REGIST_OVER: |
+    お気に入りリストは5件まで!
+  TRADE_CONTRACT_MISS: |
+    トレードが失敗しました。
+  TRADE_CONTRACT_NO_ENTRY: |
+    期間が切れたトレードか不正な操作です。トレードを選びなおしてください。
+  TRADE_CONTRACT_NO_CONDITIONS: |
+    条件の満たしていないです。トレードを選びなおしてください。
+  TRADE_CONTRACT_OVER_LIMIT: |
+    トレードは1日5回まで可能です。
+  TRADE_RECIEVE_OVER_LIMIT: |
+    プレゼントBOXが180件以上でトレード出来ません。
+  TRADE_RECIEVE_OVER_LIMIT_OTHER: |
+    相手のプレゼントBOXが180件以上でトレード出来ません。
+  TRADE_DAILY_ENTRY_OVER_LIMIT: |
+    トレードは1日3回まで出品可能です。
+  TRADE_ACTIVE_ENTRY_OVER_LIMIT: |
+    トレードの出品は3件まで可能です。
+  TRADE_ENTRY_MISS: |
+    トレード不可能なカードです。
+normal:
+  EVOLUTION_MAX_FLASH_PAGE1: |+
+    (進化が限界まで到達!)
+  EVOLUTION_MAX_FLASH_PAGE2: |
+    (最終進化に達しました!
+    これ以上進化できません!)
+  DROP_CARD_FLASH_PAGE1: |
+    %sをゲットした!!
+    %s/%s/%s
+    最大攻%d 最大防%d
+  DROP_TREASURE_FLASH_PAGE1: |
+    %sをゲットした!!
+...

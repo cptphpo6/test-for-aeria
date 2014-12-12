@@ -1,0 +1,342 @@
+# memchash_key Let's change this~
+
+conf:
+  # Image Base Folder
+  img_base_folder: '/img/raid/101/'
+  # Start Time
+  start: 2013/05/10 17:00:00
+  # During Event Image
+  center_img: '/img/raid/101/title.png'
+  # End Time
+  end:   2013/05/19 23:59:59
+  # Event End Image
+  end_center_img: '/img/raid/101/title.png'
+  # Publication Flag 0:Not Published 1:Published (End Time Has Priority)
+  carry_flag: 1
+  # Preview Time Center Display Flag 0:Center Not Displayed 1:Center Displayed
+  carry_center: 1
+  # Publication Image (Preview)
+  carry_img: '/img/raid/2/title.png'
+  # Publication Over Time - Not published if time exceeded
+  carry_end: 2013/05/16 23:59:59
+  # Ring Menu Button Transision Target URL
+  ring_link: '/raid_event/'
+  # Quest Banner
+  quest_banner: '/img/raid/Fall of Virtue/title.png'
+  # Encounter Correction Threshold Based on Remaining Stamina
+  # Remaining Stamina Ratio (Empty=0, Full=1)
+  # Please write in order from lowest to highest.
+  # Status can be addressed up to 3
+  # If it's smaller than that, implement their various adjustments
+  last_stamina_encount_rate:
+    # stamina_appear_rate0
+    - 0.1
+    # stamina_appear_rate1
+    - 0.3
+    # stamina_appear_rate2
+    - 0.5
+  # Use Point Ranking?
+  use_point_ranking: 1
+#  debug_uids:
+#    - 29
+#    - 18
+#    - 370623
+  debug_start: 2012/10/17 19:50:00
+  debug_end: 2012/12/29 21:50:00
+  # Raid Boss Appearance Rate Increase Period
+  # Play animation in My Stronghold when Win flag is not 0 during period.
+  # This will be the setting for whether the animation in My Stronghold can be replayed.
+  boss_appear_up_anim_on_mypage:
+    disp_start: 2012/12/01 17:00:00
+    disp_end:   2012/12/01 21:59:59
+    flag: 1
+  # Raid Use Item - Outside of Event Period
+  raid_item:
+    # Apple of Eden
+    -  181
+
+# 11x Conjuring
+gacha:
+  # Has Corresponding Gacha:1, No Corresponding Gacha:0
+  # when flag:0 gacha_name is ignored even if set.
+  # The date is viewable in gacha.yaml, so it does not need to be shown here.
+  flag: 1
+  # Corresponding Gacha Defined Name (use the name defined in gacha.yaml)
+  gacha_name:
+    - 'raid2_eve'
+  # Corresponding Gacha Banner Image Path
+  banner: '/img/banner/banner_11santa.gif'
+  # Gacha Banner (Small)
+  banner_small: '/img/banner/banner_11santa.gif'
+
+# Card Introduction list
+special_cards:
+  # Lust
+  - 160503
+  # Wrath
+  - 150506
+  # Greed
+  - 340506
+  # Kindness
+  - 230505
+  # Temperance
+  - 360505
+  # Humility
+  - 250506
+
+# Special Boss Appearance Time Control
+# Bosses configured here will not appear until start time has passed.
+boss_appear_limit:
+  type:
+    - 4
+  start: '2013/05/10 17:00:00'
+
+raid_battle:
+  # Critical Coefficient
+  critical_fact:
+    1.5
+  # Divine Water Flag
+  usable_special_item:
+    1
+  # Usable Time Period - Shop Below Definition and Corresponding Activation
+  shinsui_shop_def: shinsui_sell
+  # Divine Water Coefficient
+  item_fact:
+    1.5
+  # Use Stamina List
+  stamina:
+    - 20
+    - 40
+    - 60
+  # Stamina Adjustment
+  stamina_correct:
+    - 0.3
+    - 0.7
+    - 1.3
+  # Boss Escape Stamina Use
+  escape_cost: 20
+  # Cooperative Attack Bonus Coefficient
+  # Defeated boss discovered by others - Points Gained Coefficient
+  cooperation_damage_bonus:
+    1.2
+
+  # Vs. Raid Boss Special Cards
+  special_card:
+    # Effect Point Adjustments
+    type_result_point:
+#      1226: 1.2
+#      1227: 1.2
+#      1228: 1.2
+#      1229: 1.2
+#      # Labyrinth
+#      1354: 1.5
+#      1355: 1.5
+#      1356: 1.5
+#      1357: 1.5
+#      # Talien
+#      1358: 1.2
+#      1359: 1.2
+#      1360: 1.2
+#      1361: 1.2
+    # Damage Multiplier
+    type_damage:
+      # Lust MR
+      160503: 3.69
+      161503: 5.69
+      162503: 10.69
+      163503: 20.69
+      # Wrath SR
+      150506: 2
+      151506: 4
+      152506: 6
+      159506: 12
+      # Greed HR
+      340506: 1.5
+      341506: 3
+      342506: 4.5
+      349506: 9
+      # Kindness R
+      230505: 1.2
+      231505: 2
+      232505: 3
+      239505: 6
+      # Temperance MR
+      360505: 3
+      361505: 5
+      362505: 10
+      363505: 20
+      # Humility SR
+      250506: 2
+      251506: 4
+      252506: 6
+      259506: 12
+
+#    # Critical Multiplier
+#    #We're not using it this time, but this is a dummy card with a 1x multiplier like other cards.
+#    type_critical:
+#      # Pumpkin Princess
+#      1181: 1
+#      1182: 1
+#      1183: 1
+#      1184: 1
+
+  # Vs. Boss Special Cards
+  boss_special_card:
+    4: #boss_type
+      # Lust MR
+      160503: 3.69
+      161503: 5.69
+      162503: 10.69
+      163503: 20.69
+      # Wrath SR
+      150506: 2
+      151506: 4
+      152506: 6
+      159506: 12
+
+# Rewards
+reward:
+  # Restore MP (Restoration Amount: Probability Rate)
+  recover_mp:
+    10: 90
+    20: 9
+    30: 1
+  # Restore Stamina (Stamina Points Used Amount Dtermined to be Above: Restore Stamina)
+  recover_stamina:
+    0: 0
+    60: 20
+    180: 40
+  # Special Victory Rewards
+  smash_bonus:
+    disp_name: 'Raid Boss'
+    # Boss Types That Count
+    type:
+      - 1
+      - 2
+      - 3
+#Boss Victory Rewards
+    array:
+      3:
+        type: item
+        id: 22
+        cnt: 1
+      5:
+        type: item
+        id: 22
+        cnt: 1
+      7:
+        type: item
+        id: 22
+        cnt: 1
+      9:
+        type: card
+        id: 612
+        cnt: 1
+      12:
+        type: item
+        id: 22
+        cnt: 1
+      15:
+        type: item
+        id: 22
+        cnt: 1
+      18:
+        type: item
+        id: 4
+        cnt: 1
+      21:
+        type: item
+        id: 22
+        cnt: 1
+      24:
+        type: item
+        id: 22
+        cnt: 1
+      27:
+        type: card
+        id: 612
+        cnt: 1
+      30:
+        type: item
+        id: 22
+        cnt: 1
+      35:
+        type: item
+        id: 22
+        cnt: 1
+      40:
+        type: item
+        id: 4
+        cnt: 2
+      45:
+        type: card
+        id: 613
+        cnt: 1
+      50:
+        type: item
+        id: 22
+        cnt: 1
+      55:
+        type: card
+        id: 614
+        cnt: 1
+      60:
+        type: item
+        id: 4
+        cnt: 2
+      70:
+        type: item
+        id: 22
+        cnt: 3
+    repeat:
+      start: 80
+      interval: 10
+      reward:
+        type: item
+        id: 4
+        cnt: 3
+
+
+## Floor n Complete Reward: Kelpie (R) 330082
+#  quest_boss:
+#    25:
+#      comment: 'Clear 25 quests to earn Allison Chains'
+#      reward:
+#        -
+#          type: card
+#          id: 330118
+#          cnt: 1
+#    50:
+#      comment: 'Clear 25 quests to earn Allison Chains'
+#      reward:
+#        -
+#          type: card
+#          id: 330118
+#          cnt: 1
+#    75:
+#      comment: 'Clear 25 quests to earn Allison Chains'
+#      reward:
+#        -
+#          type: card
+#          id: 330118
+#          cnt: 1
+#    100:
+#      comment: 'Clear 25 quests to earn Allison Chains'
+#      reward:
+#        -
+#          type: card
+#          id: 330118
+#          cnt: 1
+#  # Victory Gift
+#  present_send:
+#    comment: 'Thanks for helping out.'
+#    list:
+#      -
+#        type: card
+#        id: 612
+#        cnt: 1
+# Thanks Message Default Text
+greet:
+  default_message:
+    # Input multiple in an array, select at random
+    - 'Thanks for joining the battle!'

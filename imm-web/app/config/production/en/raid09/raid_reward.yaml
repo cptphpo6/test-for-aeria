@@ -1,0 +1,341 @@
+#################################################
+###########<<  Total Rewards  >>#################
+#################################################
+
+# Raid Rewards Enabled?
+enable: 1
+
+# Distribution Code
+compensation:
+  # Combined Personal Rankings
+  type_personal_ranker: 131006100
+  # Combined Personal Kiriban
+  type_personal_just: 131006101
+  # Combined Guild Rankings
+  type_guild_ranker: 131006102
+  # Divine Water Exchange
+  type_item_change: 131006103
+  # Item Expiration Time
+  valid_time: '2013/10/20 23:59'
+  
+display_card_ids:
+  # Peace-Seeking Captain Oz (SSR)
+  - 160141
+  # The Nome King (HR)
+  - 140142
+  # Wicked Witch of the West Ebolla (SSR)
+  - 360150
+  # Princess Ozma (SSR)
+  - 260147
+  # Good Witch of the South Belinda (SR)
+  - 350151
+display_card_ids_personal:
+  # Peace-Seeking Captain Oz (SSR)
+  - 160141
+  # The Nome King (HR)
+  - 140142
+  # Wicked Witch of the West Ebolla (SSR)
+  - 360150
+  # Princess Ozma (SSR)
+  - 260147
+  # Good Witch of the South Belinda (SR)
+  - 350151
+display_card_ids_guild:
+  # Peace-Seeking Captain Oz (SSR)
+  - 160141
+  # The Nome King (HR)
+  - 140142
+  # Wicked Witch of the West Ebolla (SSR)
+  - 360150
+  # Princess Ozma (SSR)
+  - 260147
+  # Good Witch of the South Belinda (SR)
+  - 350151
+
+# Reward Distribution Comment Replacement
+event_name: 'Summer Spirits'
+
+# Total Personal
+personal:
+  ranker:
+    # Ranks 1-10
+    10:
+      rank_title: 'Ranks 1-10'
+      subject: 'Summer Spirits Total Personal Ranks 1-10 Reward'
+      body: 'Summer Spirits <br/>Total Personal Ranks 1-10 Reward'
+      comment: 'Summer Spirits Total Personal Ranks 1-10 Reward'
+      items:
+        - type: item
+          id: 606
+          cnt: 2
+        - type: card
+          id : 777
+          cnt : 2
+    # Ranks 11-100
+    100:
+      rank_title: 'Ranks 11-100'
+      subject: 'Summer Spirits Total Personal Ranks 11-50 Reward'
+      body: 'Summer Spirits <br/>Total Personal Ranks 11-50 Reward'
+      comment: 'Summer Spirits Total Personal Ranks 11-50 Reward'
+      items:
+        - type: item
+          id: 606
+          cnt: 1
+        - type: card
+          id : 777
+          cnt : 1
+# Ranks 101-150
+    150:
+      rank_title: 'Ranks 101-150'
+      subject: 'Summer Spirits Total Personal Ranks 101-150 Reward'
+      body: 'Summer Spirits <br/>Total Personal Ranks 101-150 Reward'
+      comment: 'Summer Spirits Total Personal Ranks 101-150 Reward'
+      items:
+        - type: card
+          id: 250162
+          cnt: 2
+        - type: card
+          id : 777
+          cnt : 1
+
+    # Ranks 151-200
+    200:
+      rank_title: 'Ranks 151-200'
+      subject: 'Summer Spirits Total Personal Ranks 151-200 Reward'
+      body: 'Summer Spirits <br/>Total Personal Ranks 151-200 Reward'
+      comment: 'Summer Spirits Total Personal Ranks 151-200 Reward'
+      items:
+        - type: card
+          id: 250162
+          cnt: 1
+        - type: card
+          id : 777
+          cnt : 1
+    # Ranks 201-350
+    350:
+      rank_title: 'Ranks 201-350'
+      subject: 'Summer Spirits Total Personal Ranks 201-350 Reward'
+      body: 'Summer Spirits <br/>Total Personal Ranks 201-350 Reward'
+      comment: 'Summer Spirits Total Personal Ranks 201-350 Reward'
+      items:
+        - type: card
+          id: 340165
+          cnt: 2
+        - type: card
+          id : 614
+          cnt : 1
+    # Ranks 351-500
+    500:
+      rank_title: 'Ranks 351-500'
+      subject: 'Summer Spirits Total Personal Ranks 351-500 Reward'
+      body: 'Summer Spirits <br/>Total Personal Ranks 351-500 Reward'
+      comment: 'Summer Spirits Total Personal Ranks 351-500 Reward'
+      items:
+        - type: card
+          id: 340165
+          cnt: 2
+    # Ranks 501-1000
+    1000:
+      rank_title: 'Ranks 501-1000'
+      subject: 'Summer Spirits Total Personal Ranks 501-1000 Reward'
+      body: 'Summer Spirits <br/>Total Personal Ranks 501-1000 Reward'
+      comment: 'Summer Spirits Total Personal Ranks 501-1000 Reward'
+      items:
+        - type: card
+          id: 340165
+          cnt: 1
+        # [Personal Use] Stamina Potion
+        - type: item
+          id : 4
+          cnt : 3
+    # Ranks 1001-3000
+    3000:
+      rank_title: 'Ranks 1001-3000'
+      subject: 'Summer Spirits Total Personal Ranks 1001-3000 Reward'
+      body: 'Summer Spirits <br/>Total Personal Ranks 1001-3000 Reward'
+      comment: 'Summer Spirits Total Personal Ranks 1001-3000 Reward'
+      items:
+        # Rare Tickets
+        - type: item
+          id : 1
+          cnt : 2
+        # [Personal Use] Stamina Potion
+        - type: item
+          id : 4
+          cnt : 1
+    # Ranks 3001-30000
+    30000:
+      rank_title: 'Ranks 3001-30000'
+      subject: 'Summer Spirits Total Personal Ranks 3001-30000 Reward'
+      body: 'Summer Spirits <br/>Total Personal Ranks 3001-30000 Reward'
+      comment: 'Summer Spirits Total Personal Ranks 3001-30000 Reward'
+      items:
+        # Rare Tickets
+        - type: item
+          id : 1
+          cnt : 1
+        # [Personal Use] Stamina Potion
+        - type: item
+          id : 4
+          cnt : 1
+
+#     # Rank 50001+
+#    -1:
+#      rank_title: 'Rank 50001+'
+#      subject: 'Dark Alice Total Personal Ranks 50001+ Reward'
+#      body: 'Dark Alice Total Personal Ranks 50001+ Reward'
+#      comment: 'Dark Alice Total Personal Ranks 50001+ Reward'
+#      items:
+#        # Gold
+#        - type: virtual_money
+#          id : 0
+#          cnt : 10000
+#
+  # Total Personal Ranks Kiriban
+  just:
+    333:
+      subject: 'Summer Spirits Total Personal Ranking Lucky Number 333 Reward'
+      body: 'Summer Spirits <br/>Total Personal Ranking Lucky Number 333 Reward'
+      comment: 'Summer Spirits Total Personal Ranking Lucky Number 333 Reward'
+      items:
+        - type: card
+          id: 250162
+          cnt: 1
+    555:
+      subject: 'Summer Spirits Total Personal Ranking Lucky Number 555 Reward'
+      body: 'Summer Spirits <br/>Total Personal Ranking Lucky Number 555 Reward'
+      comment: 'Summer Spirits Total Personal Ranking Lucky Number 555 Reward'
+      items:
+        - type: card
+          id: 250162
+          cnt: 1
+    1111:
+      subject: 'Summer Spirits Total Personal Ranking Lucky Number 1111 Reward'
+      body: 'Summer Spirits <br/>Total Personal Ranking Lucky Number 1111 Reward'
+      comment: 'Summer Spirits Total Personal Ranking Lucky Number 1111 Reward'
+      items:
+        - type: card
+          id: 250162
+          cnt: 1
+    2222:
+      subject: 'Summer Spirits Total Personal Ranking Lucky Number 1111 Reward'
+      body: 'Summer Spirits <br/>Total Personal Ranking Lucky Number 1111 Reward'
+      comment: 'Summer Spirits Total Personal Ranking Lucky Number 1111 Reward'
+      items:
+        - type: card
+          id: 250162
+          cnt: 1
+    3333:
+      subject: 'Summer Spirits Total Personal Ranking Lucky Number 3333 Reward'
+      body: 'Summer Spirits <br/>Total Personal Ranking Lucky Number 3333 Reward'
+      comment: 'Summer Spirits Total Personal Ranking Lucky Number 3333 Reward'
+      items:
+        - type: card
+          id: 250162
+          cnt: 1
+# Guild
+guild:
+  ranker:
+    # Ranks 1-10
+    10:
+      bottom: 100000
+      rank_title: 'Ranks 1-10'
+      subject: 'Summer Spirits Total Guild Rank 1-10 Reward'
+      body: 'Summer Spirits <br/>Total Guild Rank 1-10 Reward'
+      comment: 'Summer Spirits Total Guild Rank 1-10 Reward'
+      items:
+        - type: card
+          id: 250162
+          cnt: 1
+        # Power Crystal Lv.3
+        - type: card
+          id: 614
+          cnt: 1
+        # Power Crystal Lv.2
+        - type: card
+          id: 613
+          cnt: 1
+        # Power Crystal Lv.1
+        - type: card
+          id: 612
+          cnt: 1
+    # Ranks 11-50
+    50:
+      bottom: 50000
+      rank_title: 'Ranks 11-50'
+      subject: 'Summer Spirits Total Guild Rank 11-50 Reward'
+      body: 'Summer Spirits <br/>Total Guild Rank 11-50 Reward'
+      comment: 'Summer Spirits Total Guild Rank 11-50 Reward'
+      items:
+        - type: card
+          id: 250162
+          cnt: 1
+    # Ranks 51-100
+    100:
+      bottom: 30000
+      rank_title: 'Ranks 51-100'
+      subject: 'Summer Spirits Total Guild Rank 51-100 Reward'
+      body: 'Summer Spirits <br/>Total Guild Rank 51-100 Reward'
+      comment: 'Summer Spirits Total Guild Rank 51-100 Reward'
+      items:
+        - type: card
+          id: 340165
+          cnt: 1
+        # Power Crystal Lv.2
+        - type: card
+          id: 613
+          cnt: 1
+    # Ranks 101-300
+    300:
+      bottom: 10000
+      rank_title: 'Ranks 101-300'
+      subject: 'Summer Spirits Total Guild Rank 101-300 Reward'
+      body: 'Summer Spirits <br/>Total Guild Rank 101-300 Reward'
+      comment: 'Summer Spirits Total Guild Rank 101-300 Reward'
+      items:
+        # Rare Tickets
+        - type: item
+          id: 1
+          cnt: 2
+        # Power Crystal Lv.2
+        - type: card
+          id: 613
+          cnt: 1
+    # Ranks 301-1000
+    1000:
+      bottom: 5000
+      rank_title: 'Ranks 301-1000'
+      subject: 'Summer Spirits Total Guild Rank 301-1000 Reward'
+      body: 'Summer Spirits <br/>Total Guild Rank 301-1000 Reward'
+      comment: 'Summer Spirits Total Guild Rank 301-1000 Reward'
+      items:
+        # Rare Ticket
+        - type: item
+          id: 1
+          cnt: 1
+        # Power Crystal Lv.1
+        - type: card
+          id: 612
+          cnt: 1
+#    # Rank 3001+
+#    -1:
+#      rank_title: 'Rank 3001+'
+#      subject: 'Dark Alice Total Guild Rank 3001+ Reward'
+#      body: 'Dark Alice Total Guild Rank 3001+ Reward'
+#      comment: 'Dark Alice Total Guild Rank 3001+ Reward'
+#      items:
+#        # Rare Tickets
+#        - type: item
+#          id: 1
+#          cnt: 1
+
+#Exchange Secret Medicine for Spirit Water
+change:
+  subject: 'Exchange Immortal Ward for Stamina Potion'
+  body: 'Exchanged Immortal Ward for Stamina Potion.'
+  comment: 'Exchanged Immortal Ward for Stamina Potion.'
+  items:
+    - type: item
+      id: 2
+      cnt: 1
+      # cnt obtained

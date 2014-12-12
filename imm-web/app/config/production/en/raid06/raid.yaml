@@ -1,0 +1,330 @@
+# memchash_key変更しろよー
+conf:
+  # 開始時間&終了時間
+  # start: 2013/05/31 17:00:00
+  start: 2013/05/31 17:00:00
+  #end:   2013/06/09 23:59:59
+  end:   2013/06/09 23:59:59
+  # 残りスタミナによるエンカウント補正閾値
+  # 残りスタミナ割合（空=0　～　満タン=1）
+  # 段階で数値の低い順に書いてください。
+  # 現状３つまで指定可能
+  # これより小さい場合にそれぞれの補正を適用
+  last_stamina_encount_rate:
+    # stamina_appear_rate0
+    - 0.1
+    # stamina_appear_rate1
+    - 0.3
+    # stamina_appear_rate2
+    - 0.5
+  # ポイントランキングを使うか？
+  use_point_ranking: 1
+
+  # レイド専用アイテム　イベント期間外は
+  raid_item:
+    # Immortal Orb
+    -  236
+
+# カード紹介に乗せるリスト
+special_cards:
+  # 古の守護者イホウンデー 最大10倍キャラ
+  - 360125
+  # Thrud  Max 20x Character
+  - 360061
+  # 邪を滅す風のハスター 最大4倍キャラ
+  - 350126
+  # Lightbringer Luminarium  Max 12x Character
+  - 250123
+  # 深淵より這い出る巫女 最大4倍キャラ
+  - 250117
+  # ｢終わり｣をもたらす者 最大2倍キャラ
+  - 140114
+  # 憎しみの権化アバドン 最大2倍キャラ
+  - 140115
+  # Water Nymph Erika  Max 6x Character
+  - 230119
+  # エウカリス・ヌトス 最大5倍キャラ
+  - 139123
+
+# 特定ボスの出現開始時間制御
+# ここで設定されているボスは、start 時間を過ぎるまで出てこないよ
+boss_appear_limit:
+  type:
+    - 4
+  #start: '2013/05/31 17:00:00'
+  start: '2013/05/31 17:00:00'
+
+raid_battle:
+  # クリティカル係数
+  critical_fact:
+    1.5
+  # 神水フラグ
+  usable_special_item:
+    1
+  # 使用可能期間は↓のショップ定義と連動させました
+  shinsui_shop_def: shinsui_sell
+  # 神水係数
+  item_fact:
+    1.5
+  # 使用冒Pリスト
+  stamina:
+    - 20
+    - 40
+    - 60
+  # 冒P補正
+  stamina_correct:
+    - 0.3
+    - 0.7
+    - 1.3
+  # 逃亡時使用冒険P
+  escape_cost: 20
+  # 協力攻撃ボーナス係数
+  # 他人が発見したボスを殴った時獲得ポイント係数
+  cooperation_damage_bonus:
+    1.2
+
+  # 対レイドボス特殊カード
+  special_card:
+    # 結果ポイント補正
+    type_result_point:
+#      1226: 1.2
+#      1227: 1.2
+#      1228: 1.2
+#      1229: 1.2
+#      # ラビリンス
+#      1354: 1.5
+#      1355: 1.5
+#      1356: 1.5
+#      1357: 1.5
+#      # ターリア
+#      1358: 1.2
+#      1359: 1.2
+#      1360: 1.2
+#      1361: 1.2
+    # ダメージ○倍
+    type_damage:
+      # Ancient Guardian Yhoundeh  Max 20x Character
+      360125: 3
+      361125: 5
+      362125: 10
+      363125: 20
+      # Thrud  Max 20x Character
+      360061: 3
+      361061: 5
+      362061: 10
+      363061: 20
+      # Windstorm Hastur  Max 12x Character
+      350126: 2
+      351126: 4
+      352126: 6
+      359126: 12
+      # Lightbringer Luminarium  Max 12x Character
+      250123: 2
+      251123: 4
+      252123: 6
+      259123: 12
+      # Priestess Aria  Max 12x Character
+      250117: 2
+      251117: 4
+      252117: 6
+      259117: 12
+      # Harbinger of Doom  Max 9x Character
+      140114: 1.5
+      141114: 3
+      142114: 4.5
+      149114: 9
+      # Hateful Abaddon Max 9x Character
+      140115: 1.5
+      141115: 3
+      142115: 4.5
+      149115: 9
+      # Dame Netosa Max 12x Character
+      139123: 2
+      141123: 2.2
+      142123: 2.4
+      143123: 2.6
+      144123: 2.8
+      149123: 3
+      151123: 3.2
+      152123: 3.5
+      153123: 4
+      154123: 4.5
+      155123: 5
+      156123: 5.5
+      157123: 6
+      159123: 12
+      # Water Nymph Erika Max 6x Character
+      230119: 1.2
+      231119: 2
+      232119: 3
+      239119: 6
+
+#    # クリティカル○倍
+#    #今回は使用しないけど、値が入ってないとエラーになるのでダミーカードを他カードと同じ1倍で設定
+#    type_critical:
+#      # パンプキン・プリンセス
+#      1181: 1
+#      1182: 1
+#      1183: 1
+#      1184: 1
+
+#  # 対レイドボス特殊カード
+#  boss_special_card:
+#    4: #boss_type
+#      # イカロス 最大20倍キャラ
+#      360116: 14
+#      361116: 16
+#      362116: 18
+#      363116: 20
+#      # バトルオーガ 最大8倍キャラ
+#      150105: 4
+#      151105: 5
+#      152105: 6
+#      159105: 8
+
+# 報酬
+reward:
+  # 回復MP (回復量: 確率)
+  recover_mp:
+    10: 90
+    20: 9
+    30: 1
+  # 回復冒P (使用冒険P　数値以上判定: 回復冒険P)
+  recover_stamina:
+    0: 0
+    60: 20
+    180: 40
+  # 特別撃破報酬
+  smash_bonus:
+    disp_name: 'Raid Boss'
+    # カウントするボスtype
+    type:
+      - 1
+      - 2
+      - 3
+#ボス撃破報酬
+    array:
+      3:
+        type: item
+        id: 22
+        cnt: 1
+      5:
+        type: item
+        id: 22
+        cnt: 1
+      7:
+        type: item
+        id: 22
+        cnt: 1
+      9:
+        type: card
+        id: 612
+        cnt: 1
+      12:
+        type: item
+        id: 22
+        cnt: 1
+      15:
+        type: item
+        id: 22
+        cnt: 1
+      18:
+        type: item
+        id: 4
+        cnt: 1
+      21:
+        type: item
+        id: 22
+        cnt: 1
+      24:
+        type: item
+        id: 22
+        cnt: 1
+      27:
+        type: card
+        id: 612
+        cnt: 1
+      30:
+        type: item
+        id: 22
+        cnt: 1
+      35:
+        type: item
+        id: 22
+        cnt: 1
+      40:
+        type: item
+        id: 4
+        cnt: 2
+      45:
+        type: card
+        id: 613
+        cnt: 1
+      50:
+        type: item
+        id: 22
+        cnt: 1
+      55:
+        type: card
+        id: 614
+        cnt: 1
+      60:
+        type: item
+        id: 4
+        cnt: 2
+      70:
+        type: item
+        id: 22
+        cnt: 3
+    repeat:
+      start: 80
+      interval: 10
+      reward:
+        type: item
+        id: 4
+        cnt: 3
+
+
+## n階層到達で報酬:　ケラピ―（R）330082
+#  quest_boss:
+#    25:
+#      comment: '氷結の塔　第25ステージクリア報酬です。'
+#      reward:
+#        -
+#          type: card
+#          id: 330082
+#          cnt: 1
+#    50:
+#      comment: '氷結の塔　第50ステージクリア報酬です。'
+#      reward:
+#        -
+#          type: card
+#          id: 330082
+#          cnt: 1
+#    75:
+#      comment: '氷結の塔　第75ステージクリア報酬です。'
+#      reward:
+#        -
+#          type: card
+#          id: 330082
+#          cnt: 1
+#    100:
+#      comment: '氷結の塔　第100ステージクリア報酬です。'
+#      reward:
+#        -
+#          type: card
+#          id: 330082
+#          cnt: 1
+#  # 討伐お礼
+#  present_send:
+#    comment: '協力してくれてありがとう。'
+#    list:
+#      -
+#        type: card
+#        id: 612
+#        cnt: 1
+# お礼メッセージデフォルトテキスト
+greet:
+  default_message:
+    # 配列で複数入れておくと、ランダムで選択されます
+    - 'Thank you for joining the battle.'

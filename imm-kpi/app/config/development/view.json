@@ -1,0 +1,36 @@
+{
+	"view" :
+	{
+		"engine"  : "Smarty",
+		"setting" :
+		{
+			"default" :
+			{
+				"template_dir"    : "view/templates/",
+				"compile_dir"     : "/var/tmp/pokefw/default/template/",
+				"cache_dir"       : "/var/tmp/pokefw/default/template/",
+				"php_dir"         : "view/php/",
+				"other_dir"       : "view/other/",
+				"config_dir"      : "view/config/",
+				"plugins_dir"     : [ "plugins/smarty/" ],
+				"left_delimiter"  : "({",
+				"right_delimiter" : "})"
+			},
+			"android" :
+			{
+				"template_dir"    : "view/smarttemplates/",
+				"compile_dir"     : "/var/tmp/pokefw/default/template/",
+				"cache_dir"       : "/var/tmp/pokefw/default/template/",
+				"php_dir"         : "view/php/",
+				"other_dir"       : "view/other/",
+				"config_dir"      : "view/config/",
+				"plugins_dir"     : [ "plugins/smarty/" ],
+				"left_delimiter"  : "({",
+				"right_delimiter" : "})"
+			},
+			"path3" : "",
+			"path4" : ""
+		}
+	}
+}
+

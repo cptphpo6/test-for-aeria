@@ -1,0 +1,9 @@
+---
+preregistered:
+  offer_type: 'logic\UserOnetimeEventLogic::TYPE_OFFER_PREREGISTERED'
+  reward_comment: 事前登録の報酬です。
+  reward_stuff_list:
+    - type: card
+      id: 340053
+      cnt: 1
+...

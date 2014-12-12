@@ -1,0 +1,365 @@
+# レイド報酬有効？
+enable: 1
+
+# 配布番号
+compensation:
+  # 個人ランキング
+  type_personal_ranker: 130220100
+  # 個人キリ番
+  type_personal_just: 130220101
+  # クランランキング
+  type_guild_ranker: 130220102
+  # 神水変換
+  type_item_change: 130220104
+  # 受け取り有効期間
+  valid_time: '2013/03/24 23:59'
+  
+display_card_ids:
+  # 氷河に封印されしノア
+  - 260073
+  # 砕氷の剣士ツララ
+  - 250074
+  # Boreas
+  - 240502
+  # Skadi
+  - 230500
+display_card_ids_personal:
+  # 氷河に封印されしノア
+  - 260073
+  # 砕氷の剣士ツララ
+  - 250074
+  # Boreas
+  - 240502
+  # Skadi
+  - 230500
+display_card_ids_guild:
+  # 砕氷の剣士ツララ
+  - 250074
+  # Skadi
+  - 230500
+
+# 個人
+
+# 報酬配布時コメントの置換に使用
+# コメント内のs$event_nameが置き換わる
+event_name: 'Frozen Fortress'
+
+personal:
+  ranker:
+    # 1~10?
+    10:
+      rank_title: '1~10'
+      subject: '$event_name Individual Rankings 1~10'
+      body: '$event_name Individual Rankings 1~10'
+      comment: '$event_name Individual Rankings 1~10'
+      items:
+        # ?????????? Noa
+        # - type: card
+        #  id: 260073
+        #  cnt: 1
+        # Choice Box between 3 Noas
+        - type: item
+          id : 57
+          cnt : 2
+      img: 1
+    # 11-50?
+    50:
+      rank_title: '11~50'
+      subject: '$event_name Individual Rankings 11~50'
+      body: '$event_name Individual Rankings 11~50'
+      comment: '$event_name Individual Rankings 11~50'
+      items:
+        # ?????????? Noa
+        #- type: card
+        #  id: 260073
+        #  cnt: 1
+        # Choice Box between 3 Noas
+        - type: item
+          id : 57
+          cnt : 1
+      img: 2
+    # 51-100?
+    100:
+      rank_title: '51~100'
+      subject: '$event_name Individual Rankings 51~100'
+      body: '$event_name Individual Rankings 51~100'
+      comment: '$event_name Individual Rankings 51~100'
+      items:
+        # ????????
+        #- type: card
+        #  id: 250074
+        #  cnt: 1
+        # Choice Box between Icicle/Heimdall/Divina
+        - type: item
+          id : 58
+          cnt : 2
+      img: 3
+    # 101-200?
+    200:
+      rank_title: '101~200'
+      subject: '$event_name Individual Rankings 101~200'
+      body: '$event_name Individual Rankings 101~200'
+      comment: '$event_name Individual Rankings 101~200'
+      items:
+        # ??????? boreas orignally 250081, now 240502
+        #- type: card
+        #  id: 240502
+        #  cnt: 1
+        # Choice Box between Icicle/Heimdall/Divina
+        - type: item
+          id : 58
+          cnt : 1
+      img: 4
+    # 201-300?
+    300:
+      rank_title: '201~300'
+      subject: '$event_name Individual Rankings 201~300'
+      body: '$event_name Individual Rankings 201~300'
+      comment: '$event_name Individual Rankings 201~300'
+      items:
+        # ????????? skadi, originally 240082, now 230500
+        #- type: card
+        #  id: 230500
+        #  cnt: 1
+        # Choice Box between Boreas/Amorada/Rielle
+        - type: item
+          id : 59
+          cnt : 2
+      img: 5
+    # 301-500?
+    500:
+      rank_title: '301~500'
+      subject: '$event_name Individual Rankings 301~500'
+      body: '$event_name Individual Rankings 301~500'
+      comment: '$event_name Individual Rankings 301~500'
+      items:
+        # ????????? skadi, originally 240082, now 230500
+        #- type: card
+        #  id: 230500
+        #  cnt: 1
+        # Choice Box between Boreas/Amorada/rielle
+        - type: item
+          id : 59
+          cnt : 1
+      img: 6
+    # 501-700?
+    700:
+      rank_title: '501~700'
+      subject: '$event_name Individual Rankings 501~700'
+      body: '$event_name Individual Rankings 501~700'
+      comment: '$event_name Individual Rankings 501~700'
+      items:
+        # ????
+        #- type: item
+        #  id : 1
+        #  cnt : 1
+        # Choice Box between Skadi/Rafae/Sera
+        - type: item
+          id : 60
+          cnt : 3
+    # 701-1000?
+    1000:
+      rank_title: '5001~10000'
+      subject: '$event_name Individual Rankings 701~1000'
+      body: '$event_name Individual Rankings 701~1000'
+      comment: '$event_name Individual Rankings 701~1000'
+      items:
+        # Choice Box between Skadi/Rafae/Sera
+        - type: item
+          id : 60
+          cnt : 2
+    # 1001-2000?
+    2000:
+      rank_title: '1001~30000'
+      subject: '$event_name Individual Rankings 1001~2000'
+      body: '$event_name Individual Rankings 1001~2000'
+      comment: '$event_name Individual Rankings 1001~2000'
+      items:
+        # Choice Box between Skadi/Rafae/Sera
+        - type: item
+          id : 60
+          cnt : 1
+    # 2001-30000?
+    30000:
+      rank_title: '30001~50000'
+      subject: '$event_name Individual Rankings 30001~50000'
+      body: '$event_name Individual Rankings 30001~50000'
+      comment: '$event_name Individual Rankings 30001~50000'
+      items:
+        # Stamina Potion Bound
+        - type: item
+          id : 4
+          cnt : 1
+        # Rare Ticket
+        - type: item
+          id : 1
+          cnt : 1
+#     # 50001???
+#    -1:
+#      rank_title: '50001??'
+#      subject: '$event_name ???????50001?????'
+#      body: '$event_name ???????50001????????'
+#      comment: '$event_name ???????50001????????'
+#      items:
+#        # ??
+#        - type: virtual_money
+#          id : 0
+#          cnt : 10000
+
+#??????? ???
+  just:
+    333:
+      subject: '$event_name Lucky 333'
+      body: '$event_name Lucky 333'
+      comment: '$event_name Lucky 333'
+      items:
+        # Choice Box between Icicle/Heimdal/Divina
+        - type: item
+          id: 58
+          cnt: 1
+      img: 7
+    555:
+      subject: '$event_name Lucky 555'
+      body: '$event_name Lucky 555'
+      comment: '$event_name Lucky 555'
+      items:
+        # Choice Box between Icicle/Heimdall/Divina
+        - type: item
+          id: 58
+          cnt: 1
+      img: 7
+    1111:
+      subject: '$event_name Lucky 1111'
+      body: '$event_name Lucky 1111'
+      comment: '$event_name Lucky 1111'
+      items:
+        # Choice Box between Icicle/Heimdall/Divina
+        - type: item
+          id: 58
+          cnt: 1
+      img: 7
+    2222:
+      subject: '$event_name Lucky 2222'
+      body: '$event_name Lucky 2222'
+      comment: '$event_name Lucky 2222'
+      items:
+        # Choice Box between Icicle/Heimdall/Divina
+        - type: item
+          id: 58
+          cnt: 1
+      img: 7
+    3333:
+      subject: '$event_name Lucky 3333'
+      body: '$event_name Lucky 3333'
+      comment: '$event_name Lucky 3333'
+      items:
+        # Choice Box between Icicle/Heimdall/Divina
+        - type: item
+          id: 58
+          cnt: 1
+      img: 7
+# ???
+guild:
+  ranker:
+    # 1~10?
+    10:
+      #bottom: 100000
+      rank_title: '1~10'
+      subject: '$event_name Guilds 1~10'
+      body: '$event_name Guilds 1~10'
+      comment: '$event_name Guilds 1~10'
+      items:
+        # Choice Box between Icicle/Heimdall/Divina
+        - type: item
+          id: 58
+          cnt: 1
+        # ???????Lv.3
+        - type: card
+          id: 614
+          cnt: 1
+        # ???????Lv.2
+        - type: card
+          id: 613
+          cnt: 1
+        # ???????Lv.1
+        - type: card
+          id: 612
+          cnt: 1
+      img: 8
+    # 11~50?
+    50:
+      #bottom: 100000
+      rank_title: '11~50'
+      subject: '$event_name Guilds 11~50'
+      body: '$event_name Guilds 11~50'
+      comment: '$event_name Guilds 11~50'
+      items:
+        # Choice Box between Icicle/Heimdall/Divina
+        - type: item
+          id: 58
+          cnt: 1
+      img: 9
+    # 51~100?
+    100:
+      #bottom: 100000
+      rank_title: '51~100'
+      subject: '$event_name Guilds 51~100'
+      body: '$event_name Guilds 51~100'
+      comment: '$event_name Guilds 51~100'
+      items:
+        # Choice Box between Skadi/Rafae/Sera
+        - type: item
+          id: 60
+          cnt: 1
+        # ???????Lv.1
+        - type: card
+          id: 612
+          cnt: 1
+      img: 10
+    # 101~300?
+    300:
+      #bottom: 100000
+      rank_title: '101~300'
+      subject: '$event_name Guilds 101~300'
+      body: '$event_name Guilds 101~300'
+      comment: '$event_name Guilds 101~300'
+      items:
+        # Choice Box between Skadi/Rafae/Sera
+        - type: item
+          id: 60
+          cnt: 1
+      img: 11
+    # 301~1000?
+    1000:
+      #bottom: 100000
+      rank_title: '301~1000'
+      subject: '$event_name Guilds 301~1000'
+      body: '$event_name Guilds 301~1000'
+      comment: '$event_name Guilds 301~1000'
+      items:
+        # Power Crystal Lv1
+        - type: card
+          id: 612
+          cnt: 1
+#    # 3001〜
+#    -1:
+#      rank_title: '3001以下'
+#      subject: '$event_name 騎士団ランキング3001位以下報酬'
+#      body: '$event_name 騎士団ランキング3001位以下報酬です。'
+#      comment: '$event_name 騎士団ランキング3001位以下報酬です。'
+#      items:
+#        # レアチケ
+#        - type: item
+#          id: 1
+#          cnt: 1
+    
+#秘薬を霊水へ変更
+change:
+  subject: 'Frostfire Gem converted to Stamina Potion'
+  body: 'Frostfire Gem converted to Stamina Potion'
+  comment: 'Frostfire Gem converted to Stamina Potion'
+  items:
+    - type: item
+      id: 2
+      cnt: 1
+      # cnt を入れるべし

@@ -1,0 +1,13 @@
+---
+# マイページ
+mypage:
+  # 下部のバナーリスト
+  bottom_banner:
+  # スタートダッシュクエスト
+#    - url: '/startdashquest/'
+#      src: '/img/banner/banner_beginnerquest.jpg'
+#      caption: '初心者クエスト期間あと%DAY%日%HOUR%時間!!'
+#      css: 'bn_img'
+#      show:
+#        - when: duringStartDashQuest
+#      gettime: getLastDateFromStartDash

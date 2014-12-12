@@ -1,0 +1,10 @@
+maintenance:
+  # メンテ中フラグ
+  flag: 0
+  # メンテページに表示する時間
+  start_date: 4/10 Wed
+  start: '7:10 pm PDT'
+  end_date: 4/10 Wed
+  end: '8:10 pm PDT'
+  # flag to go through access from our office
+  exclude_office: 1

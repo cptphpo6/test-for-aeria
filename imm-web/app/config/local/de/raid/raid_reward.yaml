@@ -1,0 +1,354 @@
+# レイド報酬有効？
+enable: 1
+
+# 配布番号
+compensation:
+  # 個人ランキング
+  type_personal_ranker: 121228100
+  # 個人キリ番
+  type_personal_just: 121228101
+  # クランランキング
+  type_guild_ranker: 121228102
+  # 神水変換
+  type_item_change: 121228104
+  # 受け取り有効期間
+  valid_time: '2013/01/10 23:59'
+  
+display_card_ids:
+  # 電撃の鉄槌トール
+  - 360061
+  #風に乗るウィンドウィッチ
+  - 350062
+  #出番待ちの妖精ニッセ
+  - 340063
+display_card_ids_personal:
+  # 電撃の鉄槌トール
+  - 360061
+  #風に乗るウィンドウィッチ
+  - 350062
+  #出番待ちの妖精ニッセ
+  - 340063
+display_card_ids_guild:
+  #風に乗るウィンドウィッチ
+  - 350062
+  #出番待ちの妖精ニッセ
+  - 340063
+
+# 個人
+
+# 報酬配布時コメントの置換に使用
+# コメント内のs$event_nameが置き換わる
+event_name: '黒サンタからの挑戦状'
+
+personal:
+  ranker:
+    # 1~10位
+    10:
+      rank_title: '1~10位'
+      subject: '$event_name 個人ランキング1~10位報酬'
+      body: '$event_name 個人ランキング1~10位報酬です。'
+      comment: '$event_name 個人ランキング1~10位報酬です。'
+      items:
+        # 電撃の鉄槌トール
+        - type: card
+          id: 360061
+          cnt: 1
+        # SR以上確定レアチケ
+        - type: item
+          id : 8
+          cnt : 1
+    # 11-50位
+    50:
+      rank_title: '11〜50位'
+      subject: '$event_name 個人ランキング11〜50位報酬'
+      body: '$event_name 個人ランキング11〜50位報酬です。'
+      comment: '$event_name 個人ランキング11〜50位報酬です。'
+      items:
+        # 電撃の鉄槌トール
+        - type: card
+          id: 360061
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id : 7
+          cnt : 1
+    # 51-200位
+    200:
+      rank_title: '51-200位'
+      subject: '$event_name 個人ランキング51-200位報酬'
+      body: '$event_name 個人ランキング51-200位報酬です。'
+      comment: '$event_name 個人ランキング51-200位報酬です。'
+      items:
+        #風に乗るウィンドウィッチ
+        - type: card
+          id: 350062
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id : 7
+          cnt : 1
+    # 201-500位
+    500:
+      rank_title: '201-500位'
+      subject: '$event_name 個人ランキング201-500位報酬'
+      body: '$event_name 個人ランキング201-500位報酬です。'
+      comment: '$event_name 個人ランキング201-500位報酬です。'
+      items:
+        #風に乗るウィンドウィッチ
+        - type: card
+          id: 350062
+          cnt: 1
+        # レアチケ
+        - type: item
+          id : 1
+          cnt : 2
+    # 501-1000位
+    1000:
+      rank_title: '501-1000位'
+      subject: '$event_name 個人ランキング501-1000位報酬'
+      body: '$event_name 個人ランキング501-1000位報酬です。'
+      comment: '$event_name 個人ランキング501-1000位報酬です。'
+      items:
+        #出番待ちの妖精ニッセ
+        - type: card
+          id: 340063
+          cnt: 1
+        # レアチケ
+        - type: item
+          id : 1
+          cnt : 2
+    # 1001-2000位
+    2000:
+      rank_title: '1001-2000位'
+      subject: '$event_name 個人ランキング1001-2000位報酬'
+      body: '$event_name 個人ランキング1001-2000位報酬です。'
+      comment: '$event_name 個人ランキング1001-2000位報酬です。'
+      items:
+        #出番待ちの妖精ニッセ
+        - type: card
+          id: 340063
+          cnt: 1
+        # レアチケ
+        - type: item
+          id : 1
+          cnt : 1
+    # 2001-5000位
+    5000:
+      rank_title: '2001-5000位'
+      subject: '$event_name 個人ランキング2001-5000位報酬'
+      body: '$event_name 個人ランキング2001-5000位報酬です。'
+      comment: '$event_name 個人ランキング2001-5000位報酬です。'
+      items:
+        # レアチケ
+        - type: item
+          id : 1
+          cnt : 1
+        # 「自分用」進撃P全チャージ
+        - type: item
+          id : 4
+          cnt : 3
+    # 5001-10000位
+    10000:
+      rank_title: '5001-10000位'
+      subject: '$event_name 個人ランキング5001-10000位報酬'
+      body: '$event_name 個人ランキング5001-10000位報酬です。'
+      comment: '$event_name 個人ランキング5001-10000位報酬です。'
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: item
+          id : 4
+          cnt : 3
+    # 10001-30000位
+    30000:
+      rank_title: '10001-30000位'
+      subject: '$event_name 個人ランキング10001-30000位報酬'
+      body: '$event_name 個人ランキング10001-30000位報酬です。'
+      comment: '$event_name 個人ランキング10001-30000位報酬です。'
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: item
+          id : 4
+          cnt : 2
+    # 30001-50000位
+    50000:
+      rank_title: '30001-50000位'
+      subject: '$event_name 個人ランキング30001-50000位報酬'
+      body: '$event_name 個人ランキング30001-50000位報酬です。'
+      comment: '$event_name 個人ランキング30001-50000位報酬です。'
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: item
+          id : 4
+          cnt : 1
+#     # 50001位以下
+#    -1:
+#      rank_title: '50001以下'
+#      subject: '$event_name 個人ランキング50001位以下報酬'
+#      body: '$event_name 個人ランキング50001位以下報酬です。'
+#      comment: '$event_name 個人ランキング50001位以下報酬です。'
+#      items:
+#        # ギル
+#        - type: virtual_money
+#          id : 0
+#          cnt : 10000
+
+#個人ランキング キリ番
+  just:
+    333:
+      subject: '$event_name 個人ランキングキリ番333位報酬'
+      body: '$event_name 個人ランキングキリ番333位報酬です。'
+      comment: '$event_name 個人ランキングキリ番333位報酬です。'
+      items:
+        # 電撃の鉄槌トール
+        - type: card
+          id: 360061
+          cnt: 1
+    555:
+      subject: '$event_name 個人ランキングキリ番555位報酬'
+      body: '$event_name 個人ランキングキリ番555位報酬です。'
+      comment: '$event_name 個人ランキングキリ番555位報酬です。'
+      items:
+        # 電撃の鉄槌トール
+        - type: card
+          id: 360061
+          cnt: 1
+    1111:
+      subject: '$event_name 個人ランキングキリ番1111位報酬'
+      body: '$event_name 個人ランキングキリ番1111位報酬です。'
+      comment: '$event_name 個人ランキングキリ番1111位報酬です。'
+      items:
+        # 電撃の鉄槌トール
+        - type: card
+          id: 360061
+          cnt: 1
+    2222:
+      subject: '$event_name 個人ランキングキリ番2222位報酬'
+      body: '$event_name 個人ランキングキリ番2222位報酬です。'
+      comment: '$event_name 個人ランキングキリ番2222位報酬です。'
+      items:
+        # 電撃の鉄槌トール
+        - type: card
+          id: 360061
+          cnt: 1
+    3333:
+      subject: '$event_name 個人ランキングキリ番3333位報酬'
+      body: '$event_name 個人ランキングキリ番3333位報酬です。'
+      comment: '$event_name 個人ランキングキリ番3333位報酬です。'
+      items:
+        # 電撃の鉄槌トール
+        - type: card
+          id: 360061
+          cnt: 1
+# クラン
+guild:
+  ranker:
+    # 1~10位
+    10:
+      #bottom: 100000
+      rank_title: '1~10位'
+      subject: '$event_name 騎士団ランキング1~10位報酬'
+      body: '$event_name 騎士団ランキング1~10位報酬です。'
+      comment: '$event_name 騎士団ンキング1~10位報酬です。'
+      items:
+        # 風に乗るウィンドウィッチ
+        - type: card
+          id: 350062
+          cnt: 1
+        # 強化クリスタルLv.3
+        - type: card
+          id: 614
+          cnt: 1
+        # 強化クリスタルLv.2
+        - type: card
+          id: 613
+          cnt: 1
+        # 強化クリスタルLv.1
+        - type: card
+          id: 612
+          cnt: 1
+    # 11~50位
+    50:
+      #bottom: 100000
+      rank_title: '11~50位'
+      subject: '$event_name 騎士団ランキング11~50位報酬'
+      body: '$event_name 騎士団ランキング11~50位報酬です。'
+      comment: '$event_name 騎士団ンキング11~50位報酬です。'
+      items:
+        # 風に乗るウィンドウィッチ
+        - type: card
+          id: 350062
+          cnt: 1
+        # 強化クリスタルLv.2
+        - type: card
+          id: 613
+          cnt: 1
+        # 強化クリスタルLv.1
+        - type: card
+          id: 612
+          cnt: 1
+    # 51~100位
+    100:
+      #bottom: 100000
+      rank_title: '51~100位'
+      subject: '$event_name 騎士団ランキング51~100位報酬'
+      body: '$event_name 騎士団ランキング51~100位報酬です。'
+      comment: '$event_name 騎士団ンキング51~100位報酬です。'
+      items:
+        # 出番待ちの妖精ニッセ
+        - type: card
+          id: 340063
+          cnt: 1
+        # 強化クリスタルLv.2
+        - type: card
+          id: 613
+          cnt: 1
+    # 101~300位
+    300:
+      #bottom: 100000
+      rank_title: '101~300位'
+      subject: '$event_name 騎士団ランキング101~300位報酬'
+      body: '$event_name 騎士団ランキング101~300位報酬です。'
+      comment: '$event_name 騎士団ンキング101~300位報酬です。'
+      items:
+        # 出番待ちの妖精ニッセ
+        - type: card
+          id: 340063
+          cnt: 1
+        # 強化クリスタルLv.1
+        - type: card
+          id: 612
+          cnt: 1
+    # 301~1000位
+    1000:
+      #bottom: 100000
+      rank_title: '301~1000位'
+      subject: '$event_name 騎士団ランキング301~1000位報酬'
+      body: '$event_name 騎士団ランキング301~1000位報酬です。'
+      comment: '$event_name 騎士団ンキング301~1000位報酬です。'
+      items:
+        # 強化クリスタルLv.1
+        - type: card
+          id: 612
+          cnt: 1
+#    # 3001〜
+#    -1:
+#      rank_title: '3001以下'
+#      subject: '$event_name 騎士団ランキング3001位以下報酬'
+#      body: '$event_name 騎士団ランキング3001位以下報酬です。'
+#      comment: '$event_name 騎士団ランキング3001位以下報酬です。'
+#      items:
+#        # レアチケ
+#        - type: item
+#          id: 1
+#          cnt: 1
+    
+#秘薬を霊水へ変更
+change:
+  subject: 'アリスのティーポットから霊水への変換'
+  body: 'アリスのティーポットから霊水へ変換しました。'
+  comment: 'アリスのティーポットから霊水へ変換しました'
+  items:
+    - type: item
+      id: 2
+      cnt: 1
+      # cnt を入れるべし

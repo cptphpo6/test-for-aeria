@@ -1,0 +1,275 @@
+# 魔石錬成設定
+manastone_training:
+  # ブリッサ先生のイケない授業
+  manastone_training1:
+    event_id: 2
+    name: "ブリッサ先生のイケない授業"
+    start: "2013-11-21 00:00:00"
+    end: "2013-11-23 23:59:59"
+    # OPムービー
+    enable_movie: false
+    # 期間中の追加ログインボーナス設定
+    login_bonus:
+      start: "2013-11-21 00:00:00"
+      end: "2013-11-23 23:59:59"
+      comment: 'ブリッサ先生のイケない授業で使用する魔石です。'
+      bonus_list:
+        -
+          type: 'item'
+          # アイテムマスタID
+          id: 200
+          # 付与数
+          num: 5
+    # イベント用剣ItemMstIdリスト
+    manastone_item_list:
+      # 魔石
+      - 200
+    # データタイプ　付与アイテムの設定とかに使う
+    data_type:
+      virtual_money: 1
+      #purchase_money: 2
+      item_mst: 3
+      card_mst: 4
+      #card_data: 5
+      gacha_point: 6
+    # flash
+    anime_param:
+      virtual_money:
+        comment: 'ギル'
+         # 予兆演出用(1:ガチャ 2:アイテム 3:ギル 4:ランダム)
+        type: 3
+      item_mst:
+        comment: ''
+         # 予兆演出用(1:ガチャ 2:アイテム 3:ギル 4:ランダム)
+        type: 2
+      card_mst:
+        comment: ''
+         # 予兆演出用(1:ガチャ 2:アイテム 3:ギル 4:ランダム)
+        type: 1
+      gacha_point:
+        comment: '召喚P'
+         # 予兆演出用(1:ガチャ 2:アイテム 3:ギル 4:ランダム)
+        type: 1
+      # アイテムタイプ(1:カード 2:アイテム)
+      item_type :
+        card: 1
+        item: 2
+      # 上記item_typeでアイテム扱いするカードid
+      exclusion_card_id :
+        0: 612
+        1: 613
+        2: 614
+        3: 777
+    # 魔石錬成 報酬設定
+    training_type:
+      1:
+        name: "『序』"
+        # 必要な魔石数
+        manastone_num: 5
+        # 画像名
+        training_img: "jyo"
+        # 魔石チャンス突入確率
+        bonus_time_per:
+          # 魔石の種類: 確率
+          1: 30
+      2:
+        name: "『特』"
+        # 必要な魔石数
+        manastone_num: 25
+        # 画像名
+        training_img: "toku"
+        # 魔石チャンス突入確率
+        bonus_time_per:
+          # 魔石の種類: 確率
+          1: 50
+      3:
+        name: "『極』"
+        # 必要な魔石数
+        manastone_num: 60
+        # 画像名
+        training_img: "goku"
+        # 魔石チャンス突入確率
+        bonus_time_per:
+          # 魔石の種類: 確率
+          1: 100
+    # 魔石をプレゼントする最低レアリティ
+    gacha_present_rare_min: 20
+    # ガチャでのカードレアリティに応じて魔石をプレゼント
+    gacha_present:
+      # レアリティ
+      # HN
+      20:
+        # アイテムマスタID
+        id: 200
+        # 付与数
+        num: 1
+      # R
+      30:
+        # アイテムマスタID
+        id: 200
+        # 付与数
+        num: 10
+      # HR
+      40:
+        # アイテムマスタID
+        id: 200
+        # 付与数
+        num: 15
+      # SR
+      50:
+        # アイテムマスタID
+        id: 200
+        # 付与数
+        num: 50
+      # SSR
+      60:
+        # アイテムマスタID
+        id: 200
+        # 付与数
+        num: 240
+#    # 魔石錬成 報酬ボーナス
+#    training_bonus:
+#      # 錬成タイプ
+#      2:
+#        # 報酬配列
+#        -
+#          # 開封数　指定毎に付与されるので 数 % n == 0 の時に毎回付与されます
+#          cycle_num: 5
+#          # 報酬データの持ち方は、ＤＢの魔石錬成 報酬マスタと同じ形式
+#          # 報酬の種類 data_type のもの（上記で定義）
+#          # 4はcard_mst
+#          type: 4
+#          # マスタIDとか
+#          data_id: 360135
+#          # 付与数
+#          num: 1
+    # 魔石チャンス有効フラグ
+    enable_bonus_time: false
+    # 魔石チャンス中ガチャ確率
+    bonus_time_gacha_rate:
+        -
+        # 魔石チャンス期間限定2倍
+#          start: '2012-12-29 00:00:00'
+#          end: '2013-03-25 14:59:59'
+          disp_sr: 2
+          # チケット召喚
+          rare1:
+            lot:
+              # rarity番号 : 確率
+              30: 96
+              40: 3.1
+              50: 0.8
+              60: 0.1
+            # 召喚での魔石錬成識別用 値は「1」固定で問題なし
+            manastone_training_event: 1
+            overwrite: 1
+          # HRチケット召喚
+          rare1_hr_ticket:
+            lot:
+              # rarity番号 : 確率
+              40: 99.1
+              50: 0.8
+              60: 0.1
+            # 召喚での魔石錬成識別用 値は「1」固定で問題なし
+            manastone_training_event: 1
+            overwrite: 1
+          # SRチケット召喚
+          rare1_sr_ticket:
+            lot:
+              # rarity番号 : 確率
+              50: 99.95
+              60: 0.05
+            # 召喚での魔石錬成識別用 値は「1」固定で問題なし
+            manastone_training_event: 1
+            overwrite: 1
+          # 通常課金
+          rare2:
+            lot:
+              # rarity番号 : 確率
+              30: 89
+              40: 8.4
+              50: 2.2
+              60: 0.4
+            # 召喚での魔石錬成識別用 値は「1」固定で問題なし
+            manastone_training_event: 1
+            overwrite: 1
+          # 初課金
+          rare2_1st:
+            lot:
+              # rarity番号 : 確率
+              40: 97.4
+              50: 2.2
+              60: 0.4
+            # 召喚での魔石錬成識別用 値は「1」固定で問題なし
+            manastone_training_event: 1
+            overwrite: 1
+          # 連動１１連
+          rare2_11time_present:
+            bg_img: '/img/event/16_geve_manastone_training3/bana_gacha_5.jpg'
+            lot:
+              # rarity番号 : 確率
+              30: 89
+              40: 8.4
+              50: 2.2
+              60: 0.4
+            # 召喚での魔石錬成識別用 値は「1」固定で問題なし
+            manastone_training_event: 1
+            probability_type: 42
+          rare2_11time_sr_once:
+            lot:
+              # rarity番号 : 確率
+              30: 89
+              40: 8.4
+              50: 2.2
+              60: 0.4
+            # 召喚での魔石錬成識別用 値は「1」固定で問題なし
+            manastone_training_event: 1
+            probability_type: 42
+          # 属性ガチャ火
+          rare2_attr_hi_1:
+            lot:
+              # rarity番号 : 確率
+              30: 89
+              40: 8.4
+              50: 2.2
+              60: 0.4
+            # 召喚での魔石錬成識別用 値は「1」固定で問題なし
+            manastone_training_event: 1
+          # 属性ガチャ風
+          rare2_attr_kaze_1:
+            lot:
+              # rarity番号 : 確率
+              30: 89
+              40: 8.4
+              50: 2.2
+              60: 0.4
+            # 召喚での魔石錬成識別用 値は「1」固定で問題なし
+            manastone_training_event: 1
+          # 属性ガチャ水
+          rare2_attr_mizu_1:
+            lot:
+              # rarity番号 : 確率
+              30: 89
+              40: 8.4
+              50: 2.2
+              60: 0.4
+            # 召喚での魔石錬成識別用 値は「1」固定で問題なし
+            manastone_training_event: 1
+          # エクカリバー付き11連
+          rare2_11time_excalibur:
+            lot:
+              30: 89
+              40: 8.4
+              50: 2.2
+              60: 0.4
+            # 召喚での魔石錬成識別用 値は「1」固定で問題なし
+            manastone_training_event: 1
+          # 3連ガチャ
+          rare2_3time_one_day:
+            lot:
+              30: 89
+              40: 8.4
+              50: 2.2
+              60: 0.4
+            # 召喚での魔石錬成識別用 値は「1」固定で問題なし
+            manastone_training_event: 1

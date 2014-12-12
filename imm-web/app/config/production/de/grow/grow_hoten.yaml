@@ -1,0 +1,191 @@
+grow_event:
+
+  reward_list:
+    # Growth Rewards
+    grow_reward:
+      category_type: 1
+      reward_comment: 'Wachstumsbelohnung: $chara_name erreicht!'
+      disp_card_mst_id: 130123
+      reward:
+        once:
+          # Growth Character Level
+          # Netosa LV40
+          40:
+            -
+              type: virtual_money
+              id: 0
+              cnt: 30000
+              img: 9
+              title: 'Netosa +'
+              color: red
+          # Netosa +LV40
+          80:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Netosa ++'
+              color: red
+          # Netosa ++LV40
+          120:
+            -
+              type: gacha_p
+              id: 0
+              cnt: 5000
+              img: 10
+              title: 'Netosa +3'
+              color: red
+          # Netosa +3LV40
+          160:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Netosa +4'
+              color: red
+          # Netosa +4LV40
+          200:
+            -
+              type: item
+              id: 4
+              cnt: 1
+              img: 1
+              title: 'Dame Netosa'
+              color: red
+          # Eucharis Netosa LV50
+          250:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Dame Netosa +'
+              color: green
+          # Eucharis Netosa +LV50
+          300:
+            -
+              type: item
+              id: 22
+              cnt: 1
+              img: 5
+              title: 'Dame Netosa ++'
+              color: green
+          # Eucharis Netosa ++LV50
+          350:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Dame Netosa +3'
+              color: green
+          # Eucharis Netosa +3LV50
+          400:
+            -
+              type: item
+              id: 4
+              cnt: 2
+              img: 2
+              title: 'Dame Netosa +4'
+              color: green
+          # Eucharis Netosa +4LV50
+          450:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Ritterin Netosa'
+              color: green
+          # Cavalier Netosa LV60
+          510:
+            -
+              type: item
+              id: 22
+              cnt: 3
+              img: 6
+              title: 'Ritterin Netosa +'
+              color: purple
+          # Cavalier Netosa +LV60
+          570:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Ritterin Netosa ++'
+              color: purple
+          # Cavalier Netosa ++LV60
+          630:
+            -
+              type: item
+              id: 4
+              cnt: 3
+              img: 3
+              title: 'Ritterin Netosa +3'
+              color: purple
+          # Cavalier Netosa +3LV60
+          690:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Ritterin Netosa +4'
+              color: purple
+          # Cavalier Netosa +4LV60
+          750:
+            -
+              type: item
+              id: 22
+              cnt: 3
+              img: 7
+              title: 'Ritterin Netosa +5'
+              color: purple
+          # Cavalier Netosa +5LV60
+          810:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Ritterin Netosa +6'
+              color: purple
+          # Cavalier Netosa +6LV60
+          870:
+            -
+              type: item
+              id: 4
+              cnt: 4
+              img: 4
+              title: 'Ritterin Netosa +7'
+              color: purple
+          # Cavalier Netosa +7LV60
+          930:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 8
+              title: 'Walküre Netosa'
+              color: purple
+            -
+              type: item
+              id: 7
+              cnt: 1
+              img: 8
+              title: 'Walküre Netosa'
+              color: purple
+
+        repeat:
+          # Interval:
+          interval: 30
+          items:
+            -
+              type: item
+              id: 22
+              cnt: 1
+              img: 6
+              title: 'Walküre Netosa'

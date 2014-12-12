@@ -1,0 +1,10 @@
+maintenance:
+  # メンテ中フラグ
+  flag: 0
+  # メンテページに表示する時間
+  start_date: 3/26 Dienstag
+  start: '21:00 CET'
+  end_date: 3/27 Mittwoch 
+  end: '05:00 CET'
+  # flag to go through access from our office
+  exclude_office: 1

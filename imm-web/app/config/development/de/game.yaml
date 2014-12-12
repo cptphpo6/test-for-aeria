@@ -1,0 +1,8259 @@
+app_info:
+  version: 1.5
+  minimum_version: 1.5
+
+android_app_info:
+  version: 1.7
+  minimum_version: 1.7
+
+enable_ignite: 0
+
+bootstrap:
+  app_controller:
+    setup:
+      - [ \logic\InviteLogic, setup ]
+  guild_battle_controller:
+    setup:
+      - [ \logic\SelectionBattleLogic, setup ]
+
+secret_version: 1.3
+# 課金モード 0: 課金不可　1: 課金可能
+purchase_mode: 1
+user:
+  default_param:
+    stamina: 30
+    stamina_recover_sec: 60
+    gvg_stamina_max: 100
+    max_card: 50
+    deck_cost: 50
+    comment: よろしくお願いします!!
+    gvg_life: 5000
+    gvg_life_fact: 100
+  money:
+    label: ギル
+  purchase_money:
+    label: GC
+  gacha_point:
+    label: 召喚P
+  greeting:
+    limit_per_day: 100
+    max_length: 50
+    present:
+      gp_src_guild: 6
+      gp_dst_guild: 3
+      gp_src_friend: 4
+      gp_dst_friend: 2
+      gp_src: 2
+      gp_dst: 1
+  friend:
+    max_cnt: 20
+  # IMMIOS-9976: Raise Level Cap to 300. Start
+  levelup_exp:
+    1: 0
+    2: 17
+    3: 20
+    4: 24
+    5: 38
+    6: 54
+    7: 74
+    8: 96
+    9: 122
+    10: 150
+    11: 182
+    12: 216
+    13: 254
+    14: 294
+    15: 338
+    16: 384
+    17: 434
+    18: 486
+    19: 542
+    20: 600
+    21: 662
+    22: 726
+    23: 794
+    24: 864
+    25: 938
+    26: 1014
+    27: 1094
+    28: 1176
+    29: 1262
+    30: 1350
+    31: 1442
+    32: 1536
+    33: 1634
+    34: 1734
+    35: 1838
+    36: 1944
+    37: 2054
+    38: 2166
+    39: 2282
+    40: 2400
+    41: 2522
+    42: 2646
+    43: 2774
+    44: 2904
+    45: 3038
+    46: 3174
+    47: 3314
+    48: 3456
+    49: 3602
+    50: 3750
+    51: 3902
+    52: 4056
+    53: 4214
+    54: 4374
+    55: 4538
+    56: 4704
+    57: 4874
+    58: 5046
+    59: 5222
+    60: 5400
+    61: 5582
+    62: 5766
+    63: 5954
+    64: 6144
+    65: 6338
+    66: 6534
+    67: 6734
+    68: 6936
+    69: 7142
+    70: 7350
+    71: 7562
+    72: 7776
+    73: 7994
+    74: 8214
+    75: 8438
+    76: 8664
+    77: 8894
+    78: 9126
+    79: 9362
+    80: 9600
+    81: 9842
+    82: 10086
+    83: 10334
+    84: 10584
+    85: 10838
+    86: 11094
+    87: 11354
+    88: 11616
+    89: 11882
+    90: 12150
+    91: 12422
+    92: 12696
+    93: 12974
+    94: 13254
+    95: 13538
+    96: 13824
+    97: 14114
+    98: 14406
+    99: 14702
+    100: 15000
+    101: 15302
+    102: 15606
+    103: 15914
+    104: 16224
+    105: 16538
+    106: 16854
+    107: 17174
+    108: 17496
+    109: 17822
+    110: 18150
+    111: 18482
+    112: 18816
+    113: 19154
+    114: 19494
+    115: 19838
+    116: 20184
+    117: 20534
+    118: 20886
+    119: 21242
+    120: 21600
+    121: 21962
+    122: 22326
+    123: 22694
+    124: 23064
+    125: 23438
+    126: 23814
+    127: 24194
+    128: 24576
+    129: 24962
+    130: 25350
+    131: 25742
+    132: 26136
+    133: 26534
+    134: 26934
+    135: 27338
+    136: 27744
+    137: 28154
+    138: 28566
+    139: 28982
+    140: 29400
+    141: 29822
+    142: 30246
+    143: 30674
+    144: 31104
+    145: 31538
+    146: 31974
+    147: 32414
+    148: 32856
+    149: 33302
+    150: 33750
+    151: 34202
+    152: 34656
+    153: 35114
+    154: 35574
+    155: 36038
+    156: 36504
+    157: 36974
+    158: 37446
+    159: 37922
+    160: 38400
+    161: 38882
+    162: 39366
+    163: 39854
+    164: 40344
+    165: 40838
+    166: 41334
+    167: 41834
+    168: 42336
+    169: 42842
+    170: 43350
+    171: 43862
+    172: 44376
+    173: 44894
+    174: 45414
+    175: 45938
+    176: 46464
+    177: 46994
+    178: 47526
+    179: 48062
+    180: 48600
+    181: 49142
+    182: 49686
+    183: 50234
+    184: 50784
+    185: 51338
+    186: 51894
+    187: 52454
+    188: 53016
+    189: 53582
+    190: 54150
+    191: 54722
+    192: 55296
+    193: 55874
+    194: 56454
+    195: 57038
+    196: 57624
+    197: 58214
+    198: 58806
+    199: 59402
+    200: 60000
+    201: 60597
+    202: 61194
+    203: 61791
+    204: 62388
+    205: 62985
+    206: 63582
+    207: 64179
+    208: 64776
+    209: 65373
+    210: 65970
+    211: 66567
+    212: 67164
+    213: 67761
+    214: 68358
+    215: 68955
+    216: 69552
+    217: 70149
+    218: 70746
+    219: 71343
+    220: 71940
+    221: 72537
+    222: 73134
+    223: 73731
+    224: 74328
+    225: 74925
+    226: 75522
+    227: 76119
+    228: 76716
+    229: 77313
+    230: 77910
+    231: 78507
+    232: 79104
+    233: 79701
+    234: 80298
+    235: 80895
+    236: 81492
+    237: 82089
+    238: 82686
+    239: 83283
+    240: 83880
+    241: 84477
+    242: 85074
+    243: 85671
+    244: 86268
+    245: 86865
+    246: 87462
+    247: 88059
+    248: 88656
+    249: 89253
+    250: 89850
+    251: 90447
+    252: 91044
+    253: 91641
+    254: 92238
+    255: 92835
+    256: 93432
+    257: 94029
+    258: 94626
+    259: 95223
+    260: 95820
+    261: 96417
+    262: 97014
+    263: 97611
+    264: 98208
+    265: 98805
+    266: 99402
+    267: 99999
+    268: 100596
+    269: 101193
+    270: 101790
+    271: 102387
+    272: 102984
+    273: 103581
+    274: 104178
+    275: 104775
+    276: 105372
+    277: 105969
+    278: 106566
+    279: 107163
+    280: 107760
+    281: 108357
+    282: 108954
+    283: 109551
+    284: 110148
+    285: 110745
+    286: 111342
+    287: 111939
+    288: 112536
+    289: 113133
+    290: 113730
+    291: 114327
+    292: 114924
+    293: 115521
+    294: 116118
+    295: 116715
+    296: 117312
+    297: 117909
+    298: 118506
+    299: 119103
+    300: 119700
+  # IMMIOS-9976: Raise Level Cap to 300. Start
+comment:
+  present:
+    boss: ボスの撃破報酬です。
+    quiz: クイズの正解報酬です。
+    lucky_egg: ラッキーエッグの孵化報酬です。
+    rainbow_egg: レインボーエッグの孵化報酬です。
+    login_bonus: のログインボーナスです。
+    gvg_win: ガーディアンバトルの勝利報酬です。
+    gvg_draw: ガーディアンバトルの引き分け報酬です。
+    gvg_lose: ガーディアンバトルの敗北報酬です。
+    gvg_combo_bonus: ガーディアンバトルの攻撃コンボボーナスです。
+    gvg_combo_aid_bonus: ガーディアンバトルの応援コンボボーナスです。
+    gvg_all_participating: 今日のガーディアンバトルに全て参加したボーナスです。
+    ragnarok_win: クリスタルウォーの勝利報酬です。
+    ragnarok_draw: クリスタルウォーの引き分け報酬です。
+    ragnarok_lose: クリスタルウォーの敗北報酬です。
+    ragnarok_combo_bonus: クリスタルウォーの攻撃コンボボーナスです。
+    ragnarok_combo_aid_bonus: クリスタルウォーの応援コンボボーナスです。
+    user: ：○○さんからのプレゼントです。
+    daily_quest: デイリーウィークリクエスト報酬です。
+
+item_list:
+  sell_count: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 30, 40, 50]
+
+card:
+  status:
+    normal:
+      value: 0
+      label: 所持
+    merg:
+      value: 1
+      label: 強化素材
+    sell:
+      value: 2
+      label: 売却済み
+    present:
+      value: 3
+      label: 贈り物
+    trade:
+      value: 4
+      label: 交換中
+    trade_comp:
+      value: 5
+      label: 交換済み
+    evolution:
+      value: 6
+      label: 進化素材
+    grow:
+      value: 7
+      label: 育成素材
+    recycle:
+      value: 101
+      label: Recycelt
+
+  # レベルアップに必要な経験値
+  levelup_exp:
+    1: 0
+    2: 5
+    3: 10
+    4: 15
+    5: 23
+    6: 35
+    7: 42
+    8: 50
+    9: 60
+    10: 72
+    11: 86
+    12: 103
+    13: 124
+    14: 149
+    15: 179
+    16: 215
+    17: 258
+    18: 310
+    19: 326
+    20: 391
+    21: 411
+    22: 432
+    23: 454
+    24: 477
+    25: 572
+    26: 595
+    27: 619
+    28: 644
+    29: 670
+    30: 804
+    31: 828
+    32: 853
+    33: 879
+    34: 905
+    35: 1086
+    36: 1108
+    37: 1130
+    38: 1153
+    39: 1176
+    40: 1411
+    41: 1453
+    42: 1497
+    43: 1542
+    44: 1588
+    45: 1985
+    46: 2045
+    47: 2106
+    48: 2169
+    49: 2234
+    50: 2681
+    51: 2761
+    52: 2844
+    53: 2929
+    54: 3017
+    55: 3620
+    56: 3729
+    57: 3841
+    58: 3956
+    59: 4075
+    60: 4890
+    61: 5037
+    62: 5188
+    63: 5344
+    64: 5504
+    65: 6605
+    66: 6803
+    67: 7007
+    68: 7217
+    69: 7434
+    70: 8921
+    71: 10705
+    72: 11026
+    73: 11357
+    74: 11698
+    75: 12049
+    76: 12410
+    77: 12782
+    78: 13165
+    79: 13560
+    80: 13967
+    81: 14386
+    82: 14818
+    83: 15263
+    84: 15721
+    85: 16193
+    86: 16679
+    87: 17179
+    88: 17694
+    89: 18225
+    90: 18772
+    91: 19711
+    92: 20697
+    93: 21732
+    94: 22819
+    95: 23960
+    96: 25877
+    97: 27947
+    98: 30183
+    99: 32598
+
+  rarity:
+    #レア度
+      #レア度系統
+      #レベルの名称
+      #最高レベル
+      #レベルアップ係数
+      #合成レア度別基本金額
+      #合成レア度別費用上乗せ額
+      #進化金額
+      #dummy 0~9
+    0:
+      class: 0
+      label: null
+      max_level: 0
+      coefficient: 0
+      merg_base_price: 0
+      merg_up_price: 0
+      evol_price: 0
+    10:
+      class: 1
+      label: 'N'
+      max_level: 20
+      coefficient: 40
+      merg_base_price: 150
+      merg_up_price: 30
+      evol_price: 520
+    11:
+      class: 1
+      label: 'N+'
+      max_level: 20
+      coefficient: 50
+      merg_base_price: 150
+      merg_up_price: 30
+      evol_price: 520
+    12:
+      class: 1
+      label: 'N++'
+      max_level: 20
+      coefficient: 60
+      merg_base_price: 150
+      merg_up_price: 30
+      evol_price: 520
+    19:
+      class: 2
+      label: 'HN'
+      max_level: 30
+      coefficient: 80
+      merg_base_price: 200
+      merg_up_price: 40
+      evol_price: 520
+    20:
+      class: 2
+      label: 'HN'
+      max_level: 30
+      coefficient: 150
+      merg_base_price: 200
+      merg_up_price: 40
+      evol_price: 780
+    21:
+      class: 2
+      label: 'HN+'
+      max_level: 30
+      coefficient: 160
+      merg_base_price: 200
+      merg_up_price: 40
+      evol_price: 780
+    22:
+      class: 2
+      label: 'HN++'
+      max_level: 30
+      coefficient: 170
+      merg_base_price: 200
+      merg_up_price: 40
+      evol_price: 780
+    29:
+      class: 3
+      label: 'R'
+      max_level: 40
+      coefficient: 210
+      merg_base_price: 300
+      merg_up_price: 50
+      evol_price: 780
+    30:
+      class: 3
+      label: 'R'
+      max_level: 40
+      coefficient: 600
+      merg_base_price: 300
+      merg_up_price: 50
+      evol_price: 1040
+    31:
+      class: 3
+      label: 'R+'
+      max_level: 40
+      coefficient: 650
+      merg_base_price: 300
+      merg_up_price: 50
+      evol_price: 1040
+    32:
+      class: 3
+      label: 'R++'
+      max_level: 40
+      coefficient: 700
+      merg_base_price: 300
+      merg_up_price: 50
+      evol_price: 1040
+    33:
+      class: 3
+      label: 'R+3'
+      max_level: 40
+      coefficient: 700
+      merg_base_price: 300
+      merg_up_price: 50
+      evol_price: 1040
+    34:
+      class: 3
+      label: 'R+4'
+      max_level: 40
+      coefficient: 700
+      merg_base_price: 300
+      merg_up_price: 50
+      evol_price: 1040
+    39:
+      class: 4
+      label: 'HR'
+      max_level: 50
+      coefficient: 900
+      merg_base_price: 400
+      merg_up_price: 60
+      evol_price: 1040
+    40:
+      class: 4
+      label: 'HR'
+      max_level: 50
+      coefficient: 1500
+      merg_base_price: 400
+      merg_up_price: 60
+      evol_price: 1300
+    41:
+      class: 4
+      label: 'HR+'
+      max_level: 50
+      coefficient: 1600
+      merg_base_price: 400
+      merg_up_price: 60
+      evol_price: 1300
+    42:
+      class: 4
+      label: 'HR++'
+      max_level: 50
+      coefficient: 1700
+      merg_base_price: 400
+      merg_up_price: 60
+      evol_price: 1300
+    43:
+      class: 4
+      label: 'HR+3'
+      max_level: 50
+      coefficient: 1700
+      merg_base_price: 400
+      merg_up_price: 60
+      evol_price: 1300
+    44:
+      class: 4
+      label: 'HR+4'
+      max_level: 50
+      coefficient: 1700
+      merg_base_price: 400
+      merg_up_price: 60
+      evol_price: 1300
+    49:
+      class: 5
+      label: 'SR'
+      max_level: 60
+      coefficient: 2000
+      merg_base_price: 500
+      merg_up_price: 70
+      evol_price: 1300
+    50:
+      class: 5
+      label: 'SR'
+      max_level: 60
+      coefficient: 2900
+      merg_base_price: 500
+      merg_up_price: 70
+      evol_price: 1560
+    51:
+      class: 5
+      label: 'SR+'
+      max_level: 60
+      coefficient: 3100
+      merg_base_price: 500
+      merg_up_price: 70
+      evol_price: 1560
+    52:
+      class: 5
+      label: 'SR++'
+      max_level: 60
+      coefficient: 3200
+      merg_base_price: 500
+      merg_up_price: 70
+      evol_price: 1560
+    53:
+      class: 5
+      label: 'SR+3'
+      max_level: 60
+      coefficient: 3200
+      merg_base_price: 500
+      merg_up_price: 70
+      evol_price: 1560
+    54:
+      class: 5
+      label: 'SR+4'
+      max_level: 60
+      coefficient: 3200
+      merg_base_price: 500
+      merg_up_price: 70
+      evol_price: 1560
+    55:
+      class: 5
+      label: 'SR+5'
+      max_level: 60
+      coefficient: 3200
+      merg_base_price: 500
+      merg_up_price: 70
+      evol_price: 1560
+    56:
+      class: 5
+      label: 'SR+6'
+      max_level: 60
+      coefficient: 3200
+      merg_base_price: 500
+      merg_up_price: 70
+      evol_price: 1560
+    57:
+      class: 5
+      label: 'SR+7'
+      max_level: 60
+      coefficient: 3200
+      merg_base_price: 500
+      merg_up_price: 70
+      evol_price: 1560
+    58:
+      class: 5
+      label: 'SR+8'
+      max_level: 60
+      coefficient: 3200
+      merg_base_price: 500
+      merg_up_price: 70
+      evol_price: 1560
+    59:
+      class: 6
+      label: 'SSR'
+      max_level: 65
+      coefficient: 4000
+      merg_base_price: 600
+      merg_up_price: 80
+      evol_price: 1560
+    60:
+      class: 6
+      label: 'SSR'
+      max_level: 65
+      coefficient: 5500
+      merg_base_price: 700
+      merg_up_price: 80
+      evol_price: 1820
+    61:
+      class: 6
+      label: 'SSR+'
+      max_level: 65
+      coefficient: 5600
+      merg_base_price: 600
+      merg_up_price: 80
+      evol_price: 1820
+    62:
+      class: 6
+      label: 'SSR++'
+      max_level: 65
+      coefficient: 5700
+      merg_base_price: 600
+      merg_up_price: 80
+      evol_price: 1820
+    63:
+      class: 7
+      label: 'LR'
+      max_level: 65
+      coefficient: 5700
+      merg_base_price: 600
+      merg_up_price: 80
+      evol_price: 1820
+    64:
+      class: 7
+      label: 'SSR+3'
+      max_level: 65
+      coefficient: 5700
+      merg_base_price: 600
+      merg_up_price: 80
+      evol_price: 1820
+    65:
+      class: 7
+      label: 'SSR+4'
+      max_level: 65
+      coefficient: 5700
+      merg_base_price: 600
+      merg_up_price: 80
+      evol_price: 1820
+    66:
+      class: 7
+      label: 'SSR+5'
+      max_level: 65
+      coefficient: 5700
+      merg_base_price: 600
+      merg_up_price: 80
+      evol_price: 1820
+    67:
+      class: 7
+      label: 'SSR+6'
+      max_level: 65
+      coefficient: 5700
+      merg_base_price: 600
+      merg_up_price: 80
+      evol_price: 1820
+    68:
+      class: 7
+      label: 'SSR+7'
+      max_level: 65
+      coefficient: 5700
+      merg_base_price: 600
+      merg_up_price: 80
+      evol_price: 1820   
+    70:
+      class: 7
+      label: 'LR'
+      max_level: 70
+      coefficient: 9000
+      merg_base_price: 700
+      merg_up_price: 90
+      evol_price: 2080
+    71:
+      class: 7
+      label: 'LR+'
+      max_level: 70
+      coefficient: 9600
+      merg_base_price: 700
+      merg_up_price: 90
+      evol_price: 2080
+    72:
+      class: 7
+      label: 'LR++'
+      max_level: 70
+      coefficient: 10000
+      merg_base_price: 700
+      merg_up_price: 90
+      evol_price: 2080
+    73:
+      class: 7
+      label: 'LR+3'
+      max_level: 70
+      coefficient: 10000
+      merg_base_price: 700
+      merg_up_price: 90
+      evol_price: 2080
+    #IMMIOS-10604: Special Chain Card - Card rarity. Start
+    74: 
+      class: 7 
+      label: 'LR+4' 
+      max_level: 70 
+      coefficient: 10000 
+      merg_base_price: 700 
+      merg_up_price: 90 
+      evol_price: 2080 
+    75: 
+      class: 7 
+      label: 'LR+5' 
+      max_level: 70 
+      coefficient: 10000 
+      merg_base_price: 700 
+      merg_up_price: 90 
+      evol_price: 2080 
+    76: 
+      class: 7 
+      label: 'LR+6' 
+      max_level: 70 
+      coefficient: 10000 
+      merg_base_price: 700 
+      merg_up_price: 90 
+      evol_price: 2080
+    #IMMIOS-10604: Special Chain Card - Card rarity. End
+    #IMMIOS-10882: Raid 24 New rarity. Start
+    77: 
+      class: 7 
+      label: 'LR+7' 
+      max_level: 70 
+      coefficient: 10000 
+      merg_base_price: 700 
+      merg_up_price: 90 
+      evol_price: 2080
+    #IMMIOS-10882: Raid 24 New rarity. End
+    79:
+      class: 8
+      label: 'SLR'
+      max_level: 70
+      coefficient: 12000
+      merg_base_price: 700
+      merg_up_price: 90
+      evol_price: 2080
+
+  # 属性対応表
+  # label : 正式表示名
+  # slabel : 略式表示名（廃止予定）
+  # value : 値
+  # enshutu : 演出 javascript 用定義
+  attribute_names:
+    attr1:
+      label: 火
+      slabel: 火
+      value: 1
+      enshutu: sei
+      card_img_m: /img/common/cardura_m_2.png
+      tutorial_img: /img/tuto/zokusei_2.jpg
+      symbol: fire
+      show_order: 1
+    attr2:
+      label: 水
+      slabel: 水
+      value: 2
+      enshutu: yami
+      card_img_m: /img/common/cardura_m_3.png
+      tutorial_img: /img/tuto/zokusei_3.jpg
+      symbol: water
+      show_order: 2
+    attr3:
+      label: 風
+      slabel: 風
+      value: 3
+      enshutu: hito
+      card_img_m: /img/common/cardura_m_1.png
+      tutorial_img: /img/tuto/zokusei_1.jpg
+      symbol: wind
+      show_order: 3
+
+  #チュートリアル時付与
+  invest_list:
+    #↑の属性のvalue
+    1:
+      # カードリスト
+      # 1番から順に上から表示
+      1: 130022 # Aeria Replaced
+      2: 130028 # ヴィネ
+      3: 120037 # 龍玉を持つ火竜
+      4: 110049 # マグニウス
+      5: 110042 # 猛進する獣戦車
+    2:
+      1: 230020 # Aeria Replaced
+      2: 230024 # Aeria Replaced
+      3: 220035 # マーメイド
+      4: 210047 # ヴェスタ
+      5: 210043 # コボルト
+    3:
+      1: 330028 # Aeria Replaced
+      2: 330030 # Aeria Replaced
+      3: 320037 # 狡猾なネクロマンサー
+      4: 310047 # アースエレメンタル
+      5: 310046 # 森に棲みしドライアド
+
+  # 流通量
+  turn_volume:
+    -
+      every: 1000
+      label: 伝説級に希少
+    -
+      every: 500
+      label: 奇跡的に希少
+    -
+      every: 100
+      label: 超希少
+    -
+      every: 30
+      label: 希少
+    -
+      every: 10
+      label: 少ない
+    -
+      every: 3
+      label: 普通
+    -
+      every: 1
+      label: 多い
+
+  # 合成素材設定
+    # パラメータ説明
+    # カードマスタID:
+    #   merg_exp: 強化経験値
+    #   merg_skill: 強化スキル加算％
+
+  merg_sp_card: 
+  #UC Power Crystal 
+    612: 
+      merg_exp: 1200 
+  #R Power Crystal 
+    613: 
+      merg_exp: 1800 
+  #HR Power Crystal 
+    614: 
+      merg_exp: 4000 
+  #SR Power Crystal (Full base MR with 10 crystals) 
+    615: 
+      merg_exp: 9200 
+  #MR Power Crystal (Full base MR with 5 crystals) 
+    616: 
+      merg_exp: 18500 
+  #SR Power Crystal (will level 1 full base MR) 
+    617: 
+      merg_exp: 95000
+  #Normal magic crystal (has 30 percent chance to increase any skill level by 1) 
+    777: 
+      merg_skill: 30 
+  #Extra powerful magic crystal (has 60 percent chance to increase any skill level by 1) 
+    767: 
+      merg_skill: 60
+
+selector:
+  card_selector:
+    select1:
+      label: 新入手順
+      value: 1
+      sql: create_date DESC
+    select2:
+      label: 攻撃力高い順
+      value: 2
+      sql: attack DESC
+    select3:
+      label: 攻撃力低い順
+      value: 3
+      sql: attack ASC
+    select4:
+      label: 防御力高い順
+      value: 4
+      sql: defense DESC
+    select5:
+      label: 防御力低い順
+      value: 5
+      sql: defense ASC
+
+
+pager:
+  # delta は旧ページャー形式が死滅すれば不要になるパラメータ
+  default:
+    per_page: 5
+    delta: 4
+  guild_list:
+    per_page: 5
+    delta: 4
+  guild_bbs_list:
+    per_page: 10
+  theme_summons_list:
+    per_page: 2
+    page_max: 100
+  manastone_training_list:
+    per_page: 5
+    page_max: 100  
+  pictorial_list:
+#    per_page: 12
+#    column: 4
+    per_page: 1000
+  present_list:
+    per_page: 10
+  present_send:
+    per_page: 1000
+  card_merg:
+    per_page: 1000
+  card_list:
+    per_page: 1000
+  deck_card_list:
+    per_page: 1000
+  bbs_index:
+    per_page: 10
+    page_max: 50
+  bbs_detail:
+    per_page: 10
+    page_max: 100
+  battle_history_detail:
+    per_page: 10
+  cvc_rank:
+    per_page: 20
+  gvg_encourage:
+    per_page: 20
+  trade_result_list:
+    per_page: 10
+
+# アイテム設定
+item:
+  # item_mst DB の type 指定
+  type:
+    # セット売り用
+    set_sell: 0
+    # 使い切り消費アイテム
+    once: 1
+    # プレゼント専用
+    present: 2
+    # ガチャ券
+    gacha: 3
+    # レアメダル
+    rare_medal: 4
+    # 聖剣(テーマ召喚ステップ用アイテム）
+    sword: 5
+    # Mystery box
+    box: 6
+    # Super Package
+    super_pack: 7
+    # Trade Ticket
+    trade_ticket: 8
+    #card storage increase
+    card_storage: 9
+    #manastone
+    manastone: 11
+    #friend limit increase
+    friend_limit: 12
+  # 消費アイテムの種類
+  # ↓アイテムタイプ once の effect 番号指定
+  once:
+    # 冒険Ｐ
+    stamina: 1
+    # ＭＰ
+    gvg_stamina: 2
+    # ラッキーエッグ時間
+    egg_time: 3
+    # 神水
+    shinsui: 4
+    # 冒険P－ハーフ回復
+    stamina_half: 5
+    # Card
+    card: 6
+    #choice_box
+    choice_box: 7
+    # normal summon point
+    gacha_point: 8
+    # silvers pieces
+    virtual_money: 9
+    # Bonus
+    bonus: 10
+    # name change item
+    name_change: 10
+    #double gvg damage
+    gvg_damage: 11
+    # IMMIOS-7976 stat points reset 
+    status_reset: 12
+    # IMMIOS-7976 End
+    #IMMIOS-9977
+    gold_coin_gift: 13
+    #IMMIOS-9977
+  # ガチャ券の種類
+  # ↓アイテムタイプ gacha の effect 番号指定
+  gacha:
+    normal_1: 1
+    rare_1: 2
+    rare_1_hr: 3
+    rare_1_sr: 4
+    rare_2_box: 5
+    rare_2_lv_1: 11
+    rare_2_lv_2: 12
+    rare_2_lv_3: 13
+    rare_2_lv_4: 14
+    rare_2_lv_5: 15
+    rare1_11time: 16
+  sword:
+    # ノーマルソード(鉄の剣
+    normal: 1
+    # 1撃ソード(エクスカリバー
+    super: 2
+  manastone:
+    # 魔石
+    normal: 1  
+  gacha_item_limit:
+    #gacha type 3 has no limit in DE/FR
+    3: 999999999
+    #gacha type 4 has no limit in DE/FR
+    4: 999999999  
+
+# 課金周り
+payment:
+  type:
+    item: 1
+    gacha: 2
+    card: 3
+  type_name:
+    1: "アイテム"
+    2: "召喚"
+    3: "カード"
+
+
+# メダルショップ
+medal_shop:
+  # メダルショップ 0:閉店、1:開店
+  enable: 1
+  # medal_item_mst DB の type 指定
+  type:
+    # アイテムセット（effect, value は未使用）
+    set_sell: 0
+    # ステータス変化系
+    status_change: 1
+    # ギフト（主に、召喚P、ギル）
+    gift: 2
+    # カード（effect に card_mst_id、value に 枚数）
+    card: 3
+    #mystery box
+    box: 6
+  # ステータス変化系の種類　付与するものの指定
+  # ↓アイテムタイプ status_change の effect 番号指定
+  status_change:
+    # 所持カード数変化
+    card_box: 1
+    # 振り分けポイント変化
+    huriwake_p: 2
+  # ギフトの種類　付与するものの指定
+  # ↓アイテムタイプ gift の effect 番号指定
+  gift:
+    # ギル value がギル数
+    giru: 1
+    # 召喚P value が召喚P数
+    shoukan_p: 2
+
+
+# ガチャ設定
+gacha:
+  # パラメータの詳細は、event/gacha.yaml を参照してください
+
+  # 一日一回無料
+  one_day:
+    time_once: one_day_update_time
+    open_time: "00:00:00"
+    close_time: "23:59:59"
+    card_num: 1
+    category_id: 1
+    lot:
+      # rarity番号 : 確率
+      10: 85
+      20: 14.5
+      30: 0.5
+  # ランチタイム無料
+  lunchtime:
+    time_once: lunchtime_update_time
+    open_time: "12:00"
+    close_time: "13:00"
+    card_num: 1
+    category_id: 1
+    lot:
+      # rarity番号 : 確率
+      10: 85
+      20: 14.5
+      30: 0.5
+  # ディナータイム無料
+  dinnertime:
+    time_once: dinner_update_time
+    open_time: "19:00"
+    close_time: "24:00"
+    card_num: 1
+    category_id: 1
+    lot:
+      # rarity番号 : 確率
+      10: 85
+      20: 14.5
+      30: 0.5
+  # 通常ガチャ
+  normal:
+    gacha_point: 100
+    card_num: 1
+    many_max: 10
+    category_id: 1
+    lot:
+      # rarity番号 : 確率
+      10: 85
+      20: 14.5
+      30: 0.5
+  # レアチケットガチャ
+  rare1:
+    ticket:
+      #ticket - type は item - gacha の中の種類を指定します
+      type: rare_1
+      num: 1
+    card_num: 1
+    category_id: 2
+    lot:
+      # rarity番号 : 確率
+      30: 96
+      40: 4
+      50: 0
+      60: 0
+  # レア課金ガチャ
+  rare2:
+    purchase_money: 300
+    probability_type: 41
+    card_num: 1
+    miss_count:
+      key: rare_miss_count
+      num: 10
+    user_attr_per: 25
+    category_id: 2
+    lot:
+      # rarity番号 : 確率
+      30: 89
+      40: 9.7
+      50: 1.1
+      60: 0.2
+    card_mst_list:
+      # クラバトカードマスタID
+      #- 721
+      #- 395
+      #- 671
+      #- 106
+      #- 246
+      #- 769
+      #- 340017  #輪廻を暗示せしリリム
+      #- 140053  #情熱の騎士団長アレミラ
+      #- 240052  #孤高の闇天使レイ・スピアー
+      #- 360055  #運命の戦士ジャンヌ・ダルク
+      #- 150004  #戦闘天使カマエル
+      #- 350004  #光射す女神イルダーナ
+      #- 360055  #運命の戦士ジャンヌ・ダルク
+      #- 150004  #戦闘天使カマエル
+      #- 350004  #光射す女神イルダーナ
+      #- 160052  #立ち昇る闘志ガウェイン
+      #- 160001  #天翔るクリスタルドラゴン
+      #- 330059  #于禁
+      #Aeria Replaced
+      - 250007 #Aries /Aeria Replaced
+      - 350006 #Thanatos /Aeria Replaced
+      - 130022 #Taurus /Aeria Replaced
+      - 230020 #Aquarius /Aeria Replaced
+      - 330028 #High Priest /Aeria Replaced
+  # レア課金ガチャ（初回）
+  rare2_1st:
+    purchase_money: 9
+    probability_type: 11
+    enable_count: 1
+    card_num: 1
+    miss_count:
+      key: rare_miss_count
+      num: 10
+    user_attr_per: 25
+    category_id: 2
+    lot:
+      # rarity番号 : 確率
+      40: 98.7
+      50: 1.1
+      60: 0.2
+    card_mst_list:
+      # クラバトカードマスタID
+      #- 721
+      #- 395
+      #- 671
+      #- 106
+      #- 246
+      #- 769
+      - 160002 #月影の虐殺者グザファン
+      - 360002 #輪廻のフォーチュン・メビウス
+      - 260001 #聖なる加護アテネ
+      - 150005 #華麗なるベルゼブブ
+      - 250006 #白き剣舞ホワイトナイト
+  supreme:
+    time_count:
+      key: event_1_count
+      num: 3
+    open_time: "00:00:00"
+    close_time: "23:59:59"
+    gacha_point: 10000
+    card_num: 1
+    category_id: 12
+    lot:
+      20: 7
+      30: 40
+      40: 50
+      50: 3
+
+gacha_effect:
+  # パラメータを省略したものは出現しません
+  # ガチャカテゴリー番号 ガチャ設定の category_id を指定
+  1:
+    # 当選カードレアリティ
+    0:
+      # 演出
+      # しずく
+      shizuku:
+        # 演出レベル
+        1: 100
+        #2:
+        #3:
+        #4:
+      # キャラ
+      #chara:
+        #1:
+      # スパーク
+      spark:
+        1: 100
+        #2:
+        #3:
+        #4:
+       # カットイン
+      cutin:
+        0: 100
+        #1:
+        #2:
+      # 背景
+      bg:
+        1: 100
+    # 当選カードレアリティ
+    10:
+      # 演出
+      # しずく
+      shizuku:
+        # 演出レベル
+        1: 50
+        2: 50
+        #3:
+        #4:
+      # キャラ
+      #chara:
+        #1:
+      # スパーク
+      spark:
+        1: 100
+        #2:
+        #3:
+        #4:
+      # カットイン
+      cutin:
+        0: 50
+        1: 50
+        #2:
+      # 背景
+      bg:
+        1: 100
+    # 当選カードレアリティ
+    20:
+      # 演出
+      # しずく
+      shizuku:
+        # 演出レベル
+        #1:
+        2: 100
+        #3:
+        #4:
+      # キャラ
+      #chara:
+        #1:
+      # スパーク
+      spark:
+        #1:
+        2: 100
+        #3:
+        #4:
+      # カットイン
+      cutin:
+        #0:
+        1: 10
+        2: 90
+      # 背景
+      bg:
+        1: 100
+  # ガチャカテゴリー番号
+  2:
+    # 当選カードレアリティ
+    20:
+      # 演出
+      # しずく
+      shizuku:
+        # 演出レベル
+        #1:
+        2: 100
+        #3:
+        #4:
+      # キャラ
+      #chara:
+        #1:
+      # スパーク
+      spark:
+        #1:
+        2: 100
+        #3:
+        #4:
+      # カットイン
+      cutin:
+        0: 100
+        #1:
+        #2:
+        #3:
+      # 背景
+      bg:
+        1: 100
+    # 当選カードレアリティ
+    30:
+      # 演出
+      # しずく
+      shizuku:
+        # 演出レベル
+        #1:
+        2: 30
+        3: 70
+        #4:
+      # キャラ
+      #chara:
+        #1:
+      # スパーク
+      spark:
+        #1:
+        2: 100
+        #3:
+        #4:
+      # カットイン
+      cutin:
+        0: 50
+        #1:
+        2: 50
+        #3:
+      # 背景
+      bg:
+        1: 40
+        2: 60
+    # 当選カードレアリティ
+    40:
+      # 演出
+      # しずく
+      shizuku:
+        # 演出レベル
+        #1:
+        2: 30
+        3: 70
+        #4:
+      # キャラ
+      chara:
+        1: 3
+      # スパーク
+      spark:
+        #1:
+        #2:
+        3: 100
+        #4:
+      # カットイン
+      cutin:
+        #0:
+        #1:
+        #2:
+        3: 100
+      # 背景
+      bg:
+        #1:
+        2: 100
+        #3:
+    # 当選カードレアリティ
+    50:
+      # 演出
+      # しずく
+      shizuku:
+        # 演出レベル
+        #1:
+        #2:
+        3: 20
+        4: 80
+      # キャラ
+      chara:
+        1: 55
+      # スパーク
+      spark:
+        #1:
+        #2:
+        3: 40
+        4: 60
+      # カットイン
+      cutin:
+        #0:
+        #1:
+        #2:
+        3: 100
+      # 背景
+      bg:
+        #1:
+        2: 100
+        #3:
+    # 当選カードレアリティ
+    60:
+      # 演出
+      # しずく
+      shizuku:
+        # 演出レベル
+        #1:
+        #2:
+        #3:
+        4: 100
+      # キャラ
+      chara:
+        1: 100
+      # スパーク
+      spark:
+        #1:
+        #2:
+        #3:
+        4: 100
+      # カットイン
+      cutin:
+        #0:
+        #1:
+        #2:
+        3: 100
+      # 背景
+      bg:
+        #1:
+        2: 100
+
+# ガチャ当選者ログ
+gacha_hit_log:
+  # ログを残す最低レアリティ（記録の判定で、表示の判定ではないよ＝少し遅れて結果に反映される）
+  min_rare: 50
+  # 履歴表示件数
+  disp_num: 5
+
+# プレゼント
+present:
+  # プレゼント機能の有無
+  enable: 1
+  # プレゼントの種類設定
+  type:
+    virtual_money: 1
+    purchase_money: 2
+    item_mst: 3
+    card_mst: 4
+    card_data: 5
+    gacha_point: 6
+  type_name:
+    1: 'ギル'
+    2: 'GC'
+    3: 'アイテム'
+    4: 'カード'
+    5: 'カード'
+    6: '召喚P'
+  taxonomy:
+    all:
+      label: '全て'
+      types: [ 1, 2, 3, 4, 5, 6 ]
+    cards:
+      label: 'カード'
+      types: [ 4, 5 ]
+    items:
+      label: 'アイテム'
+      types: [ 3 ]
+    points:
+      label: 'Other'
+      types: [ 1, 6 ]
+  # プレゼント制限
+  limit:
+    # 最大総数
+    total_max_num: 200
+    # 一日に贈ることができる回数
+    in_a_day: 20
+    # 送り主レベル制限（このレベルより低いユーザはプレゼントを贈れません）
+    src_user_lv: 30
+    # 受け取るユーザーのレベル制限（このレベルより低いユーザはプレゼントをもらえない）
+    dst_user_lv: 30
+    # フレンドになってから7日すぎて利用できる
+    friend_limit_day: 7
+    # 送り主レベル制限（加入してこの期間が経てていないユーザはプレゼントを贈れません）
+    #src_user_regist_day: 7
+    # 受け手の未受け取り件数制限（この件数以上未受け取りがある相手には贈れません）
+    dst_user_unreceive_num: 180
+    # 受け取れる期間(day)
+    limit_day: 14
+    # batchで削除(month)
+    delete_limit: 3
+    # present時必要なitem_mst（クリスタル）
+    present_item_mst: 12
+    # present時必要なitem数
+    present_need_item_num: 5
+    #チケット所持の上限
+    limit_max_item_id: 23
+    limit_max_item_num: 20
+    limit_min_level: 30
+
+
+# webstorage 管理物バージョン
+# ver yymmddrr : rr には その日の中でのリリース番号になります。
+wsu_ver:
+  # まとめてリセット用
+  session_version:
+    category: 'session'
+    key: ''
+    ver: 12072301
+  # まとめてリセット用
+  local_version:
+    category: 'local'
+    key: ''
+    ver: 12062905
+  card_img:
+    category: 'session'
+    key: card_img/
+    ver: 12073004
+  card_merg:
+    category: 'session'
+    key: card_merg/
+    ver: 12073004
+  common_session:
+    category: 'session'
+    key: /common_session/
+    ver: 12073004
+  gacha:
+    category: 'session'
+    key: /gacha/
+    ver: 12073005
+  gacha_muryou_1:
+    category: 'local'
+    key: /gacha_muryou_1/
+    ver: 12073005
+  gacha_yuuryou:
+    category: 'local'
+    key: /gacha_yuuryou/
+    ver: 12073005
+  gvg_battle_view:
+    category: 'local'
+    key: /gvg_battle_view/
+    ver: 12073004
+  gvg_battle_kakusei:
+#    category: 'session'
+# 再利用効率が悪いのでメモリに乗せるのみにする
+    category: 'mem'
+    key: /gvg_battle_kakusei/
+    ver: 12073004
+  gvg_index:
+    category: 'local'
+    key: /gvg_index/
+    ver: 12073004
+  ring_icon:
+    category: 'local'
+    key: ring_icon
+    ver: 12060507
+  ring_center:
+    category: 'local'
+    key: ring_center
+    ver: 12060503
+  ring_adv_src:
+    category: 'local'
+    key: ring_adv_src
+    ver: 12051600
+  ring_event:
+    category: 'local'
+    key: ring_event
+    ver: 12070908
+  ring_campaign:
+    category: 'local'
+    key: ring_campaign
+    ver: 12060502
+  ring_gacha:
+    category: 'local'
+    key: ring_gacha
+    ver: 12060502
+  loginBonus:
+    category: 'local'
+    key: loginBonus
+    ver: 12051502
+  clanBattleInfo:
+    category: 'local'
+    key: clanBattleInfo
+    ver: 12052901
+  boukenCardGet:
+    category: 'session'
+    key: boukenCardGet
+    ver: 12060501
+  boukenCoinGet:
+    category: 'session'
+    key: boukenCoinGet
+    ver: 12060501
+  boukenMPGet:
+    category: 'session'
+    key: boukenMPGet
+    ver: 12060501
+  bouken_zako:
+    category: 'local'
+    key: boukenZako
+    ver: 12060501
+
+# 図鑑ボーナス
+pictorial:
+  # 総種類数
+  total_num_lv:
+    1:
+      num: 0
+      bonus: 0
+    2:
+      num: 10
+      bonus: 0
+    3:
+      num: 50
+      bonus: 0
+    4:
+      num: 100
+      bonus: 0
+    5:
+      num: 200
+      bonus: 0
+    6:
+      num: 300
+      bonus: 0
+    7:
+      num: 500
+      bonus: 0
+  # MAX進化合成獲得種類数
+  max_evol_num_lv:
+    1:
+      num: 0
+      bonus: 0
+    2:
+      num: 10
+      bonus: 0
+    3:
+      num: 20
+      bonus: 0
+    4:
+      num: 30
+      bonus: 0
+    5:
+      num: 50
+      bonus: 0
+#    6:
+#      num: 50
+#      bonus: 0
+#    7:
+#      num: 100
+#      bonus: 0
+
+# 強化合成データ
+card_merg:
+  # 同属性ボーナス
+  same_attr: 0.1
+  # 同名ボーナス
+  same_name: 0.2
+  # 一括合成制限レアリティ
+  copllect_max_rarity: 19
+
+# 進化合成データ
+card_evol:
+  # 基本％
+  default_per: 0.05
+  # MAX合成％
+  max_evol_per: 0.10
+
+# スキルデータ
+skill:
+  max_level: 10
+  # 同一スキル合成
+  same_merg:
+    base_per: 2
+    material_lv_add: 1
+    material_max_lv_add: 100
+  # 異なるスキル合成
+  diff_merg:
+    base_per: 0
+    material_lv_add: 1
+    material_max_lv_add: 100
+  # ベース：素材別基本確率
+  base_per:
+    # レアリティ
+    0:
+      # 素材レアリティ
+      10:
+        # level : 確率
+        1: 8
+        2: 5
+        3: 3
+        4: 1
+        5: 0.5
+        6: 0.3
+        7: 0.1
+        8: 0
+        9: 0
+      19:
+        # level : 確率
+        1: 12
+        2: 8
+        3: 6
+        4: 4
+        5: 3
+        6: 2
+        7: 1
+        8: 0.5
+        9: 0.2
+      29:
+        # level : 確率
+        1: 20
+        2: 14
+        3: 10
+        4: 8
+        5: 6
+        6: 4
+        7: 3
+        8: 1
+        9: 0.4
+      39:
+        # level : 確率
+        1: 32
+        2: 25
+        3: 20
+        4: 15
+        5: 10
+        6: 8
+        7: 5
+        8: 4
+        9: 2.2
+      49:
+        # level : 確率
+        1: 50
+        2: 45
+        3: 40
+        4: 35
+        5: 30
+        6: 25
+        7: 20
+        8: 15
+        9: 7
+#     59: 49と同じなので省略
+  # スキルアップ確率2倍用ステータス
+  # ベース：素材別基本確率
+#  base_per:
+    # レアリティ
+#    0:
+      # 素材レアリティ
+#      10:
+        # level : 確率
+#        1: 16
+#        2: 10
+#        3: 6
+#        4: 2
+#        5: 1
+#        6: 0.6
+#        7: 0.2
+#        8: 0
+#        9: 0
+#      19:
+        # level : 確率
+#        1: 24
+#        2: 16
+#        3: 12
+#        4: 8
+#        5: 6
+#        6: 4
+#        7: 2
+#        8: 1
+#        9: 0.4
+#      29:
+        # level : 確率
+#        1: 40
+#        2: 28
+#        3: 20
+#        4: 16
+#        5: 12
+#        6: 8
+#        7: 6
+#        8: 2
+#        9: 0.8
+#      39:
+        # level : 確率
+#        1: 64
+#        2: 50
+#        3: 40
+#        4: 30
+#        5: 20
+#        6: 16
+#        7: 10
+#        8: 8
+#        9: 4.4
+#      49:
+        # level : 確率
+#        1: 100
+#        2: 90
+#        3: 80
+#        4: 70
+#        5: 60
+#        6: 50
+#        7: 40
+#        8: 30
+#        9: 14
+#     59: 49と同じなので省略
+
+
+  # 覚醒計算式の定数
+  awake_define: 50
+  #スキルタイプ
+  skill_type:
+    attack: 1
+    defense: 2
+    att_and_def: 3
+    special: 9
+    special_attack: 91
+    special_defense: 92
+    special_att_and_def: 93
+    special_time: 94
+    special_time_attack: 95
+    special_time_defense: 96
+    special_time_att_and_def: 97    
+  motion_conditions:
+    combination: 1
+    key_card: 2
+  effect:
+    1:
+      value: 2
+    2:
+      value: 5
+    3:
+      value: 10
+    4:
+      value: 15
+    5:
+      value: 20
+    # ペア覚醒用 (specific card matches)
+    101:
+      value: 4
+    102:
+      value: 10
+    103:
+      value: 20
+    104:
+      value: 30
+    105:
+      value: 40  
+  att_revision_level:
+    1:
+      value: 1
+      name: 1%
+    2:
+      value: 2
+      name: 2%
+    3:
+      value: 3
+      name: 3%
+    4:
+      value: 4
+      name: 4%
+    5:
+      value: 5
+      name: 5%
+    6:
+      value: 6
+      name: 6%
+    7:
+      value: 7
+      name: 7%
+    8:
+      value: 8
+      name: 8%
+    9:
+      value: 9
+      name: 9%
+    10:
+      value: 10
+      name: 10%
+  def_revision_level:
+    1:
+      value: 1
+      name: 1%
+    2:
+      value: 2
+      name: 2%
+    3:
+      value: 3
+      name: 3%
+    4:
+      value: 4
+      name: 4%
+    5:
+      value: 5
+      name: 5%
+    6:
+      value: 6
+      name: 6%
+    7:
+      value: 7
+      name: 7%
+    8:
+      value: 8
+      name: 8%
+    9:
+      value: 9
+      name: 9%
+    10:
+      value: 10
+      name: 10%
+  # 防御スキル効果上限(%)
+  defense_effect_limit: 50
+
+# 特殊スキル
+# key: skill_mst_id
+#   life_recovery: 味方全体HP回復量 (指定がなければ回復しない)
+#
+special_skill:
+  43:
+    get_cp_rate: 0.2
+  69:
+    add_combo_count: 2
+  70:
+    add_combo_count: 1  
+  72:
+    mp_large_as_strong:
+      -
+        mp_min: 1
+        mp_max: 20
+        attack_rate: 1
+      -
+        mp_min: 21
+        mp_max: 30
+        attack_rate: 2
+      -
+        mp_min: 31
+        mp_max: 40
+        attack_rate: 3
+      -
+        mp_min: 41
+        mp_max: 50
+        attack_rate: 4
+      -
+        mp_min: 51
+        mp_max: 100
+        attack_rate: 5
+  73:
+    add_combo_count: 1
+  103:
+    deck_num_as_strong:
+      attribute: 1
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  109:
+    get_cp_rate: 0.2
+  114:
+    get_cp_rate: 0.2
+  133:
+    add_combo_count: 1
+  134:
+    deck_num_as_strong:
+      attribute: 2
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  159:
+    mp_large_as_strong:
+      -
+        mp_min: 1
+        mp_max: 20
+        attack_rate: 1
+      -
+        mp_min: 21
+        mp_max: 30
+        attack_rate: 2
+      -
+        mp_min: 31
+        mp_max: 40
+        attack_rate: 3
+      -
+        mp_min: 41
+        mp_max: 50
+        attack_rate: 4
+      -
+        mp_min: 51
+        mp_max: 100
+        attack_rate: 5
+  164:
+    deck_num_as_strong:
+      attribute: 3
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  179:
+    add_combo_count: 2
+  180:
+    add_combo_count: 1
+  189:
+    add_combo_count: 2
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18        
+  193:
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18        
+  196:
+    deck_num_as_strong:
+      attribute: 2
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  197:
+    deck_num_as_strong:
+      attribute: 1
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  198:
+    deck_num_as_strong:
+      attribute: 3
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  210:
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  218:
+    get_cp_rate: 0.1
+  219:
+    dead_count_as_cp_rate:
+      -
+        dead_count_min: 0
+        dead_count_max: 0
+        cp_rate: 0.1
+      -
+        dead_count_min: 1
+        dead_count_max: 1
+        cp_rate: 0.14
+      -
+        dead_count_min: 2
+        dead_count_max: 2
+        cp_rate: 0.18
+      -
+        dead_count_min: 3
+        dead_count_max: 3
+        cp_rate: 0.22
+      -
+        dead_count_min: 4
+        dead_count_max: 4
+        cp_rate: 0.26
+      -
+        dead_count_min: 5
+        dead_count_max: 999999
+        cp_rate: 0.3      
+  228:
+    deck_num_as_strong:
+      attribute: 2
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  230:
+    add_combo_count: 2
+  233:
+    aid_combo_as_strong:
+      -
+        aid_combo_min: 0
+        aid_combo_max: 30
+        attack_rate: 10
+      -
+        aid_combo_min: 31
+        aid_combo_max: 60
+        attack_rate: 11
+      -
+        aid_combo_min: 61
+        aid_combo_max: 90
+        attack_rate: 12
+      -
+        aid_combo_min: 91
+        aid_combo_max: 120
+        attack_rate: 14
+      -
+        aid_combo_min: 121
+        aid_combo_max: 150
+        attack_rate: 16
+      -
+        aid_combo_min: 151
+        aid_combo_max: 999999
+        attack_rate: 18   
+  240:
+    aid_combo_as_strong:
+      -
+        aid_combo_min: 0
+        aid_combo_max: 30
+        attack_rate: 10
+      -
+        aid_combo_min: 31
+        aid_combo_max: 60
+        attack_rate: 11
+      -
+        aid_combo_min: 61
+        aid_combo_max: 90
+        attack_rate: 12
+      -
+        aid_combo_min: 91
+        aid_combo_max: 120
+        attack_rate: 14
+      -
+        aid_combo_min: 121
+        aid_combo_max: 150
+        attack_rate: 16
+      -
+        aid_combo_min: 151
+        aid_combo_max: 999999
+        attack_rate: 18
+  244:
+    aid_combo_as_strong:
+      -
+        aid_combo_min: 0
+        aid_combo_max: 30
+        attack_rate: 10
+      -
+        aid_combo_min: 31
+        aid_combo_max: 60
+        attack_rate: 11
+      -
+        aid_combo_min: 61
+        aid_combo_max: 90
+        attack_rate: 12
+      -
+        aid_combo_min: 91
+        aid_combo_max: 120
+        attack_rate: 14
+      -
+        aid_combo_min: 121
+        aid_combo_max: 150
+        attack_rate: 16
+      -
+        aid_combo_min: 151
+        aid_combo_max: 999999
+        attack_rate: 18   
+  245:
+    mp_large_as_strong:
+      -
+        mp_min: 1
+        mp_max: 20
+        attack_rate: 3
+      -
+        mp_min: 21
+        mp_max: 30
+        attack_rate: 6
+      -
+        mp_min: 31
+        mp_max: 40
+        attack_rate: 9
+      -
+        mp_min: 41
+        mp_max: 50
+        attack_rate: 12
+      -
+        mp_min: 51
+        mp_max: 77
+        attack_rate: 15
+      -
+        mp_min: 78
+        mp_max: 100
+        attack_rate: 18
+  252:
+    dead_count_as_cp_rate:
+      -
+        dead_count_min: 0
+        dead_count_max: 0
+        cp_rate: 0.1
+      -
+        dead_count_min: 1
+        dead_count_max: 3
+        cp_rate: 0.12
+      -
+        dead_count_min: 4
+        dead_count_max: 6
+        cp_rate: 0.14
+      -
+        dead_count_min: 7
+        dead_count_max: 10
+        cp_rate: 0.16
+      -
+        dead_count_min: 11
+        dead_count_max: 13
+        cp_rate: 0.2
+      -
+        dead_count_min: 14
+        dead_count_max: 16
+        cp_rate: 0.24
+      -
+        dead_count_min: 17
+        dead_count_max: 19
+        cp_rate: 0.26
+      -
+        dead_count_min: 20
+        dead_count_max: 999999
+        cp_rate: 0.3
+  259:
+    get_cp_rate: 0.8
+  # IMMBDE-3588 Raid 11
+  262:
+    gp_comeback:
+      -
+        rate_min: 0
+        rate_max: .6
+        attack_rate: 27.5
+      -
+        rate_min: .61
+        rate_max: .7
+        attack_rate: 24
+      -
+        rate_min: .71
+        rate_max: .8
+        attack_rate: 18
+      -
+        rate_min: .81
+        rate_max: .9
+        attack_rate: 12
+      -
+        rate_min: .91
+        rate_max: 1
+        attack_rate: 6
+  263:
+    get_cp_rate: 0.05
+  264:
+    add_combo_count: 1
+    deck_num_as_strong:
+      attribute: 3
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  269:
+    mp_large_as_strong:
+      -
+        mp_min: 1
+        mp_max: 20
+        attack_rate: 3
+      -
+        mp_min: 21
+        mp_max: 30
+        attack_rate: 6
+      -
+        mp_min: 31
+        mp_max: 40
+        attack_rate: 9
+      -
+        mp_min: 41
+        mp_max: 50
+        attack_rate: 12
+      -
+        mp_min: 51
+        mp_max: 77
+        attack_rate: 15
+      -
+        mp_min: 78
+        mp_max: 100
+        attack_rate: 18
+  270:
+    add_combo_count: 1
+  274:
+    gp_comeback:
+      -
+        rate_min: 0
+        rate_max: .6
+        attack_rate: 27.5
+      -
+        rate_min: .61
+        rate_max: .7
+        attack_rate: 24
+      -
+        rate_min: .71
+        rate_max: .8
+        attack_rate: 18
+      -
+        rate_min: .81
+        rate_max: .9
+        attack_rate: 12
+      -
+        rate_min: .91
+        rate_max: 1
+        attack_rate: 6
+  275:
+    gp_comeback:
+      -
+        rate_min: 0
+        rate_max: .6
+        attack_rate: 27.5
+      -
+        rate_min: .61
+        rate_max: .7
+        attack_rate: 24
+      -
+        rate_min: .71
+        rate_max: .8
+        attack_rate: 18
+      -
+        rate_min: .81
+        rate_max: .9
+        attack_rate: 12
+      -
+        rate_min: .91
+        rate_max: 1
+        attack_rate: 6
+  # IMMBDE-3588 End
+  277:
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  283:
+    mp_large_as_strong:
+      -
+        mp_min: 1
+        mp_max: 20
+        attack_rate: 1
+      -
+        mp_min: 21
+        mp_max: 30
+        attack_rate: 2
+      -
+        mp_min: 31
+        mp_max: 40
+        attack_rate: 3
+      -
+        mp_min: 41
+        mp_max: 50
+        attack_rate: 4
+      -
+        mp_min: 51
+        mp_max: 100
+        attack_rate: 5
+  285:
+    add_combo_count: 2
+  288:
+    get_cp_rate: 0.1
+  289:
+    get_cp_rate: 0.1
+  290:
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  295:
+    add_combo_count: 1
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  # IMMBDE-3868
+  300:
+    get_cp_rate: 0.32
+  # IMMBDE-3516
+  302:
+    gp_comeback:
+      -
+        rate_min: 0
+        rate_max: .6
+        attack_rate: 27.5
+      -
+        rate_min: .61
+        rate_max: .7
+        attack_rate: 24
+      -
+        rate_min: .71
+        rate_max: .8
+        attack_rate: 18
+      -
+        rate_min: .81
+        rate_max: .9
+        attack_rate: 12
+      -
+        rate_min: .91
+        rate_max: 1
+        attack_rate: 6     
+  # IMMBDE-3516
+  # IMMBDE-3271
+  308:
+    add_combo_count: 2
+  309:
+    add_combo_count: 1
+  # IMMBDE-3271
+  # IMMBDE-9291 Start
+  319:
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 7
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 8
+      -
+        combo_min: 51
+        combo_max: 150
+        attack_rate: 9
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 14
+      -
+        combo_min: 251
+        combo_max: 350
+        attack_rate: 16
+      -
+        combo_min: 351
+        combo_max: 999999
+        attack_rate: 20
+    aid_combo_as_strong:
+      -
+        aid_combo_min: 0
+        aid_combo_max: 60
+        attack_rate: 8
+      -
+        aid_combo_min: 61
+        aid_combo_max: 120
+        attack_rate: 12
+      -
+        aid_combo_min: 121
+        aid_combo_max: 180
+        attack_rate: 16
+      -  
+        aid_combo_min: 181
+        aid_combo_max: 240
+        attack_rate: 21
+      -
+        aid_combo_min: 241
+        aid_combo_max: 300
+        attack_rate: 24
+      -
+        aid_combo_min: 301
+        aid_combo_max: 999999
+        attack_rate: 25
+  323:
+    get_cp_rate: 0.2
+  324:
+    add_combo_count: 1
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  325:
+    add_combo_count: 1
+    get_cp_rate: 0.15
+  328:
+    combo_as_cp: 
+      -
+        combo_min: 0
+        combo_max: 200
+        cp_rate: 0.1
+      -
+        combo_min: 201
+        combo_max: 400
+        cp_rate: 0.14
+      -
+        combo_min: 401
+        combo_max: 600
+        cp_rate: 0.18
+      -
+        combo_min: 601
+        combo_max: 800
+        cp_rate: 0.22
+      -
+        combo_min: 801
+        combo_max: 1000
+        cp_rate: 0.26
+      -
+        combo_min: 1001
+        combo_max: 999999
+        cp_rate: 0.3
+  5005:
+    add_combo_count: 1
+  5006:
+    add_combo_count: 1
+    get_cp_rate: 0.15
+  5007:
+    add_combo_count: 1
+    get_cp_rate: 0.15
+  5287:
+    get_cp_rate: 0.2
+  5288:
+    get_cp_rate: 0.2
+  5290:
+    combo_as_cp: 
+      -
+        combo_min: 0
+        combo_max: 200
+        cp_rate: 0.1
+      -
+        combo_min: 201
+        combo_max: 400
+        cp_rate: 0.14
+      -
+        combo_min: 401
+        combo_max: 600
+        cp_rate: 0.18
+      -
+        combo_min: 601
+        combo_max: 800
+        cp_rate: 0.22
+      -
+        combo_min: 801
+        combo_max: 1000
+        cp_rate: 0.26
+      -
+        combo_min: 1001
+        combo_max: 999999
+        cp_rate: 0.3
+  5291:
+    combo_as_cp: 
+      -
+        combo_min: 0
+        combo_max: 200
+        cp_rate: 0.1
+      -
+        combo_min: 201
+        combo_max: 400
+        cp_rate: 0.14
+      -
+        combo_min: 401
+        combo_max: 600
+        cp_rate: 0.18
+      -
+        combo_min: 601
+        combo_max: 800
+        cp_rate: 0.22
+      -
+        combo_min: 801
+        combo_max: 1000
+        cp_rate: 0.26
+      -
+        combo_min: 1001
+        combo_max: 999999
+        cp_rate: 0.3
+  # IMMBDE-9291 End
+  # IMMBDE-3899 Start
+  330:
+    get_cp_rate: 0.05
+    add_combo_count: 1
+  # IMMBDE-3899 End
+  333:
+    get_cp_rate: 0.05
+  # IMMBDE-3314 Start
+  345:
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+
+  346:
+    add_combo_count: 1
+  # IMMBDE-3314 End
+  347:
+    get_cp_rate: 0.2
+    add_combo_count: 2
+  348:
+    remove_combo_count: 1
+  352:
+    dead_count_as_cp_rate:
+      -
+        dead_count_min: 0
+        dead_count_max: 0
+        cp_rate: 0.1
+      -
+        dead_count_min: 1
+        dead_count_max: 1
+        cp_rate: 0.14
+      -
+        dead_count_min: 2
+        dead_count_max: 2
+        cp_rate: 0.18
+      -
+        dead_count_min: 3
+        dead_count_max: 3
+        cp_rate: 0.22
+      -
+        dead_count_min: 4
+        dead_count_max: 4
+        cp_rate: 0.26
+      -
+        dead_count_min: 5
+        dead_count_max: 999999
+        cp_rate: 0.3
+  # IMMBDE-3251  
+  358:
+    aid_combo_as_strong:
+      -
+        aid_combo_min: 0
+        aid_combo_max: 30
+        attack_rate: 10
+      -
+        aid_combo_min: 31
+        aid_combo_max: 60
+        attack_rate: 11
+      -
+        aid_combo_min: 61
+        aid_combo_max: 90
+        attack_rate: 12
+      -
+        aid_combo_min: 91
+        aid_combo_max: 120
+        attack_rate: 14
+      -
+        aid_combo_min: 121
+        aid_combo_max: 150
+        attack_rate: 16
+      -
+        aid_combo_min: 151
+        aid_combo_max: 999999
+        attack_rate: 18
+  359:
+    get_cp_rate: 0.1
+  # IMMBDE-3251
+  360:
+    mp_large_as_strong:
+      -
+        mp_min: 1
+        mp_mpmax: 20
+        attack_rate: 1
+      -
+        mp_min: 21
+        mp_max: 30
+        attack_rate: 2
+      -
+        mp_min: 31
+        mp_max: 40
+        attack_rate: 3
+      -
+        mp_min: 41
+        mp_max: 50
+        attack_rate: 4
+      -
+        mp_min: 51
+        mp_max: 100
+        attack_rate: 5
+  367:
+    gp_comeback:
+      -
+        rate_min: 0
+        rate_max: .6
+        attack_rate: 27.5
+      -
+        rate_min: .61
+        rate_max: .7
+        attack_rate: 24
+      -
+        rate_min: .71
+        rate_max: .8
+        attack_rate: 18
+      -
+        rate_min: .81
+        rate_max: .9
+        attack_rate: 12
+      -
+        rate_min: .91
+        rate_max: 1
+        attack_rate: 6
+  368:
+    add_combo_count: 1 
+  # IMMIOS-8707 lu premium 01
+  387:
+    get_cp_rate: 0.4
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 8
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 16
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 21
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 24
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 25
+  # IMMIOS-8707 end
+  # IMMIOS-7865 start
+  388:
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  390:
+    get_cp_rate: 0.2
+  # IMMIOS-7865 end
+  391:
+    get_cp_rate: 0.2
+  # IMMBDE-3906 cs 17 Start
+  404:
+    get_cp_rate: 0.15
+    mp_large_as_strong:
+      -
+        mp_min: 1
+        mp_max: 20
+        attack_rate: 3
+      -
+        mp_min: 21
+        mp_max: 30
+        attack_rate: 6
+      -
+        mp_min: 31
+        mp_max: 40
+        attack_rate: 9
+      -
+        mp_min: 41
+        mp_max: 50
+        attack_rate: 12
+      -
+        mp_min: 51
+        mp_max: 77
+        attack_rate: 15
+      -
+        mp_min: 78
+        mp_max: 100
+        attack_rate: 18
+  # IMMBDE-3906 cs 17 End
+  409:
+    get_cp_rate: 0.3
+  # IMMIOS-8595 Start
+  412:
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  5016:
+    get_cp_rate: 0.2
+  # IMMIOS-8595 End
+  415:
+    add_combo_count: 2
+    remove_combo_count: 2
+  432:
+    add_combo_count: 1
+    remove_combo_count: 1
+    get_cp_rate: 0.1
+  434:
+    add_combo_count: 1
+  437:
+    get_cp_rate: 0.3
+  438:
+    get_cp_rate: 0.2
+    add_combo_count: 2
+  513:
+    get_cp_rate: 0.2
+  514:
+    get_cp_rate: 0.2
+  535:
+    add_combo_count: 2
+  536:
+    add_combo_count: 1
+  552:
+    add_combo_count: 2
+  553:
+    add_combo_count: 2
+  554:
+    add_combo_count: 2
+  555:
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  556:
+    mp_large_as_strong:
+      -
+        mp_min: 1
+        mp_mpmax: 20
+        attack_rate: 1
+      -
+        mp_min: 21
+        mp_max: 30
+        attack_rate: 2
+      -
+        mp_min: 31
+        mp_max: 40
+        attack_rate: 3
+      -
+        mp_min: 41
+        mp_max: 50
+        attack_rate: 4
+      -
+        mp_min: 51
+        mp_max: 100
+        attack_rate: 5
+  559:
+    add_combo_count: 2
+  568:
+    get_cp_rate: 0.04
+  569:
+    get_cp_rate: 0.1
+  570:
+    get_cp_rate: 0.2
+  571:
+    get_cp_rate: 0.3
+  572:
+    get_cp_rate: 0.03
+  573:
+    get_cp_rate: 0.07
+  574:
+    get_cp_rate: 0.12
+  575:
+    get_cp_rate: 0.2
+  576:
+    get_cp_rate: 0.02
+  577:
+    get_cp_rate: 0.05
+  578:
+    get_cp_rate: 0.1
+  579:
+    get_cp_rate: 0.15
+  580:
+    get_cp_rate: 0.01
+  581:
+    get_cp_rate: 0.03
+  582:
+    get_cp_rate: 0.05
+  583:
+    get_cp_rate: 0.1
+  584:
+    deck_num_as_strong:
+      attribute: 2
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+    get_cp_rate: 0.05
+  585:
+    deck_num_as_strong:
+      attribute: 2
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+    get_cp_rate: 0.15
+  586:
+    deck_num_as_strong:
+      attribute: 2
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+    get_cp_rate: 0.3
+  587:
+    deck_num_as_strong:
+      attribute: 2
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+    get_cp_rate: 0.5
+  594:
+    deck_num_as_strong:
+      attribute: 2
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  595:
+    deck_num_as_strong:
+      attribute: 1
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  596:
+    deck_num_as_strong:
+      attribute: 3
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  597:
+    deck_num_as_strong:
+      attribute: 2
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  598:
+    deck_num_as_strong:
+      attribute: 3
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  599:
+    deck_num_as_strong:
+      attribute: 1
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  600:
+    deck_num_as_strong:
+      attribute: 2
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  601:
+    add_combo_count: 2
+  605:
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  606:
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  607:
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  608:
+    deck_num_as_strong:
+      attribute: 1
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  609:
+    deck_num_as_strong:
+      attribute: 2
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  610:
+    deck_num_as_strong:
+      attribute: 3
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  611:
+    add_combo_count: 2
+  612:
+    add_combo_count: 2
+  613:
+    add_combo_count: 2
+  618:
+    mp_large_as_strong:
+      -
+        mp_min: 1
+        mp_max: 20
+        attack_rate: 1
+      -
+        mp_min: 21
+        mp_max: 30
+        attack_rate: 2
+      -
+        mp_min: 31
+        mp_max: 40
+        attack_rate: 3
+      -
+        mp_min: 41
+        mp_max: 50
+        attack_rate: 4
+      -
+        mp_min: 51
+        mp_max: 100
+        attack_rate: 5
+  626:
+    add_combo_count: 1
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  630:
+    deck_num_as_strong:
+      attribute: 1
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  631:
+    deck_num_as_strong:
+      attribute: 3
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  634:
+    add_combo_count: 2
+  635:
+    add_combo_count: 2
+  638:
+    mp_large_as_strong:
+      -
+        mp_min: 1
+        mp_max: 20
+        attack_rate: 1
+      -
+        mp_min: 21
+        mp_max: 30
+        attack_rate: 2
+      -
+        mp_min: 31
+        mp_max: 40
+        attack_rate: 3
+      -
+        mp_min: 41
+        mp_max: 50
+        attack_rate: 4
+      -
+        mp_min: 51
+        mp_max: 100
+        attack_rate: 5
+  642:  
+    add_combo_count: 1
+  643:
+    deck_num_as_strong:
+      attribute: 1
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17 
+  644:
+    add_combo_count: 1
+  # IMMBDE-3321   
+  645:
+    add_combo_count: 1
+    deck_num_as_strong:
+      attribute: 1
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  653:
+    add_combo_count: 1
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  654:
+    add_combo_count: 1
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  655:
+    add_combo_count: 1
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  # IMMBDE-3321 start
+  656:
+    get_cp_rate: 0.05
+  657:
+    get_cp_rate: 0.05
+  658:
+    get_cp_rate: 0.05
+  659:
+    aid_combo_as_strong:
+      -
+        aid_combo_min: 0
+        aid_combo_max: 30
+        attack_rate: 10
+      -
+        aid_combo_min: 31
+        aid_combo_max: 60
+        attack_rate: 11
+      -
+        aid_combo_min: 61
+        aid_combo_max: 90
+        attack_rate: 12
+      -
+        aid_combo_min: 91
+        aid_combo_max: 120
+        attack_rate: 14
+      -
+        aid_combo_min: 121
+        aid_combo_max: 150
+        attack_rate: 16
+      -
+        aid_combo_min: 151
+        aid_combo_max: 999999
+        attack_rate: 18
+  660:
+    aid_combo_as_strong:
+      -
+        aid_combo_min: 0
+        aid_combo_max: 30
+        attack_rate: 10
+      -
+        aid_combo_min: 31
+        aid_combo_max: 60
+        attack_rate: 11
+      -
+        aid_combo_min: 61
+        aid_combo_max: 90
+        attack_rate: 12
+      -
+        aid_combo_min: 91
+        aid_combo_max: 120
+        attack_rate: 14
+      -
+        aid_combo_min: 121
+        aid_combo_max: 150
+        attack_rate: 16
+      -
+        aid_combo_min: 151
+        aid_combo_max: 999999
+        attack_rate: 18
+  661:
+    aid_combo_as_strong:
+      -
+        aid_combo_min: 0
+        aid_combo_max: 30
+        attack_rate: 10
+      -
+        aid_combo_min: 31
+        aid_combo_max: 60
+        attack_rate: 11
+      -
+        aid_combo_min: 61
+        aid_combo_max: 90
+        attack_rate: 12
+      -
+        aid_combo_min: 91
+        aid_combo_max: 120
+        attack_rate: 14
+      -
+        aid_combo_min: 121
+        aid_combo_max: 150
+        attack_rate: 16
+      -
+        aid_combo_min: 151
+        aid_combo_max: 999999
+        attack_rate: 18
+  # IMMBDE-3321 end  
+  666:
+    add_combo_count: 1
+  668:
+    gp_comeback:
+      -
+        rate_min: 0
+        rate_max: .6
+        attack_rate: 27.5
+      -
+        rate_min: .61
+        rate_max: .7
+        attack_rate: 24
+      -
+        rate_min: .71
+        rate_max: .8
+        attack_rate: 18
+      -
+        rate_min: .81
+        rate_max: .9
+        attack_rate: 12
+      -
+        rate_min: .91
+        rate_max: 1
+        attack_rate: 6
+  670:
+    add_combo_count: 2
+  671:
+    add_combo_count: 1
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  # IMMIOS-8707 lu premium 01
+  673:
+    add_combo_count: 2
+  # IMMIOS-8707 end
+  675:
+    aid_combo_as_strong:
+      -
+        aid_combo_min: 0
+        aid_combo_max: 30
+        attack_rate: 10
+      -
+        aid_combo_min: 31
+        aid_combo_max: 60
+        attack_rate: 11
+      -
+        aid_combo_min: 61
+        aid_combo_max: 90
+        attack_rate: 12
+      -
+        aid_combo_min: 91
+        aid_combo_max: 120
+        attack_rate: 14
+      -
+        aid_combo_min: 121
+        aid_combo_max: 150
+        attack_rate: 16
+      -
+        aid_combo_min: 151
+        aid_combo_max: 999999
+        attack_rate: 18
+  678:
+    add_combo_count: 1
+  681:
+    add_combo_count: 1
+  683:      
+    add_combo_count: 2
+  687:
+    add_combo_count: 1
+    remove_combo_count: 1
+    get_cp_rate: 0.05
+  691:
+    add_combo_count: 1
+    remove_combo_count: 1
+  692:
+    mp_large_as_strong:
+      -
+        mp_min: 1
+        mp_max: 20
+        attack_rate: 3
+      -
+        mp_min: 21
+        mp_max: 30
+        attack_rate: 6
+      -
+        mp_min: 31
+        mp_max: 40
+        attack_rate: 9
+      -
+        mp_min: 41
+        mp_max: 50
+        attack_rate: 12
+      -
+        mp_min: 51
+        mp_max: 77
+        attack_rate: 15
+      -
+        mp_min: 78
+        mp_max: 100
+        attack_rate: 18
+  693:
+    remove_combo_count: 1
+  704:
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  705:  
+    add_combo_count: 1
+  708:
+    aid_combo_as_strong:
+      -
+        aid_combo_min: 0
+        aid_combo_max: 30
+        attack_rate: 10
+      -
+        aid_combo_min: 31
+        aid_combo_max: 60
+        attack_rate: 11
+      -
+        aid_combo_min: 61
+        aid_combo_max: 90
+        attack_rate: 12
+      -
+        aid_combo_min: 91
+        aid_combo_max: 120
+        attack_rate: 14
+      -
+        aid_combo_min: 121
+        aid_combo_max: 150
+        attack_rate: 16
+      -
+        aid_combo_min: 151
+        aid_combo_max: 999999
+        attack_rate: 18
+  712:
+    deck_num_as_strong:
+      attribute: 2
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  720:
+    add_combo_count: 1
+  721:
+    add_combo_count: 1
+  726:
+    add_combo_count: 2
+  727:
+    add_combo_count: 2
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  # IMMBDE-3314 Start
+  729:
+    get_cp_rate: 0.1
+  # IMMBDE-3314 End
+  730:
+    get_cp_rate: 0.05
+    gp_comeback:
+      -
+        rate_min: 0
+        rate_max: .6
+        attack_rate: 27.5
+      -
+        rate_min: .61
+        rate_max: .7
+        attack_rate: 24
+      -
+        rate_min: .71
+        rate_max: .8
+        attack_rate: 18
+      -
+        rate_min: .81
+        rate_max: .9
+        attack_rate: 12
+      -
+        rate_min: .91
+        rate_max: 1
+        attack_rate: 6
+  734:
+    remove_combo_count: 1
+  735:
+    add_combo_count: 1
+  736:
+    combo_as_strong:
+    -
+      combo_min: 0
+      combo_max: 25
+      attack_rate: 11
+    -
+      combo_min: 26
+      combo_max: 50
+      attack_rate: 12
+    -
+      combo_min: 51
+      combo_max: 100
+      attack_rate: 13
+    -
+      combo_min: 101
+      combo_max: 150
+      attack_rate: 14
+    -
+      combo_min: 151
+      combo_max: 250
+      attack_rate: 17
+    -
+      combo_min: 251
+      combo_max: 999999
+      attack_rate: 18
+  744:
+    get_cp_rate: 0.1
+  745:
+    get_cp_rate: 0.1
+  747:
+    get_cp_rate: 0.05
+  750:
+    get_cp_rate: 0.1
+    add_combo_count: 2
+  752:
+    get_cp_rate: 0.1  
+  757:
+    add_combo_count: 2
+  760:
+    get_cp_rate: 0.1
+    add_combo_count: 2
+  # IMMBDE-3762 LU 12
+  762:
+    get_cp_rate: 0.2
+  # IMMBDE-3762 End
+  902:
+    deck_num_as_strong:
+      attribute: 1
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  903:
+    deck_num_as_strong:
+      attribute: 1
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 10
+        -
+          card_num: 6
+          attack_rate: 13
+        -
+          card_num: 7
+          attack_rate: 13
+        -
+          card_num: 8
+          attack_rate: 15
+        -
+          card_num: 9
+          attack_rate: 15
+        -
+          card_num: 10
+          attack_rate: 17
+  904:
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18  
+  905:
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  906:
+    aid_combo_as_strong:
+      -
+        aid_combo_min: 0
+        aid_combo_max: 30
+        attack_rate: 10
+      -
+        aid_combo_min: 31
+        aid_combo_max: 60
+        attack_rate: 11
+      -
+        aid_combo_min: 61
+        aid_combo_max: 90
+        attack_rate: 12
+      -
+        aid_combo_min: 91
+        aid_combo_max: 120
+        attack_rate: 14
+      -
+        aid_combo_min: 121
+        aid_combo_max: 150
+        attack_rate: 16
+      -
+        aid_combo_min: 151
+        aid_combo_max: 999999
+        attack_rate: 18  
+  907:
+    aid_combo_as_strong:
+      -
+        aid_combo_min: 0
+        aid_combo_max: 30
+        attack_rate: 10
+      -
+        aid_combo_min: 31
+        aid_combo_max: 60
+        attack_rate: 11
+      -
+        aid_combo_min: 61
+        aid_combo_max: 90
+        attack_rate: 12
+      -
+        aid_combo_min: 91
+        aid_combo_max: 120
+        attack_rate: 14
+      -
+        aid_combo_min: 121
+        aid_combo_max: 150
+        attack_rate: 16
+      -
+        aid_combo_min: 151
+        aid_combo_max: 999999
+        attack_rate: 18
+  # IMMIOS-8372 start
+  951:
+    aid_combo_as_strong:
+      -
+        aid_combo_min: 0
+        aid_combo_max: 30
+        attack_rate: 10
+      -
+        aid_combo_min: 31
+        aid_combo_max: 60
+        attack_rate: 11
+      -
+        aid_combo_min: 61
+        aid_combo_max: 90
+        attack_rate: 12
+      -
+        aid_combo_min: 91
+        aid_combo_max: 120
+        attack_rate: 14
+      -
+        aid_combo_min: 121
+        aid_combo_max: 150
+        attack_rate: 16
+      -
+        aid_combo_min: 151
+        aid_combo_max: 999999
+        attack_rate: 18
+  956:
+    get_cp_rate: 0.15
+  957:
+    get_cp_rate: 0.15
+  958:
+    get_cp_rate: 0.15
+  959:
+    get_cp_rate: 0.10
+  960:
+    get_cp_rate: 0.10
+  961:
+    get_cp_rate: 0.10
+  966:
+    add_combo_count: 1
+    get_cp_rate: 0.1
+  5208:
+    add_combo_count: 1
+    get_cp_rate: 0.1
+  5153:
+    add_combo_count: 1
+    get_cp_rate: 0.1
+  # IMMIOS-8372 end
+  # IMMIOS-10149 Start
+  2425:
+    get_cp_rate: 0.45
+  2426:
+      get_cp_rate: 0.3
+  2427:
+    add_combo_count: 1
+  2428:
+    add_combo_count: 2
+  2429:
+    add_combo_count: 3
+  # IMMIOS-10149 End
+  # IMMIOS-9920: Start
+  2450:
+    get_cp_rate: 0.45
+  2451:
+    combo_as_cp:
+      -
+        combo_min: 0
+        combo_max: 200
+        cp_rate: 0.1
+      -
+        combo_min: 201
+        combo_max: 400
+        cp_rate: 0.15
+      -
+        combo_min: 401
+        combo_max: 600
+        cp_rate: 0.2
+      -
+        combo_min: 601
+        combo_max: 800
+        cp_rate: 0.26
+      -
+        combo_min: 801
+        combo_max: 1000
+        cp_rate: 0.32
+      -
+        combo_min: 1001
+        combo_max: 1200
+        cp_rate: 0.38
+      -
+        combo_min: 1201
+        combo_max: 999999
+        cp_rate: 0.45
+  2452:
+    add_combo_count: 1
+  2453:
+    add_combo_count: 2
+  2454:
+    add_combo_count: 3
+  # IMMIOS-9920: Stop
+  # IMMIOS-10407 Start
+  2460:
+    get_cp_rate: 0.2
+  # IMMIOS-10407 End
+  # IMMIOS-10521 Start
+  2465:
+    get_cp_rate: 0.45
+  2466:
+    get_cp_rate: 0.3
+  2467:
+    get_cp_rate: 0.2
+    add_combo_count: 2
+  2468:
+    add_combo_count: 1
+  # IMMIOS-10521 End
+  # IMMIOS-10342 Start
+  2469:
+    get_cp_rate: 0.3
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 8
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 16
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 21
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 24
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 25
+  2470:
+    get_cp_rate: 0.3
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 8
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 16
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 21
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 24
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 25
+  2471:
+    get_cp_rate: 0.3
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 8
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 16
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 21
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 24
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 25
+  2472:
+    add_combo_count: 3
+  2473:
+    add_combo_count: 3
+  2474:
+    add_combo_count: 3
+  # IMMIOS-10342 End
+  5000:
+    add_combo_count: 2
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  # IMMBDE-3762 LU 12
+  5001:
+    add_combo_count: 2
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  # IMMBDE-3762 End
+  5002:
+    add_combo_count: 1
+    remove_combo_count: 1
+  # IMMBDE-3762 LU 12
+  5003:
+    add_combo_count: 1
+  # IMMBDE-3762 End
+  # IMMIOS-8707 lu premium 01
+  5008:
+    get_cp_rate: 0.2
+    add_combo_count: 2
+  # IMMIOS-8707 end
+  5011:
+    add_combo_count: 2
+  5013:
+    add_combo_count: 2
+    remove_combo_count: 2
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  # IMMBDE-3529
+  5019:
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  5020:
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  5021:
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  5022:
+    get_cp_rate: 0.2
+  5023:
+    get_cp_rate: 0.1
+  5024:
+    add_combo_count: 1
+    remove_combo_count: 1
+  5025:
+    add_combo_count: 2
+    remove_combo_count: 2
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  5026:
+    dead_count_as_cp_rate:
+      -
+        dead_count_min: 0
+        dead_count_max: 0
+        cp_rate: 0.1
+      -
+        dead_count_min: 1
+        dead_count_max: 1
+        cp_rate: 0.14
+      -
+        dead_count_min: 2
+        dead_count_max: 2
+        cp_rate: 0.18
+      -
+        dead_count_min: 3
+        dead_count_max: 3
+        cp_rate: 0.22
+      -
+        dead_count_min: 4
+        dead_count_max: 4
+        cp_rate: 0.26
+      -
+        dead_count_min: 5
+        dead_count_max: 999999
+        cp_rate: 0.3  
+  5027:
+    dead_count_as_cp_rate:
+      -
+        dead_count_min: 0
+        dead_count_max: 0
+        cp_rate: 0.1
+      -
+        dead_count_min: 1
+        dead_count_max: 1
+        cp_rate: 0.14
+      -
+        dead_count_min: 2
+        dead_count_max: 2
+        cp_rate: 0.18
+      -
+        dead_count_min: 3
+        dead_count_max: 3
+        cp_rate: 0.22
+      -
+        dead_count_min: 4
+        dead_count_max: 4
+        cp_rate: 0.26
+      -
+        dead_count_min: 5
+        dead_count_max: 999999
+        cp_rate: 0.3  
+  5029:
+    remove_combo_count: 2
+  5032:
+    add_combo_count: 2
+  5034:
+    get_cp_rate: 0.05
+  5035:
+    get_cp_rate: 0.1
+  5037:
+    add_combo_count: 2
+  # IMMIOS-9815 Start
+  5043:
+    get_cp_rate: 0.2
+    add_combo_count: 2
+  676:
+    get_cp_rate: 0.15
+  # IMMIOS-9815 End
+  5046:
+    dead_count_as_cp_rate:
+      -
+        dead_count_min: 0
+        dead_count_max: 0
+        cp_rate: 0.1
+      -
+        dead_count_min: 1
+        dead_count_max: 1
+        cp_rate: 0.16
+      -
+        dead_count_min: 2
+        dead_count_max: 2
+        cp_rate: 0.22
+      -
+        dead_count_min: 3
+        dead_count_max: 3
+        cp_rate: 0.28
+      -
+        dead_count_min: 4
+        dead_count_max: 4
+        cp_rate: 0.34
+      -
+        dead_count_min: 5
+        dead_count_max: 999999
+        cp_rate: 0.4
+  5049:
+    add_combo_count: 1
+    remove_combo_count: 1
+    get_cp_rate: 0.1
+  5053:
+    add_combo_count: 1
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  5054:
+    add_combo_count: 2
+    remove_combo_count: 2
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  5055:
+    add_combo_count: 1
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  5056:
+    add_combo_count: 1
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  5057:
+    remove_combo_count: 2
+  5058:
+    add_aid_combo_count: 2
+  5060:
+    remove_combo_count: 1
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 7
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 8
+      -
+        combo_min: 51
+        combo_max: 150
+        attack_rate: 9
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 14
+      -
+        combo_min: 251
+        combo_max: 350
+        attack_rate: 16
+      -
+        combo_min: 351
+        combo_max: 999999
+        attack_rate: 20
+    aid_combo_as_strong:
+      -
+        aid_combo_min: 0
+        aid_combo_max: 60
+        attack_rate: 8
+      -
+        aid_combo_min: 61
+        aid_combo_max: 120
+        attack_rate: 12
+      -
+        aid_combo_min: 121
+        aid_combo_max: 180
+        attack_rate: 16
+      -  
+        aid_combo_min: 181
+        aid_combo_max: 240
+        attack_rate: 21
+      -
+        aid_combo_min: 241
+        aid_combo_max: 300
+        attack_rate: 24
+      -
+        aid_combo_min: 301
+        aid_combo_max: 999999
+        attack_rate: 25    
+  5061:
+    get_cp_rate: 0.1
+  5063:
+    add_combo_count: 2 
+  5068:
+    get_cp_rate: 0.2
+  5069:
+    add_combo_count: 1
+    remove_combo_count: 1  
+  # IMMIOS-7858 start
+  5073:
+    get_cp_rate: 0.15
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  5074:
+    add_aid_combo_count: 1
+  # IMMIOS-7858 end
+  # IMMIOS-8832 start
+  5081:
+    get_cp_rate: 0.1
+    gp_comeback:
+      -
+        rate_min: 0
+        rate_max: .6
+        attack_rate: 27.5
+      -
+        rate_min: .61
+        rate_max: .7
+        attack_rate: 24
+      -
+        rate_min: .71
+        rate_max: .8
+        attack_rate: 18
+      -
+        rate_min: .81
+        rate_max: .9
+        attack_rate: 12
+      -
+        rate_min: .91
+        rate_max: 1
+        attack_rate: 6
+  5083:
+    add_combo_count: 1
+  # IMMIOS-8832 end
+  # IMMIOS-8192 4th of July
+  5131:
+    get_cp_rate: 0.25
+  5132:
+    combo_as_cp:
+      -
+        combo_min: 0
+        combo_max: 200
+        cp_rate: 0.1
+      -
+        combo_min: 201
+        combo_max: 400
+        cp_rate: 0.12
+      -
+        combo_min: 401
+        combo_max: 600
+        cp_rate: 0.14
+      -
+        combo_min: 601
+        combo_max: 800
+        cp_rate: 0.16
+      -
+        combo_min: 801
+        combo_max: 1000
+        cp_rate: 0.18
+      -
+        combo_min: 1001
+        combo_max: 999999
+        cp_rate: 0.2
+  5133:
+    add_combo_count: 1 
+  # IMMIOS-8192 end
+  # IMMIOS-7058 start
+  5151:
+    add_combo_count: 1
+  5152:
+    add_combo_count: 2
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  # IMMIOS-7058 end
+  # IMMIOS-8845 August cards
+  5212:
+    combo_as_cp: 
+      -
+        combo_min: 0
+        combo_max: 200
+        cp_rate: 0.1
+      -
+        combo_min: 201
+        combo_max: 400
+        cp_rate: 0.14
+      -
+        combo_min: 401
+        combo_max: 600
+        cp_rate: 0.18
+      -
+        combo_min: 601
+        combo_max: 800
+        cp_rate: 0.22
+      -
+        combo_min: 801
+        combo_max: 1000
+        cp_rate: 0.26
+      -
+        combo_min: 1001
+        combo_max: 999999
+        cp_rate: 0.3
+  5213:
+    get_cp_rate: 0.2
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  5214:
+    remove_combo_count: 1
+  5215:
+    get_cp_rate: 0.30
+  # IMMIOS-8845 End
+  # IMMIOS-9039 August cards II
+  5223:
+    add_combo_count: 1
+  5224:
+    add_combo_count: 2
+  5225:
+    add_combo_count: 2
+    get_cp_rate: 0.05
+  # IMMIOS-9297 Skill change
+  5226:
+    get_cp_rate: 0.15
+    add_combo_count: 1
+  # IMMIOS-9297 End
+  5227:
+    get_cp_rate: 0.3
+  5228:
+    add_combo_count: 2
+  5229:
+    add_combo_count: 2
+    get_cp_rate: 0.2
+  # IMMIOS-9039 End
+  # IMMIOS-9190 start
+  5270:
+    mp_large_as_strong:
+      -
+        mp_min: 1
+        mp_max: 20
+        attack_rate: 2
+      -
+        mp_min: 21
+        mp_max: 30
+        attack_rate: 4
+      -
+        mp_min: 31
+        mp_max: 40
+        attack_rate: 6
+      -
+        mp_min: 41
+        mp_max: 50
+        attack_rate: 8
+      -
+        mp_min: 51
+        mp_max: 100
+        attack_rate: 10
+    get_cp_rate: 0.3
+  5272:
+    get_cp_rate: 0.1
+  5273:
+    get_cp_rate: 0.2
+  5274:
+    get_cp_rate: 0.05
+  # IMMIOS-9190 end
+  # IMMIOS-9394 Start
+  5298:
+    get_cp_rate: 0.4
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  5299:
+    get_cp_rate: 0.4
+    aid_combo_as_strong:
+      -
+        aid_combo_min: 0
+        aid_combo_max: 30
+        attack_rate: 10
+      -
+        aid_combo_min: 31
+        aid_combo_max: 60
+        attack_rate: 11
+      -
+        aid_combo_min: 61
+        aid_combo_max: 90
+        attack_rate: 12
+      -
+        aid_combo_min: 91
+        aid_combo_max: 120
+        attack_rate: 14
+      -
+        aid_combo_min: 121
+        aid_combo_max: 150
+        attack_rate: 16
+      -
+        aid_combo_min: 151
+        aid_combo_max: 999999
+        attack_rate: 18
+  5300:
+    get_cp_rate: 0.4
+  5301:
+    combo_as_cp:
+      -
+        combo_min: 0
+        combo_max: 200
+        cp_rate: 0.1
+      -
+        combo_min: 201
+        combo_max: 400
+        cp_rate: 0.15
+      -
+        combo_min: 401
+        combo_max: 600
+        cp_rate: 0.2
+      -
+        combo_min: 601
+        combo_max: 800
+        cp_rate: 0.26
+      -
+        combo_min: 801
+        combo_max: 1000
+        cp_rate: 0.32
+      -
+        combo_min: 1001
+        combo_max: 1200
+        cp_rate: 0.38
+      -
+        combo_min: 1201
+        combo_max: 999999
+        cp_rate: 0.45
+  5045:
+    get_cp_rate: 0.25
+  # IMMIOS-9270 Start
+  737:
+    remove_combo_count: 1
+  5049:
+    get_cp_rate: 0.25
+  5089:
+    get_cp_rate: 0.4
+  # IMMIOS-9270 End
+  # IMMIOS-9806 Start
+  5124:
+    get_cp_rate: 0.2
+  5125:
+    mp_large_as_strong:
+      -
+        mp_min: 1
+        mp_max: 20
+        attack_rate: 3
+      -
+        mp_min: 21
+        mp_max: 30
+        attack_rate: 6
+      -
+        mp_min: 31
+        mp_max: 40
+        attack_rate: 9
+      -
+        mp_min: 41
+        mp_max: 50
+        attack_rate: 12
+      -
+        mp_min: 51
+        mp_max: 77
+        attack_rate: 15
+      -
+        mp_min: 78
+        mp_max: 100
+        attack_rate: 18
+  # IMMIOS-9806 End
+  5142:
+    get_cp_rate: 0.1
+  5143:
+    add_combo_count: 2
+  5144:
+    add_combo_count: 1
+  5145:
+    get_cp_rate: 0.05
+  5146:
+    remove_combo_count: 1
+  # IMMIOS-9394 End
+  # IMMIOS-10037 Start
+  5302:
+    get_cp_rate: 0.2
+  5304:
+    get_cp_rate: 0.3
+  5305:
+    combo_as_cp:
+      -
+        combo_min: 0
+        combo_max: 200
+        cp_rate: 0.1
+      -
+        combo_min: 201
+        combo_max: 400
+        cp_rate: 0.15
+      -
+        combo_min: 401
+        combo_max: 600
+        cp_rate: 0.2
+      -
+        combo_min: 601
+        combo_max: 800
+        cp_rate: 0.26
+      -
+        combo_min: 801
+        combo_max: 1000
+        cp_rate: 0.32
+      -
+        combo_min: 1001
+        combo_max: 1200
+        cp_rate: 0.38
+      -
+        combo_min: 1201
+        combo_max: 999999
+        cp_rate: 0.45
+  5306:
+    add_combo_count: 3
+  5308:
+    add_combo_count: 1
+  5312:
+    combo_as_cp:
+      -
+        combo_min: 0
+        combo_max: 200
+        cp_rate: 0.1
+      -
+        combo_min: 201
+        combo_max: 400
+        cp_rate: 0.15
+      -
+        combo_min: 401
+        combo_max: 600
+        cp_rate: 0.2
+      -
+        combo_min: 601
+        combo_max: 800
+        cp_rate: 0.26
+      -
+        combo_min: 801
+        combo_max: 1000
+        cp_rate: 0.32
+      -
+        combo_min: 1001
+        combo_max: 1200
+        cp_rate: 0.38
+      -
+        combo_min: 1201
+        combo_max: 999999
+        cp_rate: 0.45
+  5313:
+    combo_as_cp:
+      -
+        combo_min: 0
+        combo_max: 200
+        cp_rate: 0.1
+      -
+        combo_min: 201
+        combo_max: 400
+        cp_rate: 0.15
+      -
+        combo_min: 401
+        combo_max: 600
+        cp_rate: 0.2
+      -
+        combo_min: 601
+        combo_max: 800
+        cp_rate: 0.26
+      -
+        combo_min: 801
+        combo_max: 1000
+        cp_rate: 0.32
+      -
+        combo_min: 1001
+        combo_max: 1200
+        cp_rate: 0.38
+      -
+        combo_min: 1201
+        combo_max: 999999
+        cp_rate: 0.45
+  5314:
+    get_cp_rate: 0.3
+  5315:
+    get_cp_rate: 0.3
+  5316:
+    get_cp_rate: 0.2
+  5317:
+    get_cp_rate: 0.2
+  5318:
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 11
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 12
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 13
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 14
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 17
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 18
+  5319:
+    get_cp_rate: 0.1
+  5320:
+    add_combo_count: 2
+    add_aid_combo_count: 2
+  5322:
+    add_combo_count: 1 
+    remove_combo_count: 1 
+    get_cp_rate: 0.15
+  # IMMIOS-10037 End
+  # IMMIOS-9987 Start
+  5400:
+    get_cp_rate: 0.45
+  5405:
+    combo_as_cp:
+      -
+        combo_min: 0
+        combo_max: 200
+        cp_rate: 0.1
+      -
+        combo_min: 201
+        combo_max: 400
+        cp_rate: 0.15
+      -
+        combo_min: 401
+        combo_max: 600
+        cp_rate: 0.2
+      -
+        combo_min: 601
+        combo_max: 800
+        cp_rate: 0.26
+      -
+        combo_min: 801
+        combo_max: 1000
+        cp_rate: 0.32
+      -
+        combo_min: 1001
+        combo_max: 1200
+        cp_rate: 0.38
+      -
+        combo_min: 1201
+        combo_max: 999999
+        cp_rate: 0.45
+  5407:
+    add_combo_count: 2
+  # IMMIOS-9987 End
+  # IMMIOS-9991 Start
+  5402:
+    get_cp_rate: 0.45
+    mp_large_as_strong:
+      -
+        mp_min: 1
+        mp_max: 20
+        attack_rate: 3
+      -
+        mp_min: 21
+        mp_max: 30
+        attack_rate: 6
+      -
+        mp_min: 31
+        mp_max: 40
+        attack_rate: 9
+      -
+        mp_min: 41
+        mp_max: 50
+        attack_rate: 12
+      -
+        mp_min: 51
+        mp_max: 77
+        attack_rate: 15
+      -
+        mp_min: 78
+        mp_max: 100
+  5403:
+    get_cp_rate: 0.25
+  5408:
+    remove_combo_count: 1
+  # IMMIOS-9991 End
+  # IMMIOS-9983 Start
+  5401:
+    get_cp_rate: 0.45
+  5404:
+    get_cp_rate: 0.3
+  5406:
+    get_cp_rate: 0.25
+    add_combo_count: 1
+  5409:
+    add_combo_count: 1
+    remove_combo_count: 1
+  # IMMIOS-9983 End
+  # IMMIOS-10513 Start
+  5417:
+    get_cp_rate: 0.45 
+    combo_as_strong: 
+      - 
+        combo_min: 0 
+        combo_max: 25 
+        attack_rate: 8 
+      - 
+        combo_min: 26 
+        combo_max: 50 
+        attack_rate: 12 
+      - 
+        combo_min: 51 
+        combo_max: 100 
+        attack_rate: 16 
+      - 
+        combo_min: 101 
+        combo_max: 150 
+        attack_rate: 21 
+      - 
+        combo_min: 151 
+        combo_max: 250 
+        attack_rate: 24 
+      - 
+        combo_min: 251 
+        combo_max: 999999 
+        attack_rate: 25
+  # IMMIOS-10513 End
+  # IMMIOS-10577: Raid 24 Start
+  5600:
+    get_cp_rate: 0.2
+    add_combo_count: 1
+  5601:
+    get_cp_rate: 0.2
+    add_combo_count: 1
+  5602:
+    get_cp_rate: 0.2
+    add_combo_count: 1
+  5603:
+    combo_as_cp:
+      -
+        combo_min: 0
+        combo_max: 200
+        cp_rate: 0.1
+      -
+        combo_min: 201
+        combo_max: 400
+        cp_rate: 0.15
+      -
+        combo_min: 401
+        combo_max: 600
+        cp_rate: 0.2
+      -
+        combo_min: 601
+        combo_max: 800
+        cp_rate: 0.26
+      -
+        combo_min: 801
+        combo_max: 1000
+        cp_rate: 0.32
+      -
+        combo_min: 1001
+        combo_max: 1200
+        cp_rate: 0.38
+      -
+        combo_min: 1201
+        combo_max: 999999
+        cp_rate: 0.45
+  5604:
+    combo_as_cp:
+      -
+        combo_min: 0
+        combo_max: 200
+        cp_rate: 0.1
+      -
+        combo_min: 201
+        combo_max: 400
+        cp_rate: 0.15
+      -
+        combo_min: 401
+        combo_max: 600
+        cp_rate: 0.2
+      -
+        combo_min: 601
+        combo_max: 800
+        cp_rate: 0.26
+      -
+        combo_min: 801
+        combo_max: 1000
+        cp_rate: 0.32
+      -
+        combo_min: 1001
+        combo_max: 1200
+        cp_rate: 0.38
+      -
+        combo_min: 1201
+        combo_max: 999999
+        cp_rate: 0.45
+  5605:
+    combo_as_cp:
+      -
+        combo_min: 0
+        combo_max: 200
+        cp_rate: 0.1
+      -
+        combo_min: 201
+        combo_max: 400
+        cp_rate: 0.15
+      -
+        combo_min: 401
+        combo_max: 600
+        cp_rate: 0.2
+      -
+        combo_min: 601
+        combo_max: 800
+        cp_rate: 0.26
+      -
+        combo_min: 801
+        combo_max: 1000
+        cp_rate: 0.32
+      -
+        combo_min: 1001
+        combo_max: 1200
+        cp_rate: 0.38
+      -
+        combo_min: 1201
+        combo_max: 999999
+        cp_rate: 0.45
+  5609:
+    get_cp_rate: 0.25
+  5610:
+    get_cp_rate: 0.25
+  5611:
+    get_cp_rate: 0.25
+  5612:
+    get_cp_rate: 0.1
+    add_combo_count: 1
+  5613:
+    get_cp_rate: 0.2
+  5620:
+    get_cp_rate: 0.4
+  # IMMIOS-10577: Raid 24 End
+  # IMMIOS-8207 start
+  6000:
+    get_cp_rate: 0.30
+  6001:
+    get_cp_rate: 0.15
+  6002:
+    get_cp_rate: 0.10
+  # IMMIOS-8207 end 
+  # IMMIOS-8224 Special Conjuring
+  6005:
+    add_combo_count: 1
+    get_cp_rate: 0.1
+  # IMMIOS-8224 End
+  # IMMIOS-10932 Start
+  6536:
+    get_cp_rate: 0.45
+    combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 10
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 13
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 17
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 22
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 26
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 30
+  6534:
+    get_cp_rate: 0.3
+  6532:
+    get_cp_rate: 0.1
+  # IMMIOS-10932 End
+  # IMMIOS-11126 Start
+  6530:
+    add_combo_count: 2
+    add_aid_combo_count: 2
+  6535:
+    combo_as_cp:
+      -
+        combo_min: 0
+        combo_max: 200
+        cp_rate: 0.1
+      -
+        combo_min: 201
+        combo_max: 400
+        cp_rate: 0.15
+      -
+        combo_min: 401
+        combo_max: 600
+        cp_rate: 0.2
+      -
+        combo_min: 601
+        combo_max: 800
+        cp_rate: 0.26
+      -
+        combo_min: 801
+        combo_max: 1000
+        cp_rate: 0.32
+      -
+        combo_min: 1001
+        combo_max: 1200
+        cp_rate: 0.38
+      -
+        combo_min: 1201
+        combo_max: 999999
+        cp_rate: 0.45
+  6537:
+    get_cp_rate: 0.45
+    aid_combo_as_strong:
+      -
+        combo_min: 0
+        combo_max: 25
+        attack_rate: 10
+      -
+        combo_min: 26
+        combo_max: 50
+        attack_rate: 13
+      -
+        combo_min: 51
+        combo_max: 100
+        attack_rate: 17
+      -
+        combo_min: 101
+        combo_max: 150
+        attack_rate: 22
+      -
+        combo_min: 151
+        combo_max: 250
+        attack_rate: 26
+      -
+        combo_min: 251
+        combo_max: 999999
+        attack_rate: 30
+  # IMMIOS-11126 End
+  # IMMIOS-11266 Nov b3 cards Start
+  6538:
+    get_cp_rate: 0.45
+  6533:
+    get_cp_rate: 0.1
+  6539:
+    get_cp_rate: 0.2
+  6540:
+    get_cp_rate: 0.3
+  6541:
+    get_cp_rate: 0.4
+  6531:
+    life_recovery: 5000
+  6565:
+    get_cp_rate: 0.5
+  6566:
+    get_cp_rate: 0.5
+  6567:
+    get_cp_rate: 0.5
+  # IMMIOS-11266 End
+  # IMMIOS-10704 LU 19 Start
+  6550:
+    get_cp_rate: 0.45
+    deck_num_as_strong:
+      attribute: 2
+      rate:
+        -
+          card_num: 2
+          attack_rate: 5
+        -
+          card_num: 3
+          attack_rate: 7
+        -
+          card_num: 4
+          attack_rate: 10
+        -
+          card_num: 5
+          attack_rate: 13
+        -
+          card_num: 6
+          attack_rate: 15
+        -
+          card_num: 7
+          attack_rate: 17
+        -
+          card_num: 8
+          attack_rate: 22
+        -
+          card_num: 9
+          attack_rate: 26
+        -
+          card_num: 10
+          attack_rate: 30
+  6551:
+    get_cp_rate: 0.1
+  6552:
+    get_cp_rate: 0.2
+  6553:
+    get_cp_rate: 0.3
+  6554:
+    get_cp_rate: 0.4
+  6555:
+    add_combo_count: 1
+  6556:
+    add_combo_count: 2
+  6557:
+    add_combo_count: 3
+  6560:
+    get_cp_rate: 0.45
+  # IMMIOS-10704 End
+  # IMMIOS-10958 Start
+  6590:
+    get_cp_rate: 0.2
+  6591:
+    add_combo_count: 1
+  # IMMIOS-10958 End
+  # IMMIOS-11046 Start
+  6570:
+    get_cp_rate: 0.25
+  6571:
+    get_cp_rate: 0.25
+  6572:
+    get_cp_rate: 0.25
+  6575:
+    get_cp_rate: 0.3
+    add_combo_count: 1
+  6576:
+    get_cp_rate: 0.3
+    add_combo_count: 1
+  6577:
+    get_cp_rate: 0.3
+    add_combo_count: 1
+  6578:
+    combo_as_cp:
+      -
+        combo_min: 0
+        combo_max: 200
+        cp_rate: 0.1
+      -
+        combo_min: 201
+        combo_max: 400
+        cp_rate: 0.15
+      -
+        combo_min: 401
+        combo_max: 600
+        cp_rate: 0.21
+      -
+        combo_min: 601
+        combo_max: 800
+        cp_rate: 0.28
+      -
+        combo_min: 801
+        combo_max: 1000
+        cp_rate: 0.35
+      -
+        combo_min: 1001
+        combo_max: 1200
+        cp_rate: 0.42
+      -
+        combo_min: 1201
+        combo_max: 999999
+        cp_rate: 0.50
+  6579:
+    combo_as_cp:
+      -
+        combo_min: 0
+        combo_max: 200
+        cp_rate: 0.1
+      -
+        combo_min: 201
+        combo_max: 400
+        cp_rate: 0.15
+      -
+        combo_min: 401
+        combo_max: 600
+        cp_rate: 0.21
+      -
+        combo_min: 601
+        combo_max: 800
+        cp_rate: 0.28
+      -
+        combo_min: 801
+        combo_max: 1000
+        cp_rate: 0.35
+      -
+        combo_min: 1001
+        combo_max: 1200
+        cp_rate: 0.42
+      -
+        combo_min: 1201
+        combo_max: 999999
+        cp_rate: 0.50
+  6580:
+    combo_as_cp:
+      -
+        combo_min: 0
+        combo_max: 200
+        cp_rate: 0.1
+      -
+        combo_min: 201
+        combo_max: 400
+        cp_rate: 0.15
+      -
+        combo_min: 401
+        combo_max: 600
+        cp_rate: 0.21
+      -
+        combo_min: 601
+        combo_max: 800
+        cp_rate: 0.28
+      -
+        combo_min: 801
+        combo_max: 1000
+        cp_rate: 0.35
+      -
+        combo_min: 1001
+        combo_max: 1200
+        cp_rate: 0.42
+      -
+        combo_min: 1201
+        combo_max: 999999
+        cp_rate: 0.50
+  6581:
+    get_cp_rate: 0.2
+  6582:
+    get_cp_rate: 0.05
+  6587:
+    get_cp_rate: 0.45
+  # IMMIOS-11046 End
+  # IMMIOS-11097 Start
+  6605:
+    get_cp_rate: 0.5
+  6606:
+    get_cp_rate: 0.3
+  6607:
+    get_cp_rate: 0.2
+    add_combo_count: 1
+  # IMMIOS-11097 End
+  # IMMIOS-7720 Start
+  7000:
+    add_combo_count: 300
+  7001:
+    add_combo_count: 300
+  7002:
+    add_combo_count: 300
+  7003:
+    add_aid_combo_count: 300
+  7004:
+    add_aid_combo_count: 300
+  7005:
+    add_aid_combo_count: 300
+  9998:
+    passive_own_use_mp_down: 1
+  # IMMIOS-7720 End
+  # IMMIOS-11119 Start
+  6620:
+    get_cp_rate: 0.5
+  6621:
+    get_cp_rate: 0.3
+  6622:
+    add_combo_count: 1
+    passive_own_use_mp_down: 1
+  # IMMIOS-11119 End
+  # IMMIOS-11193 Passive Card Release Conjuring. Start
+  6624:
+    get_cp_rate: 0.25
+    passive_own_use_mp_down: 1
+  6625:
+    get_cp_rate: 0.25
+    passive_own_use_mp_down: 1
+  6626:
+    get_cp_rate: 0.25
+    passive_own_use_mp_down: 1
+  # IMMIOS-11193 End
+  # IMMIOS-11108 LUP03. Start
+  6627:
+    get_cp_rate: 0.5
+  6628:
+    get_cp_rate: 0.3
+  6629:
+    add_combo_count: 1
+    passive_own_use_mp_down: 1
+  # IMMIOS-11108 End
+time_skill:
+  270:
+    title: Shield Boost
+    ttl: 600
+    effect:
+      -
+        defense_rate: 30
+  651:
+    title: GP Warp
+    ttl: 600
+    effect:
+      -
+        other_lower_cp_bonus: .7 
+  741:
+    title: Shield Boost
+    ttl: 30
+    effect:
+      -
+        defense_rate: 70     
+  5031:
+    title: Attack Boost
+    ttl: 30
+    effect:
+      -
+        combo_as_strong:
+          -
+            combo_min: 0
+            combo_max: 999999
+            attack_rate: 10
+    
+# add yamanaka
+gvg:
+  #自動更新秒数
+  limittime: 5
+  #行動種別
+  action_kind:
+    battle: 1
+    aid: 2
+    recovery: 3
+  #1日のGVG回数
+  gvg_battle_num: 7
+  #GvG開始時刻
+  start_hours:
+    1:
+      hours: 4
+      minutes: 0
+      period: 4:00-4:59
+      period_time: "5:00"
+    2:
+      hours: 8
+      minutes: 0
+      period: 8:00-8:59
+      period_time: "9:00"
+    3:
+      hours: 10
+      minutes: 0
+      period: 10:00-10:59
+      period_time: "11:00"
+    4:
+      hours: 14
+      minutes: 0
+      period: 14:00-14:59
+      period_time: "15:00"  
+    5:
+      hours: 16
+      minutes: 0
+      period: 16:00-16:59
+      period_time: "17:00"  
+    6:
+      hours: 18
+      minutes: 0
+      period: 18:00-18:59
+      period_time: "19:00"
+    7:
+      hours: 20
+      minutes: 0
+      period: 20:00-20:59
+      period_time: "21:00"
+  #GvG開催時間(Duration)
+  gvg_hours: 1
+  #GvGマッチング開始時刻
+  matching_start_time:
+    hours: 1
+    minutes: 0
+  #GvGバトル結果
+  battle_result:
+    win:
+      value: 1
+      comment: 勝利
+    draw:
+      value: 2
+      comment: 引き分け
+    lose:
+      value: 3
+      comment: 敗戦
+  #GvGカードステータス
+  gvg_card_status:
+    active_card: 1
+    sub_active_card: 2
+    dead_card: 3
+  #鼓舞回復量
+  amount_of_encourage_recovery: 5
+  #1日の最大鼓舞回数
+  max_encourage_times: 10
+  #各ダメージ倍率
+  combo:
+    #コンボ回数2-20追加倍率
+    combo_rate1:
+       combo_count_min: 1
+       combo_count_max: 20
+       combo_rate: 0.04
+    #コンボ回数20以上追加倍率
+    combo_rate2:
+       combo_count_min: 20
+       combo_count_max: 999
+       combo_rate: 0.01
+    #コンボ回数上限値
+    total_combo_count_max: 999
+    #コンボ可能期間(分)
+    max_combo_minutes: 10
+  #カード枚数に応じたダメージ倍率
+  card_injection:
+    #枚数/倍率
+    1: 1
+    2: 1.05
+    3: 1.1
+    4: 1.15
+    5: 1.2
+  #隊列が後列の場合のダメージ倍率
+  party_sequence_back: 0.7
+  #同属性カードのダメージ倍率
+  same_attribute_rate:
+    default: 1
+    same: 1.005
+  #属性基本値
+  attribute_base_rate: 1
+  #属性弱点
+  attribute_strong_point_rate: 1.15
+  #属性耐性
+  attribute_weak_point_rate: 0.7
+  #クリティカル
+  critical:
+    #クリティカルヒット発動確率 min/max
+    critical_rand_min: 1
+    critical_rand_max: 400
+    #クリティカルヒットダメージ倍率
+    #critical_damage_rate: 8
+    #クリティカルフラグ
+    critical: 8
+  #エースの権限
+  ace_rate: 1.05
+  #隊列
+  party_sequence:
+    1: 前衛
+    2: 後衛
+  #前衛人数
+  party_sequence_advance_num: 5
+  #前衛消費MP倍率
+  sequencecritical_mp_rate:
+    front: 0.8
+    back: 1
+  #チャージ時消費MP
+  charge_used_mp: 20
+  #回復時消費MP
+  recovery_used_mp: 20
+  #応援時消費MP
+  aid_used_mp: 10
+  #覚醒ﾗﾝｸ
+  awake_rank:
+    0:
+      #範囲
+      range: 20
+      #範囲補正値
+      range_collection: 10
+    1:
+      range: 30
+      range_collection: 15
+    2:
+      range: 40
+      range_collection: 20
+    3:
+      range: 60
+      range_collection: 20
+    4:
+      range: 40
+      range_collection: 20
+    5:
+      range: 60
+      range_collection: 25
+    6:
+      range: 60
+      range_collection: 15
+    7:
+      range: 100
+      range_collection: 40
+    8:
+      range: 100
+      range_collection: 55
+    9:
+      range: 130
+      range_collection: 60
+    10:
+      range: 150
+      range_collection: 55
+  #応援コンボ
+  combo_aid:
+    #応援コンボ係数
+    combo_aid_rate_up: 0.01
+    combo_aid_rate_down: 0.01
+    #応援コンボ可能期間(分)
+    max_combo_minutes: 10
+    #コンボ回数上限値
+    total_combo_count_max: 100
+    #応援倍率アップ初期値
+    default_aid_rate_up: 1.01
+    #応援倍率ダウン初期値
+    default_aid_rate_down: 1.01
+    #アップ時回数依存倍率算出基準値
+    default_aid_combo_calc_rate_up: 80
+    #ダウン時回数依存倍率算出基準値
+    default_aid_combo_calc_rate_down: 80
+    #防御力下限値
+    default_defense: 250
+    #獲得CP倍率 (獲得CP)/倍率
+    aid_cp_rate: 5
+  # 報酬付与
+  gvg_presents:
+    gvg_win:
+      virtual_money: 3000
+      gacha_point: 300
+      item:
+        -
+          item_id: 12
+          num: 2
+        #-
+        #  item_id: 23
+        #  num: 1
+      value: 1
+    gvg_draw:
+      virtual_money: 2000
+      gacha_point: 0
+      #item:
+      #  -
+      #    item_id: 23
+      #    num: 1
+      value: 2
+    gvg_lose:
+      virtual_money: 2000
+      gacha_point: 0
+      #item:
+      #  -
+      #    item_id: 23
+      #    num: 1
+      value: 3
+  # 報酬増加キャンペーン
+  gvg_presents_campaign:
+    start_date: "2013-02-11 16:00:00"
+    end_date: "2013-02-14 23:59:59"
+    gvg_win:
+      virtual_money: 6000
+      gacha_point: 600
+      item:
+        -
+          item_id: 12
+          num: 4
+      value: 1
+    gvg_draw:
+      virtual_money: 4000
+      gacha_point: 0
+      item:
+        -
+          item_id: 12
+          num: 0
+      value: 2
+    gvg_lose:
+      virtual_money: 4000
+      gacha_point: 0
+      item:
+        -
+          item_id: 12
+          num: 0
+      value: 3
+  # バトルレート加算値
+  battle_rate:
+    win_strong_battle_rate: 3
+    win_same_battle_rate: 2
+    win_weak_battle_rate: 1
+    lose_strong_battle_rate: -3
+    lose_same_battle_rate: -2
+    lose_weak_battle_rate: -1
+  # ダミーguild_data_id
+  dummy_guild_data_id: 1
+  # gvg twitter/facebook 期間限定コメントフラグ
+  social_comment_limit:
+    start_date: "2012-07-06 19:00:00"
+    end_date: "2012-07-09 13:00:00"
+  # 攻撃コンボボーナス
+  gvg_combo_bonus:
+    -
+      bonus_type: 1
+      bonus_count: 50
+      bonus_present:
+        item:
+          -
+            item_id: 12
+            num: 1
+    -
+      bonus_type: 2
+      bonus_count: 100
+      bonus_present:
+        item:
+          -
+            item_id: 12
+            num: 2
+  # 応援コンボボーナス
+  gvg_combo_aid_bonus:
+    -
+      bonus_type: 1
+      bonus_count: 50
+      bonus_present:
+        item:
+          -
+            item_id: 12
+            num: 1
+    -
+      bonus_type: 2
+      bonus_count: 100
+      bonus_present:
+        item:
+          -
+            item_id: 12
+            num: 2
+  # 1日回数ボーナス
+  gvg_participating_bonus:
+    participating_count: 4
+    participating_present:
+      item:
+        -
+          item_id: 12
+          num: 1
+ragnarok:
+  # デバッグモード 0:制限あり 1:常にアクセス可能
+  debug_mode: 0
+  # 開催日時
+  beind_held_date:
+    #曜日 日曜=0, ... , 土曜=6
+    #day_of_the_week: 0
+    day_of_the_week: 6
+    ragnarok_date: "2013-04-13"
+    #開催日 (*試合目)
+    #gvg_today_times_count: 4
+    gvg_today_times_count: 1
+    # Items below are added by Aeria.
+    start_date: "2013-04-13 18:00:00"
+    end_date: "2013-04-13 19:00:00"
+  # 選出クラン数
+  selected_guild_num : 50
+  # 補欠クラン数(選出対象クランが脱退とかしちゃったときの対策)
+  sub_selected_guild_num : 50
+  # ページ制御(選出クラン)
+  page_control:
+    ragnarok_start_date:
+      start_date: "00:00:00"
+      end_date: "0:59:59"
+      page_background: ragnarok_2
+      page_button: ragnarok_3
+      type: close
+    ragnarok_battle_date:
+      start_date: "1:00:00"
+      end_date: "1:59:59"
+      page_background: ragnarok_1
+      page_button: ragnarok_1
+      type: challenger
+    ragnarok_end_date:
+      start_date: "2:00:00"
+      end_date: "23:59:59"
+      page_background: ragnarok_2
+      page_button: ragnarok_3
+      type: close
+  # ページ制御(観戦クラン)
+  watch_page_control:
+    ragnarok_start_date:
+      start_date: "00:00:00"
+      end_date: "0:59:59"
+      page_background: ragnarok_2
+      page_button: ragnarok_3
+      type: close
+    ragnarok_battle_date:
+      start_date: "1:00:00"
+      end_date: "1:59:59"
+      page_background: ragnarok_1
+      page_button: ragnarok_2
+      type: spectator
+    ragnarok_end_date:
+      start_date: "2:00:00"
+      end_date: "23:59:59"
+      page_background: ragnarok_2
+      page_button: ragnarok_3
+      type: close
+  # BETシステム
+  bet:
+    #BETシステム導入フラグ 1:導入 0:導入しない
+    active_flg: 0
+    # BET対象試合数
+    bet_battle_num: 25
+  # BETマッチング
+  bet_matching_rank_range:
+    -
+      rank_range_min: 1
+      rank_range_max: 2
+      matching_range: 1
+    -
+      rank_range_min: 3
+      rank_range_max: 6
+      matching_range: 2
+    -
+      rank_range_min: 7
+      rank_range_max: 10
+      matching_range: 3
+    -
+      rank_range_min: 11
+      rank_range_max: 20
+      matching_range: 4
+    -
+      rank_range_min: 21
+      rank_range_max: 50
+      matching_range: 5
+  # チャットシステム
+  chat:
+    #チャットシステム導入フラグ 1:導入 0:導入しない
+    active_flg: 0
+  # 報酬付与
+  ragnarok_presents:
+        win:
+          card:
+            -
+              card_id: 614
+              num: 1
+          item:
+            -
+              item_id: 1
+              num: 1
+            -
+              item_id: 2
+              num: 3
+            -
+              item_id: 12
+              num: 10
+          virtual_money: 10000
+          gacha_point: 1000
+          shogo:
+            1:
+              shogo_id: 10000
+            2:
+              shogo_id: 10001
+            3:
+              shogo_id: 10002
+            4:
+              shogo_id: 10003
+            5:
+              shogo_id: 10004
+            6:
+              shogo_id: 10005
+          value: 1
+        draw:
+          virtual_money: 4000
+          item:
+            -
+              item_id: 1
+              num: 1
+            -
+              item_id: 12
+              num: 5
+          value: 2
+        lose:
+          virtual_money: 4000
+          item:
+            -
+              item_id: 1
+              num: 1
+            -
+              item_id: 12
+              num: 5
+          value: 3
+  # MP回復量
+  gvg_stamina: 100
+  # 観戦だけで召喚P付与
+  watching_gacha_point: 1000
+  # ログインボーナス
+  login_bonus:
+    text: "600召喚Pと\n6000ギルをプレゼント！\nプレゼントから受け取ってね♪"
+    text_0621: "600召喚Pと\n6000ギルをプレゼント！\nプレゼントボックスから\n受け取ってね♪\n50MP回復したよ♪"
+    gacha_p: 600
+    virtual_money: 6000
+    mp: 50
+  # 英雄の称号
+  guild_shogo_mst_id:
+    -
+      10000
+    -
+      10001
+    -
+      10002
+    -
+      10003
+    -
+      10004
+    -
+      10005
+
+# 前衛強化施策
+gvg_advance_strength_campaign:
+  start_date: "2012-07-03 12:00:00"
+  end_date: "2012-07-03 23:00:00"
+  #前衛攻撃力強化倍率
+  #attack_rate: 2
+  attack_rate: 1
+  #追い打ち時の倍率
+  additional_attack_rate: 1
+  #HP加算値
+  advance_gvg_life: 5000
+  advance_gvg_life_fact: 2000
+
+# 応援施策
+aid_limit:
+  start_date: "2012-07-22 19:00:00"
+  end_date: "2020-12-31 23:00:00"
+  #応援味方攻撃力上限倍率
+  aid_limit_attack_max_rate: 2
+  #応援味方攻撃力下限倍率
+  aid_limit_attack_min_rate: 0.5
+  #応援相手防御力上限倍率
+  aid_receive_limit_defense_max_rate: 2
+  #応援相手防御力下限倍率
+  aid_receive_limit_defense_min_rate: 0.5
+
+# 選抜戦フィールド対応
+field_limit:
+  # The start_date and end_date now can be controlled by CMS tool.
+  start_date: "2013-07-01 00:00:00"
+  end_date: "2013-08-07 23:00:00"
+  field_fact_list:
+    0:
+      name: "ノーマル"
+      img: "gvg_stage"
+      text_up: "属性バランスのとれたフィールド。"
+      text_down: "属性バランスのとれたフィールド。"
+      attack_rate_1: 0
+      attack_rate_2: 0
+      attack_rate_3: 0
+    1:
+      name: "トルネードオブカオス"
+      img: "stage_tornado_chaos"
+      text_up: "風属性の攻撃力50％アップ。"
+      text_down: "水属性の攻撃力30％ダウン。"
+      attack_rate_1: 0
+      attack_rate_2: -0.3
+      attack_rate_3: 0.5
+    2:
+      name: "マグマストリーム"
+      img: "stage_magma_storm"
+      text_up: "火属性の攻撃力50％アップ。"
+      text_down: "風属性の攻撃力30％ダウン。"
+      attack_rate_1: 0.5
+      attack_rate_2: 0
+      attack_rate_3: -0.3
+    3:
+      name: "ダイダルコースト"
+      img: "stage_tidal_coast"
+      text_up: "水属性の攻撃力50％アップ。"
+      text_down: "火属性の攻撃力30％ダウン。"
+      attack_rate_1: -0.3
+      attack_rate_2: 0.5
+      attack_rate_3: 0
+    4:
+      name: "トルネードオブカオス"
+      img: "stage_tornado_chaos"
+      text_up: "風属性の攻撃力50％アップ。"
+      text_down: "水属性の攻撃力30％ダウン。"
+      attack_rate_1: 0
+      attack_rate_2: -0.3
+      attack_rate_3: 0.5
+    5:
+      name: "マグマストリーム"
+      img: "stage_magma_storm"
+      text_up: "火属性の攻撃力50％アップ。"
+      text_down: "風属性の攻撃力30％ダウン。"
+      attack_rate_1: 0.5
+      attack_rate_2: 0
+      attack_rate_3: -0.3
+    6:
+      name: "ダイダルコースト"
+      img: "stage_tidal_coast"
+      text_up: "水属性の攻撃力50％アップ。"
+      text_down: "火属性の攻撃力30％ダウン。"
+      attack_rate_1: -0.3
+      attack_rate_2: 0.5
+      attack_rate_3: 0
+    #1:
+    #  #火属性ガーディアンの攻撃力大アップ
+    #  name: "ストームルイン"
+    #  img: "stage_storm"
+    #  text_up: "火属性の攻撃力大アップ。"
+    #  text_down: "風属性の攻撃力大ダウン。"
+    #  attack_rate_1: 0.05
+    #  attack_rate_2: 0
+    #  #風属性ガーディアンの攻撃力大ダウン
+    #  attack_rate_3: -0.05
+    #2:
+    #  name: "アクアリーフ"
+    #  img: "stage_aqua"
+    #  text_up: "水属性の攻撃力大アップ。"
+    #  text_down: "火属性の攻撃力大ダウン。"
+    #  attack_rate_1: -0.05
+    #  attack_rate_2: 0.05
+    #  attack_rate_3: 0
+    #3:
+    #  name: "ウィンドガーデン"
+    #  img: "stage_wind"
+    #  text_up: "風属性の攻撃力大アップ。"
+    #  text_down: "水属性の攻撃力大ダウン。"
+    #  attack_rate_1: 0
+    #  attack_rate_2: -0.05
+    #  attack_rate_3: 0.05
+    #4:
+    #  name: "ヴォルケーノ"
+    #  img: "stage_volcano"
+    #  text_up: "火属性の攻撃力大アップ。"
+    #  text_down: "水属性の攻撃力大ダウン。"
+    #  attack_rate_1: 0.05
+    #  attack_rate_2: -0.05
+    #  attack_rate_3: 0
+    #5:
+    #  name: "スノーエクリプス"
+    #  img: "stage_snow"
+    #  text_up: "水属性の攻撃力大アップ。"
+    #  text_down: "風属性の攻撃力大ダウン。"
+    #  attack_rate_1: 0
+    #  attack_rate_2: 0.05
+    #  attack_rate_3: -0.05
+    #6:
+    #  name: "ディープフォレスト"
+    #  img: "stage_forest"
+    #  text_up: "風属性の攻撃力大アップ。"
+    #  text_down: "火属性の攻撃力大ダウン。"
+    #  attack_rate_1: -0.05
+    #  attack_rate_2: 0
+    #  attack_rate_3: 0.05
+#特殊フィールド
+#gvg何回目指定
+#HP 1:matchless 0:not
+#rate:max100
+#4:number 4 gvg battle
+field_special:
+  start_date: "2013-08-01 10:00:00"
+  end_date: "2013-08-07 21:00:00"
+  field_fact_list:
+    4:
+      name: "アイロン"
+      img: "stage_iron"
+      text_up: "無敵フィールド。"
+      text_down: "無敵フィールド。"
+      matchless: 1
+      attack_rate_1: 0
+      attack_rate_2: 0
+      attack_rate_3: 0      
+# ギルドレベルによる追加レート
+guild_attack_rate:
+  start_date: "2013-08-01 00:00:00"
+  end_date: "2013-08-07 23:59:00"
+  attack_rate: 0.02 
+  
+# ダメージ計算パターン
+gvg_damage_key: version_2
+gvg_damage:
+  default:
+    # 時間制御 0:制御なし 1:あり
+    time_check: 0
+    # 気絶制御 0:制御なし 1:あり
+    dead_check: 0
+    # 相手カード参照 0:しない 1:する
+    receive_card: 1
+  #Ver2
+  version_2:
+    # 時間制御 0:制御なし 1:あり
+    time_check: 1
+    start_date: "2012-07-22 19:00:00"
+    end_date: "2020-02-03 23:59:00"
+    # 気絶制御 0:制御なし 1:あり
+    dead_check: 1
+    #デッキ割係数
+    deck_coefficient: 15
+    #ユーザーLV補正倍率
+    add_userlevel_rate: 7
+    #HP加算値
+    gvg_life: 5000
+    gvg_life_fact: 600
+    # 相手カード参照 0:しない 1:する
+    receive_card: 0
+  version_2_hp:
+    # 時間制御 0:制御なし 1:あり
+    time_check: 1
+    start_date: "2013-02-04 00:00:00"
+    end_date: "2020-12-31 23:00:00"
+    # 気絶制御 0:制御なし 1:あり
+    dead_check: 1
+    #デッキ割係数
+    deck_coefficient: 15
+    #ユーザーLV補正倍率
+    add_userlevel_rate: 7
+    #HP加算値
+    gvg_life: 5000
+    gvg_life_fact: 6000
+    # 相手カード参照 0:しない 1:する
+    receive_card: 0
+
+gvg_matching:
+  #GLvによるグループ分けのLVの範囲
+  group_level_interval: 5
+  #レート軸
+  battle_rate_axis:
+    4:
+      min: 24
+      max: 999999
+      matching_array:
+        0: 10
+        1: 11
+        2: 12
+    3:
+      min: 11
+      max: 23
+      matching_array:
+        0: 7
+        1: 8
+        2: 9
+    2:
+      min: 3
+      max: 10
+      matching_array:
+        0: 4
+        1: 5
+        2: 6
+    1:
+      min: -999999
+      max: 2
+      matching_array:
+        0: 1
+        1: 2
+        2: 3
+  #アクティブ軸
+  active_axis:
+    3:
+      min: 40
+      max: 999999
+      matching_array:
+        0: 7
+        1: 8
+        2: 9
+    2:
+      min: 10
+      max: 39
+      matching_array:
+        0: 4
+        1: 5
+        2: 6
+    1:
+      min: 0
+      max: 9
+      matching_array:
+        0: 1
+        1: 2
+        2: 3
+  #課金軸
+  purchase_axis:
+    1:
+      min: 0
+      max: 6
+    2:
+      min: 7
+      max: 15
+    3:
+      min: 16
+      max: 999999
+  # matching axis based on guild_data.recent_guild_point 
+  recent_guild_point_axis:
+    12:
+      min: 3000001
+      max: 2000000000
+      matching_array:
+        0: 12
+    11:
+      min: 2000001
+      max: 3000000
+      matching_array:
+        0: 11
+    10:
+      min: 1400001
+      max: 2000000
+      matching_array:
+        0: 10
+    9:
+      min: 900001
+      max: 1400000
+      matching_array:
+        0: 9
+    8:
+      min: 400001
+      max: 900000
+      matching_array:
+        0: 8
+    7:
+      min: 200001
+      max: 400000
+      matching_array:
+        0: 7
+    6:
+      min: 50001
+      max: 200000
+      matching_array:
+        0: 6
+    5:
+      min: 10001
+      max: 50000
+      matching_array:
+        0: 5
+    4:
+      min: 3001
+      max: 10000
+      matching_array:
+        0: 4
+    3:
+      min: 1
+      max: 3000
+      matching_array:
+        0: 3
+    2:
+      min: 0
+      max: 0
+      matching_array:
+        0: 2
+    1:
+      min: -1
+      max: -1
+      matching_array:
+        0: 1
+  # matching axis based on GP and VP mixed point 
+  gpvp_axis:
+    12:
+      min: 200001
+      max: 2000000000
+      matching_array:
+        0: 12
+    11:
+      min: 139001
+      max: 200000
+      matching_array:
+        0: 11
+    10:
+      min: 100001
+      max: 139000
+      matching_array:
+        0: 10
+    9:
+      min: 64001
+      max: 100000
+      matching_array:
+        0: 9
+    8:
+      min: 36001
+      max: 64000
+      matching_array:
+        0: 8
+    7:
+      min: 16001
+      max: 36000
+      matching_array:
+        0: 7
+    6:
+      min: 10001
+      max: 16000
+      matching_array:
+        0: 6
+    5:
+      min: 4001
+      max: 10000
+      matching_array:
+        0: 5
+    4:
+      min: 2001
+      max: 4000
+      matching_array:
+        0: 4
+    3:
+      min: 1001
+      max: 2000
+      matching_array:
+        0: 3
+    2:
+      min: 1
+      max: 1000
+      matching_array:
+        0: 2
+    1:
+      min: -1000
+      max: 0
+      matching_array:
+        0: 1
+  #マッチング軸
+  matching_axis:
+    1:
+      active_axis: 1
+      purchase_axis: 1
+      value: 1
+    2:
+      active_axis: 1
+      purchase_axis: 2
+      value: 2
+    3:
+      active_axis: 1
+      purchase_axis: 3
+      value: 3
+    4:
+      active_axis: 2
+      purchase_axis: 1
+      value: 4
+    5:
+      active_axis: 2
+      purchase_axis: 2
+      value: 5
+    6:
+      active_axis: 2
+      purchase_axis: 3
+      value: 6
+    7:
+      active_axis: 3
+      purchase_axis: 1
+      value: 7
+    8:
+      active_axis: 3
+      purchase_axis: 2
+      value: 8
+    9:
+      active_axis: 3
+      purchase_axis: 3
+      value: 9
+  #マッチング軸(レート用)
+  battle_rate_matching_axis:
+    1:
+      battle_rate_axis: 1
+      purchase_axis: 1
+      value: 1
+    2:
+      battle_rate_axis: 1
+      purchase_axis: 2
+      value: 2
+    3:
+      battle_rate_axis: 1
+      purchase_axis: 3
+      value: 3
+    4:
+      battle_rate_axis: 2
+      purchase_axis: 1
+      value: 4
+    5:
+      battle_rate_axis: 2
+      purchase_axis: 2
+      value: 5
+    6:
+      battle_rate_axis: 2
+      purchase_axis: 3
+      value: 6
+    7:
+      battle_rate_axis: 3
+      purchase_axis: 1
+      value: 7
+    8:
+      battle_rate_axis: 3
+      purchase_axis: 2
+      value: 8
+    9:
+      battle_rate_axis: 3
+      purchase_axis: 3
+      value: 9
+    10:
+      battle_rate_axis: 4
+      purchase_axis: 1
+      value: 10
+    11:
+      battle_rate_axis: 4
+      purchase_axis: 2
+      value: 11
+    12:
+      battle_rate_axis: 4
+      purchase_axis: 3
+      value: 12
+  # matching axis by recent guild point 
+  recent_guild_point_matching_axis:
+    1:
+      recent_guild_point_axis: 1
+      value: 1
+    2:
+      recent_guild_point_axis: 2
+      value: 2
+    3:
+      recent_guild_point_axis: 3
+      value: 3
+    4:
+      recent_guild_point_axis: 4
+      value: 4
+    5:
+      recent_guild_point_axis: 5
+      value: 5
+    6:
+      recent_guild_point_axis: 6
+      value: 6
+    7:
+      recent_guild_point_axis: 7
+      value: 7
+    8:
+      recent_guild_point_axis: 8
+      value: 8
+    9:
+      recent_guild_point_axis: 9
+      value: 9
+    10:
+      recent_guild_point_axis: 10
+      value: 10
+    11:
+      recent_guild_point_axis: 11
+      value: 11
+    12:
+      recent_guild_point_axis: 12
+      value: 12
+  #アクティブ率Point
+  active_point:
+    24hours:
+      times: 24
+      point: 3
+    48hours:
+      times: 48
+      point: 1
+  #課金率Point
+  purchase_point:
+    over20000:
+      money: 20000
+      point: 3
+    over3000:
+      money: 3000
+      point: 1
+  #課金率集計期間(日)
+  purchase_period_days: 7
+
+guild:
+  #加入可能ｷﾞﾙﾄﾞﾒﾝﾊﾞｰ初期値
+  default_max_member_num: 20
+  #初期LVｱｯﾌﾟ経験値
+  default_level_up_exp: 10
+  #ギルド掲示板
+  guild_bbs:
+    #ギルド掲示板最大文字数
+    default_max_guild_bbs_num: 100
+    #ギルド掲示板最小文字数
+    default_min_guild_bbs_num: 1
+  #ギルド名
+  guild_name:
+    #ギルド名最大文字数
+    default_max_guild_name_num: 8
+    #ギルド名最小文字数
+    default_min_guild_name_num: 1
+  #マスターコメント
+  guild_word:
+    #マスターコメント最大文字数
+    default_max_guild_word_num: 50
+    #マスターコメント最小文字数
+    default_min_guild_word_num: 1
+  #役職
+  guild_role:
+    #役職タイプ
+    guild_role_type:
+      0: 全員
+      1: バトル系
+      2: クエスト系
+      3: 合成系
+      9: 特殊系
+    #クランマスターID
+    guild_owner_role_mst_id: 1
+    #クラン執行役ID
+    guild_sub_owner_role_mst_id: 2
+  #承認設定
+  recognition:
+    1: 承認制
+    2: 非承認制
+  #冒険時の検索対象所属人数
+  recognition_selected_guild_member_num: 5
+  recognition_selected_guild_member_num_desc: 19
+  #ギルメン募集検索フォーム
+  invite_select:
+    #ユーザーLv
+    user_level:
+      0:
+        name: -ユーザーLv-
+      1:
+        name: Lv.1～
+      2:
+        name: Lv.20～
+      3:
+        name: Lv.30～
+      4:
+        name: Lv.40～
+      5:
+        name: Lv.50～
+      6:
+        name: Lv.60～
+      7:
+        name: Lv.70～
+      8:
+        name: Lv.80～
+      9:
+        name: Lv.90～
+      10:
+        name: Lv.100～
+      11:
+        name: Lv.150～
+      12:
+        name: Lv.200～
+    #平均Lv
+    average_level:
+      0:
+        name: -平均Lv-
+      1:
+        name: Lv.1～19
+      2:
+        name: Lv.20～29
+      3:
+        name: Lv.30～39
+      4:
+        name: Lv.40～49
+      5:
+        name: Lv.50～59
+      6:
+        name: Lv.60～69
+      7:
+        name: Lv.70～79
+      8:
+        name: Lv.80～89
+      9:
+        name: Lv.90～99
+      10:
+        name: Lv.100～149
+      11:
+        name: Lv.150～Lv.199
+      12:
+        name: Lv.200～
+    #雰囲気
+    atmosphere:
+      0:
+        name: -雰囲気-
+      1:
+        name: がっつり
+      2:
+        name: まったり
+      3:
+        name: ぼちぼち
+      4:
+        name: そこそこ
+    #経験
+    experience:
+      0:
+        name: -経験-
+      1:
+        name: 初心者OK
+      2:
+        name: 中級者
+      3:
+        name: 上級者
+    #クランLv
+    guild_level:
+      0:
+        name: -クランLv-
+      1:
+        name: Lv.5～9
+      2:
+        name: Lv.10～14
+      3:
+        name: Lv.15～19
+      4:
+        name: Lv.20～24
+      5:
+        name: Lv.25～29
+      6:
+        name: Lv.30～34
+      7:
+        name: Lv.35～39
+      8:
+        name: Lv.40～44
+      9:
+        name: Lv.45～49
+      10:
+        name: Lv.50～
+    #所属人数
+    guild_member_num:
+      0:
+        name: -所属人数-
+      1:
+        name: 1人～
+      2:
+        name: 5人～
+      3:
+        name: 10人～
+      4:
+        name: 15人～
+      5:
+        name: 20人～
+  #スカウト勧誘検索フォーム
+  scout_select:
+    #ユーザーLv
+    user_level:
+      0:
+        name: -ユーザーLv-
+        value: 1
+      1:
+        name: Lv.1～
+        value: 1
+      2:
+        name: Lv.20～
+        value: 20
+      3:
+        name: Lv.30～
+        value: 30
+      4:
+        name: Lv.40～
+        value: 40
+      5:
+        name: Lv.50～
+        value: 50
+      6:
+        name: Lv.60～
+        value: 60
+      7:
+        name: Lv.70～
+        value: 70
+      8:
+        name: Lv.80～
+        value: 80
+      9:
+        name: Lv.90～
+        value: 90
+      10:
+        name: Lv.100～
+        value: 100
+      11:
+        name: Lv.150～
+        value: 150
+      12:
+        name: Lv.200～
+        value: 200
+    #雰囲気
+    atmosphere:
+      0:
+        name: -雰囲気-
+      1:
+        name: がっつり
+      2:
+        name: まったり
+      3:
+        name: ぼちぼち
+      4:
+        name: そこそこ
+    #経験
+    experience:
+      0:
+        name: -経験-
+      1:
+        name: 初心者OK
+      2:
+        name: 中堅層
+      3:
+        name: 上級者
+    #クランLv
+    guild_level:
+      0:
+        name: -クランLv-
+      1:
+        name: Lv.1～4
+      2:
+        name: Lv.5～9
+      3:
+        name: Lv.10～14
+      4:
+        name: Lv.15～19
+      5:
+        name: Lv.20～24
+      6:
+        name: Lv.25～29
+      7:
+        name: Lv.30～34
+      8:
+        name: Lv.35～39
+      9:
+        name: Lv.40～44
+      10:
+        name: Lv.45～49
+      11:
+        name: Lv.50～
+    #所属人数
+    guild_member_num:
+      0:
+        name: -所属人数-
+      1:
+        name: 1人～
+      2:
+        name: 5人～
+      3:
+        name: 10人～
+      4:
+        name: 15人～
+      5:
+        name: 20人～
+    #平均Lv
+    average_level:
+      0:
+        name: -平均Lv-
+      1:
+        name: Lv.1～19
+      2:
+        name: Lv.20～29
+      3:
+        name: Lv.30～39
+      4:
+        name: Lv.40～49
+      5:
+        name: Lv.50～59
+      6:
+        name: Lv.60～69
+      7:
+        name: Lv.70～79
+      8:
+        name: Lv.80～89
+      9:
+        name: Lv.90～99
+      10:
+        name: Lv.100～149
+      11:
+        name: Lv.150～Lv.199
+      12:
+        name: Lv.200～
+  levelup_exp:
+    1: 0
+    2: 20000
+    3: 45000
+    4: 80000
+    5: 125000
+    6: 180000
+    7: 245000
+    8: 320000
+    9: 405000
+    10: 500000
+    11: 605000
+    12: 720000
+    13: 845000
+    14: 980000
+    15: 1125000
+    16: 1280000
+    17: 1445000
+    18: 1620000
+    19: 1805000
+    20: 2000000
+    21: 2205000
+    22: 2420000
+    23: 2645000
+    24: 2880000
+    25: 3125000
+    26: 3380000
+    27: 3645000
+    28: 3920000
+    29: 4205000
+    30: 4500000
+    31: 4805000
+    32: 5120000
+    33: 5445000
+    34: 5780000
+    35: 6125000
+    36: 6480000
+    37: 6845000
+    38: 7220000
+    39: 7605000
+    40: 8000000
+    41: 8405000
+    42: 8820000
+    43: 9245000
+    44: 9680000
+    45: 10125000
+    46: 10580000
+    47: 11045000
+    48: 11520000
+    49: 12005000
+    50: 12500000
+    51: 13005000
+    52: 13520000
+    53: 14045000
+    54: 14580000
+    55: 15125000
+    56: 15680000
+    57: 16245000
+    58: 16820000
+    59: 17405000
+    60: 18000000
+    61: 18605000
+    62: 19220000
+    63: 19845000
+    64: 20480000
+    65: 21125000
+    66: 21780000
+    67: 22445000
+    68: 23120000
+    69: 23805000
+    70: 26185500
+    71: 28804050
+    72: 31684455
+    73: 34852901
+    74: 38338191
+    75: 42172010
+    76: 46389211
+    77: 51028132
+    78: 56130945
+    79: 61744039
+    80: 67918443
+    81: 74710288
+    82: 82181316
+    83: 90399448
+    84: 99439393
+    85: 109383332
+    86: 120321665
+    87: 132353832
+    88: 145589215
+    89: 160148136
+    90: 176162950
+    91: 193779245
+    92: 213157169
+    93: 234472886
+    94: 257920175
+    95: 283712192
+    96: 312083412
+    97: 343291753
+    98: 377620928
+    99: 415383021
+  # 称号
+  shogo:
+    default: 1
+    delete: 2
+
+deck:
+  #デッキ数
+  default_max_deck_num: 4
+  #おすすめデッキ名
+  recommend_deck_name: おすすめデッキ
+  #デッキ名
+  default_deck_name: デッキ名
+  #デッキに設定可能なカード数
+  default_max_deck_card_num: 10
+  #デッキ名最大文字数
+  default_max_deck_name_num: 20
+  #デッキ名最小文字数
+  default_min_deck_name_num: 2
+
+adventure:
+  # アイテム抽選までの歩数
+  step_cnt_min: 3
+  step_cnt_max: 4
+  # ギルド紹介発生確率 0~100
+  guild_presentation_ratio: 5
+  # MP強制提出
+  force_mp_drop_cnt: 2
+  # 最終エリア
+  final_area: 10
+
+img_param:
+  item:
+    small:
+      directory: /img/item/s/
+      ext: .jpg
+    middle:
+      directory: /img/item/s/
+      ext: .jpg
+    large:
+      directory: /img/item/l/
+      ext: .jpg
+  card:
+    small:
+      directory: /img/card/s/
+      ext: .jpg
+    middle:
+      directory: /img/card/m/
+      ext: .jpg
+    large:
+      directory: /img/card/l/
+      ext: .jpg
+    largelarge:
+      directory: /img/card/ll/
+      ext: .jpg
+    xlarge:
+      directory: /img/card/xl/
+      ext: .jpg
+    xxlarge:
+      directory: /img/card/xxl/
+      ext: .jpg
+    myp:
+      directory: /img/card/myp/
+      ext: .jpg
+    atk:
+      directory: /img/card/cutin/
+      ext: .png
+    skill_cutin:
+      directory: /img/kakusei/skill_name/
+      ext: .png
+    kakusei:
+      directory: /img/card/kakusei/
+      ext: .png
+  field:
+      directory: /img/crystal_war/selection_battle/
+      ext: .jpg
+
+quiz:
+  category:
+    # カテゴリ名 連番でよろしく
+    1: 進撃編
+    2: ガーディアン編
+    3: バトル編①
+    4: バトル編②
+    5: 特別編
+  reward:
+    virtual_money: 1000
+
+lucky_egg:
+  # デフォルト待ち時間
+  default_minute: 480
+  # 最大温め回数
+  warm_cnt_max: 10
+  # １回の温めで短くなる時間
+  reduction_minute_per_warm: 30
+  # 温め報酬
+  warm_gacha_p: 10
+  # アイテムmst_id(self…[自分用])
+  item_mst_id: 3
+  item_self_mst_id: 6
+special_egg:
+  # 特殊エッグのtype基底値(2以降が特殊エッグ)
+  type_base: 2
+  # レインボーエッグ
+  rainbow_egg:
+    start_date: "2013-07-30 15:00:00"
+    # レインボーエッグ type:2
+    type: 2
+    # 基底値(通常エッグIDからの増分値)
+    offset: 11
+    # アイテムmst_id(self…[自分用])
+    item_mst_id: 441
+    item_self_mst_id: 442
+login_bonus:
+  text: "300召喚Pと\n3000ギルをプレゼント！\nプレゼントから受け取ってね♪"
+  text_0621: "300召喚Pと\n3000ギルをプレゼント！\nプレゼントボックスから\n受け取ってね♪\n50MP回復したよ♪"
+  gacha_p: 300
+  virtual_money: 3000
+  mp: 50
+
+tutorial:
+  reward_comment: チュートリアル突破の報酬です。
+  reward:
+    1:
+      type: card
+      id: 340053
+      cnt: 1
+    2:
+      type: item
+      id: 1
+      cnt: 1
+    3:
+      type: virtual_money
+      cnt: 3000
+    4:
+      type: gacha_p
+      cnt: 1000
+    5:
+      type: item
+      id: 4
+      cnt: 1
+
+social_bonus:
+  clanbattle:
+    add_mp: 40
+  invite_campaign:
+    bonus_point: 200
+  bonus_name:
+    0: '招待キャンペーン'
+    1: 'クランバトル'
+  type_name:
+    0: 'Twitter'
+    1: 'Facebook'
+
+# ゲーム内掲示板設定
+bbs:
+  # 掲示板タイプ
+  type:
+    # 雑談
+    talk: 1
+    # 攻略
+    capture: 2
+    # エール
+    yell: 3
+  #トピック
+  topic:
+    #タイトル最大文字数
+    title_length: 20
+    #本文最大文字数
+    body_length: 200
+    #１日のトピック立て制限
+    one_day_limit: 10
+  #返信
+  reply:
+    #本文最大文字数
+    body_length: 500
+    #１日のレス制限
+    one_day_limit: 10
+
+# ランキング
+ranking:
+  # weekly
+  weekly:
+    # 集計開始曜日
+    start_total_clan_point: 1
+  # monthly
+  monthly:
+    # 集計開始日
+    start_total_clan_point: 1
+
+# デイリークエスト
+dailyquest:
+  enable: true
+  daily_size: 1
+
+# MPCrossPromo
+mppromo:
+  MP_GAME_ID_IMM_DE: 'immde'
+  MP_SECRET_KEY_IMM_DE: '1s3tF1r3t0tH3R41n'
+  MP_PROMOTION_ID: '1'
+  MP_SERIAL_URL: 'http://mp-test.aeriagames.com/'
+
+# Passive skills - limits
+passive_skill_limit:
+  # MP redution upper limit
+  use_mp_down_max_down_limit: 3
+  # MP redution lower limit
+  use_mp_down_min_point: 1

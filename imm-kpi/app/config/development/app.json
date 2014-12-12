@@ -1,0 +1,98 @@
+{
+    "apps": {
+        "1": "bushin",
+        "2": "monster",
+        "3": "sangoku",
+        "4": "clanbattle",
+        "5": "immen",
+        "6": "immde",
+        "7": "immfr",
+        "8": "immru"
+    },
+    "logDir": {
+        "1": [
+            "/var/log/httpd/access_log.1"
+        ],
+        "2": [
+            "/var/log/httpd/access_log.1"
+        ],
+        "3": [
+            "/var/log/httpd/access_log.1"
+        ],
+        "4": [
+            "/var/log/httpd/access_log.1"
+        ],
+        "5": [
+            "/tmp/access-imm.gz",
+			"/tmp/access-imm.gz",
+		    "/tmp/access-imm.gz",
+			"/tmp/access-imm.gz",
+			"/tmp/access-imm.gz",
+			"/tmp/access-imm.gz"
+        ],
+        "6": [
+            "/tmp/access-imm.gz",
+			"/tmp/access-imm.gz",
+		    "/tmp/access-imm.gz",
+			"/tmp/access-imm.gz"
+        ],
+        "7": [
+            "/tmp/access-imm.gz",
+			"/tmp/access-imm.gz",
+		    "/tmp/access-imm.gz",
+			"/tmp/access-imm.gz"
+        ],
+        "8": [
+            "/tmp/access-imm.gz",
+			"/tmp/access-imm.gz",
+		    "/tmp/access-imm.gz",
+			"/tmp/access-imm.gz"
+        ]
+    },
+    "tmpLogDir": {
+        "1": [
+            "/tmp/access_log"
+        ],
+        "2": [
+            "/tmp/access_log"
+        ],
+        "3": [
+            "/tmp/access_log"
+        ],
+        "4": [
+            "/tmp/access_log"
+        ],
+        "5": [
+            "/tmp/access_imm_en_log.1",
+			"/tmp/access_imm_en_log.2",
+			"/tmp/access_imm_en_log.3",
+			"/tmp/access_imm_en_log.4",
+			"/tmp/access_imm_en_log.5",
+			"/tmp/access_imm_en_log.6"
+        ],
+        "6": [
+            "/tmp/access_imm_de_log.1",
+			"/tmp/access_imm_de_log.2",
+			"/tmp/access_imm_de_log.3",
+			"/tmp/access_imm_de_log.4"
+        ],
+        "7": [
+            "/tmp/access_imm_fr_log.1",
+			"/tmp/access_imm_fr_log.2",
+			"/tmp/access_imm_fr_log.3",
+			"/tmp/access_imm_fr_log.4"
+        ],
+        "8": [
+            "/tmp/access_imm_ru_log.1",
+			"/tmp/access_imm_ru_log.2",
+			"/tmp/access_imm_ru_log.3",
+			"/tmp/access_imm_ru_log.4"
+        ]
+    },
+    "timezone": {
+        "5": "America/Los_Angeles",
+ 	    "6": "Europe/Berlin",
+        "7": "Europe/Paris",
+        "8": "Europe/Moscow"
+	}
+}

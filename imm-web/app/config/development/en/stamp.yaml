@@ -1,0 +1,777 @@
+---
+#スタンプ
+# カードid(915)は開発環境に無いので623に変更
+#201210:
+#    # イベント開始日
+#    start_date: 12
+#
+#    # 1日に押すスタンプ数
+#    stamp_pushes_count: 1
+#    
+#    # 日数
+#    date_count: 1
+#    
+#    # イベントの開催月
+#    stamp_month: 10gatu
+#    
+#    # セル数
+#    cell: 25
+#    
+#    # 非表示セル（設定した数値以降を非表示）
+#    disableCells: 26
+#    
+#    # 達成条件を設定
+#    achievement_condition:
+#        0: 
+#            achievementNum: 10000
+#            type: "card"
+#            #id: 915
+#            id: 653
+#            onImg: 10000btn_on
+#            offImg: 10000btn_off
+#    
+#    # 到達条件その1（10月は10000人）    
+#    # achievement_first: 10000
+#    
+#    # プレゼントコメント1
+#    present_comment_1 : "【スタンプラリーイベント】スタンプ"
+#    
+#    # プレゼントコメント2
+#    present_comment_2 : "個目の報酬です。"
+#    
+#    # プレゼントコメント3
+#    present_comment_3 : "スタンプラリーイベント"
+#    
+#    # プレゼントコメント4
+#    present_comment_4 : "人突破報酬です。"
+#
+#    # 到達報酬カードのマスターID
+#    #achievement_present_card: 915
+#    achievement_present_card: 653
+#    
+#    # プレゼントするカード情報（カードマスタIDとカード画像）
+#    present_card: 
+#        #915: "card1"
+#        #653: "card1"
+#        #612: "card2"
+#        349052: 612
+#        612: 349052
+#    
+#    # プレゼントするアイテム情報アイテム（IDと画像名）
+#    present_item: 
+#        #2: "medicine1"
+#        #3: "medicine2"
+#        #1: "ticket"
+#        5: 2
+#        1: 7
+#        12: 23
+#        6: 4
+#
+#    # スタンプコンプリート報酬
+#    stamp_comp:
+#        25:
+#         type: "item"
+#         num: 1
+#         id: 1
+#         commnet: "【スタンプラリーイベント】特別ボーナス報酬です"
+#         
+#    # typeは配布報酬の種類を記載　card, virtual_money, gacha_p, item
+#    # numは配布個数
+#    # idは配布報酬のアイテム・カードマスタID
+#    stamp_present_list:
+#        1:
+#         type: "item"
+#         num: 1
+#         id: 2
+#        4:
+#         type: "item"
+#         num: 1
+#         id: 1
+#        7:
+#         type: "card"
+#         num: 1
+#         #id: 915
+#         id: 653
+#        10:
+#         type: "virtual_money"
+#         num: 20000
+#        13:
+#         type: "card"
+#         num: 1
+#         #id: 915
+#         id: 653
+#        16:
+#         type: "gacha_p"
+#         num: 5000
+#        19:
+#         type: "card"
+#         num: 1
+#         id: 612
+#        25:
+#         type: "card"
+#         num: 1
+#         #id: 915
+#         id: 653
+#
+#    # 'cell' の数以上が押された場合の報酬 
+#    stamp_present_over:
+#         type: "item"
+#         num: 1
+#         id: 2
+
+battle_stamprally_1:
+    # 期間
+    start_date: '2012-11-30 10:00:00'
+    end_date: '2012-12-31 23:59:59'
+
+    # イベント開始日
+    #start_date: 12
+
+    # 1日に押すスタンプ数
+    stamp_pushes_count: 1
+
+    # 日数
+    date_count: 1
+
+    # イベントの開催月
+    stamp_month: 10gatu
+
+    # セル数
+    #cell: 25
+    cell: 12
+
+    # 非表示セル（設定した数値以降を非表示）
+    #disableCells: 26
+    disableCells: 13
+
+
+    # 達成条件を設定
+    achievement_condition:
+        0:
+            achievementNum: 10000
+            type: "card"
+            #id: 915
+            id: 653
+            onImg: 10000btn_on
+            offImg: 10000btn_off
+
+    # 到達条件その1（10月は10000人）
+    # achievement_first: 10000
+
+    # プレゼントコメント1
+    present_comment_1 : "【スタンプラリーイベント】スタンプ%count%個目の報酬です。"
+
+    # プレゼントコメント2
+    present_comment_2 : ""
+
+    # プレゼントコメント3
+    present_comment_3 : "スタンプラリーイベント%count%人突破報酬です。"
+
+    # プレゼントコメント4
+    present_comment_4 : ""
+
+    # 到達報酬カードのマスターID
+    #achievement_present_card: 915
+    achievement_present_card: 653
+
+    # プレゼントするカード情報（カードマスタIDとカード画像）
+    present_card:
+        #915: "card1"
+        #653: "card1"
+        #612: "card2"
+        340052: 612
+        612: 340052
+
+    # プレゼントするアイテム情報アイテム（IDと画像名）
+    present_item:
+        #2: "medicine1"
+        #3: "medicine2"
+        #1: "ticket"
+        5: 2
+        1: 7
+        12: 23
+        6: 4
+        4: 1
+    # スタンプコンプリート報酬
+    #stamp_comp:
+    #    25:
+    #     type: "item"
+    #     num: 1
+    #     id: 1
+    #     commnet: "【スタンプラリーイベント】特別ボーナス報酬です"
+
+    # typeは配布報酬の種類を記載　card, virtual_money, gacha_p, item
+    # numは配布個数
+    # idは配布報酬のアイテム・カードマスタID
+    stamp_present_list:
+        # [自分用]進撃Pハーフチャージ
+        1:
+         type: "item"
+         num: 1
+         id: 5
+         label: "[自分用]進撃Pハーフチャージ"
+        # ギル
+        2:
+         type: "virtual_money"
+         num: 3000
+         label: "ギル"
+        # 召喚P
+        3:
+         type: "gacha_p"
+         num: 1000
+         label: "召喚P"
+        # レアチケット
+
+        4:
+         type: "item"
+         num: 1
+         id: 1
+         label: "レアチケット"
+         important: 1 # 目立たせるためのフラグ
+        # 強化クリスタルLv.1
+        5:
+         type: "card"
+         num: 1
+         id: 612
+         label: "強化クリスタルLv.1"
+        # [自分用]時の砂時計
+        6:
+         type: "item"
+         num: 1
+         id: 6
+         label: "[自分用]時の砂時計"
+        # [自分用]進撃P全チャージ
+        7:
+         type: "item"
+         num: 1
+         id: 4
+         label: "[自分用]進撃P全チャージ"
+        # オリオン
+        8:
+         type: "card"
+         num: 1
+         id: 340052
+         label: "オリオン"
+         important: 1
+        # ギル
+        9:
+         type: "virtual_money"
+         num: 3000
+         label: "ギル"
+        # 召喚P
+        10:
+         type: "gacha_p"
+         num: 1000
+         label: "召喚P"
+        # 強化クリスタルLv.1
+        11:
+         type: "card"
+         num: 2
+         id: 612
+         label: "強化クリスタルLv.1"
+        # オリオン
+        12:
+         type: "card"
+         num: 1
+         id: 340052
+         label: "オリオン"
+         important: 1
+
+    # 'cell' の数以上が押された場合の報酬
+    stamp_present_over:
+         type: "item"
+         num: 1
+         id: 2
+
+battle_stamprally_2:
+    # 期間
+    start_date: '2013-01-28 00:00:00'
+    end_date: '2013-02-10 23:59:59'
+
+    # イベント開始日
+    #start_date: 12
+
+    # 1日に押すスタンプ数
+    stamp_pushes_count: 1
+
+    # 日数
+    date_count: 1
+
+    # イベントの開催月
+    #stamp_month: 10gatu
+
+    # セル数
+    #cell: 25
+    cell: 12
+
+    # 非表示セル（設定した数値以降を非表示）
+    #disableCells: 26
+    disableCells: 13
+
+
+    # 達成条件を設定
+    #achievement_condition:
+    #    0:
+    #        achievementNum: 10000
+    #        type: "card"
+    #        #id: 915
+    #        id: 653
+    #        onImg: 10000btn_on
+    #        offImg: 10000btn_off
+
+    # 到達条件その1（10月は10000人）
+    # achievement_first: 10000
+
+    # プレゼントコメント1
+    present_comment_1 : "【スタンプラリーイベント】スタンプ%count%個目の報酬です。"
+
+    # プレゼントコメント2
+    present_comment_2 : ""
+
+    # プレゼントコメント3
+    present_comment_3 : "スタンプラリーイベント%count%人突破報酬です。"
+
+    # プレゼントコメント4
+    present_comment_4 : ""
+
+    # 到達報酬カードのマスターID
+    #achievement_present_card: 915
+    #achievement_present_card: 653
+
+    # プレゼントするカード情報（カードマスタIDとカード画像）
+    present_card:
+        #915: "card1"
+        #653: "card1"
+        #612: "card2"
+        612: "card_612"
+        240056: "card_240056"
+
+    # プレゼントするアイテム情報アイテム（IDと画像名）
+    present_item:
+        #2: "medicine1"
+        #3: "medicine2"
+        #1: "ticket"
+        5: "item_2"
+        1: "item_7"
+        12: "item_23"
+        6: "item_4"
+        4: "item_1"
+    # スタンプコンプリート報酬
+    #stamp_comp:
+    #    25:
+    #     type: "item"
+    #     num: 1
+    #     id: 1
+    #     commnet: "【スタンプラリーイベント】特別ボーナス報酬です"
+
+    # typeは配布報酬の種類を記載　card, virtual_money, gacha_p, item
+    # numは配布個数
+    # idは配布報酬のアイテム・カードマスタID
+    stamp_present_list:
+        # [自分用]進撃Pハーフチャージ
+        1:
+         type: "item"
+         num: 1
+         id: 5
+         label: "[自分用]進撃Pハーフチャージ"
+        # ギル
+        2:
+         type: "virtual_money"
+         num: 3000
+         label: "ギル"
+        # 召喚P
+        3:
+         type: "gacha_p"
+         num: 1000
+         label: "召喚P"
+        # レアチケット
+        4:
+         type: "item"
+         num: 1
+         id: 1
+         label: "レアチケット"
+         important: 1 # 目立たせるためのフラグ
+        # 強化クリスタルLv.1
+        5:
+         type: "card"
+         num: 1
+         id: 612
+         label: "強化クリスタルLv.1"
+        # [自分用]時の砂時計
+        6:
+         type: "item"
+         num: 1
+         id: 6
+         label: "[自分用]時の砂時計"
+        # [自分用]進撃P全チャージ
+        7:
+         type: "item"
+         num: 1
+         id: 4
+         label: "[自分用]進撃P全チャージ"
+        # オリオン
+        8:
+         type: "card"
+         num: 1
+         id: 240056
+         label: "春待ちしベルセポネ"
+         important: 1
+        # ギル
+        9:
+         type: "virtual_money"
+         num: 3000
+         label: "ギル"
+        # 召喚P
+        10:
+         type: "gacha_p"
+         num: 1000
+         label: "召喚P"
+        # 強化クリスタルLv.1
+        11:
+         type: "card"
+         num: 2
+         id: 612
+         label: "強化クリスタルLv.1"
+        # オリオン
+        12:
+         type: "card"
+         num: 1
+         id: 240056
+         label: "春待ちしベルセポネ"
+         important: 1
+
+    # 'cell' の数以上が押された場合の報酬
+    #stamp_present_over:
+    #     type: "item"
+    #     num: 1
+    #     id: 2
+
+battle_stamprally_3:
+    # 期間
+    start_date: '2013-02-11 00:00:00'
+    end_date: '2013-02-25 23:59:59'
+
+    # イベント開始日
+    #start_date: 12
+
+    # 1日に押すスタンプ数
+    stamp_pushes_count: 1
+
+    # 日数
+    date_count: 1
+
+    # イベントの開催月
+    #stamp_month: 10gatu
+
+    # セル数
+    #cell: 25
+    cell: 12
+
+    # 非表示セル（設定した数値以降を非表示）
+    #disableCells: 26
+    disableCells: 13
+
+
+    # 達成条件を設定
+    #achievement_condition:
+    #    0:
+    #        achievementNum: 10000
+    #        type: "card"
+    #        #id: 915
+    #        id: 653
+    #        onImg: 10000btn_on
+    #        offImg: 10000btn_off
+
+    # 到達条件その1（10月は10000人）
+    # achievement_first: 10000
+
+    # プレゼントコメント1
+    present_comment_1 : "【スタンプラリーイベント】スタンプ%count%個目の報酬です。"
+
+    # プレゼントコメント2
+    present_comment_2 : ""
+
+    # プレゼントコメント3
+    present_comment_3 : "スタンプラリーイベント%count%人突破報酬です。"
+
+    # プレゼントコメント4
+    present_comment_4 : ""
+
+    # 到達報酬カードのマスターID
+    #achievement_present_card: 915
+    #achievement_present_card: 653
+
+    # プレゼントするカード情報（カードマスタIDとカード画像）
+    present_card:
+        #915: "card1"
+        #653: "card1"
+        #612: "card2"
+        612: "card_612"
+        140061: "card_140061"
+
+    # プレゼントするアイテム情報アイテム（IDと画像名）
+    present_item:
+        #2: "medicine1"
+        #3: "medicine2"
+        #1: "ticket"
+        5: "item_2"
+        1: "item_7"
+        12: "item_23"
+        6: "item_4"
+        4: "item_1"
+    # スタンプコンプリート報酬
+    #stamp_comp:
+    #    25:
+    #     type: "item"
+    #     num: 1
+    #     id: 1
+    #     commnet: "【スタンプラリーイベント】特別ボーナス報酬です"
+
+    # typeは配布報酬の種類を記載　card, virtual_money, gacha_p, item
+    # numは配布個数
+    # idは配布報酬のアイテム・カードマスタID
+    stamp_present_list:
+        # [自分用]進撃Pハーフチャージ
+        1:
+         type: "item"
+         num: 1
+         id: 5
+         label: "[自分用]進撃Pハーフチャージ"
+        # ギル
+        2:
+         type: "virtual_money"
+         num: 3000
+         label: "ギル"
+        # 召喚P
+        3:
+         type: "gacha_p"
+         num: 1000
+         label: "召喚P"
+        # レアチケット
+        4:
+         type: "item"
+         num: 1
+         id: 1
+         label: "レアチケット"
+         important: 1 # 目立たせるためのフラグ
+        # 強化クリスタルLv.1
+        5:
+         type: "card"
+         num: 1
+         id: 612
+         label: "強化クリスタルLv.1"
+        # [自分用]時の砂時計
+        6:
+         type: "item"
+         num: 1
+         id: 6
+         label: "[自分用]時の砂時計"
+        # [自分用]進撃P全チャージ
+        7:
+         type: "item"
+         num: 1
+         id: 4
+         label: "[自分用]進撃P全チャージ"
+        # オリオン
+        8:
+         type: "card"
+         num: 1
+         id: 140061
+         label: "幸運のラクシュミ"
+         important: 1
+        # ギル
+        9:
+         type: "virtual_money"
+         num: 3000
+         label: "ギル"
+        # 召喚P
+        10:
+         type: "gacha_p"
+         num: 1000
+         label: "召喚P"
+        # 強化クリスタルLv.1
+        11:
+         type: "card"
+         num: 2
+         id: 612
+         label: "強化クリスタルLv.1"
+        # オリオン
+        12:
+         type: "card"
+         num: 1
+         id: 140061
+         label: "幸運のラクシュミ"
+         important: 1
+
+    # 'cell' の数以上が押された場合の報酬
+    #stamp_present_over:
+    #     type: "item"
+    #     num: 1
+    #     id: 2
+
+battle_stamprally_4:
+    # 期間
+    start_date: '2013-02-21 00:00:00'
+    end_date: '2013-03-14 23:59:59'
+
+    # イベント開始日
+    #start_date: 12
+
+    # 1日に押すスタンプ数
+    stamp_pushes_count: 1
+
+    # 日数
+    date_count: 1
+
+    # イベントの開催月
+    #stamp_month: 10gatu
+
+    # セル数
+    #cell: 25
+    cell: 12
+
+    # 非表示セル（設定した数値以降を非表示）
+    #disableCells: 26
+    disableCells: 13
+
+
+    # 達成条件を設定
+    #achievement_condition:
+    #    0:
+    #        achievementNum: 10000
+    #        type: "card"
+    #        #id: 915
+    #        id: 653
+    #        onImg: 10000btn_on
+    #        offImg: 10000btn_off
+
+    # 到達条件その1（10月は10000人）
+    # achievement_first: 10000
+
+    # プレゼントコメント1
+    present_comment_1 : "【スタンプラリーイベント】スタンプ%count%個目の報酬です。"
+
+    # プレゼントコメント2
+    present_comment_2 : ""
+
+    # プレゼントコメント3
+    present_comment_3 : "スタンプラリーイベント%count%人突破報酬です。"
+
+    # プレゼントコメント4
+    present_comment_4 : ""
+
+    # 到達報酬カードのマスターID
+    #achievement_present_card: 915
+    #achievement_present_card: 653
+
+    # プレゼントするカード情報（カードマスタIDとカード画像）
+    present_card:
+        #915: "card1"
+        #653: "card1"
+        #612: "card2"
+        612: "card_612"
+        340075: "card_340075"
+
+    # プレゼントするアイテム情報アイテム（IDと画像名）
+    present_item:
+        #2: "medicine1"
+        #3: "medicine2"
+        #1: "ticket"
+        5: "item_2"
+        1: "item_7"
+        12: "item_23"
+        6: "item_4"
+        4: "item_1"
+    # スタンプコンプリート報酬
+    #stamp_comp:
+    #    25:
+    #     type: "item"
+    #     num: 1
+    #     id: 1
+    #     commnet: "【スタンプラリーイベント】特別ボーナス報酬です"
+
+    # typeは配布報酬の種類を記載　card, virtual_money, gacha_p, item
+    # numは配布個数
+    # idは配布報酬のアイテム・カードマスタID
+    stamp_present_list:
+        # [自分用]進撃Pハーフチャージ
+        1:
+         type: "item"
+         num: 1
+         id: 5
+         label: "[自分用]進撃Pハーフチャージ"
+        # ギル
+        2:
+         type: "virtual_money"
+         num: 3000
+         label: "ギル"
+        # 召喚P
+        3:
+         type: "gacha_p"
+         num: 1000
+         label: "召喚P"
+        # レアチケット
+        4:
+         type: "item"
+         num: 1
+         id: 1
+         label: "レアチケット"
+         important: 1 # 目立たせるためのフラグ
+        # 強化クリスタルLv.1
+        5:
+         type: "card"
+         num: 1
+         id: 612
+         label: "強化クリスタルLv.1"
+        # [自分用]時の砂時計
+        6:
+         type: "item"
+         num: 1
+         id: 6
+         label: "[自分用]時の砂時計"
+        # [自分用]進撃P全チャージ
+        7:
+         type: "item"
+         num: 1
+         id: 4
+         label: "[自分用]進撃P全チャージ"
+        # オリオン
+        8:
+         type: "card"
+         num: 1
+         id: 340075
+         label: "従順なモルジアナ"
+         important: 1
+        # ギル
+        9:
+         type: "virtual_money"
+         num: 3000
+         label: "ギル"
+        # 召喚P
+        10:
+         type: "gacha_p"
+         num: 1000
+         label: "召喚P"
+        # 強化クリスタルLv.1
+        11:
+         type: "card"
+         num: 2
+         id: 612
+         label: "強化クリスタルLv.1"
+        # オリオン
+        12:
+         type: "card"
+         num: 1
+         id: 340075
+         label: "従順なモルジアナ"
+         important: 1
+
+    # 'cell' の数以上が押された場合の報酬
+    #stamp_present_over:
+    #     type: "item"
+    #     num: 1
+    #     id: 2
+
+
+
+

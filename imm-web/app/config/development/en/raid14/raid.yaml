@@ -1,0 +1,595 @@
+# memchash_key変更しろよー
+conf:
+  # 開始時間&終了時間
+  start: 2014/04/18 17:00:00
+  end:   2014/05/30 18:59:59
+  # ムービーが変更される際の時間（設定がない場合は動作しない）
+  second_movie_start: 2014/04/25 17:00:00
+  second_period_start: 2014/04/27 17:00:00
+  
+  #使用css名解決（おそらく毎回語尾の数値が変わる）
+  css_class_name: raid_eve15
+
+  # 残りスタミナによるエンカウント補正閾値
+  # 残りスタミナ割合（空=0　～　満タン=1）
+  # 段階で数値の低い順に書いてください。
+  # 現状３つまで指定可能
+  # これより小さい場合にそれぞれの補正を適用
+  last_stamina_encount_rate:
+    # stamina_appear_rate0
+    - 0.1
+    # stamina_appear_rate1
+    - 0.3
+    # stamina_appear_rate2
+    - 0.5
+  # ポイントランキングを使うか？
+  use_point_ranking: 1
+
+  # レイド専用アイテム　イベント期間外は
+  raid_item:
+    # 勇士の結晶
+    -  24
+# 特定ボスの出現開始時間制御
+# ここで設定されているボスは、start 時間を過ぎるまで出てこないよ
+boss_appear_limit:
+  type:
+    - 4
+  start: '2014/04/18 17:00:00'
+
+#報酬カード情報（報酬の表示時に利用）
+reward_card_info:
+  reward_card_ssr_1:
+    id: 360224
+    name: 大陸警備団長トゥナイト
+    
+  reward_card_ssr_2:
+    id: 160210
+    name: 勇援の堕天使イポス
+    
+  reward_card_sr_1:
+    id: 350223
+    name: 黒衣の千年卿ガダーヴル
+    
+  reward_card_sr_2:
+    id: 140209
+    name: タール・シュロフ
+    
+  reward_card_sr_3:
+    id: 150208
+    name: マグネス・ベルネット
+    
+  reward_card_hr_1:
+    id: 240205
+    name: 狂気に満ちし殺戮者 J
+    
+
+# 特定ボスの出現率調整
+boss_appear_rate:
+  bonus_term_1:
+    #開始日時
+    note_text: "ボーナスボス出現率アップ"
+    #開始日時
+    start_time: 2014-04-18 17:00:00
+    #終了日時
+    end_time: 2014-04-18 23:59:59
+    #確率変更内容cluster_id,boss_type, next_boss_typeの順で値はrateの値
+    rate:
+      1-0-5: 3000
+      2-0-5: 3000
+      3-0-5: 2500
+      4-0-5: 3000
+      5-0-5: 3000
+      6-0-5: 2500
+      7-0-5: 3000
+      8-0-5: 3000
+      9-0-5: 2500
+  bonus_term_2:
+    #開始日時
+    note_text: "裏ボス出現率アップ"
+    #開始日時
+    start_time: 2014-04-20 17:00:00
+    #終了日時
+    end_time: 2014-04-20 23:59:59
+    #確率変更内容cluster_id,boss_type, next_boss_typeの順で値はrateの値
+    rate:
+      1-1-4: 3000
+      2-1-4: 3000
+      3-1-4: 2500
+      4-1-4: 3000
+      5-1-4: 3000
+      6-1-4: 2500
+      7-1-4: 3000
+      8-1-4: 3000
+      9-1-4: 2500
+  bonus_term_3:
+    #開始日時
+    note_text: "ボーナスボス出現率アップ"
+    #開始日時
+    start_time: 2014-04-22 11:00:00
+    #終了日時
+    end_time: 2014-04-22 23:59:59
+    #確率変更内容cluster_id,boss_type, next_boss_typeの順で値はrateの値
+    rate:
+      1-0-5: 3000
+      2-0-5: 3000
+      3-0-5: 2500
+      4-0-5: 3000
+      5-0-5: 3000
+      6-0-5: 2500
+      7-0-5: 3000
+      8-0-5: 3000
+      9-0-5: 2500
+  bonus_term_4:
+    #開始日時
+    note_text: "裏ボス・ボーナスボス出現率アップ"
+    #開始日時
+    start_time: 2014-04-24 00:00:00
+    #終了日時
+    end_time: 2014-04-24 18:59:59
+    #確率変更内容cluster_id,boss_type, next_boss_typeの順で値はrateの値
+    rate:
+      1-0-5: 3000
+      2-0-5: 3000
+      3-0-5: 2500
+      4-0-5: 3000
+      5-0-5: 3000
+      6-0-5: 2500
+      7-0-5: 3000
+      8-0-5: 3000
+      9-0-5: 2500
+      1-1-4: 3000
+      2-1-4: 3000
+      3-1-4: 2500
+      4-1-4: 3000
+      5-1-4: 3000
+      6-1-4: 2500
+      7-1-4: 3000
+      8-1-4: 3000
+      9-1-4: 2500
+
+raid_battle:
+  # クリティカル係数
+  critical_fact:
+    1.5
+  # 神水フラグ
+  usable_special_item:
+    1
+  # 使用可能期間は↓のショップ定義と連動させました
+  shinsui_shop_def: shinsui_sell
+  # 神水係数
+  item_fact:
+    1.5
+  # 使用冒Pリスト
+  stamina:
+    - 20
+    - 40
+    - 60
+  # 冒P補正
+  stamina_correct:
+    - 0.3
+    - 0.7
+    - 1.3
+  # 逃亡時使用冒険P
+  escape_cost: 20
+  # 協力攻撃ボーナス係数
+  # 他人が発見したボスを殴った時獲得ポイント係数
+  cooperation_damage_bonus:
+    1.2
+
+  # 対レイドボス特殊カード
+  special_card:
+    # 結果ポイント補正
+    type_result_point:
+#      1226: 1.2
+#      1227: 1.2
+#      1228: 1.2
+#      1229: 1.2
+#      # ラビリンス
+#      1354: 1.5
+#      1355: 1.5
+#      1356: 1.5
+#      1357: 1.5
+#      # ターリア
+#      1358: 1.2
+#      1359: 1.2
+#      1360: 1.2
+#      1361: 1.2
+
+    # ダメージ○倍
+    type_damage:
+
+      # 奇跡の千年王ラグノス1世 SR
+      150211: 2
+      151211: 2.5
+      152211: 3
+      159211: 4
+
+      # 勇猛たる剣闘士ガルデバラン HR
+      340225: 1.2
+      341225: 1.35
+      342225: 1.5
+      349225: 1.7
+
+      # 槍撃の獣戦姫ミラ HR
+      140212: 1.2
+      141212: 1.35
+      142212: 1.5
+      149212: 1.7
+
+      # 大平原の闘女サバンナコマンサ R
+      230207: 1.1
+      231207: 1.2
+      232207: 1.3
+      239207: 1.5
+
+      # 冷酷なる女剣士オイフェ R
+      330226: 1.1
+      331226: 1.2
+      332226: 1.3
+      339226: 1.5
+
+      # 大陸警備団長トゥナイト SSR
+      360224: 7
+      361224: 8
+      362224: 9
+      363224: 10
+
+
+    # クリティカル○倍
+    #今回は使用しないけど、値が入ってないとエラーになるのでダミーカードを他カードと同じ1倍で設定
+#    type_critical:
+#      # パンプキン・プリンセス
+#      1181: 1
+#      1182: 1
+#      1183: 1
+#      1184: 1
+
+  # 対レイドボス特殊カード
+  boss_special_card:
+    4: #boss_type
+      # 大陸の支配者ラグノス15世
+      260206: 14
+      261206: 16
+      262206: 18
+      263206: 20
+    0: #boss_type
+      # 大陸の支配者ラグノス15世
+      260206: 7
+      261206: 8
+      262206: 9
+      263206: 10
+    1: #boss_type
+      # 大陸の支配者ラグノス15世
+      260206: 7
+      261206: 8
+      262206: 9
+      263206: 10
+    2: #boss_type
+      # 大陸の支配者ラグノス15世
+      260206: 7
+      261206: 8
+      262206: 9
+      263206: 10
+    3: #boss_type
+      # 大陸の支配者ラグノス15世
+      260206: 7
+      261206: 8
+      262206: 9
+      263206: 10
+    5: #boss_type
+      # 大陸の支配者ラグノス15世
+      260206: 7
+      261206: 8
+      262206: 9
+      263206: 10
+
+# 報酬
+reward:
+  # 回復MP (回復量: 確率)
+  recover_mp:
+    10: 90
+    20: 9
+    30: 1
+
+  # 回復冒P (使用冒険P　数値以上判定: 回復冒険P)
+  recover_stamina:
+    0: 0
+    60: 20
+    180: 40
+
+  # roulette報酬
+  roulette_bonus_lot: 100
+  roulette_bonus:
+    1:
+      lot: 116
+      type: stamina
+      effect_fact: 0
+      minute: 5
+    2:
+      lot: 116.5
+      type: stamina
+      effect_fact: 0.5
+      minute: 10
+    3:
+      lot: 16
+      type: exp
+      effect_fact: 2
+      minute: 5
+    4:
+      lot: 16.5
+      type: exp
+      effect_fact: 1.5
+      minute: 10
+    5:
+      lot: 16
+      type: boss
+      effect_fact: 2
+      minute: 5
+    6:
+      lot: 17
+      type: boss
+      effect_fact: 1.5
+      minute: 10
+    7:
+      lot: 1.4
+      type: item
+      id: 22
+      cnt: 1
+    8:
+      lot: 0.55
+      type: item
+      id: 22
+      cnt: 2
+    9:
+      lot: 0.05
+      type: item
+      id: 22
+      cnt: 3
+
+  # 撃破数によって特別card報酬
+#  piece_collection_bonus:
+#    # カウントするボスtype
+#    type:
+#      - 0
+#      - 1
+#      - 2
+#      - 3
+#      - 4
+#      - 5
+#    # 撃破数 X体でゲット
+#    piece_turn: 5
+#    # piece X個でゲット
+#    complete_cnt: 9
+#    #piece コンプで貰える報酬
+#    complete_bonus:
+#      1:
+#        type: card
+#        id: 350170
+#        cnt: 1
+#    bonus_limit: 4
+
+  # 特別撃破報酬
+  smash_bonus:
+    disp_name: 'レイドボス'
+    # カウントするボスtype
+    type:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+    #ボス撃破報酬
+    array:
+      5:
+        type: item
+        id: 4
+        cnt: 1
+      10:
+        type: item
+        id: 22
+        cnt: 1
+      15:
+        type: item
+        id: 22
+        cnt: 1
+      20:
+        type: card
+        id: 612
+        cnt: 1
+      25:
+        type: item
+        id: 22
+        cnt: 1
+      30:
+        type: item
+        id: 22
+        cnt: 1
+      35:
+        type: item
+        id: 4
+        cnt: 1
+      40:
+        type: item
+        id: 22
+        cnt: 1
+      45:
+        type: item
+        id: 4
+        cnt: 2
+      50:
+        type: item
+        id: 22
+        cnt: 1
+      55:
+        type: item
+        id: 22
+        cnt: 1
+      60:
+        type: item
+        id: 22
+        cnt: 1
+      65:
+        type: item
+        id: 4
+        cnt: 2
+      70:
+        type: card
+        id: 613
+        cnt: 1
+      75:
+        type: item
+        id: 22
+        cnt: 1
+      80:
+        type: card
+        id: 614
+        cnt: 1
+      85:
+        type: item
+        id: 4
+        cnt: 2
+      90:
+        type: item
+        id: 22
+        cnt: 3
+      95:
+        type: item
+        id: 4
+        cnt: 2
+      100:
+        type: item
+        id: 22
+        cnt: 3
+      105:
+        type: card
+        id: 614
+        cnt: 1
+      110:
+        type: item
+        id: 22
+        cnt: 1
+      115:
+        type: card
+        id: 614
+        cnt: 1
+      120:
+        type: item
+        id: 4
+        cnt: 2
+      125:
+        type: card
+        id: 777
+        cnt: 1
+      130:
+        type: card
+        id: 614
+        cnt: 1
+      135:
+        type: item
+        id: 22
+        cnt: 1
+      140:
+        type: item
+        id: 4
+        cnt: 2
+      145:
+        type: card
+        id: 614
+        cnt: 1
+      150:
+        type: item
+        id: 22
+        cnt: 2
+      155:
+        type: item
+        id: 4
+        cnt: 2
+      160:
+        type: card
+        id: 614
+        cnt: 1
+      165:
+        type: card
+        id: 777
+        cnt: 1
+      170:
+        type: item
+        id: 4
+        cnt: 2
+      175:
+        type: card
+        id: 614
+        cnt: 1
+      180:
+        type: item
+        id: 22
+        cnt: 1
+      185:
+        type: item
+        id: 4
+        cnt: 2
+      190:
+        type: item
+        id: 22
+        cnt: 1
+      195:
+        type: card
+        id: 614
+        cnt: 1
+      200:
+        type: item
+        id: 22
+        cnt: 3
+    repeat:
+      start: 210
+      interval: 10
+      reward:
+        type: item
+        id: 55
+        cnt: 5
+
+
+## n階層到達で報酬:　ケラピ―（R）330082
+#  quest_boss:
+#    25:
+#      comment: '氷結の塔　第25ステージクリア報酬です。'
+#      reward:
+#        -
+#          type: card
+#          id: 330082
+#          cnt: 1
+#    50:
+#      comment: '氷結の塔　第50ステージクリア報酬です。'
+#      reward:
+#        -
+#          type: card
+#          id: 330082
+#          cnt: 1
+#    75:
+#      comment: '氷結の塔　第75ステージクリア報酬です。'
+#      reward:
+#        -
+#          type: card
+#          id: 330082
+#          cnt: 1
+#    100:
+#      comment: '氷結の塔　第100ステージクリア報酬です。'
+#      reward:
+#        -
+#          type: card
+#          id: 330082
+#          cnt: 1
+#  # 討伐お礼
+#  present_send:
+#    comment: '協力してくれてありがとう。'
+#    list:
+#      -
+#        type: card
+#        id: 612
+#        cnt: 1
+# お礼メッセージデフォルトテキスト
+greet:
+  default_message:
+    # 配列で複数入れておくと、ランダムで選択されます
+    - '参戦してくれてありがとう'

@@ -1,0 +1,28 @@
+application:
+  latest_app_version: '1.0'
+  minimum_app_version: '1.0'
+  navigate_to_appstore: true
+  appstore_url: "http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=552242059&mt=8"
+
+  url_whitelist:
+    # [format] <match string>: <match type>
+    #   match type: 11 url prefix match
+    #               12 url perfect match
+    #               13 url suffix match
+    #               21 domain prefix match
+    #               22 domain perfect match
+    #               23 domain suffix match
+    webview:
+      "platform.pokelabo.jp": 22
+      ".platform.pokelabo.jp": 23
+    browser:
+      "itunes.apple.com": 22
+    twitter:
+      "https://api.twitter.com/oauth/authenticate": 11
+      "https://api.twitter.com/intent/session": 11
+    facebook:
+      "m.facebook.com": 22
+      "https://www.facebook.com/dialog/": 11
+      "http://www.facebook.com/dialog/": 11
+      "https://www.facebook.com/login.php": 11
+      "http://www.facebook.com/login.php": 11

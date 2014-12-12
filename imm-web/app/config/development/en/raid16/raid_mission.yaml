@@ -1,0 +1,84 @@
+---
+mission:
+  # アイテム抽選までの歩数
+  step_cnt_min: 3
+  step_cnt_max: 4
+  # MP強制提出
+  force_mp_drop_cnt: 2
+  # 最終エリア
+  final_area: 5
+  # エリア開始ID
+  area_id_1st: 1
+  # ステージ開始ID
+  stage_id_1st: 1
+  # クエストクリアステップ
+  stage_clear_step: 100
+  # ステージ設定取得カード最大数
+  defined_drop_card_cnt: 10
+  # ステージクリア時に取得可能なパラメータ値
+  gain_param_point_per_clear: 1
+  # スタートダッシュボーナスの期間
+  base_start_bonus_period_sec: 86400
+  # ステージ道中でドロップするカードの種類の最大数
+  stage_drop_card_type_num_max: 10
+  # ステージ道中でドロップするアイテムの種類の最大数
+  stage_drop_item_type_num_max: 10
+  # ボスからドロップするアイテムの種類の最大数
+  boss_drop_item_type_num_max: 10
+  # ボスからドロップするカードの種類の最大数
+  boss_drop_card_type_num_max: 10
+  # ボスからドロップするアイテムの最大数
+  boss_drop_item_max: 5
+  # １回のアクセスで進む最大ステップ数
+  max_step_by_one_access: 4
+  # 進撃中のインフォで出力するメッセージ
+  info_message: ただ今進撃リニューアル中です
+  # 一度のアクセスで進む最大ステップ数
+  max_step_by_one_access: 4
+  # 進撃中スタミナ消費がかからないレベルのMAX
+  no_use_stamina_level_max: 20
+  # ボス戦で選択可能に表示させるユーザー数（上位ｎ名）
+  boss_help_friend_max: 3
+  # ボス戦でのアイテムドロップ時の確率最大数
+  boss_drop_rate_max: 10000
+
+#進撃イベントID解決
+mission_event_id:
+  #イベントなし
+  no_event: 0
+  #ラッキーエッグ獲得
+  luckyegg: 1
+  #カード獲得
+  card: 2
+  #カード獲得後売却
+  card_sell: 6
+  #ガチャポイント獲得
+  gacha_point: 3
+  #MP獲得
+  mp: 4
+  #レベルアップ
+  levelup: 5
+  #次画面遷移
+  transitions: 100
+
+#各マップごとの最大エリアIDを取得
+disp_area_map:
+  max_disp_area_map_id: 1
+
+#会話演出からの戻りURL解決
+story_back:
+  #育成結果画面
+  raise_result: /raid_raise_event/raise_result
+
+#画面テンプレート解決
+template_name:
+  #ミッショントップ画面（エリア選択画面）
+  mission_top: raid_raise_event/mission_area_top
+  #ステージアクセス画面
+  stage: raid_raise_event/mission_stage
+  #ステージ結果画面
+  stage_result: raid_raise_event/mission_result
+  #体力切れ画面
+  mission_empty: raid_raise_event/mission_empty
+  #ストーリー画面
+  play_story: raid_raise_event/play_story

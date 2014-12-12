@@ -1,0 +1,14 @@
+# メダルショップ設定
+medal_shop:
+# 説明書は development/event/medal_shop.yaml
+
+  # サンプルイベント
+#  event1:
+#    start: "2012-08-13 17:50"
+#    end: "2012-08-20 22:59"
+#    medal_item_list:
+#      # 期間限定アイテムセット
+#      -
+#        id: 1
+#        limit_num: 3
+#        can_buy: 1

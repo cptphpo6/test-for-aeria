@@ -1,0 +1,440 @@
+#####################################
+###########<<  前半報酬  >>############
+#####################################
+
+# レイド報酬有効？
+enable: 1
+
+# 配布番号（数値は配布日のYYMMDD＋100からの連番）
+compensation:
+  # 前半個人ランキング
+  type_personal_ranker: 310714100
+  # 前半個人キリ番
+  type_personal_just: 310714101
+  # 前半騎士団ランキング
+  type_guild_ranker: 310714102
+  # 神水変換
+  type_item_change: 310714103
+  # 受け取り有効期間
+  valid_time: '2014/09/01 00:00'
+  
+display_card_ids:
+  # Vertulio
+  - 150222
+  # Advisor Layla
+  - 140219
+display_card_ids_personal:
+  # Vertulio
+  - 150222
+  # Advisor Layla
+  - 140219
+  
+display_card_ids_guild:
+  # Vertulio
+  - 150222
+  # Advisor Layla
+  - 140219
+
+# 報酬配布時コメントの置換に使用
+event_name: 'Egoistic Princess'
+
+# 前半個人
+personal:
+  ranker:
+    # 1~1位
+    1:
+      rank_title: '1st Place'
+      subject: 'Egoistic Princess Reward for 1st Place in Part 1 Personal Ranking'
+      body: 'Egoistic Princess <br/>Reward for 1st Place in Part 1 Personal Ranking.'
+      comment: 'Egoistic Princess Reward for 1st Place in Part 1 Personal Ranking.'
+      items:
+        # LR Choice Box
+        - type: item
+          id: 1721
+          cnt: 1
+        # LR Choice Box
+        - type: item
+          id: 1721
+          cnt: 1
+        # Choice box Guardian Aleenade (MR)
+        - type: item
+          id : 1712
+          cnt : 1
+        # Choice box Thief Lord Silvia (MR)	  
+        - type: item
+          id : 1713
+          cnt : 1
+        # Choice box Thief Lord Silvia (MR)	  
+        - type: item
+          id : 1713
+          cnt : 1
+    # 2-3位
+    3:
+      rank_title: '2-3rd Place'
+      subject: 'Egoistic Princess Reward for 2-3rd Place in Part 1 Personal Ranking'
+      body: 'Egoistic Princess <br/>Reward for 2-3rd Place in Part 1 Personal Ranking.'
+      comment: 'Egoistic Princess Reward for 2-3rd Place in Part 1 Personal Ranking.'
+      items:
+        # LR Choice Box
+        - type: item
+          id: 1721
+          cnt: 1
+        # Choice box Guardian Aleenade  (MR)
+        - type: item
+          id: 1712
+          cnt: 1
+        # Choice box Thief Lord Silvia (MR)
+        - type: item
+          id : 1713
+          cnt : 1
+        # Lucky box Guardian Aleenade  (MR)	  
+        - type: item
+          id : 1714
+          cnt : 1
+        # Lucky box Thief Lord Silvia (MR)	  
+        - type: item
+          id : 1716
+          cnt : 1
+    # 4-5位
+    5:
+      rank_title: '4-5th Place'
+      subject: 'Egoistic Princess Reward for 4-5th Place in Part 1 Personal Ranking'
+      body: 'Egoistic Princess <br/>Reward for 4-5th Place in Part 1 Personal Ranking.'
+      comment: 'Egoistic Princess Reward for 4-5th Place in Part 1 Personal Ranking.'
+      items:
+        # Choice box Guardian Aleenade  (MR)
+        - type: item
+          id: 1712
+          cnt: 1
+        # Lucky box Guardian Aleenade  (MR)
+        - type: item
+          id: 1714
+          cnt: 1
+        # Choice box Thief Lord Silvia (MR)
+        - type: item
+          id : 1713
+          cnt : 1
+        # Lucky box Thief Lord Silvia (MR)  
+        - type: item
+          id : 1716
+          cnt : 1
+        # Vertulio 
+        - type: card
+          id : 150222
+          cnt : 5
+    # 6-10位
+    10:
+      rank_title: '6-10th Place'
+      subject: 'Egoistic Princess Reward for 6-10th Place in Part 1 Personal Ranking'
+      body: 'Egoistic Princess <br/>Reward for 6-10th Place in Part 1 Personal Ranking.'
+      comment: 'Egoistic Princess Reward for 6-10th Place in Part 1 Personal Ranking.'
+      items:
+        # Lucky box Guardian Aleenade  (MR)
+        - type: item
+          id: 1714
+          cnt: 1
+        # Choice box Thief Lord Silvia (MR)
+        - type: item
+          id: 1713
+          cnt: 1
+        # Lucky box Thief Lord Silvia (MR)
+        - type: item
+          id : 1716
+          cnt : 1
+        # Vertulio 
+        - type: card
+          id : 150222
+          cnt : 5
+        # Magic Crystal
+        - type: card
+          id : 777
+          cnt : 2
+    # 11-25位
+    25:
+      rank_title: '11-25th Place'
+      subject: 'Egoistic Princess Reward for 11-25th Place in Part 1 Personal Ranking'
+      body: 'Egoistic Princess <br/>Reward for 11-25th Place in Part 1 Personal Ranking.'
+      comment: 'Egoistic Princess Reward for 11-25th Place in Part 1 Personal Ranking.'
+      items:
+        # Lucky box Guardian Aleenade  (MR)
+        - type: item
+          id: 1714
+          cnt: 1
+        # Choice box Thief Lord Silvia (MR)
+        - type: item
+          id: 1713
+          cnt: 1
+        # Vertulio 
+        - type: card
+          id : 150222
+          cnt : 3
+        # Magic Crystal
+        - type: card
+          id : 777
+          cnt : 1
+        # Gemme Sacrée Lvl 3
+        - type: card
+          id : 614
+          cnt : 3
+    # 26-50位
+    50:
+      rank_title: '26-50th Place'
+      subject: 'Egoistic Princess Reward for 26-50th Place in Part 1 Personal Ranking'
+      body: 'Egoistic Princess <br/>Reward for 26-50th Place in Part 1 Personal Ranking.'
+      comment: 'Egoistic Princess Reward for 26-50th Place in Part 1 Personal Ranking.'
+      items:
+        # Lucky box Guardian Aleenade  (MR)
+        - type: item
+          id: 1714
+          cnt: 1
+        # Lucky box Guardian Aleenade  (MR)
+        - type: item
+          id: 1714
+          cnt: 1
+        # Vertulio 
+        - type: card
+          id : 150222
+          cnt : 2
+        # Gemme Sacrée Lvl 2
+        - type: card
+          id : 613
+          cnt : 2
+        # Gemme Sacrée Lvl 3
+        - type: card
+          id : 614
+          cnt : 2
+    # 51-100位
+    100:
+      rank_title: '51-100th Place'
+      subject: 'Egoistic Princess Reward for 51-100th Place in Part 1 Personal Ranking'
+      body: 'Egoistic Princess <br/>Reward for 51-100th Place in Part 1 Personal Ranking.'
+      comment: 'Egoistic Princess Reward for 51-100th Place in Part 1 Personal Ranking.'
+      items:
+        # Lucky box Guardian Aleenade  (MR)
+        - type: item
+          id: 1714
+          cnt: 1
+        # Vertulio 
+        - type: card
+          id : 150222
+          cnt : 2
+        # Gemme Sacrée Lvl 2
+        - type: card
+          id : 613
+          cnt : 1
+        # Gemme Sacrée Lvl 3
+        - type: card
+          id : 614
+          cnt : 1
+        # Advisor Layla
+        - type: card
+          id: 140219
+          cnt: 4
+    # 101-250位
+    250:
+      rank_title: '101-250th Place'
+      subject: 'Egoistic Princess Reward for 101-250th Place in Part 1 Personal Ranking'
+      body: 'Egoistic Princess <br/>Reward for 101-250th Place in Part 1 Personal Ranking.'
+      comment: 'Egoistic Princess Reward for 101-250th Place in Part 1 Personal Ranking.'
+      items:
+        # Vertulio 
+        - type: card
+          id : 150222
+          cnt : 2
+        # Gemme Sacrée Lvl 2
+        - type: card
+          id : 613
+          cnt : 1
+        # Advisor Layla
+        - type: card
+          id: 140219
+          cnt: 3
+    # 251-500位
+    500:
+      rank_title: '251-500th Place'
+      subject: 'Egoistic Princess Reward for 251-500th Place in Part 1 Personal Ranking'
+      body: 'Egoistic Princess <br/>Reward for 251-500th Place in Part 1 Personal Ranking.'
+      comment: 'Egoistic Princess Reward for 251-500th Place in Part 1 Personal Ranking.'
+      items:
+        # Vertulio 
+        - type: card
+          id : 150222
+          cnt : 1
+        # Advisor Layla
+        - type: card
+          id: 140219
+          cnt: 2
+    # 501-1000位
+    1000:
+      rank_title: '501-1000th Place'
+      subject: 'Egoistic Princess Reward for 501-1000th Place in Part 1 Personal Ranking'
+      body: 'Egoistic Princess <br/>Reward for 501-1000th Place in Part 1 Personal Ranking.'
+      comment: 'Egoistic Princess Reward for 501-1000th Place in Part 1 Personal Ranking.'
+      items:
+        # Gemme Sacrée Niv. 1
+        - type: card
+          id : 612
+          cnt : 1
+        # Advisor Layla
+        - type: card
+          id: 140219
+          cnt: 2
+    # 1001-2500位
+    2500:
+      rank_title: '1001-2500th Place'
+      subject: 'Egoistic Princess Reward for 1001-2500th Place in Part 1 Personal Ranking'
+      body: 'Egoistic Princess <br/>Reward for 1001-2500th Place in Part 1 Personal Ranking.'
+      comment: 'Egoistic Princess Reward for 1001-2500th Place in Part 1 Personal Ranking.'
+      items:
+        # Gemme Sacrée Niv. 1
+        - type: card
+          id : 612
+          cnt : 1
+        # Advisor Layla
+        - type: card
+          id: 140219
+          cnt: 1
+    # 2501-5000
+    5000:
+      rank_title: '2501-5000th Place'
+      subject: 'Egoistic Princess Reward for 2501-5000th Place in Part 1 Personal Ranking'
+      body: 'Egoistic Princess <br/>Reward for 2501-5000th Place Place in Part 1 Personal Ranking.'
+      comment: 'Egoistic Princess Reward for 2501-5000th Place Place in Part 1 Personal Ranking.'
+      items:  
+        # Gemme Sacrée Niv. 1
+        - type: card
+          id : 612
+          cnt : 1
+#     # 50001位以下
+#    -1:
+#      rank_title: '50001以下'
+#      subject: 'ワガママ姫は挫けない 前半個人ランキング50001位以下報酬'
+#      body: 'ワガママ姫は挫けない 前半個人ランキング50001位以下報酬です。'
+#      comment: 'ワガママ姫は挫けない 前半個人ランキング50001位以下報酬です。'
+#      items:
+#        # ギル
+#        - type: virtual_money
+#          id : 0
+#          cnt : 10000
+
+#前半個人ランキング キリ番
+  just:
+    333:
+      subject: 'Egoistic Princess Reward for Lucky 333rd Place in Part 1 Personal Ranking'
+      body: 'Egoistic Princess <br/>Reward for Lucky 333rd Place in Part 1 Personal Ranking.'
+      comment: 'Egoistic Princess Reward for Lucky 333rd Place in Part 1 Personal Ranking.'
+      items:
+        # Vertulio
+        - type: card
+          id : 150222
+          cnt : 1
+    555:
+      subject: 'Egoistic Princess Reward for Lucky 555rd Place in Part 1 Personal Ranking'
+      body: 'Egoistic Princess <br/>Reward for Lucky 555rd Place in Part 1 Personal Ranking.'
+      comment: 'Egoistic Princess Reward for Lucky 555rd Place in Part 1 Personal Ranking.'
+      items:
+        # Vertulio
+        - type: card
+          id : 150222
+          cnt : 1
+    1111:
+      subject: 'Egoistic Princess Reward for Lucky 1111rd Place in Part 1 Personal Ranking'
+      body: 'Egoistic Princess <br/>Reward for Lucky 1111rd Place in Part 1 Personal Ranking.'
+      comment: 'Egoistic Princess Reward for Lucky 1111rd Place in Part 1 Personal Ranking.'
+      items:
+        # Vertulio
+        - type: card
+          id : 150222
+          cnt : 1
+    2222:
+      subject: 'Egoistic Princess Reward for Lucky 2222rd Place in Part 1 Personal Ranking'
+      body: 'Egoistic Princess <br/>Reward for Lucky 2222rd Place in Part 1 Personal Ranking.'
+      comment: 'Egoistic Princess Reward for Lucky 2222rd Place in Part 1 Personal Ranking.'
+      items:
+        # Vertulio
+        - type: card
+          id : 150222
+          cnt : 1
+    3333:
+      subject: 'Egoistic Princess Reward for Lucky 3333rd Place in Part 1 Personal Ranking'
+      body: 'Egoistic Princess <br/>Reward for Lucky 3333rd Place in Part 1 Personal Ranking.'
+      comment: 'Egoistic Princess Reward for Lucky 3333rd Place in Part 1 Personal Ranking.'
+      items:
+        # Vertulio
+        - type: card
+          id : 150222
+          cnt : 1
+#    # 3001〜
+#    -1:
+#      rank_title: '3001以下'
+#      subject: 'ワガママ姫は挫けない 前半騎士団ランキング3001位以下報酬'
+#      body: 'ワガママ姫は挫けない 前半騎士団ランキング3001位以下報酬です'
+#      comment: 'ワガママ姫は挫けない 前半騎士団ランキング3001位以下報酬です'
+#      items:
+#        # レアチケ
+#        - type: item
+#          id: 1
+#          cnt: 1
+# クラン
+guild:
+  ranker:
+    # 1~1位
+    1:
+      bottom: 100000
+      rank_title: '1st Place'
+      subject: 'Egoistic Princess  Reward for 1st Place in Part 1 Guild Ranking'
+      body: 'Egoistic Princess <br/>Reward for 1st Place in Part 1 Guild Ranking.'
+      comment: 'Egoistic Princess Reward for 1st Place in Part 1 Guild Ranking.'
+      items:
+        # Choice box Guardian Aleenade  (MR)
+        - type: item
+          id : 1712
+          cnt : 1
+    # 2~4
+    4:
+      bottom: 100000
+      rank_title: '2-4th Place'
+      subject: 'Egoistic Princess Reward for 2-4th Place in Part 1 Guild Ranking'
+      body: 'Egoistic Princess <br/>Reward for 2-5th Place in Part 1 Guild Ranking'
+      comment: 'Egoistic Princess Reward for 2-5th Place in Part 1 Guild Ranking'
+      items:
+        # Lucky box Guardian Aleenade  (MR)
+        - type: item
+          id: 1714
+          cnt: 1
+
+    # 5~50
+    50:
+      bottom: 100000
+      rank_title: '5-50 Place'
+      subject: 'Egoistic Princess Reward for 5-50th Place in Part 1 Guild Ranking'
+      body: 'Egoistic Princess <br/>Reward for 5-50th Place in Part 1 Guild Ranking'
+      comment: 'Egoistic Princess Reward for 5-50th Place in Part 1 Guild Ranking'
+      items:
+        # Vertulio
+        - type: card
+          id: 150222
+          cnt: 1
+    # 51~300位
+    300:
+      bottom: 1000
+      rank_title: '51-300 Place'
+      subject: 'Egoistic Princess Reward for 51-300th Place in Part 1 Guild Ranking'
+      body: 'Egoistic Princess <br/>Reward for 51-300th Place in Part 1 Guild Ranking'
+      comment: 'Egoistic Princess Reward for 51-300th Place in Part 1 Guild Ranking'
+      items:
+        # Advisor Layla
+        - type: card
+          id: 140219
+          cnt: 1
+
+#秘薬を霊水へ変更
+change:
+  subject: "Exchange of Hero's Crystals for Stamina Potion."
+  body: "You exchanged Hero's Crystals for Stamina Potion."
+  comment: "You exchanged Hero's Crystals for Stamina Potion."
+  items:
+    - type: item
+      id: 2
+      cnt: 1
+      # cnt を入れるべし

@@ -1,0 +1,449 @@
+# Are Raid Rewards effective?
+enable: 1
+
+# Disbursement Number
+compensation:
+  # Personal Rankings
+  type_personal_ranker: 201305101
+  # Personal Lucky Number
+  type_personal_just: 201305102
+  # Guild Rankings
+  type_guild_ranker: 201305103
+  # Divine Water Conversion
+  type_item_change: 201305104
+  # Effective Receiving Time
+  valid_time: '2013/05/26 23:59'
+
+display_card_ids:
+  # Patience
+  - 160502
+  - 260502
+  - 360504
+  # Charity
+  - 150505
+  - 250505
+  - 350502
+  # Chastity
+  - 140504
+  - 240505
+  - 340505
+  - 130504
+
+display_card_ids_personal:
+  # Patience
+  - 160502
+  - 260502
+  - 360504
+  # Charity
+  - 150505
+  - 250505
+  - 350502
+  # Chastity
+  - 140504
+  - 240505
+  - 340505
+  - 130504
+
+display_card_ids_guild:
+  # Charity
+  - 150505
+  - 250505
+  - 350502
+  # Diligence
+  - 130504
+  - 230504
+  - 330503
+
+# Used for setting comment for time of reward disbursement
+event_name: 'Fall of Virtue'
+
+# Personal
+personal:
+  ranker:
+    # Ranks 1-10
+    10:
+      rank_title: 'Ranks 1-10'
+      subject: '$event_name Individual Rankings 1~10'
+      body: '$event_name Individual Rankings 1~10'
+      comment: '$event_name Individual Rankings 1~10'
+      items:
+        # Oswald Songstorm
+        #- type: card
+        #  id: 360109
+        #  cnt: 1
+        # SR+ Guaranteed Rare Ticket
+        #- type: item
+        #  id : 8
+        #  cnt : 1
+        # Platinum Choice Box
+        - type: item
+          id: 177
+          cnt: 2
+
+    # Ranks 11-50
+    50:
+      rank_title: 'Ranks 11-50'
+      subject: '$event_name Individual Rankings 11~50'
+      body: '$event_name Individual Rankings 11~50'
+      comment: '$event_name Individual Rankings 11~50'
+      items:
+        # Oswald Songstorm
+        #- type: card
+        #  id: 360109
+        #  cnt: 1
+        # HR+ Guaranteed Rare Ticket
+        #- type: item
+        #  id : 7
+        #  cnt : 1
+        # Platinum Choice Box
+        - type: item
+          id: 177
+          cnt: 1
+    # Ranks 51-100
+    100:
+      rank_title: 'Ranks 51-100'
+      subject: '$event_name Individual Rankings 51~100'
+      body: '$event_name Individual Rankings 51~100'
+      comment: '$event_name Individual Rankings 51~100'
+      items:
+        # Stabbeth
+        #- type: card
+        #  id: 150099
+        #  cnt: 1
+        # HR+ Guaranteed Rare Ticket
+        #- type: item
+        #  id : 7
+        #  cnt : 1
+        # Gold Choice Box
+        - type: item
+          id: 178
+          cnt: 2
+    # Ranks 101-200
+    200:
+      rank_title: 'Ranks 101-200'
+      subject: '$event_name Individual Rankings 101~200'
+      body: '$event_name Individual Rankings 101~200'
+      comment: '$event_name Individual Rankings 101~200'
+      items:
+        # Stabbeth
+        #- type: card
+        #  id: 150099
+        #  cnt: 1
+        # Rare Ticket
+        #- type: item
+        #  id : 1
+        #  cnt : 2
+        # Gold Choice Box
+        - type: item
+          id: 178
+          cnt: 1
+    # Ranks 201-300
+    300:
+      rank_title: 'Ranks 201-300'
+      subject: '$event_name Individual Rankings 201~300'
+      body: '$event_name Individual Rankings 201~300'
+      comment: '$event_name Individual Rankings 201~300'
+      items:
+        # Steel Maiden
+        #- type: card
+        #  id: 240101
+        #  cnt: 1
+        # Rare Ticket
+        #- type: item
+        #  id : 1
+        #  cnt : 2
+        # Silver Choice Box
+        - type: item
+          id: 179
+          cnt: 2
+    # Ranks 301-500
+    500:
+      rank_title: 'Ranks 301-500'
+      subject: '$event_name Individual Rankings 301~500'
+      body: '$event_name Individual Rankings 301~500'
+      comment: '$event_name Individual Rankings 301~500'
+      items:
+        # Steel Maiden
+        #- type: card
+        #  id: 240101
+        #  cnt: 1
+        # Rare Ticket
+        #- type: item
+        #  id : 1
+        #  cnt : 1
+        # Silver Choice Box
+        - type: item
+          id: 179
+          cnt: 1
+    # Ranks 501-700
+    700:
+      rank_title: 'Ranks 501-700'
+      subject: '$event_name Individual Rankings 501~700'
+      body: '$event_name Individual Rankings 501~700'
+      comment: '$event_name Individual Rankings 501~700'
+      items:
+        # Rare Ticket
+        #- type: item
+        #  id : 1
+        #  cnt : 1
+        # Stamina Potion (Bound)Stamina Potion (Bound)
+        #- type: item
+        #  id : 4
+        #  cnt : 3
+        # Bronze Choice Box
+        - type: item
+          id: 180
+          cnt: 3
+    # Ranks 701-1000
+    1000:
+      rank_title: 'Ranks 701-1000'
+      subject: '$event_name Individual Rankings 701~1000'
+      body: '$event_name Individual Rankings 701~1000'
+      comment: '$event_name Individual Rankings 701~1000'
+      items:
+        # Stamina Potion (Bound)
+        #- type: item
+        #  id : 4
+        #  cnt : 3
+        # Bronze Choice Box
+        - type: item
+          id: 180
+          cnt: 2
+    # Ranks 1001-3000
+    3000:
+      rank_title: 'Ranks 1001-3000'
+      subject: '$event_name Individual Rankings 1001~3000'
+      body: '$event_name Individual Rankings 1001~3000'
+      comment: '$event_name Individual Rankings 1001~3000'
+      items:
+        # Stamina Potion (Bound)
+        #- type: item
+        #  id : 4
+        #  cnt : 2
+        # Bronze Choice Box
+        - type: item
+          id: 180
+          cnt: 1
+    # Ranks 3001-30000
+    30000:
+      rank_title: 'Ranks 3001-30000'
+      subject: '$event_name Individual Rankings 3001~30000'
+      body: '$event_name Individual Rankings 3001~30000'
+      comment: '$event_name Individual Rankings 3001~30000'
+      items:
+        # Stamina Potion (Bound)
+        - type: item
+          id : 4
+          cnt : 1
+        # Rare Ticket
+        - type: item
+          id : 1
+          cnt : 1
+#     # Ranks 50001 and Below
+#    -1:
+#      rank_title: 'Ranks 50001 and Below'
+#      subject: 'Legend of Metal - Personal Ranking Ranks 50001 and Below Rewards'
+#      body: 'Legend of Metal <br/>Personal Ranking Ranks 50001 and Below Rewards'
+#      comment: 'Legend of Metal - Personal Ranking Ranks Ranks 50001 and Below Rewards'
+#      items:
+#        # Silver Pieces
+#        - type: virtual_money
+#          id : 0
+#          cnt : 10000
+
+# Personal Rankings - Lucky Numbers
+  just:
+    333:
+      subject: '$event_name Lucky 333'
+      body: '$event_name Lucky 333'
+      comment: '$event_name Lucky 333'
+      items:
+        # Oswald Songstorm
+        #- type: card
+        #  id: 360109
+        #  cnt: 1
+        # Gold Choice Box
+        - type: item
+          id: 178
+          cnt: 1
+    555:
+      subject: '$event_name Lucky 555'
+      body: '$event_name Lucky 555'
+      comment: '$event_name Lucky 555'
+      items:
+        # Oswald Songstorm
+        #- type: card
+        #  id: 360109
+        #  cnt: 1
+        # Gold Choice Box
+        - type: item
+          id: 178
+          cnt: 1
+    1111:
+      subject: '$event_name Lucky 1111'
+      body: '$event_name Lucky 1111'
+      comment: '$event_name Lucky 1111'
+      items:
+        # Oswald Songstorm
+        #- type: card
+        #  id: 360109
+        #  cnt: 1
+        # Gold Choice Box
+        - type: item
+          id: 178
+          cnt: 1
+    2222:
+      subject: '$event_name Lucky 2222'
+      body: '$event_name Lucky 2222'
+      comment: '$event_name Lucky 2222'
+      items:
+        # Oswald Songstorm
+        #- type: card
+        #  id: 360109
+        #  cnt: 1
+        # Gold Choice Box
+        - type: item
+          id: 178
+          cnt: 1
+    3333:
+      subject: '$event_name Lucky 3333'
+      body: '$event_name Lucky 3333'
+      comment: '$event_name Lucky 3333'
+      items:
+        # Oswald Songstorm
+        #- type: card
+        #  id: 360109
+        #  cnt: 1
+        # Gold Choice Box
+        - type: item
+          id: 178
+          cnt: 1
+# Guild
+guild:
+  ranker:
+    # Ranks 1-10
+    10:
+      bottom: 100000
+      rank_title: 'Ranks 1-10'
+      subject: '$event_name Guilds 1~10'
+      body: '$event_name Guilds 1~10'
+      comment: '$event_name Guilds 1~10'
+      items:
+        # Oswald Songstorm
+        #- type: card
+        #  id: 360109
+        #  cnt: 1
+        # Gold Choice Box
+        - type: item
+          id: 178
+          cnt: 1
+        # Fortification Crystal Lv.3
+        - type: card
+          id: 614
+          cnt: 1
+        # Fortification Crystal Lv.2
+        - type: card
+          id: 613
+          cnt: 1
+        # Fortification Crystal Lv.1
+        - type: card
+          id: 612
+          cnt: 1
+    # Ranks 11-50
+    50:
+      bottom: 50000
+      rank_title: 'Ranks 11-50'
+      subject: '$event_name Guilds 11~50'
+      body: '$event_name Guilds 11~50'
+      comment: '$event_name Guilds 11~50'
+      items:
+        # Stabbeth
+        #- type: card
+        #  id: 150099
+        #  cnt: 1
+        # Fortification Crystal Lv.2
+        #- type: card
+        #  id: 613
+        #  cnt: 1
+        # Fortification Crystal Lv.1
+        #- type: card
+        #  id: 612
+        #  cnt: 1
+        # Gold Choice Box
+        - type: item
+          id: 178
+          cnt: 1
+    # Ranks 51-100
+    100:
+      bottom: 30000
+      rank_title: 'Ranks 51-100'
+      subject: '$event_name Guilds 51~100'
+      body: '$event_name Guilds 51~100'
+      comment: '$event_name Guilds 51~100'
+      items:
+        # Stabbeth
+        #- type: card
+        #  id: 150099
+        #  cnt: 1
+        # Fortification Crystal Lv.1
+        - type: card
+          id: 612
+          cnt: 1
+        # Bronze Choice Box
+        - type: item
+          id: 180
+          cnt: 1
+    # Ranks 101-300
+    300:
+      bottom: 10000
+      rank_title: 'Ranks 101-300'
+      subject: '$event_name Guilds 101~300'
+      body: '$event_name Guilds 101~300'
+      comment: '$event_name Guilds 101~300'
+      items:
+        # Steel Maiden
+        #- type: card
+        #  id: 240101
+        #  cnt: 1
+        # Fortification Crystal Lv.1
+        #- type: card
+        #  id: 612
+        #  cnt: 1
+        # Bronze Choice Box
+        - type: item
+          id: 180
+          cnt: 1
+    # Ranks 301-1000
+    1000:
+      bottom: 5000
+      rank_title: 'Ranks 301-1000'
+      subject: '$event_name Guilds 301~1000'
+      body: '$event_name Guilds 301~1000'
+      comment: '$event_name Guilds 301~1000'
+      items:
+        # Fortification Crystal Lv.1
+        - type: card
+          id: 612
+          cnt: 1
+#    # 3001 -
+#    -1:
+#      rank_title: '3001 and Below'
+#      subject: 'Legend of Metal - Guild Ranking Ranks 3001 and Below Rewards'
+#      body: 'Legend of Metal <br/>Guild Ranking Ranks 3001 and Below Rewards'
+#      comment: 'Legend of Metal - Guild Ranking Ranks 3001 and Below Rewards'
+#      items:c
+#        # Rare Ticket
+#        - type: item
+#          id: 1
+#          cnt: 1
+
+#Change Secret Medicine to Divine Water
+change:
+  subject: 'Trade your Apple of Eden to Stamina Potion'
+  body: 'Trade your Apple of Eden to Stamina Potion'
+  comment: 'Trade your Apple of Eden to Stamina Potion'
+  items:
+    - type: item
+      id: 2
+      cnt: 1
+      # Enter cnt

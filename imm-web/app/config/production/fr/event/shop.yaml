@@ -1,0 +1,219 @@
+# ショップ設定
+shop:
+  # 定義名:
+  #  start: 開始日時
+  #                  20yy-m-d h:i で指定（php date に準拠）
+  #                  m は 05 、 5 どっちでもＯＫ
+  #                  d は 05 、 5 どっちでもＯＫ
+  #                  h:i でも h:i:s どっちでもＯＫ
+  #         省略時は制限無し
+  #  start_tutorial_end: 1 を書くと、チュートリアル終了後からイベントが始まるようになります
+  #                start: も定義している場合は、start と start_tutorial_end でより遅い方が採用されるようになります
+  #                start 日時時点でチュートリアル済みの人は、start 日時よりイベント開始
+  #                start 日時時点でチュートリアル未完の人は、チュートリアル終了後からイベント開始になります
+  #  end: 終了日時
+  #                  20yy-m-d h:i で指定（php date に準拠）
+  #       省略時は制限無し
+  #       end_add が設定されている場合は、end_add を参照します
+  #  end_add: 開始日時からのオフセットで終了日時を指定
+  #                  +n day で指定（php strtotime に準拠）
+  #                  +n week で週単位も可
+  #       省略時は制限無し
+  #       end が設定されている場合は、end 設定が優先されます
+  #  enable_count: 1～ 購入可能数
+  #                省略時は個数制限無し
+  #  serifu: お店のお姉ちゃんのセリフをイベント用に置き換えられます
+  #  item_list: 指定アイテムリスト定義
+  #    1: ←適当にユニーク名を振る　省略不可
+  #      id: 対象アイテムの item_mst_id を指定　省略不可
+  #      purchase_money: 変更後の価格を指定　省略時価格変更無し
+  #      can_buy:条件下において購入フラグをONにする。
+  #
+  #  ringmenu_img: リングメニューバナー画像指定
+  #       省略時はバナーが出ません
+  #       複数のイベントが重なった場合は、設定ファイルで上に宣言されているものが優先されます
+  #
+  
+  #ガーバトキャンペーン・チュートリアル突破後4日間は進撃P全チャージを40GCで1人最大10個まで購入できる
+  #bg_canpain_1:
+  #   start_tutorial_end: "tutorial_end"
+  #   end_add: "+4 day"
+  #   enable_count: 10
+  #   item_list:
+  #     # 進撃P全チャージ
+  #     1:
+  #       id: 2
+  #       purchase_money: 40
+         
+
+  #ガーバトキャンペーン・チュートリアル突破後4日間はスタートダッシュセットを350GCで1人1セットまで購入できる
+  #gb_canpain_2:
+  #   start_tutorial_end: "tutorial_end"
+  #   end_add: "+4 day"
+  #   enable_count: 1
+  #   item_list:
+  #     # スタートダッシュスペシャルセット
+  #     2:
+  #       id: 9
+  #       can_buy: 1
+  #   serifu: スタートダッシュセットは今だけだよ～♪
+     
+  #ガーバトキャンペーン・進撃Pチャージセット！！！！
+  gb_canpain_3:
+     start: "2012-12-02 11:00:00"
+     end: "2012-12-03 23:59:59"
+     item_list:
+       # 進撃P全チャージ8個セット
+       3:
+         id: 11
+         can_buy: 1
+     serifu: 進撃Pチャージセットは今だけだよ～♪
+    
+  
+#  # 初心者セット値引き
+#  beginner_dash:
+#    start_tutorial_end: "tutorial_end"
+#    enable_count: 3
+#    item_list:
+#      # ユグドラシルの霊水
+#      101:
+#        id: 2
+#      # スタートダッシュスペシャルセット
+#      100:
+#        id: 9
+#        can_buy: 1
+#      # 初心者応援セット
+#      200:
+#        id: 10
+#
+#        
+#
+#  # 初期値引き
+#  start_dash:
+#    start: "2012-06-21 11:00"
+#    start_tutorial_end: "tutorial_end"
+#    end_add: "+4 day"
+#    enable_count: 10
+#    serifu: "4日間限定の新人応援セールやってるよ!"
+#    item_list:
+#      # ユグドラシルの霊水
+#      1:
+#        id: 2
+#        purchase_money: 40
+#      # スクルドの秘薬
+#      2:
+#        id: 3
+#        purchase_money: 40
+#
+#
+#
+#  # 350ガーコインセット販売
+#  350_sale:
+#    start: "2012-09-03 13:00"
+#    end_add: "+3 day"
+#    enable_count: 1
+#    serifu: "3日間限定のアイテムセットを販売中だよ！"
+#    item_list:
+#      # 期間限定アイテムセット
+#      11:
+#        id: 11
+#        can_buy: 1
+#    banner_id: 12
+#
+  # 350ガーコインセット販売 クリスタルウォー開戦記念! 超お得なセット!　
+  350_sale_2:
+    start: "2012-12-07 21:00"
+    end: "2012-12-10 17:00"
+    enable_count: 1
+    serifu: "クリスタルウォー開戦記念! 超お得なセット!"
+    item_list:
+      # 期間限定アイテムセット
+      4:
+        id: 14
+        can_buy: 1
+#
+##  # 350ガーコインセット販売３　ラグナロク前夜祭
+##  350_sale_3:
+##    start: "2012-07-24 12:00"
+##    end: "2012-07-27 22:59"
+##    enable_count: 1
+##    serifu: "目指せラグナロク！！　強化応援セール　やってるよ！"
+##    item_list:
+##      # 期間限定アイテムセット
+##      17:
+##        id: 17
+##        can_buy: 1
+##    banner_id: 19
+#
+#  # 350ガーコインセット販売４　クラバト応援セール
+#  350_sale_4:
+#    start: "2012-08-08 12:00"
+#    end: "2012-08-14 11:59"
+#    # 購入可能数
+#    enable_count: 1
+#    serifu: "クラバト応援セールやってるよ！"
+#    item_list:
+#      # 期間限定アイテムセット
+#      20:
+#        id: 20
+#        can_buy: 1
+#    banner_id: 20
+#
+#  # ユグドラシルの霊水セットセール
+#  reisui_sale:
+#    start: "2012-09-03 1:00"
+#    end: "2012-09-05 23:59:59"
+#    enable_count: 10
+#    serifu: "前夜祭が終了間近!!<br />今ならユグドラシルの霊水セットがお得だよ!!"
+#    item_list:
+#      # ユグドラシルの霊水x11セット
+#      6:
+#        id: 6
+#        can_buy: 1
+#    ringmenu_img: "/img/common/mypage_img_4.png"
+#
+#  # ユグドラシルの霊水セットセール２
+##  reisui_sale_2:
+##    start: "2012-07-12 1:00"
+##    end: "2012-07-17 21:59"
+##    enable_count: 20
+##    item_list:
+##      # ユグドラシルの霊水x8セット
+##      13:
+##        id: 13
+##        can_buy: 1
+#
+# # ユグドラシルの霊水セットセール3(raid2)
+##  reisui_sale_3:
+##    start: "2012-08-12 15:00"
+##    end: "2012-08-20 14:59:59"
+##    enable_count: 20
+##    item_list:
+##      # ユグドラシルの霊水x8セット
+##      13:
+##        id: 13
+##        can_buy: 1
+##    banner_id: 21
+#
+#  # MP販売
+##  mp_sell:
+##    start: "2012-06-9 11:00"
+##    end_add: "+3 day"
+##    enable_count: 10
+##    serifu: "期間限定でMPを販売しているよ！"
+##    item_list:
+##      # 期間限定アイテムセット
+##      10:
+##        id: 10
+##        can_buy: 1
+#
+## 神水販売
+##  shinsui_sell:
+##    start: "2012-08-20 00:00"
+##    end: "2012-08-23 14:59"
+##    serifu: "スプリガンの秘薬発売中だよ！"
+##    item_list:
+##      19:
+##        id: 19
+##        can_buy: 1
+#

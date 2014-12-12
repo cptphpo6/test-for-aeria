@@ -1,0 +1,10 @@
+maintenance:
+  # メンテ中フラグ
+  flag: 0
+  # メンテページに表示する時間
+  start_date: 1/15 Tue
+  start: '2:00 pm PST'
+  end_date: 1/15 Tue
+  end: '4:30 pm PST'
+  # flag to go through access from our office
+  exclude_office: 1

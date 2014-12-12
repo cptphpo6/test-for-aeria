@@ -1,0 +1,154 @@
+{
+    "apps": {
+        "1": "bushin",
+        "2": "monster",
+        "3": "sangoku",
+        "4": "clanbattle",
+        "5": "immen",
+        "6": "immde",
+        "7": "immfr",
+        "8": "immru"
+    },
+    "logDir": {
+        "1": [
+            "/var/tmp/log/samurai/access_log_sw-web01.1.gz",
+            "/var/tmp/log/samurai/access_log_sw-web02.1.gz",
+            "/var/tmp/log/samurai/access_log_sw-web03.1.gz",
+            "/var/tmp/log/samurai/access_log_sw-web04.1.gz"
+        ],
+        "2": [
+            "/var/tmp/log/monster/access_log_sw-web01.1.gz",
+            "/var/tmp/log/monster/access_log_sw-web02.1.gz",
+            "/var/tmp/log/monster/access_log_sw-web03.1.gz",
+            "/var/tmp/log/monster/access_log_sw-web04.1.gz"
+        ],
+        "3": [
+            "/var/tmp/log/sangoku/access_log_sw-web01.1.gz",
+            "/var/tmp/log/sangoku/access_log_sw-web02.1.gz",
+            "/var/tmp/log/sangoku/access_log_sw-web03.1.gz",
+            "/var/tmp/log/sangoku/access_log_sw-web04.1.gz"
+        ],
+        "4": [
+            "/home/access_log/access_log_cb-web01.1.gz",
+            "/home/access_log/access_log_cb-web02.1.gz",
+            "/home/access_log/access_log_cb-web03.1.gz",
+            "/home/access_log/access_log_cb-web04.1.gz",
+            "/home/access_log/access_log_cb-web05.1.gz",
+            "/home/access_log/access_log_cb-web06.1.gz",
+            "/home/access_log/access_log_cb-web07.1.gz",
+            "/home/access_log/access_log_cb-web08.1.gz",
+            "/home/access_log/access_log_cb-web09.1.gz",
+            "/home/access_log/access_log_cb-web10.1.gz",
+            "/home/access_log/access_log_cb-web11.1.gz",
+            "/home/access_log/access_log_cb-web12.1.gz",
+            "/home/access_log/access_log_cb-web13.1.gz",
+            "/home/access_log/access_log_cb-web14.1.gz",
+            "/home/access_log/access_log_cb-web15.1.gz",
+            "/home/access_log/access_log_cb-web16.1.gz",
+            "/home/access_log/access_log_cb-web17.1.gz",
+            "/home/access_log/access_log_cb-web18.1.gz",
+            "/home/access_log/access_log_cb-web19.1.gz",
+            "/home/access_log/access_log_cb-web20.1.gz"
+        ],
+        "5": [
+            "/tmp/access-imm-en-10.40.244.88.gz",
+			"/tmp/access-imm-en-10.40.244.92.gz",
+		    "/tmp/access-imm-en-10.40.244.70.gz",
+			"/tmp/access-imm-en-10.40.244.98.gz",
+			"/tmp/access-imm-en-10.61.60.135.gz",
+			"/tmp/access-imm-en-10.61.60.137.gz"
+        ],
+        "6": [
+            "/tmp/access-imm-de-10.68.59.206.gz",
+			"/tmp/access-imm-de-10.68.59.200.gz",
+		    "/tmp/access-imm-de-10.68.59.212.gz",
+			"/tmp/access-imm-de-10.68.59.214.gz"
+        ],
+        "7": [
+            "/tmp/access-imm-fr-10.68.59.206.gz",
+			"/tmp/access-imm-fr-10.68.59.200.gz",
+		    "/tmp/access-imm-fr-10.68.59.212.gz",
+			"/tmp/access-imm-fr-10.68.59.214.gz"
+        ],
+        "8": [
+            "/tmp/access-imm-ru-10.68.59.206.gz",
+			"/tmp/access-imm-ru-10.68.59.200.gz",
+		    "/tmp/access-imm-ru-10.68.59.212.gz",
+			"/tmp/access-imm-ru-10.68.59.214.gz"
+        ]
+    },
+    "tmpLogDir": {
+        "1": [
+            "/tmp/samurai/access_log_sw-web01.1",
+            "/tmp/samurai/access_log_sw-web02.1",
+            "/tmp/samurai/access_log_sw-web03.1",
+            "/tmp/samurai/access_log_sw-web04.1"
+        ],
+        "2": [
+            "/tmp/monster/access_log_sw-web01.1",
+            "/tmp/monster/access_log_sw-web02.1",
+            "/tmp/monster/access_log_sw-web03.1",
+            "/tmp/monster/access_log_sw-web04.1"
+        ],
+        "3": [
+            "/tmp/sangoku/access_log_sw-web01.1",
+            "/tmp/sangoku/access_log_sw-web02.1",
+            "/tmp/sangoku/access_log_sw-web03.1",
+            "/tmp/sangoku/access_log_sw-web04.1"
+        ],
+        "4": [
+            "/tmp/clanbattle/access_log_sw-web01.1",
+            "/tmp/clanbattle/access_log_sw-web02.1",
+            "/tmp/clanbattle/access_log_sw-web03.1",
+            "/tmp/clanbattle/access_log_sw-web04.1",
+            "/tmp/clanbattle/access_log_sw-web05.1",
+            "/tmp/clanbattle/access_log_sw-web06.1",
+            "/tmp/clanbattle/access_log_sw-web07.1",
+            "/tmp/clanbattle/access_log_sw-web08.1",
+            "/tmp/clanbattle/access_log_sw-web09.1",
+            "/tmp/clanbattle/access_log_sw-web10.1",
+            "/tmp/clanbattle/access_log_sw-web11.1",
+            "/tmp/clanbattle/access_log_sw-web12.1",
+            "/tmp/clanbattle/access_log_sw-web13.1",
+            "/tmp/clanbattle/access_log_sw-web14.1",
+            "/tmp/clanbattle/access_log_sw-web15.1",
+            "/tmp/clanbattle/access_log_sw-web16.1",
+            "/tmp/clanbattle/access_log_sw-web17.1",
+            "/tmp/clanbattle/access_log_sw-web18.1",
+            "/tmp/clanbattle/access_log_sw-web19.1",
+            "/tmp/clanbattle/access_log_sw-web20.1"
+        ],
+        "5": [
+            "/tmp/access_imm_en_log.1",
+			"/tmp/access_imm_en_log.2",
+			"/tmp/access_imm_en_log.3",
+			"/tmp/access_imm_en_log.4",
+			"/tmp/access_imm_en_log.5",
+			"/tmp/access_imm_en_log.6"						
+        ],
+        "6": [
+            "/tmp/access_imm_de_log.1",
+			"/tmp/access_imm_de_log.2",
+			"/tmp/access_imm_de_log.3",
+			"/tmp/access_imm_de_log.4"
+        ],
+        "7": [
+            "/tmp/access_imm_fr_log.1",
+			"/tmp/access_imm_fr_log.2",
+			"/tmp/access_imm_fr_log.3",
+			"/tmp/access_imm_fr_log.4"
+        ],
+        "8": [
+            "/tmp/access_imm_ru_log.1",
+			"/tmp/access_imm_ru_log.2",
+			"/tmp/access_imm_ru_log.3",
+			"/tmp/access_imm_ru_log.4"
+        ]
+    },
+    "timezone": {
+        "5": "America/Los_Angeles",
+ 	    "6": "Europe/Berlin",
+        "7": "Europe/Paris",
+        "8": "Europe/Moscow"
+	}
+}

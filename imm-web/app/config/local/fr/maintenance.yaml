@@ -1,0 +1,8 @@
+maintenance:
+  # メンテ中フラグ
+  flag: 0
+  # メンテページに表示する時間
+  start_date: 6/12(fri)
+  start: '19:00'
+  end_date: 6/13(sat)
+  end: '20:00'

@@ -1,0 +1,334 @@
+# レイド報酬有効？
+enable: 1
+
+# 配布番号
+compensation:
+  # 個人ランキング
+  type_personal_ranker: 131011100
+  # 個人キリ番
+  type_personal_just: 131011101
+  # クランランキング
+  type_guild_ranker: 131011102
+  # 神水変換
+  type_item_change: 131011103
+  # 受け取り有効期間
+  valid_time: '2013/10/25 23:59'
+  
+display_card_ids:
+  # Dreadlord Malphas
+  - 260522
+  # Gaap
+  - 260522
+  # Gunslinger Maiden
+  - 340510
+display_card_ids_personal:
+  # Dreadlord Malphas
+  - 260522
+  # Gaap
+  - 250086
+  # Gunslinger Maiden
+  - 340510
+display_card_ids_guild:
+  # Gaap
+  - 250086
+  # Gunslinger Maiden
+  - 340510
+
+# 報酬配布時コメントの置換に使用
+event_name: 'Rise of the Dark God 2 Part 2'
+
+# 個人
+personal:
+  ranker:
+    # 1~10位
+    10:
+      rank_title: 'Ranks 1-10'
+      subject: '$event_name Individual Rankings 1~10'
+      body: '$event_name Individual Rankings 1~10'
+      comment: '$event_name Individual Rankings 1~10'
+      items:
+        # Dreadlord Malphas
+        - type: card
+          id: 260522
+          cnt: 2
+        # Magic Crystal
+        - type: card
+          id: 777
+          cnt: 2
+    # 11-50位
+    50:
+      rank_title: 'Ranks 11-50'
+      subject: '$event_name Individual Rankings 11~50'
+      body: '$event_name Individual Rankings 11~50'
+      comment: '$event_name Individual Rankings 11~50'
+      items:
+        # Dreadlord Malphas
+        - type: card
+          id: 260522
+          cnt: 1
+        # Magic Crystal
+        - type: card
+          id: 777
+          cnt: 1
+    # Ranks 51-100
+    100:
+      rank_title: 'Ranks 51-100'
+      subject: '$event_name Individual Rankings 51~100'
+      body: '$event_name Individual Rankings 51~100'
+      comment: '$event_name Individual Rankings 51~100'
+      items:
+        # Gaap
+        - type: card
+          id: 250086
+          cnt: 2
+        # Magic Crystal
+        - type: card
+          id: 777
+          cnt: 1
+    # 51-200位
+    200:
+      rank_title: 'Ranks 101-200'
+      subject: '$event_name Individual Rankings 101~200'
+      body: '$event_name Individual Rankings 101~200'
+      comment: '$event_name Individual Rankings 101~200'
+      items:
+        # Gaap
+        - type: card
+          id: 250086
+          cnt: 1
+        # Magic Crystal
+        - type: card
+          id: 777
+          cnt: 1
+    # 201-350位
+    350:
+      rank_title: 'Ranks 201-350'
+      subject: '$event_name Individual Rankings 201~350'
+      body: '$event_name Individual Rankings 201~350'
+      comment: '$event_name Individual Rankings 201~350'
+      items:
+        # Gunslinger Maiden
+        - type: card
+          id: 340510
+          cnt: 2
+        # Magic Crystal
+        - type: card
+          id: 777
+          cnt: 1
+    # Ranks 351-500
+    500:
+      rank_title: 'Ranks 351-500'
+      subject: '$event_name Individual Rankings 351~500'
+      body: '$event_name Individual Rankings 351~500'
+      comment: '$event_name Individual Rankings 351~500'
+      items:
+        # Gunslinger Maiden
+        - type: card
+          id: 340510
+          cnt: 1
+        # Stamina Potion (Bound)
+        - type: item
+          id : 4
+          cnt : 3
+    # Ranks 501-1000
+    1000:
+      rank_title: 'Ranks 501-1000'
+      subject: '$event_name Individual Rankings 501~1000'
+      body: '$event_name Individual Rankings 501~1000'
+      comment: '$event_name Individual Rankings 501~1000'
+      items:
+        # Gunslinger Maiden
+        - type: card
+          id: 340510
+          cnt: 1
+        # Stamina Potion (Bound)
+        - type: item
+          id : 4
+          cnt : 1
+    # 1001-3000位
+    3000:
+      rank_title: 'Ranks 1001-3000'
+      subject: '$event_name Individual Rankings 1001~3000'
+      body: '$event_name Individual Rankings 1001~3000'
+      comment: '$event_name Individual Rankings 1001~3000'
+      items:
+        # Rare Ticket
+        - type: item
+          id : 1
+          cnt : 2
+        # Stamina Potion (Bound)
+        - type: item
+          id : 4
+          cnt : 1
+    # 3001-30000位
+    30000:
+      rank_title: 'Ranks 3001-30000'
+      subject: '$event_name Individual Rankings 3001~30000'
+      body: '$event_name Individual Rankings 3001~30000'
+      comment: '$event_name Individual Rankings 3001~30000'
+      items:
+        # Stamina Potion (Bound)
+        - type: item
+          id : 4
+          cnt : 1
+        # Stamina Potion (Bound)
+        - type: item
+          id : 4
+          cnt : 1
+
+#Personal Rankings Lucky Number
+  just:
+    333:
+      subject: '$event_name Lucky 333'
+      body: '$event_name Lucky 333'
+      comment: '$event_name Lucky 333'
+      items:
+        # Gaap
+        - type: card
+          id: 250086
+          cnt: 1
+    555:
+      subject: '$event_name Lucky 555'
+      body: '$event_name Lucky 555'
+      comment: '$event_name Lucky 555'
+      items:
+        # Gaap
+        - type: card
+          id: 250086
+          cnt: 1
+    1111:
+      subject: '$event_name Lucky 1111'
+      body: '$event_name Lucky 1111'
+      comment: '$event_name Lucky 1111'
+      items:
+        # Gaap
+        - type: card
+          id: 250086
+          cnt: 1
+    2222:
+      subject: '$event_name Lucky 2222'
+      body: '$event_name Lucky 2222'
+      comment: '$event_name Lucky 2222'
+      items:
+        # Gaap
+        - type: card
+          id: 250086
+          cnt: 1
+    3333:
+      subject: '$event_name Lucky 3333'
+      body: '$event_name Lucky 3333'
+      comment: '$event_name Lucky 3333'
+      items:
+        # Gaap
+        - type: card
+          id: 250086
+          cnt: 1
+# クラン
+guild:
+  ranker:
+    # 1~10位
+    10:
+      bottom: 100000
+      rank_title: 'Ranks 1-10'
+      subject: '$event_name Guilds 1~10'
+      body: '$event_name Guilds 1~10'
+      comment: '$event_name Guilds 1~10'
+      items:
+        # Gaap
+        - type: card
+          id: 250086
+          cnt: 1
+        # 強化クリスタルLv.3
+        - type: card
+          id: 614
+          cnt: 1
+        # 強化クリスタルLv.2
+        - type: card
+          id: 613
+          cnt: 1
+        # 強化クリスタルLv.1
+        - type: card
+          id: 612
+          cnt: 1
+    # 11~50位
+    50:
+      bottom: 50000
+      rank_title: 'Ranks 11-50'
+      subject: '$event_name Guilds 11~50'
+      body: '$event_name Guilds 11~50'
+      comment: '$event_name Guilds 11~50'
+      items:
+        # Gaap
+        - type: card
+          id: 250086
+          cnt: 1
+    # 51~100位
+    100:
+      bottom: 30000
+      rank_title: 'Ranks 51-100'
+      subject: '$event_name Guilds 51~100'
+      body: '$event_name Guilds 51~100'
+      comment: '$event_name Guilds 51~100'
+      items:
+        # Gunslinger Maiden
+        - type: card
+          id: 340510
+          cnt: 1
+        # 強化クリスタルLv.2
+        - type: card
+          id: 613
+          cnt: 1
+    # 101~300位
+    300:
+      bottom: 10000
+      rank_title: 'Ranks 101-300'
+      subject: '$event_name Guilds 101~300'
+      body: '$event_name Guilds 101~300'
+      comment: '$event_name Guilds 101~300'
+      items:
+        # Rare Ticket
+        - type: item
+          id : 1
+          cnt : 2
+        # 強化クリスタルLv.2
+        - type: card
+          id: 613
+          cnt: 1
+    # 301~1000位
+    1000:
+      bottom: 5000
+      rank_title: 'Ranks 301-1000'
+      subject: '$event_name Guilds 301~1000'
+      body: '$event_name Guilds 301~1000'
+      comment: '$event_name Guilds 301~1000'
+      items:
+        # Rare Ticket
+        - type: item
+          id : 1
+          cnt : 1
+        # 強化クリスタルLv.1
+        - type: card
+          id: 612
+          cnt: 1
+#    # 3001〜
+#    -1:
+#      rank_title: '3001以下'
+#      subject: '蘇る邪神～光と闇の闘い～ 騎士団ランキング3001位以下報酬'
+#      body: '蘇る邪神～光と闇の闘い～ 騎士団ランキング3001位以下報酬です'
+#      comment: '蘇る邪神～光と闇の闘い～ 騎士団ランキング3001位以下報酬です'
+#      items:
+#        # レアチケ
+#        - type: item
+#          id: 1
+#          cnt: 1
+
+#秘薬を霊水へ変更
+change:
+  subject: 'Trade Immortal Orb for Stamina Potion'
+  body: 'Traded Immortal Orb for Stamina Potion.'
+  comment: 'Traded Immortal Orb for Stamina Potion.'
+  items:
+    - type: item
+      id: 2
+      cnt: 1
+      # cnt を入れるべし

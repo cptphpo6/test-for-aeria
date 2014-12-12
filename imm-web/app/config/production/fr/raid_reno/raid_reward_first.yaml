@@ -1,0 +1,437 @@
+﻿#####################################
+###########<<  前半報酬  >>############
+#####################################
+
+# レイド報酬有効？
+enable: 1
+
+# 配布番号（数値は配布日のYYMMDD＋100からの連番）
+compensation:
+  # 前半個人ランキング
+  type_personal_ranker: 171114225
+  # 前半個人キリ番
+  type_personal_just: 171114226
+  # 前半騎士団ランキング
+  type_guild_ranker: 171114227
+  # 神水変換
+  type_item_change: 171114228
+  # 受け取り有効期間
+  valid_time: '2014/12/15 00:00:00'
+display_card_ids:
+  # 大陸警備団長トゥナイト(SSR)
+  - 350276
+  # 勇援の堕天使イポス(SSR)
+  - 140265
+display_card_ids_personal:
+  # 大陸警備団長トゥナイト(SSR)
+  - 350276
+  # 勇援の堕天使イポス(SSR)
+  - 140265
+display_card_ids_guild:
+  # 大陸警備団長トゥナイト(SSR)
+  - 350276
+  # 勇援の堕天使イポス(SSR)
+  - 140265
+
+# 報酬配布時コメントの置換に使用
+event_name: 'Mission!'
+
+# 前半個人
+personal:
+  ranker:
+    # 1位
+    1:
+      rank_title: 'Rang 1'
+      subject: 'Mission! : 1re moitié - Récompenses pour classement personnel 1'
+      body: 'Mission! <br/>1re moitié - Récompenses pour classement personnel 1.'
+      comment: 'Mission! : 1re moitié - Récompenses pour classement personnel 1.'
+      items:
+        # 大陸警備団長トゥナイト(SSR)
+        - type: item
+          id: 2379
+          cnt: 1
+        # SR以上確定レアチケ
+        - type: item
+          id: 2379
+          cnt: 1
+        # SR以上確定レアチケ
+        - type : item
+          id: 2371
+          cnt: 1
+        # SR以上確定レアチケ
+        - type: item
+          id: 2372
+          cnt: 1
+        # SR以上確定レアチケ
+        - type: item
+          id: 2372
+          cnt: 1
+    # 2-3位
+    3:
+      rank_title: 'Rangs 2-3'
+      subject: 'Mission! : 1re moitié - Récompenses pour classement personnel 2-3'
+      body: 'Mission! <br/>1re moitié - Récompenses pour classement personnel 2-3.'
+      comment: 'Mission! : 1re moitié - Récompenses pour classement personnel 2-3.'
+      items:
+        # 大陸警備団長トゥナイト(SSR)
+        - type: item
+          id: 2379
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id: 2371
+          cnt: 1
+        # HR以上確定レアチケ
+        - type : item
+          id: 2372
+          cnt: 1
+        # HR以上確定レアチケ
+        - type : item
+          id: 2374
+          cnt: 1
+        # HR以上確定レアチケ
+        - type : item
+          id: 2375
+          cnt: 1
+    # 4-5位
+    5:
+      rank_title: 'Rangs 4-5'
+      subject: 'Mission! : 1re moitié - Récompenses pour classement personnel 4-5'
+      body: 'Mission! <br/>1re moitié - Récompenses pour classement personnel 4-5.'
+      comment: 'Mission! : 1re moitié - Récompenses pour classement personnel 4-5.'
+      items:
+        # SR以上確定レアチケ
+        - type: item
+          id: 2371
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id: 2374
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id: 2372
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id: 2375
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: card
+          id: 350276
+          cnt: 5
+    # 6-10位
+    10:
+      rank_title: 'Rangs 6-10'
+      subject: 'Mission! : 1re moitié - Récompenses pour classement personnel 6-10'
+      body: 'Mission! <br/>1re moitié - Récompenses pour classement personnel 6-10.'
+      comment: 'Mission! : 1re moitié - Récompenses pour classement personnel 6-10.'
+      items:
+        # SR以上確定レアチケ
+        - type: item
+          id: 2374
+          cnt: 1
+        # レアチケ
+        - type: item
+          id: 2372
+          cnt: 1
+        # レアチケ
+        - type : item
+          id: 2375
+          cnt: 1
+        # レアチケ
+        - type: card
+          id: 350276
+          cnt: 5
+        # レアチケ
+        - type: card
+          id: 777
+          cnt: 2
+    # 11-25位
+    25:
+      rank_title: 'Rangs 11-25'
+      subject: 'Mission! : 1re moitié - Récompenses pour classement personnel 11-25'
+      body: 'Mission! <br/>1re moitié - Récompenses pour classement personnel 11-25.'
+      comment: 'Mission! : 1re moitié - Récompenses pour classement personnel 11-25.'
+      items:
+        # HR以上確定レアチケ
+        - type: item
+          id: 2374
+          cnt: 1
+        # レアチケ
+        - type: item
+          id: 2372
+          cnt: 1
+        # レアチケ
+        - type: card
+          id: 350276
+          cnt: 3
+        # レアチケ
+        - type: card
+          id: 777
+          cnt: 1
+        # レアチケ
+        - type: card
+          id: 614
+          cnt: 3
+    # 26-50位
+    50:
+      rank_title: 'Rangs 26-50'
+      subject: 'Mission! : 1re moitié - Récompenses pour classement personnel 26-50'
+      body: 'Mission! <br/>1re moitié - Récompenses pour classement personnel 26-50.'
+      comment: 'Mission! : 1re moitié - Récompenses pour classement personnel 26-50.'
+      items:
+        # HR以上確定レアチケ
+        - type: item
+          id: 2374
+          cnt: 1
+        # レアチケ
+        - type: item
+          id: 2374
+          cnt: 1
+        # レアチケ
+        - type: card
+          id: 350276
+          cnt: 2
+        # レアチケ
+        - type: card
+          id: 613
+          cnt: 2
+        # レアチケ
+        - type: card
+          id: 614 
+          cnt: 2
+    # 51-100位
+    100:
+      rank_title: 'Rangs 51-100'
+      subject: 'Mission! : 1re moitié - Récompenses pour classement personnel 51-100'
+      body: 'Mission! <br/>1re moitié - Récompenses pour classement personnel 51-100.'
+      comment: 'Mission! : 1re moitié - Récompenses pour classement personnel 51-100.'
+      items:
+        # レアチケ
+        - type: item
+          id: 2374
+          cnt: 1
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 350276
+          cnt: 2
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 613
+          cnt: 1
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 614
+          cnt: 1
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 140265
+          cnt: 4
+    # 101-250位
+    250:
+      rank_title: 'Rangs 101-250'
+      subject: 'Mission! : 1re moitié - Récompenses pour classement personnel 101-250'
+      body: 'Mission! <br/>1re moitié - Récompenses pour classement personnel 101-250.'
+      comment: 'Mission! : 1re moitié - Récompenses pour classement personnel 101-250.'
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 350276
+          cnt: 2
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 613
+          cnt: 1
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 140265
+          cnt: 3
+    # 251-500位
+    500:
+      rank_title: 'Rangs 251-500'
+      subject: 'Mission! : 1re moitié - Récompenses pour classement personnel 251-500'
+      body: 'Mission! <br/>1re moitié - Récompenses pour classement personnel 251-500.'
+      comment: 'Mission! : 1re moitié - Récompenses pour classement personnel 251-500.'
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 350276
+          cnt: 1
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 140265
+          cnt: 2
+    # 501-1000位
+    1000:
+      rank_title: 'Rangs 501-1000'
+      subject: 'Mission! : 1re moitié - Récompenses pour classement personnel 501-1000'
+      body: 'Mission! <br/>1re moitié - Récompenses pour classement personnel 501-1000.'
+      comment: 'Mission! : 1re moitié - Récompenses pour classement personnel 501-1000.'
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 140265
+          cnt: 2
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 612
+          cnt: 1
+    # 1001-2500位
+    2500:
+      rank_title: 'Rangs 1001-2500'
+      subject: 'Mission! : 1re moitié - Récompenses pour classement personnel 1001-2500'
+      body: 'Mission! <br/>1re moitié - Récompenses pour classement personnel 1001-2500.'
+      comment: 'Mission! : 1re moitié - Récompenses pour classement personnel 1001-2500.'
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 140265
+          cnt: 1
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 612
+          cnt: 1
+    # 2501-5000位
+    5000:
+      rank_title: 'Rangs 2501-5000'
+      subject: 'Mission! : 1re moitié - Récompenses pour classement personnel 2501-5000'
+      body: 'Mission! <br/>1re moitié - Récompenses pour classement personnel 2501-5000.'
+      comment: 'Mission! : 1re moitié - Récompenses pour classement personnel 2501-5000.'
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 612
+          cnt: 1
+#     # 5001位以下
+#    -1:
+#      rank_title: 'Above 5001'
+#      subject: 'Nightmare Circus  Reward for 50001 or higher Place in Part 1 Personal Ranking'
+#      body: 'Nightmare Circus  Reward for 50001 or higher Place in Part 1 Personal Ranking.'
+#      comment: 'Nightmare Circus  Reward for 50001 or higher Place in Part 1 Personal Ranking.'
+#      items:
+#        # ギル
+#        - type: virtual_money
+#          id : 0
+#          cnt : 10000
+
+#前半個人ランキング キリ番
+  just:
+    333:
+      subject: 'Mission! : 1re moitié - Récompenses pour classement personnel - Chiffre porte-bonheur 333'
+      body: 'Mission! <br/>1re moitié - Récompenses pour classement personnel - Chiffre porte-bonheur 333.'
+      comment: 'Mission! : 1re moitié - Récompenses pour classement personnel - Chiffre porte-bonheur 333.'
+      items:
+        # 大陸警備団長トゥナイト(SSR)
+        - type: card
+          id: 350276
+          cnt: 1
+    555:
+      subject: 'Mission! : 1re moitié - Récompenses pour classement personnel - Chiffre porte-bonheur 555'
+      body: 'Mission! <br/>1re moitié - Récompenses pour classement personnel - Chiffre porte-bonheur 555.'
+      comment: 'Mission! : 1re moitié - Récompenses pour classement personnel - Chiffre porte-bonheur 555.'
+      items:
+        # 大陸警備団長トゥナイト(SSR)
+        - type: card
+          id: 350276
+          cnt: 1
+    1111:
+      subject: 'Mission! : 1re moitié - Récompenses pour classement personnel - Chiffre porte-bonheur 1111'
+      body: 'Mission! <br/>1re moitié - Récompenses pour classement personnel - Chiffre porte-bonheur 1111.'
+      comment: 'Mission! : 1re moitié - Récompenses pour classement personnel - Chiffre porte-bonheur 1111.'
+      items:
+        # 大陸警備団長トゥナイト(SSR)
+        - type: card
+          id: 350276
+          cnt: 1
+    2222:
+      subject: 'Mission! : 1re moitié - Récompenses pour classement personnel - Chiffre porte-bonheur 2222'
+      body: 'Mission! <br/>1re moitié - Récompenses pour classement personnel - Chiffre porte-bonheur 2222.'
+      comment: 'Mission! : 1re moitié - Récompenses pour classement personnel - Chiffre porte-bonheur 2222.'
+      items:
+        # 大陸警備団長トゥナイト(SSR)
+        - type: card
+          id: 350276
+          cnt: 1
+    3333:
+      subject: 'Mission! : 1re moitié - Récompenses pour classement personnel - Chiffre porte-bonheur 3333'
+      body: 'Mission! <br/>1re moitié - Récompenses pour classement personnel - Chiffre porte-bonheur 3333.'
+      comment: 'Mission! : 1re moitié - Récompenses pour classement personnel - Chiffre porte-bonheur 3333.'
+      items:
+        # 大陸警備団長トゥナイト(SSR)
+        - type: card
+          id: 350276
+          cnt: 1
+# クラン
+guild:
+  ranker:
+    # 1位
+    1:
+      bottom: 100000
+      rank_title: 'Rang 1'
+      subject: 'Mission! : 1re moitié - Récompenses pour classement de guilde 1'
+      body: 'Mission! <br/>1re moitié - Récompenses pour classement de guilde 1.'
+      comment: 'Mission! : 1re moitié - Récompenses pour classement de guilde 1.'
+      items:
+        # 大陸警備団長トゥナイト(SSR)
+        - type: item
+          id: 2372
+          cnt: 1
+    # 2~4位
+    4:
+      bottom: 100000
+      rank_title: 'Rangs 2-4'
+      subject: 'Mission! : 1re moitié - Récompenses pour classement de guilde 2-4'
+      body: 'Mission! <br/>1re moitié - Récompenses pour classement de guilde 2-4.'
+      comment: 'Mission! : 1re moitié - Récompenses pour classement de guilde 2-4.'
+      items:
+        # SR以上確定レアチケ
+        - type: item
+          id: 2375
+          cnt: 1
+    # 5~50位
+    50:
+      bottom: 100000
+      rank_title: 'Rangs 5-50'
+      subject: 'Mission! : 1re moitié - Récompenses pour classement de guilde 5-50'
+      body: 'Mission! <br/>1re moitié - Récompenses pour classement de guilde 5-50.'
+      comment: 'Mission! : 1re moitié - Récompenses pour classement de guilde 5-50.'
+      items:
+        # SR以上確定レアチケ
+        - type: card
+          id: 350276
+          cnt: 1
+    # 51~300位
+    300:
+      bottom: 1000
+      rank_title: 'Rangs 51-300'
+      subject: 'Mission! : 1re moitié - Récompenses pour classement de guilde 51-300'
+      body: 'Mission! <br/>1re moitié - Récompenses pour classement de guilde 51-300.'
+      comment: 'Mission! : 1re moitié - Récompenses pour classement de guilde 51-300.'
+      items:
+        # HR以上確定レアチケ
+        - type: card
+          id: 140265
+          cnt: 1
+#    # 301〜
+#    -1:
+#      rank_title: 'Above 301'
+#      subject: 'Nightmare Circus  Reward for 301 or higher Place in Part 1 Guild Ranking'
+#      body: 'Nightmare Circus  Reward for 301 or higher Place in Part 1 Guild Ranking.'
+#      comment: 'Nightmare Circus  Reward for 301 or higher Place in Part 1 Guild Ranking.'
+#      items:
+#        # レアチケ
+#        - type: item
+#          id: 1
+#          cnt: 1
+
+#秘薬を霊水へ変更
+change:
+  subject: 'Echangez vos Filets Electromagnétiques contre des Potions de Stamina'
+  body: 'Vous avez échangé vos Filets Electromagnétiques contre des Potions de Stamina.'
+  comment: 'Vous avez échangé vos Filets Electromagnétiques contre des Potions de Stamina.'
+  items:
+    - type: item
+      id: 2
+      cnt: 1
+      # cnt を入れるべし

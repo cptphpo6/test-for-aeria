@@ -1,0 +1,85 @@
+conf:
+  # 開始時間
+  start: 2012/07/14 15:00:00
+  # 終了時間
+  end:   2012/07/21 14:59:59
+
+raid_battle:
+  # クリティカル係数
+  critical_fact:
+    1.5
+  # 神水係数
+  item_fact:
+    1.5
+  # 使用冒Pリスト
+  stamina:
+    - 20
+    - 40
+    - 60
+  # 冒P補正
+  stamina_correct:
+    - 0.3
+    - 0.7
+    - 1.3
+  
+  # 対レイドボス特殊カード
+  special_card:
+  # ロンギヌス
+    577: 7
+    578: 8
+    579: 9
+    580: 10
+  # ミカエル
+    126: 2
+    127: 3
+    128: 4
+    129: 5
+
+# 報酬
+reward:
+  # 撃破数
+  type_cnt:
+    - smash: 3
+      type: virtual_money
+      cnt: 10000
+    - smash: 10
+      type: item
+      id: 2
+      cnt: 2
+    - smash: 20
+      type: item
+      id: 2
+      cnt: 3
+    - smash: 30
+      type: card
+      id: 613
+    - smash: 40
+      type: item
+      id: 2
+      cnt: 4
+    - smash: 50
+      type: item
+      id: 2
+      cnt: 5
+    - smash: 60
+      type: card
+      id: 126
+  # 対象撃破 typeとtype_orderで判断
+  type_target:
+    - target:
+      type: 2
+      type_order: 0
+      reward:
+        type: card
+        id: 126
+    - target:
+      type: 2
+      type_order: 1
+      reward:
+        type: card
+        id: 659
+  # 回復MP (回復量: 確率)
+  recover_mp:
+    10: 90
+    20: 9
+    30: 1

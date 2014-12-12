@@ -1,0 +1,28 @@
+---
+cache:
+  default:
+    engine: Apc
+    setting:
+      ttl: 3600
+  memcache:
+    engine: Memcache
+    setting:
+      ttl: 0
+      hosts:
+        - { hostname: memcache1, port: 11211 }
+        - { hostname: memcache2, port: 11211 }
+  dbaccess_cache:
+    engine: Apc
+    setting:
+      ttl: 3600
+      hosts:
+      - host: localhost
+        port: "12001"
+  network_global_lock:
+    engine: Memcache
+    setting:
+      ttl: 10
+      hosts:
+        - { hostname: memcache1, port: 11211 }
+        - { hostname: memcache2, port: 11211 }
+...

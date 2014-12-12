@@ -1,0 +1,371 @@
+##############################################
+###########<<  Part 2  Rewards  >>############
+##############################################
+
+# Are raid rewards enabled?
+enable: 1
+
+# Distribution Numbers
+# 【Important Note】： Make sure it doesn't match the combined rewards key!
+compensation:
+  # Combined Personal Rankings
+  type_personal_ranker: 131201100
+  # Combined Personal Kiriban
+  type_personal_just: 131201101
+  # Combined Clan Rankings
+  type_guild_ranker: 131201102
+  # Divine Water Exchange
+  type_item_change: 131201103
+  # Experiation Time
+  valid_time: '2013/12/15 23:59'
+  
+display_card_ids:
+  # Black Dalia(SSR)
+  - 160160
+  # Sun Emperor Heliogabarus(SSR)
+  - 160161
+  # Depraved Soul Babylon(SSR)
+  - 360176
+  # Fallen God Dark Zeus(SR)
+  - 350177
+  # Dark Whisper Dark Gaia(HR)
+  - 340178
+display_card_ids_personal:
+  # Black Dalia(SSR)
+  - 160160
+  # Sun Emperor Heliogabarus(SSR)
+  - 160161
+  # Depraved Soul Babylon(SSR)
+  - 360176
+  # Fallen God Dark Zeus(SR)
+  - 350177
+  # Dark Whisper Dark Gaia(HR)
+  - 340178
+display_card_ids_guild:
+  # Black Dalia(SSR)
+  - 160160
+  # Sun Emperor Heliogabarus(SSR)
+  - 160161
+  # Depraved Soul Babylon(SSR)
+  - 360176
+  # Fallen God Dark Zeus(SR)
+  - 350177
+  # Dark Whisper Dark Gaia(HR)
+  - 340178
+
+# Use to replace the comment given when distributing rewards.
+event_name: 'Black Sun'
+
+# Part 2 Personal
+personal:
+  ranker:
+    # 1-10 Rank
+    10:
+      rank_title: '1-10 Rank'
+      subject: 'Black Sun Part 2 Personal Rankings 1-10 Rank Rewards'
+      body: 'Black Sun <br/>Part 2 Personal Rankings 1-10 Rank Rewards'
+      comment: 'Black Sun Part 2 Personal Rankings 1-10 Rank Rewards'
+      items:
+        # Black Dhalia
+        - type: card
+          id: 160160
+          cnt: 2
+        # Magic Crystal
+        - type: card
+          id : 777
+          cnt : 2
+    # 11-100 Rank
+    100:
+      rank_title: '11-100 Rank'
+      subject: 'Black Sun Part 2 Personal Rankings 11-100 Rank Rewards'
+      body: 'Black Sun <br/>Part 2 Personal Rankings 11-100 Rank Rewards'
+      comment: 'Black Sun Part 2 Personal Rankings 11-100 Rank Rewards'
+      items:
+        # Black Dhalia
+        - type: card
+          id: 160160
+          cnt: 1
+        # Magic Crystal
+        - type: card
+          id : 777
+          cnt : 1
+    # 101-150 Rank
+    150:
+      rank_title: '101-150 Rank'
+      subject: 'Black Sun Part 2 Personal Rankings 101-150 Rank Rewards'
+      body: 'Black Sun <br/>Part 2 Personal Rankings 101-150 Rank Rewards'
+      comment: 'Black Sun Part 2 Personal Rankings 101-150 Rank Rewards'
+      items:
+        # Shadow Zeus
+        - type: card
+          id : 350177
+          cnt : 2
+        # Magic Crystal
+        - type: card
+          id : 777
+          cnt : 1
+    # 151-200 Rank
+    200:
+      rank_title: '151-200 Rank'
+      subject: 'Black Sun Part 2 Personal Rankings 151-200 Rank Rewards'
+      body: 'Black Sun <br/>Part 2 Personal Rankings 151-200 Rank Rewards'
+      comment: 'Black Sun Part 2 Personal Rankings 151-200 Rank Rewards'
+      items:
+        # Shadow Zeus
+        - type: card
+          id : 3501777
+          cnt : 1
+        # Magic Crystal
+        - type: card
+          id : 777
+          cnt : 1
+    # 201-350 Rank
+    350:
+      rank_title: '201-350 Rank'
+      subject: 'Black Sun Part 2 Personal Rankings 201-350 Rank Rewards'
+      body: 'Black Sun <br/>Part 2 Personal Rankings 201-350 Rank Rewards'
+      comment: 'Black Sun Part 2 Personal Rankings 201-350 Rank Rewards'
+      items:
+        # Dark Gaia
+        - type: card
+          id : 340178
+          cnt : 2
+        # Power Crystal Lv3
+        - type: card
+          id : 614
+          cnt : 1
+    # 351-500 Rank
+    500:
+      rank_title: '351-500 Rank'
+      subject: 'Black Sun Part 2 Personal Rankings 351-500 Rank Rewards'
+      body: 'Black Sun <br/>Part 2 Personal Rankings 351-500 Rank Rewards'
+      comment: 'Black Sun Part 2 Personal Rankings 351-500 Rank Rewards'
+      items:
+        # Dark Gaia
+        - type: card
+          id : 340178
+          cnt : 2
+    # 501-1000 Rank
+    1000:
+      rank_title: '501-1000 Rank'
+      subject: 'Black Sun Part 2 Personal Rankings 501-1000 Rank Rewards'
+      body: 'Black Sun <br/>Part 2 Personal Rankings 501-1000 Rank Rewards'
+      comment: 'Black Sun Part 2 Personal Rankings 501-1000 Rank Rewards'
+      items:
+        # Dark Gaia
+        - type: card
+          id : 340178
+          cnt : 1
+        # Stamina Full Recovery [Bound]
+        - type: item
+          id : 4
+          cnt : 3
+    # 1001-3000 Rank
+    3000:
+      rank_title: '1001-3000 Rank'
+      subject: 'Black Sun Part 2 Personal Rankings 1001-3000 Rank Rewards'
+      body: 'Black Sun <br/>Part 2 Personal Rankings 1001-3000 Rank Rewards'
+      comment: 'Black Sun Part 2 Personal Rankings 1001-3000 Rank Rewards'
+      items:
+        # Rare Tickets
+        - type: item
+          id : 1
+          cnt : 2
+        # Stamina Full Recovery [Bound]
+        - type: item
+          id : 4
+          cnt : 1
+    # 3001-30000 Rank
+    30000:
+      rank_title: '3001-30000 Rank'
+      subject: 'Black Sun Part 2 Personal Rankings 3001-30000 Rank Rewards'
+      body: 'Black Sun <br/>Part 2 Personal Rankings 3001-30000 Rank Rewards'
+      comment: 'Black Sun Part 2 Personal Rankings 3001-30000 Rank Rewards'
+      items:
+        # Rare Tickets
+        - type: item
+          id : 1
+          cnt : 1
+        # Stamina Full Recovery [Bound]
+        - type: item
+          id : 4
+          cnt : 1
+#    # 30001-50000 Rank
+#    50000:
+#      rank_title: '30001-50000 Rank'
+#      subject: 'Black Sun Part 2 Personal Rankings30001-50000 Rank Rewards'
+#      body: 'Black Sun <br/>Part 2 Personal Rankings30001-50000 Rank Rewards'
+#      comment: 'Black Sun Part 2 Personal Rankings30001-50000 Rank Rewards'
+#      items:
+#        # Stamina Full Recovery [Bound]
+#        - type: item
+#          id : 4
+#          cnt : 1
+#     # 50001 Rank and Below 
+#    -1:
+#      rank_title: '50001 and Below '
+#      subject: 'Black Sun Part 2 Personal Rankings 50001 Rank and Below Rewards'
+#      body: 'Black Sun Part 2 Personal Rankings 50001 Rank and Below Rewards'
+#      comment: 'Black Sun Part 2 Personal Rankings 50001 Rank and Below Rewards'
+#      items:
+#        # Gil
+#        - type: virtual_money
+#          id : 0
+#          cnt : 10000
+
+#Part 2 Personal Rankings  Kiriban 
+  just:
+    333:
+      subject: 'Black Sun Part 2 Personal Rankings Lucky Number 333 Rank'
+      body: 'Black Sun <br/>Part 2 Personal Rankings Lucky Number 333 Rank'
+      comment: 'Black Sun Part 2 Personal Rankings Lucky Number 333 Rank'
+      items:
+        # Shadow Zeus
+        - type: card
+          id: 350177
+          cnt: 1
+    555:
+      subject: 'Black Sun Part 2 Personal Rankings Lucky Number 555 Rank'
+      body: 'Black Sun <br/>Part 2 Personal Rankings Lucky Number 555 Rank'
+      comment: 'Black Sun Part 2 Personal Rankings Lucky Number 555 Rank'
+      items:
+        # Shadow Zeus
+        - type: card
+          id: 350177
+          cnt: 1
+    1111:
+      subject: 'Black Sun Part 2 Personal Rankings Lucky Number 1111 Rank'
+      body: 'Black Sun <br/>Part 2 Personal Rankings Lucky Number 1111 Rank'
+      comment: 'Black Sun Part 2 Personal Rankings Lucky Number 1111 Rank'
+      items:
+        # Shadow Zeus
+        - type: card
+          id: 350177
+          cnt: 1
+    2222:
+      subject: 'Black Sun Part 2 Personal Rankings Lucky Number 2222 Rank'
+      body: 'Black Sun <br/>Part 2 Personal Rankings Lucky Number 2222 Rank'
+      comment: 'Black Sun Part 2 Personal Rankings Lucky Number 2222 Rank'
+      items:
+        # Shadow Zeus
+        - type: card
+          id: 350177
+          cnt: 1
+    3333:
+      subject: 'Black Sun Part 2 Personal Rankings Lucky Number 3333 Rank'
+      body: 'Black Sun <br/>Part 2 Personal Rankings Lucky Number 3333 Rank'
+      comment: 'Black Sun Part 2 Personal Rankings Lucky Number 3333 Rank'
+      items:
+        # Shadow Zeus
+        - type: card
+          id: 350177
+          cnt: 1
+# Clan
+guild:
+  ranker:
+    # 1-10 Rank
+    10:
+      bottom: 100000
+      rank_title: '1-10 Rank'
+      subject: 'Black Sun Part 2 Guild Rankings 1-10 Rank Rewards'
+      body: 'Black Sun <br/>Part 2 Guild Rankings 1-10 Rank Rewards'
+      comment: 'Black Sun Part 2 Guild Rankings 1-10 Rank Rewards'
+      items:
+        # Shadow Zeus
+        - type: card
+          id: 350177
+          cnt: 1
+        # Power Crystal Lv.3
+        - type: card
+          id: 614
+          cnt: 1
+        # Power Crystal Lv.2
+        - type: card
+          id: 613
+          cnt: 1
+        # Power Crystal Lv.1
+        - type: card
+          id: 612
+          cnt: 1
+    # 11-50 Rank
+    50:
+      bottom: 100000
+      rank_title: '11-50 Rank'
+      subject: 'Black Sun Part 2 Guild Rankings 11-50 Rank Rewards'
+      body: 'Black Sun <br/>Part 2 Guild Rankings 11-50 Rank Rewards'
+      comment: 'Black Sun Part 2 Guild Rankings11-50 Rank Rewards'
+      items:
+        # Shadow Zeus
+        - type: card
+          id: 350177
+          cnt: 1
+    # 51-100 Rank
+    100:
+      bottom: 100000
+      rank_title: '51-100 Rank'
+      subject: 'Black Sun Part 2 Guild Rankings 51-100 Rank Rewards'
+      body: 'Black Sun <br/>Part 2 Guild Rankings 51-100 Rank Rewards'
+      comment: 'Black Sun Part 2 Guild Rankings51-100 Rank Rewards'
+      items:
+        # Dark Gaia
+        - type: card
+          id: 340178
+          cnt: 1
+        # Power Crystal Lv.2
+        - type: card
+          id: 613
+          cnt: 1
+    # 101-300 Rank
+    300:
+      bottom: 1000
+      rank_title: '101-300 Rank'
+      subject: 'Black Sun Part 2 Guild Rankings 101-300 Rank Rewards'
+      body: 'Black Sun <br/>Part 2 Guild Rankings 101-300 Rank Rewards'
+      comment: 'Black Sun Part 2 Guild Rankings 101-300 Rank Rewards'
+      items:
+        # Rare Tickets
+        - type: item
+          id : 1
+          cnt : 2
+        # Power Crystal Lv.1
+        - type: card
+          id: 613
+          cnt: 1
+    # 301-1000 Rank
+    1000:
+      bottom: 1000
+      rank_title: '301-1000 Rank'
+      subject: 'Black Sun Part 2 Guild Rankings 301-1000 Rank Rewards'
+      body: 'Black Sun <br/>Part 2 Guild Rankings 301-1000 Rank Rewards'
+      comment: 'Black Sun Part 2 Guild Rankings 301-1000 Rank Rewards'
+      items:
+        # Rare Tickets
+        - type: item
+          id: 1
+          cnt: 1
+        # Power Crystal Lv.1
+        - type: card
+          id: 612
+          cnt: 1
+#    # 3001-
+#    -1:
+#      rank_title: '3001 and Below '
+#      subject: 'Black Sun Part 2 Guild Rankings 3001 Rank and Below Rewards'
+#      body: 'Black Sun Part 2 Guild Rankings 3001 Rank and Below Rewards'
+#      comment: 'Black Sun Part 2 Guild Rankings 3001 Rank and Below Rewards'
+#      items:
+#        # Rare Tickets
+#        - type: item
+#          id: 1
+#          cnt: 1
+
+#Trade Secret Medicine for Spirit Water
+change:
+  subject: 'Exchange Hero Crystals for Stamina Potion'
+  body: 'Exchanged Hero Crystals for Stamina Potion'
+  comment: 'Exchanged Hero Crystals for Stamina Potion'
+  items:
+    - type: item
+      id: 2
+      cnt: 1
+      # cnt Needed

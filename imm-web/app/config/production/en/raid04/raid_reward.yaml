@@ -1,0 +1,339 @@
+# レイド報酬有効？
+enable: 1
+
+# 配布番号
+compensation:
+  # 個人ランキング
+  type_personal_ranker: 201304191
+  # 個人キリ番
+  type_personal_just: 201304192
+  # クランランキング
+  type_guild_ranker: 201304193
+  # 神水変換
+  type_item_change: 201304194
+  # 受け取り有効期間
+  valid_time: '2013/05/05 23:59'
+  
+display_card_ids:
+  # メタルヒーローランディ
+  - 360109
+  # 傭兵団の首領ザイーロ
+  - 150099
+  # 凄腕の傭兵リーロイ
+  - 240101
+  - 330110
+
+display_card_ids_personal:
+  # メタルヒーローランディ
+  - 360109
+  # 傭兵団の首領ザイーロ
+  - 150099
+  # 凄腕の傭兵リーロイ
+  - 240101
+  - 330110
+
+display_card_ids_guild:
+  # メタルヒーローランディ
+  - 360109
+  # 傭兵団の首領ザイーロ
+  - 150099
+  # 凄腕の傭兵リーロイ
+  - 240101
+  - 330110
+
+# 報酬配布時コメントの置換に使用
+event_name: 'Legend of Metal'
+
+# 個人
+personal:
+  ranker:
+    # 1~10位
+    10:
+      rank_title: 'Ranks 1-10'
+      subject: '$event_name Individual Rankings 1~10'
+      body: '$event_name Individual Rankings 1~10'
+      comment: '$event_name Individual Rankings 1~10'
+      items:
+        # Platinum Choice Box
+        - type: item
+          id : 144
+          cnt : 2
+    # 11-50位
+    50:
+      rank_title: 'Ranks 11-50'
+      subject: '$event_name Individual Rankings 11~50'
+      body: '$event_name Individual Rankings 11~50'
+      comment: '$event_name Individual Rankings 11~50'
+      items:
+        # Platinum Choice Box
+        - type: item
+          id : 144
+          cnt : 1
+    # 51-100位
+    100:
+      rank_title: 'Ranks 51-100'
+      subject: '$event_name Individual Rankings 51~100'
+      body: '$event_name Individual Rankings 51~100'
+      comment: '$event_name Individual Rankings 51~100'
+      items:
+        # Gold Choice Box
+        - type: item
+          id : 145
+          cnt : 2
+    # 101-200位
+    200:
+      rank_title: 'Ranks 101-200'
+      subject: '$event_name Individual Rankings 101~200'
+      body: '$event_name Individual Rankings 101~200'
+      comment: '$event_name Individual Rankings 101~200'
+      items:
+        # Gold Choice Box
+        - type: item
+          id : 145
+          cnt : 1
+    # 201-300位
+    300:
+      rank_title: 'Ranks 201-300'
+      subject: '$event_name Individual Rankings 201~300'
+      body: '$event_name Individual Rankings 201~300'
+      comment: '$event_name Individual Rankings 201~300'
+      items:
+        # Silver Choice Box
+        - type: item
+          id : 146
+          cnt : 2
+    # 301-500位
+    500:
+      rank_title: 'Ranks 301-500'
+      subject: '$event_name Individual Rankings 301~500'
+      body: '$event_name Individual Rankings 301~500'
+      comment: '$event_name Individual Rankings 301~500'
+      items:
+        # Silver Choice Box
+        - type: item
+          id : 146
+          cnt : 1
+    # 501-700位
+    700:
+      rank_title: 'Ranks 501-700'
+      subject: '$event_name Individual Rankings 501~700'
+      body: '$event_name Individual Rankings 501~700'
+      comment: '$event_name Individual Rankings 501~700'
+      items:
+        # Bronze Choice Box
+        - type: item
+          id : 147
+          cnt : 3
+    # 701-1000位
+    1000:
+      rank_title: 'Ranks 701-1000'
+      subject: '$event_name Individual Rankings 701~1000'
+      body: '$event_name Individual Rankings 701~1000'
+      comment: '$event_name Individual Rankings 701~1000'
+      items:
+        # Bronze Choice Box
+        - type: item
+          id : 147
+          cnt : 2
+    # 1001-3000位
+    3000:
+      rank_title: 'Ranks 1001-3000'
+      subject: '$event_name Individual Rankings 1001~3000'
+      body: '$event_name Individual Rankings 1001~3000'
+      comment: '$event_name Individual Rankings 1001~3000'
+      items:
+        # Bronze Choice Box
+        - type: item
+          id : 147
+          cnt : 1
+    # 3001-30000位
+    30000:
+      rank_title: 'Ranks 3001-30000'
+      subject: '$event_name Individual Rankings 3001~30000'
+      body: '$event_name Individual Rankings 3001~30000'
+      comment: '$event_name Individual Rankings 3001~30000'
+      items:
+        # Stamina Potion (Bound)
+        - type: item
+          id : 4
+          cnt : 1
+        # Rare Ticket
+        - type: item
+          id : 1
+          cnt : 1
+#     # 50001位以下
+#    -1:
+#      rank_title: '50001以下'
+#      subject: 'メタルレイダース 個人ランキング50001位以下報酬'
+#      body: 'メタルレイダース 個人ランキング50001位以下報酬です。'
+#      comment: 'メタルレイダース 個人ランキング50001位以下報酬です。'
+#      items:
+#        # ギル
+#        - type: virtual_money
+#          id : 0
+#          cnt : 10000
+
+#個人ランキング キリ番
+  just:
+    333:
+      subject: '$event_name Lucky 333'
+      body: '$event_name Lucky 333'
+      comment: '$event_name Lucky 333'
+      items:
+        # Gold Choice Box
+        - type: item
+          id : 145
+          cnt : 1
+    555:
+      subject: '$event_name Lucky 555'
+      body: '$event_name Lucky 555'
+      comment: '$event_name Lucky 555'
+      items:
+        # Gold Choice Box
+        - type: item
+          id : 145
+          cnt : 1
+    1111:
+      subject: '$event_name Lucky 1111'
+      body: '$event_name Lucky 1111'
+      comment: '$event_name Lucky 1111'
+      items:
+        # Gold Choice Box
+        - type: item
+          id : 145
+          cnt : 1
+    2222:
+      subject: '$event_name Lucky 2222'
+      body: '$event_name Lucky 2222'
+      comment: '$event_name Lucky 2222'
+      items:
+        # Gold Choice Box
+        - type: item
+          id : 145
+          cnt : 1
+    3333:
+      subject: '$event_name Lucky 3333'
+      body: '$event_name Lucky 3333'
+      comment: '$event_name Lucky 3333'
+      items:
+        # Gold Choice Box
+        - type: item
+          id : 145
+          cnt : 1
+# クラン
+guild:
+  ranker:
+    # 1~10位
+    10:
+      bottom: 100000
+      rank_title: 'Ranks 1-10'
+      subject: '$event_name Guilds 1~10'
+      body: '$event_name Guilds 1~10'
+      comment: '$event_name Guilds 1~10'
+      items:
+        # メタルヒーローランディ
+        #- type: card
+        #  id: 360109
+        #  cnt: 1
+        # Gold Choice Box
+        - type: item
+          id : 145
+          cnt : 1
+        # 強化クリスタルLv.3
+        - type: card
+          id: 614
+          cnt: 1
+        # 強化クリスタルLv.2
+        - type: card
+          id: 613
+          cnt: 1
+        # 強化クリスタルLv.1
+        - type: card
+          id: 612
+          cnt: 1
+    # 11~50位
+    50:
+      bottom: 50000
+      rank_title: 'Ranks 11-50'
+      subject: '$event_name Guilds 11~50'
+      body: '$event_name Guilds 11~50'
+      comment: '$event_name Guilds 11~50'
+      items:
+        # Gold Choice Box
+        - type: item
+          id : 145
+          cnt : 1
+    # 51~100位
+    100:
+      bottom: 30000
+      rank_title: 'Ranks 51-100'
+      subject: '$event_name Guilds 51~100'
+      body: '$event_name Guilds 51~100'
+      comment: '$event_name Guilds 51~100'
+      items:
+        # 傭兵団の首領ザイーロ
+        #- type: card
+        #  id: 150099
+        #  cnt: 1
+        # 強化クリスタルLv.2
+        - type: card
+          id: 612
+          cnt: 1
+        # Bronze Choice Box
+        - type: item
+          id : 147
+          cnt : 1
+    # 101~300位
+    300:
+      bottom: 10000
+      rank_title: 'Ranks 101-300'
+      subject: '$event_name Guilds 101~300'
+      body: '$event_name Guilds 101~300'
+      comment: '$event_name Guilds 101~300'
+      items:
+        # 凄腕の傭兵リーロイ
+        #- type: card
+        #  id: 240101
+        #  cnt: 1
+        # 強化クリスタルLv.1
+        #- type: card
+        #  id: 612
+        #  cnt: 1
+        # Bronze Choice Box
+        - type: item
+          id : 147
+          cnt : 1
+    # 301~1000位
+    1000:
+      bottom: 5000
+      rank_title: 'Ranks 301-1000'
+      subject: '$event_name Guilds 301~1000'
+      body: '$event_name Guilds 301~1000'
+      comment: '$event_name Guilds 301~1000'
+      items:
+        # 強化クリスタルLv.1
+        - type: card
+          id: 612
+          cnt: 1
+#    # 3001〜
+#    -1:
+#      rank_title: '3001以下'
+#      subject: 'メタルレイダース 騎士団ランキング3001位以下報酬'
+#      body: 'メタルレイダース 騎士団ランキング3001位以下報酬です'
+#      comment: 'メタルレイダース 騎士団ランキング3001位以下報酬です'
+#      items:
+#        # レアチケ
+#        - type: item
+#          id: 1
+#          cnt: 1
+
+#秘薬を霊水へ変更
+change:
+  subject: 'Trade from Immortal Cog to Stamina Potion'
+  body: 'Trade from Immortal Cog to Stamina Potion'
+  comment: 'Trade from Immortal Cog to Stamina Potion'
+  items:
+    - type: item
+      id: 2
+      cnt: 1
+      # cnt を入れるべし

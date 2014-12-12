@@ -1,0 +1,191 @@
+grow_event:
+
+  reward_list:
+    # Growth Rewards
+    grow_reward:
+      category_type: 1
+      reward_comment: 'Récompense de Croissance (Évolution en $chara_name)'
+      disp_card_mst_id: 130123
+      reward:
+        once:
+          # Growth Character Level
+          # Netosa LV40
+          40:
+            -
+              type: virtual_money
+              id: 0
+              cnt: 30000
+              img: 9
+              title: 'Nétosa Inédite +'
+              color: red
+          # Nétosa +LV40
+          80:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Nétosa Inédite ++'
+              color: red
+          # Nétosa ++LV40
+          120:
+            -
+              type: gacha_p
+              id: 0
+              cnt: 5000
+              img: 10
+              title: 'Nétosa Inédite +3'
+              color: red
+          # Nétosa +3LV40
+          160:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Nétosa Inédite +4'
+              color: red
+          # Nétosa +4LV40
+          200:
+            -
+              type: item
+              id: 4
+              cnt: 1
+              img: 1
+              title: 'Dame Nétosa'
+              color: red
+          # Eucharis Netosa LV50
+          250:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Dame Nétosa +'
+              color: green
+          # Eucharis Nétosa +LV50
+          300:
+            -
+              type: item
+              id: 22
+              cnt: 1
+              img: 5
+              title: 'Dame Nétosa ++'
+              color: green
+          # Eucharis Nétosa ++LV50
+          350:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Dame Nétosa +3'
+              color: green
+          # Eucharis Nétosa +3LV50
+          400:
+            -
+              type: item
+              id: 4
+              cnt: 2
+              img: 2
+              title: 'Dame Nétosa +4'
+              color: green
+          # Eucharis Nétosa +4LV50
+          450:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Chevalier Nétosa '
+              color: green
+          # Cavalier Netosa LV60
+          510:
+            -
+              type: item
+              id: 22
+              cnt: 3
+              img: 6
+              title: 'Chevalier Nétosa +'
+              color: purple
+          # Cavalier Nétosa +LV60
+          570:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Chevalier Nétosa ++'
+              color: purple
+          # Cavalier Nétosa ++LV60
+          630:
+            -
+              type: item
+              id: 4
+              cnt: 3
+              img: 3
+              title: 'Chevalier Nétosa +3'
+              color: purple
+          # Cavalier Nétosa +3LV60
+          690:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Chevalier Nétosa +4'
+              color: purple
+          # Cavalier Nétosa +4LV60
+          750:
+            -
+              type: item
+              id: 22
+              cnt: 3
+              img: 7
+              title: 'Chevalier Nétosa +5'
+              color: purple
+          # Cavalier Nétosa +5LV60
+          810:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Chevalier Nétosa +6'
+              color: purple
+          # Cavalier Nétosa +6LV60
+          870:
+            -
+              type: item
+              id: 4
+              cnt: 4
+              img: 4
+              title: 'Chevalier Nétosa +7'
+              color: purple
+          # Cavalier Nétosa +7LV60
+          930:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 8
+              title: 'Valkyrie Nétosa '
+              color: purple
+            -
+              type: item
+              id: 7
+              cnt: 1
+              img: 8
+              title: 'Valkyrie Nétosa '
+              color: purple
+
+        repeat:
+          # Interval:
+          interval: 30
+          items:
+            -
+              type: item
+              id: 22
+              cnt: 1
+              img: 6
+              title: 'Valkyrie Nétosa '

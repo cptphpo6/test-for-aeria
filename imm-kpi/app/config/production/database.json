@@ -1,0 +1,19 @@
+{
+    "database": {
+        "dbhosts": {
+            "yggdrasill4": {
+                "hostname": "127.0.0.1",
+                "dbname": "db_name",
+                "dbuser": "db_user",
+                "dbpass": "db_pass"
+            }
+        },
+        "tables": {
+            "user": "yggdrasill4",
+            "batch_status": "yggdrasill4",
+            "install_users_log": "yggdrasill4",
+            "install_users_access_log": "yggdrasill4",
+            "base_kpi": "yggdrasill4"
+        }
+    }
+}

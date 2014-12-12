@@ -1,0 +1,305 @@
+# memchash_key Let's change it!
+conf:
+  # Start & End Times
+  start: 2013/08/02 15:00:00 # two hours earlier for QA to smoke test
+  end:   2013/08/11 23:59:59
+  second_period_start: 2013/08/07 15:00:00
+
+  # Encounter adjustment based on remaining stamina
+  # Remaining stamina ratio (0 is empty, 1 is full)
+  # Please list stages in order of lowest value to highest
+  # Currently supports up to 3 values.
+  # Smaller values than this will be adjusted.
+  last_stamina_encount_rate:
+    # stamina_appear_rate0
+    - 0.1
+    # stamina_appear_rate1
+    - 0.3
+    # stamina_appear_rate2
+    - 0.5
+  # Use point ranking?
+  use_point_ranking: 1
+
+  # Raid Item outside of event
+  raid_item:
+    # Immortal Ore
+    -  423
+
+# List of cards in the card intro list
+special_cards:
+  # Peace-Seeking Captain Oz (SSR)
+  - 160141
+  # The Nome King(HR)
+  - 140142
+  # Wicked Witch of the West Ebolla (SSR)
+  - 360150
+  # Princess Ozma (SSR)
+  - 260147
+  # Good Witch of the South Belinda(SR)
+  - 350151
+
+# Special Boss Appearances Start Time
+# The event boss will not start appearing until after the start time here is reached.
+boss_appear_limit:
+  type:
+    - 4
+  start: '2013/08/07 15:00:00'
+
+raid_battle:
+  # Critical Factor
+  critical_fact:
+    1.5
+  # Divine Water Flag
+  usable_special_item:
+    1
+  # Usable Period connects to the shop below
+  shinsui_shop_def: shinsui_sell
+  # Divine Water Factor
+  item_fact:
+    1.5
+  # Stamina Cost List
+  stamina:
+    - 20
+    - 40
+    - 60
+  # Stamina Adjustment
+  stamina_correct:
+    - 0.3
+    - 0.7
+    - 1.3
+  # Stamina Cost on Escape
+  escape_cost: 20
+  # Cooperation Attack Bonus
+  # Multiplier to points gained from defeating a boss someone else discovered
+  cooperation_damage_bonus:
+    1.2
+
+  # Vs. Raid Boss Special Cards
+  special_card:
+    # Result Points Adjustment
+    type_result_point:
+#      1226: 1.2
+#      1227: 1.2
+#      1228: 1.2
+#      1229: 1.2
+#      # Labyrinth
+#      1354: 1.5
+#      1355: 1.5
+#      1356: 1.5
+#      1357: 1.5
+#      # Talia
+#      1358: 1.2
+#      1359: 1.2
+#      1360: 1.2
+#      1361: 1.2
+    # Damage Multiplier
+    type_damage:
+      # Dorothy
+      360152: 3
+      361152: 5
+      362152: 10
+      363152: 20
+
+      # Heartless Iron Man
+      150143: 2
+      151143: 4
+      152143: 6
+      159143: 12
+
+      # Woodcutter Nick
+      140144: 1.5
+      141144: 3
+      142144: 4.5
+      149144: 9
+
+      # Brave Little Toto
+      330154: 1.2
+      331154: 2
+      332154: 3
+      339154: 6
+
+      # Peace-Seeking Captain Oz 
+      160141: 3
+      161141: 5
+      162141: 10
+      163141: 25
+
+      # Peace-Seeking Captain Oz 
+      260515: 3
+      261515: 5
+      262515: 10
+      263515: 25
+
+      # Peace-Seeking Captain Oz 
+      360514: 3
+      361514: 5
+      362514: 10
+      363514: 25
+
+     # Noorden
+      250153: 2
+      251153: 4
+      252153: 6
+      259153: 12
+
+     # Odyle 
+      160513: 3
+      161513: 5
+      162513: 10
+      163513: 20
+
+    # Critical Multiplier
+    #Not used this time, but a number needs to be entered, so we put in a dummy card and a multiplier of 1.
+#    type_critical:
+#      # Pumpkin Princess
+#      1181: 1
+#      1182: 1
+#      1183: 1
+#      1184: 1
+
+#  Reward
+reward:
+  # MP Restoration (Amount: Probability)
+  recover_mp:
+    10: 90
+    20: 9
+    30: 1
+  # Stamina Restoration (Stamina Exceeds X: Restores Y)
+  recover_stamina:
+    0: 0
+    60: 20
+    180: 40
+  # Special Boss Victory Reward
+  smash_bonus:
+    disp_name: 'Raid Boss'
+    # Counting Boss Type
+    type:
+      - 1
+      - 2
+      - 3
+#Boss Victory Reward
+    array:
+      5:
+        type: item
+        id: 4
+        cnt: 1
+      10:
+        type: item
+        id: 22
+        cnt: 1
+      15:
+        type: item
+        id: 22
+        cnt: 1
+      20:
+        type: card
+        id: 612
+        cnt: 1
+      25:
+        type: item
+        id: 22
+        cnt: 1
+      30:
+        type: item
+        id: 22
+        cnt: 1
+      35:
+        type: item
+        id: 4
+        cnt: 1
+      40:
+        type: item
+        id: 22
+        cnt: 1
+      45:
+        type: item
+        id: 4
+        cnt: 2
+      50:
+        type: item
+        id: 22
+        cnt: 1
+      55:
+        type: item
+        id: 22
+        cnt: 1
+      60:
+        type: item
+        id: 22
+        cnt: 1
+      65:
+        type: item
+        id: 4
+        cnt: 2
+      70:
+        type: card
+        id: 613
+        cnt: 1
+      75:
+        type: item
+        id: 22
+        cnt: 1
+      80:
+        type: card
+        id: 614
+        cnt: 1
+      85:
+        type: item
+        id: 4
+        cnt: 2
+      90:
+        type: item
+        id: 22
+        cnt: 3
+    repeat:
+      start: 100
+      interval: 10
+      reward:
+        type: item
+        id: 4
+        cnt: 3
+
+
+## Floor n Reward:　Kerapy （R）330082
+#  quest_boss:
+#    25:
+#      comment: 'Ice Tower Floor 25 Clear Reward'
+#      reward:
+#        -
+#          type: card
+#          id: 330082
+#          cnt: 1
+#    50:
+#      comment: 'Ice Tower Floor 50 Clear Reward'
+#      reward:
+#        -
+#          type: card
+#          id: 330082
+#          cnt: 1
+#    75:
+#      comment: 'Ice Tower Floor 75 Clear Reward'
+#      reward:
+#        -
+#          type: card
+#          id: 330082
+#          cnt: 1
+#    100:
+#      comment: 'Ice Tower Floor 100 Clear Reward'
+#      reward:
+#        -
+#          type: card
+#          id: 330082
+#          cnt: 1
+#  # Boss Defeat Thanks
+#  present_send:
+#    comment: 'Thanks for your help.'
+#    list:
+#      -
+#        type: card
+#        id: 612
+#        cnt: 1
+# Thanks message default text.
+greet:
+  default_message:
+    # If you enter multiple messages the game will select one at random.
+    - 'Thank you for joining the battle!'

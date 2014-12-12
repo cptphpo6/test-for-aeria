@@ -1,0 +1,40 @@
+{
+	"application" :
+	{
+		"app_name"          : "default",
+		"priority_post"     : true,
+		"default_sigauth"   : true,
+		"view_class"        : "SmartyView",
+		"debug"             : false,
+		"internal_encoding" : "UTF-8",
+		"timezone"          : "America/Los_Angeles",
+		"log" :
+		{
+			"log_dir"   : "/tmp/csv/",
+			"log_level" : 0
+		},
+		"output_encoding" :
+		{
+			"default" : "UTF-8",
+			"docomo"  : "SJIS" ,
+			"softbank": "UTF-8",
+			"au"      : "SJIS" ,
+			"android" : "UTF-8"
+		}
+
+	},
+	"opensocialapp" :
+	{
+		"platform"        : "poke",
+		"app_id"          : 12006691,
+		"app_host"        : "app_host",
+		"api_host"        : "api_host",
+		"app_host_"        : "sb.sp.pf.mbga.jp",
+		"api_host_"        : "sb.sp.app.mbga.jp",
+		"consumer_key"    : "b779ba3aa944e2681f1c",
+		"consumer_secret" : "918b3602b8c0faf207f31aefa3c18ad91ce16e1d",
+		"host_"            : "dummyapp.pokedev.jp",
+		"host"            : "host_ip"
+
+	}
+}

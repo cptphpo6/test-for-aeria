@@ -1,0 +1,23 @@
+login_bonus:
+  text: "%GP%召喚Pと\n%VM%ギルをプレゼント！\nプレゼントボックスから\n受け取ってね♪\n%MP%MP回復したよ♪"
+  normal:
+    gacha_p: 300
+    virtual_money: 3000
+    mp: 50
+  ragnarok:
+    gacha_p: 1000
+    virtual_money: 10000
+    mp: 50
+  special:
+    # この日の次の日から(↓は含まない)
+    start: 2012/08/1
+    # この日まで(↓の日付を含む)
+    end: 2012/08/05
+    normal:
+      gacha_p: 1000
+      virtual_money: 3000
+      mp: 50
+    ragnarok:
+      gacha_p: 1500
+      virtual_money: 10000
+      mp: 50

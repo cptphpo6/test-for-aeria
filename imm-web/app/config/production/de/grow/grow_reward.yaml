@@ -1,0 +1,154 @@
+# チョコ報酬
+choco:
+
+  # 配布番号(yymmdd1**)
+  personal: 201311050
+  just: 201311051
+  # 受け取り有効期間
+  valid_time: '2013/12/15 23:59:59'
+  # イベント名
+  event_name: '運命のヴァレンタインバトル'
+
+  ranker:
+    # 1-10位
+    10:
+      rank_title: '本命チョコ'
+      subject: '本命チョコ'
+      body: '本命チョコです。'
+      comment: '本命チョコです。'
+      class: 'favorite'
+      items:
+        # (HR)オリビア（合成屋の人）：本命チョコ版
+        - type: card
+          id: 1714
+          cnt: 1
+
+    # 11-100位
+    100:
+      rank_title: '金の義理チョコ'
+      subject: '金の義理チョコ'
+      body: '金の義理チョコです。'
+      comment: '金の義理チョコです。'
+      class: 'gold'
+      items:
+        # HR確定チケット1枚
+        - type: item
+          id : 15
+          cnt : 1
+        # (HR)オリビア（合成屋の人）：金の義理チョコ版
+        - type: card
+          id: 1714
+          cnt: 1
+
+    # 101-600位
+    600:
+      rank_title: '銀の義理チョコ'
+      subject: '銀の義理チョコ'
+      body: '銀の義理チョコです。'
+      comment: '銀の義理チョコです。'
+      class: 'sliver'
+      items:
+        # レアチケ
+        - type: item
+          id : 1
+          cnt : 2
+        # (HR)オリビア（合成屋の人）：銀の義理チョコ版
+        - type: card
+          id: 1714
+          cnt: 1
+
+    # 601-10000位
+    10000:
+      rank_title: '銅の義理チョコ'
+      subject: '銅の義理チョコ'
+      body: '銅の義理チョコです。'
+      comment: '銅の義理チョコです。'
+      class: 'copper'
+      items:
+        # レアチケ
+        - type: item
+          id : 1
+          cnt : 1
+        # スプリガン
+        - type: card
+          id: 259
+          cnt: 10
+
+
+#個人ランキング キリ番
+  just:
+    200:
+      rank_title: '金の義理チョコ'
+      subject: '金の義理チョコ'
+      body: '金の義理チョコです。'
+      comment: '金の義理チョコです。'
+      class: 'gold'
+      items:
+        # HR確定チケット1枚
+        - type: item
+          id : 15
+          cnt : 1
+        # (HR)オリビア（合成屋の人）：金の義理チョコ版
+        - type: card
+          id: 1714
+          cnt: 1
+    500:
+      rank_title: '金の義理チョコ'
+      subject: '金の義理チョコ'
+      body: '金の義理チョコです。'
+      comment: '金の義理チョコです。'
+      class: 'gold'
+      items:
+        # HR確定チケット1枚
+        - type: item
+          id : 15
+          cnt : 1
+        # (HR)オリビア（合成屋の人）：金の義理チョコ版
+        - type: card
+          id: 1714
+          cnt: 1
+    1000:
+      rank_title: '金の義理チョコ'
+      subject: '金の義理チョコ'
+      body: '金の義理チョコです。'
+      comment: '金の義理チョコです。'
+      class: 'gold'
+      items:
+        # HR確定チケット1枚
+        - type: item
+          id : 15
+          cnt : 1
+        # (HR)オリビア（合成屋の人）：金の義理チョコ版
+        - type: card
+          id: 1714
+          cnt: 1
+    2000:
+      rank_title: '金の義理チョコ'
+      subject: '金の義理チョコ'
+      body: '金の義理チョコです。'
+      comment: '金の義理チョコです。'
+      class: 'gold'
+      items:
+        # HR確定チケット1枚
+        - type: item
+          id : 15
+          cnt : 1
+        # (HR)オリビア（合成屋の人）：金の義理チョコ版
+        - type: card
+          id: 1714
+          cnt: 1
+    5000:
+      rank_title: '金の義理チョコ'
+      subject: '金の義理チョコ'
+      body: '金の義理チョコです。'
+      comment: '金の義理チョコです。'
+      class: 'gold'
+      items:
+        # HR確定チケット1枚
+        - type: item
+          id : 15
+          cnt : 1
+        # (HR)オリビア（合成屋の人）：金の義理チョコ版
+        - type: card
+          id: 1714
+          cnt: 1

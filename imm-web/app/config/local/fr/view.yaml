@@ -1,0 +1,25 @@
+---
+view:
+  class: view\AppView
+  setting:
+    smarty:
+      template_dir: view/templates/
+      compile_dir: /var/tmp/pokefw/default/template/
+      cache_dir: /var/tmp/pokefw/default/template/
+      config_dir: view/config/
+      plugins_dir:
+        - plugins/smarty/
+      left_delimiter: '({'
+      right_delimiter: '})'
+      autoload_filters:
+        output: []
+    pokefw:
+      php_dir: view/php/
+      other_dir: view/other/
+carrier_overrides:
+  android:
+    view:
+      setting:
+        smarty:
+          template_dir: view/templates_android/
+...

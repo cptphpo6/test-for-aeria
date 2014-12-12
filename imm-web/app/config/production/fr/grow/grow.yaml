@@ -1,0 +1,472 @@
+﻿grow_event:
+
+  #################################################################
+  # Active Time
+  #################################################################
+  # Event Active Time start-end
+  start: '2014-01-20 00:00:00'
+  end:   '2014-01-26 23:59:59'
+
+  # Event Page (Preview, ending screen, etc.) display period start-end
+  disp_start: '2014-01-20 00:00:00'
+  disp_end:   '2014-01-26 23:59:59'
+
+  #################################################################
+  # Growth Settings
+  #################################################################
+  # Growth Fusion
+  grow_merge:
+    # Number of materials cards granted at once
+    material_max_num: 20
+    # 与えられる最低レア度
+    material_under_rarity: 30 # R+ (Exclude R final form)
+    # Friendship Points/EXP Gain Rate (Multiplier for rate of EXP gain)
+    grow_love_exp_rate: 0.1
+
+    merge_per_rate: 1.3
+
+    # EXP required for gaining a level after reaching final level
+    one_level_up_need_exp: 120000
+
+#    need_exp_level_range:
+#      1000: 1000000
+
+    # Special Growth Card ID: EXP acquired
+    # card_mst_id: exp
+    grow_special_card_exp:
+      701: 2800
+      702: 5200
+      703: 8700
+
+
+    # Cards that cannot be used as growth materials
+    not_use_material_card_ids:
+      #
+      - 612
+      - 613
+      - 614
+      - 777
+      - 130123
+      - 131123
+      - 132123
+      - 133123
+      - 134123
+      - 139123
+      - 141123
+      - 142123
+      - 143123
+      - 144123
+      - 149123
+      - 151123
+      - 152123
+      - 153123
+      - 154123
+      - 155123
+      - 156123
+      - 157123
+      - 159123
+
+
+    # mst_id of HR or lower cards with special growth usage
+    can_use_under_rare_card:
+    - 701
+    - 120119
+    - 121119
+    - 122119
+    - 129119
+    - 120120
+    - 121120
+    - 122120
+    - 129120
+    - 310131
+    - 311131
+    - 312131
+    - 319131
+    - 210120
+    - 211120
+    - 212120
+    - 219120
+    - 110121
+    - 111121
+    - 112121
+    - 119121
+
+
+
+    # Growth bonus cards
+    material_bonus:
+      # Bonus based on quantity owned
+      # up_type within material_bonus:
+      #   Qty. of cards owned corresponding to all clans
+      #     Bonus
+      up_type:
+        1:
+          1:
+            2
+          5:
+            2.2
+          10:
+            2.5
+          20:
+            3
+        2:
+          1:
+            1.2
+          5:
+            1.4
+          10:
+            1.6
+          20:
+            2
+
+      # Growth Bonus Target Cards
+      # type: - Corresponding type indicated by up_type
+      #   card_mst_id: cnt (How many cards can one card apply to)
+      up_card:
+        1:
+          -
+            # Evil-Smashing Wind Hunter
+            350126: 1
+            351126: 2
+            352126: 3
+            359126: 4
+          -
+            # Abyssal Priestess
+            250117: 1
+            251117: 2
+            252117: 3
+            259117: 4
+        2:
+          -
+            # Bringer of the End
+            140114: 1
+            141114: 2
+            142114: 3
+            149114: 4
+          -
+            # Abaddon
+            140115: 1
+            141115: 2
+            142115: 3
+            149115: 4
+
+#  # Growth Character Friendship Points
+#  grow_love_point:
+#    # Friendship Points
+#    1:
+#      # Accumulated EXP
+#      0
+#    2:
+#      2000
+#    3:
+#      7800
+#    4:
+#      20000
+#    5:
+#      40000
+#    6:
+#      75000
+#    7:
+#      100000
+#    8:
+#      130000
+#    9:
+#      165000
+#    10:
+#      200000
+
+
+  #################################################################
+  # Raising Rewards
+  #################################################################
+  reward_list:
+    # Growth Rewards
+    grow_reward:
+      category_type: 1
+      reward_comment: 'Récompense de Croissance (Évolution en $chara_name)'
+      disp_card_mst_id: 130123
+      reward:
+        once:
+          # Growth Character Level
+          # Netosa LV40
+          40:
+            -
+              type: virtual_money
+              id: 0
+              cnt: 30000
+              img: 9
+              title: 'Nétosa Inédite +'
+              color: red
+          # Netosa +LV40
+          79:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Nétosa Inédite ++'
+              color: red
+          # Netosa ++LV40
+          118:
+            -
+              type: gacha_p
+              id: 0
+              cnt: 5000
+              img: 10
+              title: 'Nétosa Inédite +3'
+              color: red
+          # Netosa +3LV40
+          157:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Nétosa Inédite +4'
+              color: red
+          # Netosa +4LV40
+          196:
+            -
+              type: item
+              id: 4
+              cnt: 1
+              img: 1
+              title: 'Dame Nétosa '
+              color: red
+          # Eucharis Netosa LV50
+          245:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Dame Nétosa +'
+              color: green
+          # Eucharis Netosa +LV50
+          294:
+            -
+              type: item
+              id: 22
+              cnt: 3
+              img: 5
+              title: 'Dame Nétosa ++'
+              color: green
+          # Eucharis Netosa ++LV50
+          343:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Dame Nétosa +3'
+              color: green
+          # Eucharis Netosa +3LV50
+          392:
+            -
+              type: item
+              id: 4
+              cnt: 2
+              img: 2
+              title: 'Dame Nétosa +4'
+              color: green
+          # Eucharis Netosa +4LV50
+          441:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Chevalier Nétosa '
+              color: green
+          # Cavalier Netosa LV60
+          500:
+            -
+              type: item
+              id: 22
+              cnt: 3
+              img: 6
+              title: 'Chevalier Nétosa +'
+              color: purple
+          # Cavalier Netosa +LV60
+          559:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Chevalier Nétosa ++'
+              color: purple
+          # Cavalier Netosa ++LV60
+          618:
+            -
+              type: item
+              id: 4
+              cnt: 3
+              img: 3
+              title: 'Chevalier Nétosa +3'
+              color: purple
+          # Cavalier Netosa +3LV60
+          677:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Chevalier Nétosa +4'
+              color: purple
+          # Cavalier Netosa +4LV60
+          736:
+            -
+              type: item
+              id: 22
+              cnt: 3
+              img: 7
+              title: 'Chevalier Nétosa +5'
+              color: purple
+          # Cavalier Netosa +5LV60
+          795:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 11
+              title: 'Chevalier Nétosa +6'
+              color: purple
+          # Cavalier Netosa +6LV60
+          854:
+            -
+              type: item
+              id: 4
+              cnt: 4
+              img: 4
+              title: 'Chevalier Nétosa +7'
+              color: purple
+          # Cavalier Netosa +7LV60
+          913:
+            -
+              type: card
+              id: 130123
+              cnt: 1
+              img: 8
+              title: 'Valkyrie Nétosa '
+              color: purple
+            -
+              type: item
+              id: 7
+              cnt: 1
+              img: 8
+              title: 'Valkyrie Nétosa '
+              color: purple
+
+        repeat:
+          # Interval:
+          interval: 30
+          items:
+            -
+              type: item
+              id: 22
+              cnt: 1
+              img: 6
+              title: 'Valkyrie Nétosa '
+
+    # Friendship Points Rewards
+    love_reward:
+      category_type: 2
+      reward_comment: 'Récompense pour l''obtention de $love_point Point(s) d''Amitié'
+      disp_card_mst_id: 1272
+      reward:
+        # Friendship PointsLv
+        2:
+          -
+            # Netosa 
+            type: card
+            id: 130123
+            cnt: 1
+        3:
+          -
+            # Netosa 
+            type: card
+            id: 130123
+            cnt: 1
+          -
+            # Personal Use Stamina Potion 
+            type: item
+            id : 4
+            cnt : 1
+        4:
+          -
+            # Netosa 
+            type: card
+            id: 130123
+            cnt: 2
+          -
+            # Knight's Key
+            type: item
+            id : 22
+            cnt : 3
+        5:
+          -
+            # Netosa 
+            type: card
+            id: 130123
+            cnt: 1
+          -
+            # Power Crystal Lv1
+            type: card
+            id: 612
+            cnt: 1
+        6:
+          -
+            # Netosa 
+            type: card
+            id: 130123
+            cnt: 1
+          -
+            # Personal Use Stamina Potion x2
+            type: item
+            id : 4
+            cnt : 2
+        7:
+          -
+            # Netosa 
+            type: card
+            id: 130123
+            cnt: 1
+          -
+            # Knight's Key
+            type: item
+            id : 22
+            cnt : 3
+        8:
+          -
+            # Netosa 
+            type: card
+            id: 130123
+            cnt: 1
+          -
+            # Power Crystal Lv2
+            type: card
+            id: 613
+            cnt: 1
+        9:
+          -
+            # Netosa 
+            type: card
+            id: 130123
+            cnt: 1
+          -
+            # Personal Use Stamina Potion x3
+            type: item
+            id : 4
+            cnt : 3
+        10:
+          -
+            # Netosa x2
+            type: card
+            id: 130123
+            cnt: 1
+          -
+            # Knight's Key
+            type: item
+            id : 22
+            cnt : 3

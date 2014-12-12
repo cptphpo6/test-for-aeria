@@ -1,0 +1,183 @@
+---
+mission:
+  # アイテム抽選までの歩数
+  step_cnt_min: 3
+  step_cnt_max: 4
+  # MP強制提出
+  force_mp_drop_cnt: 2
+  # 最終エリア
+  final_area: 9
+  # エリア開始ID
+  area_id_1st: 1
+  # ステージ開始ID
+  stage_id_1st: 1
+  # クエストクリアステップ
+  stage_clear_step: 100
+  # ステージ設定取得カード最大数
+  defined_drop_card_cnt: 10
+  # ステージクリア時に取得可能なパラメータ値
+  gain_param_point_per_clear: 1
+  # スタートダッシュボーナスの期間
+  base_start_bonus_period_sec: 86400
+  # ステージ道中でドロップするカードの種類の最大数
+  stage_drop_card_type_num_max: 10
+  # ステージ道中でドロップするアイテムの種類の最大数
+  stage_drop_item_type_num_max: 10
+  # ボスからドロップするアイテムの種類の最大数
+  boss_drop_item_type_num_max: 10
+  # ボスからドロップするカードの種類の最大数
+  boss_drop_card_type_num_max: 10
+  # ボスからドロップするアイテムの最大数
+  boss_drop_item_max: 5
+  # １回のアクセスで進む最大ステップ数
+  max_step_by_one_access: 4
+  # 進撃中のインフォで出力するメッセージ
+  info_message: ただ今進撃リニューアル中です
+  # 一度のアクセスで進む最大ステップ数
+  max_step_by_one_access: 4
+  # 進撃中スタミナ消費がかからないレベルのMAX
+  no_use_stamina_level_max: 20
+  # ボス戦で選択可能に表示させるユーザー数（上位ｎ名）
+  boss_help_friend_max: 3
+  # ボス戦でのアイテムドロップ時の確率最大数
+  boss_drop_rate_max: 10000
+
+#各マップごとの名前解決（背景画像を取得する際に必要
+area_map_name:
+  #マップ１
+  map_1: sophirest
+  #マップ２
+  map_2: velga
+  #MP回復ステージ
+  mprecovery: mprecovery
+
+#MP回復ステージのエリアID,ステージIDのセット
+mp_recovery:
+  #マップ１
+  map_1:
+    area_id: 10001
+    stage_id: 1
+  
+  #マップ２
+  map_2:
+    area_id: 10002
+    stage_id: 1
+  
+  #マップ３
+  map_3:
+    area_id: 10003
+    stage_id: 1
+
+  #マップ４
+  map_4:
+    area_id: 10004
+    stage_id: 1
+
+  #マップ５
+  map_5:
+    area_id: 10005
+    stage_id: 1
+
+#チュートリアルステップを定義
+tutorial:
+  #レベルアップ
+  levelup: 1
+  #ステ振り
+  parameter: 2
+  #ステージクリア
+  stage_clear: 3
+  #ボス戦仲間選択
+  boss_ready: 4
+  #ボス戦説明
+  boss_battle: 5
+  #エリア１クリア後
+  area_clear: 6
+
+  #チュートリアル最終ステップ
+  last_step: 6
+
+#ボス討伐ログ関連
+boss_log:
+  #カードドロップ時のdrop_type
+  drop_type_card: 1
+  #アイテムドロップ時のdrop_type
+  drop_type_item: 2
+
+#各マップごとの最大エリアIDを取得
+disp_area_map:
+  max_disp_area_map_id: 2
+
+#進撃イベントID解決
+mission_event_id:
+  #イベントなし
+  no_event: 0
+  #ラッキーエッグ獲得
+  luckyegg: 1
+  #カード獲得
+  card: 2
+  #カード獲得後売却
+  card_sell: 6
+  #ガチャポイント獲得
+  gacha_point: 3
+  #MP獲得
+  mp: 4
+  #レベルアップ
+  levelup: 5
+  #次画面遷移
+  transitions: 100
+
+#画面テンプレート解決
+template_name:
+  #ミッショントップ画面（エリア選択画面）
+  mission_top: mission/area_top
+  #MP回復ステージ画面
+  stage_mp_recovery: mission/stage_mp_recovery
+  #ステージアクセス画面
+  stage_top: mission/stage_top
+  #ステージアクセス画面
+  stage: mission/stage
+  #ステージ結果画面
+  stage_result: mission/result
+  #ボス戦戦闘画面
+  boss_top: mission/boss_top
+  #ボス準備画面
+  boss_ready: mission/boss_ready
+  #ボス戦戦闘画面
+  boss_battle: mission/boss_battle
+  #ボス結果画面（取得アイテムを表示）
+  boss_result: mission/boss_result
+  #体力切れ画面
+  mission_empty: mission/empty
+  #ストーリー画面
+  play_story: mission/play_story
+
+#会話演出からの戻りURL解決
+story_back:
+  #エリア画面
+  area: /mission/
+  #ステージアクセス画面
+  stage: /mission/stage
+  #ステージクリア画面
+  stage_result: /mission/result
+  #ボス準備画面
+  boss_ready: /mission_boss/boss_ready
+  #ミッションチュートリアル画面
+  tutorial: /adventure/miniTutorial
+
+
+#進撃の各パラメータにボーナスがかかる状態を定義
+#campaign:
+#  #月初キャンペーン
+#  monthly_campaign:
+#    #開始日時
+#    disp_text: "今ダケ!獲得Exp&ギル5倍!!"
+#    #開始日時
+#    start_time: 2013-11-27 00:00:00
+#    #終了日時
+#    end_time: 2013-12-16 23:59:59
+#    #消費スタミナ倍率ボーナス（なければ１を設定）
+#    stamina_fact: 1
+#    #獲得経験値倍率ボーナス（なければ１を設定）
+#    exp_fact: 5
+#    #獲得ギル倍率ボーナス（なければ１を設定）
+#    money_fact: 5

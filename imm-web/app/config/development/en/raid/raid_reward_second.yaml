@@ -1,0 +1,440 @@
+﻿#####################################
+###########<<  後半報酬  >>############
+#####################################
+
+# レイド報酬有効？
+enable: 1
+
+# 配布番号
+# 【注意点】：総合のキーとかぶっちゃだめよ！
+compensation:
+  # 後半個人ランキング
+  type_personal_ranker: 171114300
+  # 後半個人キリ番
+  type_personal_just: 171114301
+  # 後半騎士団ランキング
+  type_guild_ranker: 171114302
+  # 神水変換
+  type_item_change: 171114303
+  # 受け取り有効期間
+  valid_time: '2014/12/15 00:00:00'
+display_card_ids:
+  # 大陸警備団長トゥナイト(SSR)
+  - 350276
+  # 勇援の堕天使イポス(SSR)
+  - 140265
+
+display_card_ids_personal:
+  # 大陸警備団長トゥナイト(SSR)
+  - 350276
+  # 勇援の堕天使イポス(SSR)
+  - 140265
+
+display_card_ids_guild:
+  # 大陸警備団長トゥナイト(SSR)
+  - 350276
+  # 勇援の堕天使イポス(SSR)
+  - 140265
+
+# 報酬配布時コメントの置換に使用
+event_name: 'Fugitive Escaping'
+
+# 後半個人
+personal:
+  ranker:
+    # 1位
+    1:
+      rank_title: '1 Place'
+      subject: 'Fugitive Escaping Reward for 1 Place in Part 2 Personal Ranking'
+      body: 'Fugitive Escaping <br/>Reward for 1 Place in Part 2 Personal Ranking.'
+      comment: 'Fugitive Escaping Reward for 1 Place in Part 2 Personal Ranking.'
+      items:
+        # 勇援の堕天使イポス(SSR)
+        - type: item
+          id: 2283
+          cnt: 1
+        # SR以上確定レアチケ
+        - type: item
+          id: 2283
+          cnt: 1
+        # SR以上確定レアチケ
+        - type: item
+          id: 2275
+          cnt: 1
+        # SR以上確定レアチケ
+        - type: item
+          id: 2277
+          cnt: 1
+        # SR以上確定レアチケ
+        - type: item
+          id: 2277
+          cnt: 1
+    # 2-3位
+    3:
+      rank_title: '2-3 Place'
+      subject: 'Fugitive Escaping Reward for 2-3 Place in Part 2 Personal Ranking'
+      body: 'Fugitive Escaping <br/>Reward for 2-3 Place in Part 2 Personal Ranking.'
+      comment: 'Fugitive Escaping Reward for 2-3 Place in Part 2 Personal Ranking.'
+      items:
+        # 勇援の堕天使イポス(SSR)
+        - type: item
+          id: 2283
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id: 2275
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id: 2277
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id: 2278
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id: 2280
+          cnt: 1
+    # 4-5位
+    5:
+      rank_title: '4-5 Place'
+      subject: 'Fugitive Escaping Reward for 4-5 Place in Part 2 Personal Ranking'
+      body: 'Fugitive Escaping <br/>Reward for 4-5 Place in Part 2 Personal Ranking.'
+      comment: 'Fugitive Escaping Reward for 4-5 Place in Part 2 Personal Ranking.'
+      items:
+        # SR以上確定レアチケ
+        - type: item
+          id: 2275
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id: 2278
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id: 2277
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id: 2280
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: card
+          id: 350276
+          cnt: 5
+    # 6-10位
+    10:
+      rank_title: '6-10 Place'
+      subject: 'Fugitive Escaping Reward for 6-10 Place in Part 2 Personal Ranking'
+      body: 'Fugitive Escaping <br/>Reward for 6-10 Place in Part 2 Personal Ranking.'
+      comment: 'Fugitive Escaping Reward for 6-10 Place in Part 2 Personal Ranking.'
+      items:
+        # SR以上確定レアチケ
+        - type: item
+          id: 2278
+          cnt: 1
+        # レアチケ
+        - type: item
+          id: 2277
+          cnt: 1
+        # レアチケ
+        - type: item
+          id: 2280
+          cnt: 1
+        # レアチケ
+        - type: card
+          id: 350276
+          cnt: 5
+        # レアチケ
+        - type: card
+          id: 777
+          cnt: 2
+    # 11-25位
+    25:
+      rank_title: '11-25 Place'
+      subject: 'Fugitive Escaping Reward for 11-25 Place in Part 2 Personal Ranking'
+      body: 'Fugitive Escaping <br/>Reward for 11-25 Place in Part 2 Personal Ranking.'
+      comment: 'Fugitive Escaping Reward for 11-25 Place in Part 2 Personal Ranking.'
+      items:
+        # HR以上確定レアチケ
+        - type: item
+          id: 2278
+          cnt: 1
+        # レアチケ
+        - type: item
+          id: 2277
+          cnt: 1
+        # レアチケ
+        - type: card
+          id: 350276
+          cnt: 3
+        # レアチケ
+        - type: card
+          id: 777
+          cnt: 1
+        # レアチケ
+        - type: card
+          id: 614
+          cnt: 3
+    # 26-50位
+    50:
+      rank_title: '26-50 Place'
+      subject: 'Fugitive Escaping Reward for 26-50 Place in Part 2 Personal Ranking'
+      body: 'Fugitive Escaping <br/>Reward for 26-50 Place in Part 2 Personal Ranking.'
+      comment: 'Fugitive Escaping Reward for 26-50 Place in Part 2 Personal Ranking.'
+      items:
+        # HR以上確定レアチケ
+        - type: item
+          id: 2278
+          cnt: 1
+        # レアチケ
+        - type: item
+          id: 2278
+          cnt: 1
+        # レアチケ
+        - type: card
+          id: 350276
+          cnt: 2
+        # レアチケ
+        - type: card
+          id: 613
+          cnt: 2
+        # レアチケ
+        - type: card
+          id: 614
+          cnt: 2
+    # 51-100位
+    100:
+      rank_title: '51-100 Place'
+      subject: 'Fugitive Escaping Reward for 51-100 Place in Part 2 Personal Ranking'
+      body: 'Fugitive Escaping <br/>Reward for 51-100 Place in Part 2 Personal Ranking.'
+      comment: 'Fugitive Escaping Reward for 51-100 Place in Part 2 Personal Ranking.'
+      items:
+        # レアチケ
+        - type: item
+          id: 2278
+          cnt: 1
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 350276
+          cnt: 2
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 613
+          cnt: 1
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 614
+          cnt: 1
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 140265
+          cnt: 4
+    # 101-250位
+    250:
+      rank_title: '101-250 Place'
+      subject: 'Fugitive Escaping Reward for 101-250 Place in Part 2 Personal Ranking'
+      body: 'Fugitive Escaping <br/>Reward for 101-250 Place in Part 2 Personal Ranking.'
+      comment: 'Fugitive Escaping Reward for 101-250 Place in Part 2 Personal Ranking.'
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 350276
+          cnt: 2
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 613
+          cnt: 1
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 140265
+          cnt: 3
+    # 251-500位
+    500:
+      rank_title: '251-500 Place'
+      subject: 'Fugitive Escaping Reward for 251-500 Place in Part 2 Personal Ranking'
+      body: 'Fugitive Escaping <br/>Reward for 251-500 Place in Part 2 Personal Ranking.'
+      comment: 'Fugitive Escaping Reward for 251-500 Place in Part 2 Personal Ranking.'
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 350276
+          cnt: 1
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 140265
+          cnt: 2
+    # 501-1000位
+    1000:
+      rank_title: '501-1000 Place'
+      subject: 'Fugitive Escaping Reward for 501-1000 Place in Part 2 Personal Ranking'
+      body: 'Fugitive Escaping <br/>Reward for 501-1000 Place in Part 2 Personal Ranking.'
+      comment: 'Fugitive Escaping Reward for 501-1000 Place in Part 2 Personal Ranking.'
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 140265
+          cnt: 2
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 612
+          cnt: 1
+    # 1001-2500位
+    2500:
+      rank_title: '1001-2500 Place'
+      subject: 'Fugitive Escaping Reward for 1001-2500 Place in Part 2 Personal Ranking'
+      body: 'Fugitive Escaping <br/>Reward for 1001-2500 Place in Part 2 Personal Ranking.'
+      comment: 'Fugitive Escaping Reward for 1001-2500 Place in Part 2 Personal Ranking.'
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 140265
+          cnt: 1
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 612
+          cnt: 1
+    # 2501-5000位
+    5000:
+      rank_title: '2501-5000 Place'
+      subject: 'Fugitive Escaping Reward for 2501-5000 Place in Part 2 Personal Ranking'
+      body: 'Fugitive Escaping <br/>Reward for 2501-5000 Place in Part 2 Personal Ranking.'
+      comment: 'Fugitive Escaping Reward for 2501-5000 Place in Part 2 Personal Ranking.'
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 612
+          cnt: 1
+#     # 5001位以下
+#    -1:
+#      rank_title: 'Above 5001'
+#      subject: 'Nightmare Circus  Reward for 50001 or higher Place in Part 2 Personal Ranking'
+#      body: 'Nightmare Circus  Reward for 50001 or higher Place in Part 2 Personal Ranking.'
+#      comment: 'Nightmare Circus  Reward for 50001 or higher Place in Part 2 Personal Rankings.'
+#      items:
+#        # ギル
+#        - type: virtual_money
+#          id : 0
+#          cnt : 10000
+
+#後半個人ランキング キリ番
+  just:
+    333:
+      subject: 'Fugitive Escaping Reward for Lucky 333 Place in Part 2 Personal Ranking'
+      body: 'Fugitive Escaping <br/>Reward for Lucky 333 Place in Part 2 Personal Ranking.'
+      comment: 'Fugitive Escaping Reward for Lucky 333 Place in Part 2 Personal Ranking.'
+      items:
+        # 勇援の堕天使イポス(SSR)
+        - type: card
+          id: 350276
+          cnt: 1
+    555:
+      subject: 'Fugitive Escaping Reward for Lucky 555 Place in Part 2 Personal Ranking'
+      body: 'Fugitive Escaping <br/>Reward for Lucky 555 Place in Part 2 Personal Ranking.'
+      comment: 'Fugitive Escaping Reward for Lucky 555 Place in Part 2 Personal Ranking.'
+      items:
+        # 勇援の堕天使イポス(SSR)
+        - type: card
+          id: 350276
+          cnt: 1
+    1111:
+      subject: 'Fugitive Escaping Reward for Lucky 1111 Place in Part 2 Personal Ranking'
+      body: 'Fugitive Escaping <br/>Reward for Lucky 1111 Place in Part 2 Personal Ranking.'
+      comment: 'Fugitive Escaping Reward for Lucky 1111 Place in Part 2 Personal Ranking.'
+      items:
+        # 勇援の堕天使イポス(SSR)
+        - type: card
+          id: 350276
+          cnt: 1
+    2222:
+      subject: 'Fugitive Escaping Reward for Lucky 2222 Place in Part 2 Personal Ranking'
+      body: 'Fugitive Escaping <br/>Reward for Lucky 2222 Place in Part 2 Personal Ranking.'
+      comment: 'Fugitive Escaping Reward for Lucky 2222 Place in Part 2 Personal Ranking.'
+      items:
+        # 勇援の堕天使イポス(SSR)
+        - type: card
+          id: 350276
+          cnt: 1
+    3333:
+      subject: 'Fugitive Escaping Reward for Lucky 3333 Place in Part 2 Personal Ranking'
+      body: 'Fugitive Escaping <br/>Reward for Lucky 3333 Place in Part 2 Personal Ranking.'
+      comment: 'Fugitive Escaping Reward for Lucky 3333 Place in Part 2 Personal Ranking.'
+      items:
+        # 勇援の堕天使イポス(SSR)
+        - type: card
+          id: 350276
+          cnt: 1
+# クラン
+guild:
+  ranker:
+    # 1位
+    1:
+      bottom: 100000
+      rank_title: '1 Place'
+      subject: 'Fugitive Escaping Reward for 1 Place in Part 2 Guild Ranking'
+      body: 'Fugitive Escaping <br/>Reward for 1 Place in Part 2 Guild Ranking.'
+      comment: 'Fugitive Escaping Reward for 1 Place in Part 2 Guild Ranking.'
+      items:
+        # 勇援の堕天使イポス(SSR)
+        - type: item
+          id: 2277
+          cnt: 1
+    # 2~4位
+    4:
+      bottom: 100000
+      rank_title: '2-4 Place'
+      subject: 'Fugitive Escaping Reward for 2-4 Place in Part 2 Guild Ranking'
+      body: 'Fugitive Escaping <br/>Reward for 2-4 Place in Part 2 Guild Ranking.'
+      comment: 'Fugitive Escaping Reward for 2-4 Place in Part 2 Guild Ranking.'
+      items:
+        # SR以上確定レアチケ
+        - type: item
+          id: 2280
+          cnt: 1
+    # 5~500位
+    50:
+      bottom: 100000
+      rank_title: '5-50 Place'
+      subject: 'Fugitive Escaping Reward for 5-50 Place in Part 2 Guild Ranking'
+      body: 'Fugitive Escaping <br/>Reward for 5-50 Place in Part 2 Guild Ranking.'
+      comment: 'Fugitive Escaping Reward for 5-50 Place in Part 2 Guild Ranking.'
+      items:
+        # SR以上確定レアチケ
+        - type: card
+          id: 350276
+          cnt: 1
+    # 51~300位
+    300:
+      bottom: 1000
+      rank_title: '51-300 Place'
+      subject: 'Fugitive Escaping Reward for 51-300 Place in Part 2 Guild Ranking'
+      body: 'Fugitive Escaping <br/>Reward for 51-300 Place in Part 2 Guild Ranking.'
+      comment: 'Fugitive Escaping Reward for 51-300 Place in Part 2 Guild Ranking.'
+      items:
+        # HR以上確定レアチケ
+        - type: card
+          id: 140265
+          cnt: 1
+#    # 301〜
+#    -1:
+#      rank_title: 'Above 301'
+#      subject: 'Nightmare Circus  Reward for 301 and higher Place in Part 2 Guild Ranking'
+#      body: 'Nightmare Circus  Reward for 301 and higher Place in Part 2 Guild Ranking'
+#      comment: 'Nightmare Circus  Reward for 301 and higher Place in Part 2 Guild Ranking'
+#      items:
+#        # レアチケ
+#        - type: item
+#          id: 1
+#          cnt: 1
+
+#秘薬を霊水へ変更
+change:
+  subject: 'Exchange of Electromagnetic Supernet for Stamina Potion.'
+  body: 'You exchanged Electromagnetic Supernet for Stamina Potion.'
+  comment: 'You exchanged Electromagnetic Supernet for Stamina Potion.'
+  items:
+    - type: item
+      id: 2
+      cnt: 1
+      # cnt を入れるべし

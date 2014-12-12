@@ -1,0 +1,437 @@
+﻿#####################################
+###########<<  前半報酬  >>############
+#####################################
+
+# レイド報酬有効？
+enable: 1
+
+# 配布番号（数値は配布日のYYMMDD＋100からの連番）
+compensation:
+  # 前半個人ランキング
+  type_personal_ranker: 111714215
+  # 前半個人キリ番
+  type_personal_just: 111714216
+  # 前半騎士団ランキング
+  type_guild_ranker: 111714217
+  # 神水変換
+  type_item_change: 111714218
+  # 受け取り有効期間
+  valid_time: '2014/12/15 00:00:00 '
+display_card_ids:
+  # 大陸警備団長トゥナイト(SSR)
+  - 350276
+  # 勇援の堕天使イポス(SSR)
+  - 140265
+display_card_ids_personal:
+  # 大陸警備団長トゥナイト(SSR)
+  - 350276
+  # 勇援の堕天使イポス(SSR)
+  - 140265
+display_card_ids_guild:
+  # 大陸警備団長トゥナイト(SSR)
+  - 350276
+  # 勇援の堕天使イポス(SSR)
+  - 140265
+
+# 報酬配布時コメントの置換に使用
+event_name: 'Mission: Jage die Deserteure!'
+
+# 前半個人
+personal:
+  ranker:
+    # 1位
+    1:
+      rank_title: 'Belohnung für Rang 1'
+      subject: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 1'
+      body: 'Prämie - Mission: Jage die Deserteure! - Akt 1 <br/>Eigenrang 1'
+      comment: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 1'
+      items:
+        # 大陸警備団長トゥナイト(SSR)
+        - type: item
+          id: 2330
+          cnt: 1
+        # SR以上確定レアチケ
+        - type: item
+          id: 2330
+          cnt: 1
+        # SR以上確定レアチケ
+        - type: item
+          id: 2322
+          cnt: 1
+        # SR以上確定レアチケ
+        - type: item
+          id: 2323
+          cnt: 1
+        # SR以上確定レアチケ
+        - type: item
+          id: 2323
+          cnt: 1
+    # 2-3位
+    3:
+      rank_title: 'Belohnung für Rang 2-3'
+      subject: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 2-3'
+      body: 'Prämie - Mission: Jage die Deserteure! - Akt 1 <br/>Eigenrang 2-3'
+      comment: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 2-3'
+      items:
+        # 大陸警備団長トゥナイト(SSR)
+        - type: item
+          id: 2330
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id: 2322
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id: 2323
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id: 2325
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id: 2326
+          cnt: 1
+    # 4-5位
+    5:
+      rank_title: 'Belohnung für Rang 4-5'
+      subject: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 4-5'
+      body: 'Prämie - Mission: Jage die Deserteure! - Akt 1 <br/>Eigenrang 4-5'
+      comment: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 4-5'
+      items:
+        # SR以上確定レアチケ
+        - type: item
+          id: 2322
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id: 2325
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id: 2323
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id: 2326
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: card
+          id: 350276
+          cnt: 5
+    # 6-10位
+    10:
+      rank_title: 'Belohnung für Rang 6-10'
+      subject: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 6-10'
+      body: 'Prämie - Mission: Jage die Deserteure! - Akt 1 <br/>Eigenrang 6-10'
+      comment: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 6-10'
+      items:
+        # SR以上確定レアチケ
+        - type: item
+          id: 2325
+          cnt: 1
+        # レアチケ
+        - type: item
+          id: 2323
+          cnt: 1
+        # レアチケ
+        - type: item
+          id: 2326
+          cnt: 1
+        # レアチケ
+        - type: card
+          id: 350276
+          cnt: 5
+        # レアチケ
+        - type: card
+          id: 777
+          cnt: 2
+    # 11-25位
+    25:
+      rank_title: 'Belohnung für Rang 11-25'
+      subject: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 11-25'
+      body: 'Prämie - Mission: Jage die Deserteure! - Akt 1 <br/>Eigenrang 11-25'
+      comment: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 11-25'
+      items:
+        # HR以上確定レアチケ
+        - type: item
+          id: 2325
+          cnt: 1
+        # レアチケ
+        - type: item
+          id: 2323
+          cnt: 1
+        # レアチケ
+        - type: card
+          id: 350276
+          cnt: 3
+        # レアチケ
+        - type: card
+          id: 777
+          cnt: 1
+        # レアチケ
+        - type: card
+          id: 614
+          cnt: 3
+    # 26-50位
+    50:
+      rank_title: 'Belohnung für Rang 26-50'
+      subject: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 26-50'
+      body: 'Prämie - Mission: Jage die Deserteure! - Akt 1 <br/>Eigenrang 26-50'
+      comment: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 26-50'
+      items:
+        # HR以上確定レアチケ
+        - type: item
+          id: 2325
+          cnt: 1
+        # レアチケ
+        - type: item
+          id: 2325
+          cnt: 1
+        # レアチケ
+        - type: card
+          id: 350276
+          cnt: 2
+        # レアチケ
+        - type: card
+          id: 613
+          cnt: 2
+        # レアチケ
+        - type: card
+          id: 614 
+          cnt: 2
+    # 51-100位
+    100:
+      rank_title: 'Belohnung für Rang 51-100'
+      subject: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 51-100'
+      body: 'Prämie - Mission: Jage die Deserteure! - Akt 1 <br/>Eigenrang 51-100'
+      comment: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 51-100'
+      items:
+        # レアチケ
+        - type: item
+          id: 2325
+          cnt: 1
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 350276
+          cnt: 2
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 613
+          cnt: 1
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 614
+          cnt: 1
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 140265
+          cnt: 4
+    # 101-250位
+    250:
+      rank_title: 'Belohnung für Rang 101-250'
+      subject: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 101-250'
+      body: 'Prämie - Mission: Jage die Deserteure! - Akt 1 <br/>Eigenrang 101-250'
+      comment: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 101-250'
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 350276
+          cnt: 2
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 613
+          cnt: 1
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 140265
+          cnt: 3
+    # 251-500位
+    500:
+      rank_title: 'Belohnung für Rang 251-500'
+      subject: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 251-500'
+      body: 'Prämie - Mission: Jage die Deserteure! - Akt 1 <br/>Eigenrang 251-500'
+      comment: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 251-500'
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 350276
+          cnt: 1
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 140265
+          cnt: 2
+    # 501-1000位
+    1000:
+      rank_title: 'Belohnung für Rang 501-1000'
+      subject: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 501-1000'
+      body: 'Prämie - Mission: Jage die Deserteure! - Akt 1 <br/>Eigenrang 501-1000'
+      comment: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 501-1000'
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 140265
+          cnt: 2
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 612
+          cnt: 1
+    # 1001-2500位
+    2500:
+      rank_title: 'Belohnung für Rang 1001-2500'
+      subject: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 1001-2500'
+      body: 'Prämie - Mission: Jage die Deserteure! - Akt 1 <br/>Eigenrang 1001-2500'
+      comment: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 1001-2500'
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 140265
+          cnt: 1
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 612
+          cnt: 1
+    # 2501-5000位
+    5000:
+      rank_title: 'Belohnung für Rang 2501-5000'
+      subject: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 2501-5000'
+      body: 'Prämie - Mission: Jage die Deserteure! - Akt 1 <br/>Eigenrang 2501-5000'
+      comment: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 2501-5000'
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: card
+          id: 612
+          cnt: 1
+#     # 5001位以下
+#    -1:
+#      rank_title: 'Above 5001'
+#      subject: 'Nightmare Circus  Reward for 50001 or higher Place in Part 1 Personal Ranking'
+#      body: 'Nightmare Circus  Reward for 50001 or higher Place in Part 1 Personal Ranking.'
+#      comment: 'Nightmare Circus  Reward for 50001 or higher Place in Part 1 Personal Ranking.'
+#      items:
+#        # ギル
+#        - type: virtual_money
+#          id : 0
+#          cnt : 10000
+
+#前半個人ランキング キリ番
+  just:
+    333:
+      subject: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 333 - Glücksbonus'
+      body: 'Prämie - Mission: Jage die Deserteure! - Akt 1 <br/>Eigenrang 333 - Glücksbonus'
+      comment: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 333 - Glücksbonus'
+      items:
+        # 大陸警備団長トゥナイト(SSR)
+        - type: card
+          id: 350276
+          cnt: 1
+    555:
+      subject: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 555 - Glücksbonus'
+      body: 'Prämie - Mission: Jage die Deserteure! - Akt 1 <br/>Eigenrang 555 - Glücksbonus'
+      comment: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 555 - Glücksbonus'
+      items:
+        # 大陸警備団長トゥナイト(SSR)
+        - type: card
+          id: 350276
+          cnt: 1
+    1111:
+      subject: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 1111 - Glücksbonus'
+      body: 'Prämie - Mission: Jage die Deserteure! - Akt 1 <br/>Eigenrang 1111 - Glücksbonus'
+      comment: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 1111 - Glücksbonus'
+      items:
+        # 大陸警備団長トゥナイト(SSR)
+        - type: card
+          id: 350276
+          cnt: 1
+    2222:
+      subject: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 2222 - Glücksbonus'
+      body: 'Prämie - Mission: Jage die Deserteure! - Akt 1 <br/>Eigenrang 2222 - Glücksbonus'
+      comment: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 2222 - Glücksbonus'
+      items:
+        # 大陸警備団長トゥナイト(SSR)
+        - type: card
+          id: 350276
+          cnt: 1
+    3333:
+      subject: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 3333 - Glücksbonus'
+      body: 'Prämie - Mission: Jage die Deserteure! - Akt 1 <br/>Eigenrang 3333 - Glücksbonus'
+      comment: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Eigenrang 3333 - Glücksbonus'
+      items:
+        # 大陸警備団長トゥナイト(SSR)
+        - type: card
+          id: 350276
+          cnt: 1
+# クラン
+guild:
+  ranker:
+    # 1位
+    1:
+      bottom: 100000
+      rank_title: 'Belohnung für Rang 1'
+      subject: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Gildenrang 1'
+      body: 'Prämie - Mission: Jage die Deserteure! - Akt 1 <br/>Gildenrang 1'
+      comment: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Gildenrang 1'
+      items:
+        # 大陸警備団長トゥナイト(SSR)
+        - type: item
+          id: 2323
+          cnt: 1
+    # 2~4位
+    4:
+      bottom: 100000
+      rank_title: 'Belohnung für Rang 2-4'
+      subject: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Gildenrang 2-4'
+      body: 'Prämie - Mission: Jage die Deserteure! - Akt 1 <br/>Gildenrang 2-4'
+      comment: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Gildenrang 2-4'
+      items:
+        # SR以上確定レアチケ
+        - type: item
+          id: 2325
+          cnt: 1
+    # 5~50位
+    50:
+      bottom: 100000
+      rank_title: 'Belohnung für Rang 5-50'
+      subject: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Gildenrang 5-50'
+      body: 'Prämie - Mission: Jage die Deserteure! - Akt 1 <br/>Gildenrang 5-50'
+      comment: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Gildenrang 5-50'
+      items:
+        # SR以上確定レアチケ
+        - type: card
+          id: 350276
+          cnt: 1
+    # 51~300位
+    300:
+      bottom: 1000
+      rank_title: 'Belohnung für Rang 51-300'
+      subject: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Gildenrang 51-300'
+      body: 'Prämie - Mission: Jage die Deserteure! - Akt 1 <br/>Gildenrang 51-300'
+      comment: 'Prämie - Mission: Jage die Deserteure! - Akt 1: Gildenrang 51-300'
+      items:
+        # HR以上確定レアチケ
+        - type: card
+          id: 140265
+          cnt: 1
+#    # 301〜
+#    -1:
+#      rank_title: 'Above 301'
+#      subject: 'Nightmare Circus  Reward for 301 or higher Place in Part 1 Guild Ranking'
+#      body: 'Nightmare Circus  Reward for 301 or higher Place in Part 1 Guild Ranking.'
+#      comment: 'Nightmare Circus  Reward for 301 or higher Place in Part 1 Guild Ranking.'
+#      items:
+#        # レアチケ
+#        - type: item
+#          id: 1
+#          cnt: 1
+
+#秘薬を霊水へ変更
+change:
+  subject: 'Tausch: Elektromagnetisches Supernetz gegen Ausdauertrank'
+  body: 'Elektromagnetisches Supernetz gegen Ausdauertrank getauscht.'
+  comment: 'Elektromagnetisches Supernetz gegen Ausdauertrank getauscht.'
+  items:
+    - type: item
+      id: 2
+      cnt: 1
+      # cnt を入れるべし

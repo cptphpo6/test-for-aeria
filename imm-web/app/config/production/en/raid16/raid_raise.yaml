@@ -1,0 +1,95 @@
+---
+raise:
+  # イベントID
+  raise_event_id: 1
+
+  # 報酬コメント
+  reward_comment: 'This is the reward for reaching Lv%d in Egoistic Princess event'
+
+  # 台詞の改行文字列
+  saying_line_delimiter: ￥n
+
+  # 設定最大レベル（このレベルを超えた場合は繰り返し処理とみなして該当の
+  # レコードへのアクセスを行う
+  limit_setting_level: 75
+
+  # 設定のないレベルへの対応
+  repeat_level_num: 99999
+
+  # 育成の台詞が出る画面のID
+  # トップページ
+  raise_saying_screen_top: 1
+  # 育成画面
+  raise_saying_screen_main: 2
+
+  # 育成アイテムのドロップ確率の分母
+  raise_item_drop_rate_total: 10000
+
+  # 育成アイテムの文字列からIDへの変換
+  raise_item_id:
+    raise_item_1: 1726
+    raise_item_2: 1727
+    raise_item_3: 1728
+
+  # 育成アイテムのIDと効果の組
+  raise_item_effect:
+    raise_item_1: 1
+    raise_item_2: 2
+    raise_item_3: 3
+
+  # 育成結果画面で表示するカードの名前、および、表示するレベル
+  raise_character_name:
+    12: "Lazy Princess Flan"
+    36: "Elegant Princess Flan"
+    68: "Noble Queen Flan"
+    75: "Majestic Queen Flan "
+
+#育成報酬カード情報（育成報酬の表示時に利用）
+reward_card_info:
+  reward_card_ssr_1:
+    id: 163227
+    name: "Majestic Queen Flan"
+
+  reward_card_ssr_2:
+    id: 263221
+    name: "Majestic Queen Flan"
+
+  reward_card_ssr_3:
+    id: 363237
+    name: "Majestic Queen Flan"
+
+  reward_card_sr_1:
+    id: 159225
+    name: "Noble Queen Flan"
+
+  reward_card_sr_2:
+    id: 259220
+    name: "Noble Queen Flan"
+
+  reward_card_sr_3:
+    id: 359236
+    name: "Noble Queen Flan"
+
+  reward_card_hr_1:
+    id: 149224
+    name: "Elegant Princess Flan"
+
+  reward_card_hr_2:
+    id: 249219
+    name: "Elegant Princess Flan"
+
+  reward_card_hr_3:
+    id: 349235
+    name: "Elegant Princess Flan"
+
+  reward_card_r_1:
+    id: 139223
+    name: "Lazy Princess Flan"
+
+  reward_card_r_2:
+    id: 239218
+    name: "Lazy Princess Flan"
+
+  reward_card_r_3:
+    id: 339234
+    name: "Lazy Princess Flan"

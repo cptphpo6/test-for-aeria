@@ -1,0 +1,1073 @@
+# ガチャ設定
+gacha:
+  # 定義名:
+  #   コスト定義: パラメータ
+  #     コストは、gacha_point, ticket, puchase_money, virtual_money, time のどれか一つだけ指定してください
+  #     複数指定した場合は、どれか一つだけ有効になります（たぶん最後の指定かな）
+  #     ↓指定方法
+  #     gacha_point: 1～ ガチャP必要数
+  #     puchase_money: 1～ リアルマネー必要数
+  #     virtual_money: 1～ ゲーム内マネー必要数
+  #     ticket:
+  #       type: チケットの種類 item - gacha で定義しているものを指定 rare_1 とか
+  #       num: 1～ 必要チケット枚数
+  #     time_once: 期間内１回　パラメータは記録するDBカラムになります。
+  #                one_day_update_time（一日一回）、lunchtime_update_time（ランチタイム）、dinner_update_time（ディナータイム）のどれか
+  #                もしくは event_*_time を指定
+  #                対象期間は open_time、close_time で指定
+  #
+  #   ↓その他パラメータ指定
+  #   card_num: 1～ 一度に排出するカード枚数
+  #             省略時は１
+  #   many_max: 1～ Ｎ連ガチャ最大数　指定なしの場合は単発オンリーです
+  #   user_attr_per: 確率（小数点第三位まで有効）　設定された場合、指定確率でユーザと同属性のカードがでるようになります
+  #                  100 - user_attr_per の確率だけ別属性のカードがでることになります
+  #                  レアリティ抽選後に反映され、当選レアリティに該当属性カードが無かった場合、この設定は無視されます（レアリティが優先されます）
+  #   category_id: 1～ 抽選ガチャカテゴリID gacha_mst DB指定 gacha_category_id
+  #   effect_id: 1～ エフェクトＩＤ
+  #              game.yaml の gacha_effect の ID を指定
+  #              省略時は category_id が入ります
+  #
+  #   miss_count:
+  #     key: 補てんカウントを記録するカラム　rare_miss_count か event_*_miss_count を指定
+  #     num: 1～ はずれ補てん数字　この回数連続してはずれ（抽選指定内の一番低いレアリティ）を引くと、次はそれ以外から抽選します
+  #
+  #   enable_count: 1～ 有効回数　指定の category_id に対してこの回数だけユーザが課金できます　※課金支払ログを利用しているので、課金でのみ有効です
+  #   time_count: enable_count は start, end の範囲内回数指定ですが、time_count は open_time, close_time の範囲内回数指定になります。
+  #     key: カウント保持用のカラム　event_*_count を指定
+  #     num: １～有効回数
+  #
+  #
+  #   lot: 抽選指定
+  #     rarity番号 : 確率（小数点第三位まで有効）
+  #   card_mst_list: ガチャトップに表示するカード一覧指定
+  #     - カードマスタId
+  #
+  #   overwrite: 1 上書き用定義、0 通常定義
+  #              省略時は 0
+  #              上書き設定すると、他の定義（通常のrare2 とかもＯＫ）の設定を上書きすることができます
+  #              期間設定も使って、特定期間だけ設定を変える等に利用できます
+  #
+  #
+  #   期間指定もの
+  #   open_time: 開店時間指定 例）12:00　省略時は指定なし
+  #   close_time: 閉店時間指定 例）13:00　省略時は指定なし
+  #   ※open_time、close_time は両方セットで指定して有効になります
+  #
+  #  start: イベント開始日時
+  #                  20yy-m-d h:i で指定（php date に準拠）
+  #                  m は 05 、 5 どっちでもＯＫ
+  #                  d は 05 、 5 どっちでもＯＫ
+  #                  h:i でも h:i:s どっちでもＯＫ
+  #         tutorial_end を書くと、チュートリアル終了時間が入ります
+  #         省略時は制限無し
+  #  end: イベント終了日時
+  #                  20yy-m-d h:i で指定（php date に準拠）
+  #       省略時は制限無し
+  #       end_add が設定されている場合は、end_add を参照します
+  #  end_add: イベント開始日時からのオフセットで終了日時を指定
+  #                  +n day で指定（php strtotime に準拠）
+  #                  +n week で週単位も可
+  #       省略時は制限無し
+  #       end が設定されている場合は、end 設定が優先されます
+  #
+  #
+  #  おまけでプレゼントする場合
+  #  present:
+  #    # プレゼントボックスに表示されるメッセージです
+  #    comment: 'レア召喚報酬です。'
+  #    お金をあげるよ
+  #    virtual_money: 30000
+  #    アイテムをあげるよ
+  #    item:
+  #      アイテムマスタIDを指定して
+  #      2:
+  #        あげる個数を指定
+  #        1
+  #      複数種類のアイテムを上げたい場合は、続けてマスタIDと個数を指定してください
+  #
+  #
+  #  バナーボタン用の画像url指定
+  #  bg_img: '/img/campaign/bana/gacha_cam9_2.jpg'
+
+
+  # レア11連お買い得ガチャ
+  #rare2_11:
+  #  purchase_money: 3000
+  #  card_num: 11
+  #  miss_count:
+  #    key: rare_miss_count
+  #    num: 10
+  #  user_attr_per: 30
+  #  category_id: 2
+  #  lot:
+  #   # rarity番号 : 確率
+  #    30: 89
+  #    40: 9.7
+  #    50: 1.1
+  #    60: 0.2
+
+
+#  # レア11連お買い得ガチャ　お金とアイテムもらえるよ
+#  rare2_11_present:
+#    start: "2012-10-01 13:00"
+#    end: "2012-11-30 16:00"
+#    purchase_money: 3000
+#    card_num: 11
+#    miss_count:
+#      key: rare_miss_count
+#      num: 10
+#    user_attr_per: 30
+#    category_id: 2
+#    present:
+#      comment: 'レア11連召喚のおまけです。'
+#      virtual_money: 30000
+##      item:
+##        # アイテムマスタID
+##        2:
+##          # 個数
+##          1
+#    lot:
+#      # rarity番号 : 確率
+#      30: 89
+#      40: 9.7
+#      50: 1.1
+#      60: 0.2
+
+  # レア11連お買い得ガチャ　はとがもらえるよ
+#  rare2_11_hato:
+#    start: "2012-06-29 11:00"
+#    end: "2012-07-03 21:59"
+#    purchase_money: 3000
+#    card_num: 11
+#    miss_count:
+#      key: rare_miss_count
+#      num: 10
+#    user_attr_per: 30
+#    category_id: 2
+#    present:
+#      comment: 'レア11連召喚のおまけです。'
+#      card:
+#        # カードマスタID
+#        612:
+#          # 個数
+#          1
+#      item:
+#        # アイテムマスタID
+#        2:
+#          # 個数
+#          1
+#    lot:
+#      # rarity番号 : 確率
+#      30: 89
+#      40: 9.7
+#      50: 1.1
+#      60: 0.2
+
+
+  # レア11連お買い得ガチャ　はとがもらえるよ
+#  rare2_11_gacha_p:
+#    start: "2012-07-06 10:00"
+#    end: "2012-07-10 21:37"
+#    purchase_money: 3000
+#    card_num: 11
+#    miss_count:
+#      key: rare_miss_count
+#      num: 10
+#    user_attr_per: 30
+#    category_id: 2
+#    present:
+#      comment: 'レア11連召喚のおまけです。'
+#      gacha_point: 3000
+#      card:
+#        # カードマスタID
+#        612:
+#          # 個数
+#          1
+#    lot:
+#      # rarity番号 : 確率
+#      30: 89
+#      40: 9.7
+#      50: 1.1
+#      60: 0.2
+
+
+  # 期間限定１日一回属性ガチャ
+#  rare2_attr_hito:
+#    start: "2012-07-09 10:00"
+#    end: "2012-07-28 17:59"
+#    purchase_money: 100
+#    card_num: 1
+#    time_once: event_1_time
+#    open_time: "00:00:00"
+#    close_time: "23:59:59"
+#    category_id: 5
+#    effect_id: 2
+#    lot:
+#      # rarity番号 : 確率
+#      30: 96
+#      40: 3.55
+#      50: 0.4
+#      60: 0.05
+  # 期間限定１日一回属性ガチャ
+#  rare2_attr_sei:
+#    start: "2012-07-09 10:00"
+#    end: "2012-07-28 17:59"
+#    purchase_money: 100
+#    card_num: 1
+#    time_once: event_1_time
+#    open_time: "00:00:00"
+#    close_time: "23:59:59"
+#    category_id: 3
+#    effect_id: 2
+#    lot:
+#      # rarity番号 : 確率
+#      30: 96
+#      40: 3.55
+#      50: 0.4
+#      60: 0.05
+  # 期間限定１日一回属性ガチャ
+#  rare2_attr_yami:
+#    start: "2012-07-09 10:00"
+#    end: "2012-07-28 17:59"
+#    purchase_money: 100
+#    card_num: 1
+#    time_once: event_1_time
+#    open_time: "00:00:00"
+#    close_time: "23:59:59"
+#    category_id: 4
+#    effect_id: 2
+#    lot:
+#      # rarity番号 : 確率
+#      30: 96
+#      40: 3.55
+#      50: 0.4
+#      60: 0.05
+
+  # 期間限定１日３回属性ガチャ
+#  rare2_attr_hito_2:
+#    start: "2012-07-29 10:00"
+#    end: "2012-08-04 21:59"
+#    purchase_money: 100
+#    card_num: 1
+#    time_count:
+#      key: event_1_count
+#      num: 3
+#    open_time: "00:00:00"
+#    close_time: "23:59:59"
+#    category_id: 5
+#    effect_id: 2
+#    lot:
+#      # rarity番号 : 確率
+#      30: 96
+#      40: 3.55
+#      50: 0.4
+#      60: 0.05
+#  # 期間限定１日３回属性ガチャ
+#  rare2_attr_sei_2:
+#    start: "2012-07-29 10:00"
+#    end: "2012-08-04 21:59"
+#    purchase_money: 100
+#    card_num: 1
+#    time_count:
+#      key: event_1_count
+#      num: 3
+#    open_time: "00:00:00"
+#    close_time: "23:59:59"
+#    category_id: 3
+#    effect_id: 2
+#    lot:
+#      # rarity番号 : 確率
+#      30: 96
+#      40: 3.55
+#      50: 0.4
+#      60: 0.05
+#  # 期間限定１日３回属性ガチャ
+#  rare2_attr_yami_2:
+#    start: "2012-07-29 10:00"
+#    end: "2012-08-04 21:59"
+#    purchase_money: 100
+#    card_num: 1
+#    time_count:
+#      key: event_1_count
+#      num: 3
+#    open_time: "00:00:00"
+#    close_time: "23:59:59"
+#    category_id: 4
+#    effect_id: 2
+#    lot:
+#      # rarity番号 : 確率
+#      30: 96
+#      40: 3.55
+#      50: 0.4
+#      60: 0.05
+
+
+  # ペアガチャ定義（期間定義だけで使用）
+  # 実際の抽選は課金レア召喚
+#  rare2_pair:
+#    start: "2012-07-11 10:00"
+#    end: "2012-07-12 20:59"
+
+  # レイドガチャ定義（期間定義だけで使用）
+  # 実際の抽選は課金レア召喚
+#  rare2_raid:
+#    start: "2012-07-12 10:00"
+#    end: "2012-07-21 23:59"
+
+  # レイド用チケットガチャ（定義の上書きで対応）
+#  rare1:
+#    start: "2012-07-12 10:00"
+#    end: "2012-07-21 23:59"
+#    special_card:
+#      # レアリティ
+#      30:
+#        # カード番号：確率
+#        # ミカエル
+#        126: 15
+#      40:
+#        # ロンギヌス
+#        577: 25
+#    overwrite: 1
+  # レイド用レア課金ガチャ（定義の上書きで対応）
+#  rare2:
+#    start: "2012-07-12 10:00"
+#    end: "2012-07-21 23:59"
+#    special_card:
+#      # レアリティ
+#      30:
+#        # カード番号：確率
+#        # ミカエル
+#        126: 15
+#      40:
+#        # ロンギヌス
+#        577: 25
+#    card_mst_list:
+#      - 400
+#      - 246
+#      - 106
+#      - 416
+#      - 242
+#      - 577
+#    overwrite: 1
+  # レイド用初回レア課金ガチャ（定義の上書きで対応）
+#  rare2_1st:
+#    start: "2012-07-12 10:00"
+#    end: "2012-07-21 23:59"
+#    special_card:
+#      # レアリティ
+#      30:
+#        # カード番号：確率
+#        # ミカエル
+#        126: 15
+#      40:
+#        # ロンギヌス
+#        577: 25
+#    card_mst_list:
+#      - 400
+#      - 246
+#      - 106
+#      - 416
+#      - 242
+#      - 577
+#    overwrite: 1
+
+
+  # レア11連お買い得ガチャ　はとがもらえるよ
+#  rare2_11_raid_1:
+#    start: "2012-07-12 17:00"
+#    end: "2012-07-20 15:59"
+#    purchase_money: 3000
+#    card_num: 11
+#    miss_count:
+#      key: rare_miss_count
+#      num: 10
+#    user_attr_per: 30
+#    category_id: 2
+#    present:
+#      comment: 'レア11連召喚のおまけです。'
+#      card:
+#        # カードマスタID
+#        612:
+#          # 個数
+#          1
+#      item:
+#        # アイテムマスタID
+#        2:
+#          # 個数
+#          2
+#    lot:
+#      # rarity番号 : 確率
+#      30: 89
+#      40: 9.7
+#      50: 1.1
+#      60: 0.2
+#    special_card:
+#      # レアリティ
+#      30:
+#        # カード番号：確率
+#        # ミカエル
+#        126: 15
+#      40:
+#        # ロンギヌス
+#        577: 25
+
+
+  # レア4連
+#  rare2_4:
+#    start: "2012-07-18 15:30"
+#    end: "2012-07-20 11:59"
+#    purchase_money: 1000
+#    card_num: 4
+#    miss_count:
+#      key: rare_miss_count
+#      num: 10
+#    user_attr_per: 30
+#    category_id: 2
+#    lot:
+#      # rarity番号 : 確率
+#      30: 89
+#      40: 9.7
+#      50: 1.1
+#      60: 0.2
+#    special_card:
+#      # レアリティ
+#      30:
+#        # カード番号：確率
+#        # ミカエル
+#        126: 35
+#      40:
+#        # ロンギヌス
+#        577: 50
+
+  # レア11連お買い得ガチャ　はとがもらえるよ
+#  rare2_11_hato_2:
+#    start: "2012-07-20 16:00"
+#    end: "2012-07-24 19:10"
+#    purchase_money: 3000
+#    card_num: 11
+#    miss_count:
+#      key: rare_miss_count
+#      num: 10
+#    user_attr_per: 30
+#    category_id: 2
+#    present:
+#      comment: 'レア11連召喚のおまけです。'
+#      card:
+#        # カードマスタID
+#        612:
+#          # 個数
+#          1
+#    lot:
+#      # rarity番号 : 確率
+#      30: 89
+#      40: 9.7
+#      50: 1.1
+#      60: 0.2
+
+  # HRチケットガチャ
+  rare1_hr_ticket:
+    ticket:
+      type: rare_1_hr
+      num: 1
+    card_num: 1
+    category_id: 2
+    lot:
+      # rarity番号 : 確率
+      40: 99.55
+      50: 0.4
+      60: 0.05
+
+  # SRチケットガチャ
+  rare1_sr_ticket:
+    ticket:
+      type: rare_1_sr
+      num: 1
+    card_num: 1
+    category_id: 2
+    lot:
+      # rarity番号 : 確率
+      50: 99.95
+      60: 0.05
+
+
+ # ノーマル召喚レア３倍定義（期間定義だけで使用）
+#  normal_r_x3:
+#    start: "2012-08-10 14:00"
+#    end: "2012-08-13 14:59:59"
+ # 一日一回無料レア３倍
+#  one_day:
+#    start: "2012-08-10 14:00"
+#    end: "2012-08-13 14:59:59"
+#    lot:
+#      # rarity番号 : 確率
+#      10: 84
+#      20: 14.5
+#      30: 1.5
+#    overwrite: 1
+ # ランチタイム無料レア３倍
+#  lunchtime:
+#    start: "2012-08-10 14:00"
+#    end: "2012-08-13 14:59:59"
+#    lot:
+#      # rarity番号 : 確率
+#      10: 84
+#      20: 14.5
+#      30: 1.5
+#    overwrite: 1
+ # ディナータイム無料レア３倍
+#  dinnertime:
+#    start: "2012-08-10 14:00"
+#    end: "2012-08-13 14:59:59"
+#    lot:
+#      # rarity番号 : 確率
+#      10: 84
+#      20: 14.5
+#      30: 1.5
+#    overwrite: 1
+ # 通常ガチャレア３倍
+#  normal:
+#    start: "2012-08-10 14:00"
+#    end: "2012-08-13 14:59:59"
+#    lot:
+#      # rarity番号 : 確率
+#      10: 84
+#      20: 14.5
+#      30: 1.5
+#    overwrite: 1
+
+
+  # SRx2定義（期間定義だけで使用）
+#  rare2_sr_x2:
+#    start: "2012-07-26 16:00"
+#    end: "2012-07-28 20:59"
+#  # レア11連SRx2、ハト、2000ギル
+#  rare2_11_present_2:
+#    start: "2012-07-26 16:00"
+#    end: "2012-07-28 22:00"
+#    purchase_money: 3000
+#    card_num: 11
+#    miss_count:
+#      key: rare_miss_count
+#      num: 10
+#    user_attr_per: 30
+#    category_id: 2
+#    present:
+#      comment: 'レア11連召喚のおまけです。'
+#      virtual_money: 20000
+#    lot:
+#      # rarity番号 : 確率
+#      30: 89
+#      40: 8.6
+#      50: 2
+#      60: 0.4
+#  # レア11連SRx2、ハト、2000ギル（後半戦）
+#  rare2_11_present_2_2:
+#    start: "2012-07-26 20:00"
+#    end: "2012-07-28 20:59"
+#    purchase_money: 3000
+#    card_num: 11
+#    miss_count:
+#      key: rare_miss_count
+#      num: 10
+#    user_attr_per: 30
+#    category_id: 2
+#    present:
+#      comment: 'レア11連召喚のおまけです。'
+#      virtual_money: 20000
+#      card:
+#        # カードマスタID
+#        612:
+#          # 個数
+#          1
+#    lot:
+#      # rarity番号 : 確率
+#      30: 89
+#      40: 8.6
+#      50: 2
+#      60: 0.4
+#  # SRx2用レア課金ガチャ（定義の上書きで対応）
+#  rare2:
+#    start: "2012-07-26 16:00"
+#    end: "2012-07-28 20:59"
+#    lot:
+#      # rarity番号 : 確率
+#      30: 89
+#      40: 8.6
+#      50: 2
+#      60: 0.4
+#    overwrite: 1
+#  # SRx2用初回レア課金ガチャ（定義の上書きで対応）
+#  rare2_1st:
+#    start: "2012-07-26 16:00"
+#    end: "2012-07-28 20:59"
+#    lot:
+#      # rarity番号 : 確率
+#      30: 89
+#      40: 8.6
+#      50: 2
+#      60: 0.4
+#    overwrite: 1
+
+
+#  # レア11連ガチャ　アーサーシリーズ
+#  rare2_11_knights:
+#    bg_img: '/img/campaign/bana/gacha_cam9_2.jpg'
+#    start: "2012-08-02 11:00"
+#    end: "2012-08-12 19:10"
+#    purchase_money: 3000
+#    card_num: 11
+#    miss_count:
+#      key: rare_miss_count
+#      num: 10
+#    user_attr_per: 30
+#    category_id: 2
+#    present:
+#      comment: 'レア11連召喚のおまけです。'
+#      card:
+#        # カードマスタID
+#        612:
+#          # 個数
+#          1
+#    lot:
+#      # rarity番号 : 確率
+#      30: 89
+#      40: 9.7
+#      50: 1.1
+#      60: 0.2
+#    # 期間限定で排出カードの追加（確率N倍にも使えるよ）
+#    add_card:
+#      - 671
+#      - 581
+#  # レイド用レア課金ガチャ（定義の上書きで対応）
+#  rare2:
+#    start: "2012-08-02 11:00"
+#    end: "2012-08-07 21:59"
+#    # 期間限定で排出カードの追加（確率N倍にも使えるよ）
+#    add_card:
+#      - 671
+#      - 581
+#    overwrite: 1
+#  # レイド用初回レア課金ガチャ（定義の上書きで対応）
+#  rare2_1st:
+#    start: "2012-08-02 11:00"
+#    end: "2012-08-07 21:59"
+#    # 期間限定で排出カードの追加（確率N倍にも使えるよ）
+#    add_card:
+#      - 671
+#      - 581
+#    overwrite: 1
+
+ # 深海告知ページ開いてる期間
+  raid2_eve:
+    start: "2012-11-09 11:00"
+    end: "2012-11-30 11:00"
+
+ # レイド用チケットガチャ（定義の上書きで対応）
+#  rare1:
+#    start: "2012-08-10 11:00"
+#    end: "2012-08-21 23:59:59"
+#    special_card:
+#      # レアリティ
+#      40:
+#        # カード番号：確率
+#        # アプサラス
+#        737: 25
+#      30:
+#        # ビーストテイマー
+#        741: 10
+#        786: 20
+#        790: 20
+#    overwrite: 1
+ # レイド用レア課金ガチャ（定義の上書きで対応）
+#  rare2:
+#    start: "2012-08-10 11:00"
+#    end: "2012-08-21 23:59:59"
+#    special_card:
+#      # レアリティ
+#      40:
+#        # カード番号：確率
+#        # アプサラス
+#        737: 25
+#      30:
+#        # ビーストテイマー
+#        741: 10
+#        786: 20
+#        790: 20
+#    card_mst_list:
+#      - 721
+#      - 395
+#      - 106
+#      - 246
+#      - 769
+#      - 737
+#    overwrite: 1
+ # レイド用初回レア課金ガチャ（定義の上書きで対応）
+#  rare2_1st:
+#    start: "2012-08-10 11:00"
+#    end: "2012-08-21 23:59:59"
+#    special_card:
+#     # レアリティ
+#      40:
+#        # カード番号：確率
+#        # アプサラス
+#        737: 25
+#      30:
+#        # ビーストテイマー
+#        741: 10
+#        786: 20
+#        790: 20
+#    card_mst_list:
+#      - 721
+#      - 395
+#      - 106
+#      - 246
+#      - 769
+#      - 737
+#    overwrite: 1
+
+
+# # レア11連お買い得ガチャ　はとがもらえるよ
+  rare2_11_raid_2_a:
+    bg_img: '/img/campaign/bana/gacha_cam18_2.jpg'
+    start: "2012-11-09 11:00"
+    end: "2012-11-30 11:00"
+    purchase_money: 3000
+    card_num: 11
+    # 補填回数
+    miss_count:
+      key: rare_miss_count
+      num: 10
+    user_attr_per: 30
+    category_id: 2
+    present:
+      comment: 'レア11連召喚のおまけです。'
+      card:
+        # カードマスタID
+        220036:
+          # 個数
+          1
+      item:
+        # アイテムマスタID
+        2:
+          # 個数
+          2
+    lot:
+      # rarity番号 : 確率
+      # game.yaml内と基本統一
+      30: 89
+      40: 9.7
+      50: 1.1
+      60: 0.2
+    special_card:
+      # レアリティ
+      50:
+        # カード番号：確率
+        # アプサラス
+        220036: 30
+      40:
+        # ビーストテイマー
+        220036: 25
+ # レア11連お買い得ガチャ　はとがもらえるよ
+#  rare2_11_raid_2_b:
+#    bg_img: '/img/campaign/bana/gacha_cam18_2.jpg'
+#    start: "2012-08-13 23:59"
+#    end: "2012-08-14 23:59:59"
+#    purchase_money: 3000
+#    card_num: 11
+#    # 補填回数
+#    miss_count:
+#      key: rare_miss_count
+#      num: 10
+#    user_attr_per: 30
+#    category_id: 2
+#    present:
+#      comment: 'レア11連召喚のおまけです。'
+#      card:
+#        # カードマスタID
+#        612:
+#          # 個数
+#          1
+#      item:
+#        # アイテムマスタID
+#        2:
+#          # 個数
+#          2
+#    lot:
+#      # rarity番号 : 確率
+#      # game.yaml内と基本統一
+#      30: 89
+#      40: 9.7
+#      50: 1.1
+#      60: 0.2
+#    special_card:
+#      # レアリティ
+#      40:
+#        # カード番号：確率
+#        # アプサラス
+#        737: 45
+#      30:
+#        # ビーストテ
+#        741: 40
+
+
+ # 深海告知ページ開いてる期間（後半戦）
+#  raid2_eve2:
+#    start: "2012-08-16 10:59"
+#    end: "2012-08-21 23:59:59"
+
+ # レイド２　１１連２本目
+#  rare2_11_raid_2_a_2:
+#    bg_img: '/img/campaign/bana/gacha_cam19_2.jpg'
+#    start: "2012-08-16 11:00"
+#    end: "2012-08-20 12:42"
+#    purchase_money: 3000
+#    card_num: 11
+#    # 補填回数
+#    miss_count:
+#      key: rare_miss_count
+#      num: 10
+#    user_attr_per: 30
+#    category_id: 2
+#    present:
+#      comment: 'レア11連召喚のおまけです。'
+#      card:
+#        # カードマスタID
+#        612:
+#          # 個数
+#          2
+#      item:
+#        # アイテムマスタID
+#        2:
+#          # 個数
+#          1
+#    lot:
+#      # rarity番号 : 確率
+#      # game.yaml内と基本統一
+#      30: 89
+#      40: 9.7
+#      50: 1.1
+#      60: 0.2
+#    special_card:
+#      # レアリティ
+#      40:
+#        # カード番号：確率
+#        # アプサラス
+#        737: 40
+#      30:
+#        # ビーストテイマー
+#        741: 10
+#        786: 20
+#        790: 20
+
+ # レイド２　１１連２本目(アイテム変更ー＞秘薬)
+#  rare2_11_raid_2_b_2:
+#    bg_img: '/img/campaign/bana/gacha_cam20_2.jpg'
+#    start: "2012-08-20 12:41"
+#    end: "2012-08-21 23:59:59"
+#    purchase_money: 3000
+#    card_num: 11
+#    # 補填回数
+#    miss_count:
+#      key: rare_miss_count
+#      num: 10
+#    user_attr_per: 30
+#    category_id: 2
+#    present:
+#      comment: 'レア11連召喚のおまけです。'
+#      card:
+#        # カードマスタID
+#        612:
+#          # 個数
+#          2
+#      item:
+#        # アイテムマスタID
+#        19:
+#          # 個数
+#          1
+#    lot:
+#      # rarity番号 : 確率
+#      # game.yaml内と基本統一
+#      30: 89
+#      40: 9.7
+#      50: 1.1
+#      60: 0.2
+#    special_card:
+#      # レアリティ
+#      40:
+#        # カード番号：確率
+#        # アプサラス
+#        737: 40
+#      30:
+#        # ビーストテイマー
+#        741: 10
+#        786: 20
+#        790: 20
+
+
+
+
+
+#===============   ガーディアン 召喚キャンペーン用 =====================
+
+# ■ノーマル召喚レア３倍
+#
+#  'overwrite' は 通常のノーマル召喚定義にが上書きされる指定
+
+  normal:
+      start: "2012-12-01 17:00:00"
+      end:   "2013-01-31 20:59:59"
+      lot:
+        # rarity番号 : 確率
+        10: 84
+        20: 14.5
+        30: 1.5
+      overwrite: 1
+
+
+# ■新カードパック配信
+# 不明
+
+#  rare2_11_present:
+#    start: "2012-10-01 13:00"
+#    end: "2012-11-30 16:00"
+#    purchase_money: 3000
+#    card_num: 11
+#    miss_count:
+#      key: rare_miss_count
+#      num: 10
+#    user_attr_per: 30
+#    category_id: 2
+#    present:
+#      comment: 'レア11連召喚のおまけです。'
+#      virtual_money: 30000
+##      item:
+##        # アイテムマスタID
+##        2:
+##          # 個数
+##          1
+#    lot:
+#      # rarity番号 : 確率
+#      20: 89
+#      30: 9.7
+#      40: 1.1
+#      50: 0.2
+
+
+# ■11連召喚+おまけ付き
+#
+  rare2_11time_present:
+    start: "2012-11-5 15:00:00"
+    end: "2012-12-11 14:59:59"
+    purchase_money: 3000
+    card_num: 11
+    miss_count:
+      key: rare_miss_count
+      num: 10
+    #user_attr_per: 30
+    category_id: 2
+    present:
+      comment: 'レア11連召喚のおまけです。'
+      virtual_money: 30000
+      #gacha_point: 100
+      # 強化クリスタル x 2
+      #card :
+      #   612 : 2
+      #card :
+      #    353 : 1
+      #    87 : 1
+      #天魔の宴　鉄の剣
+      item:
+        15: 2
+      display: 'virtual_money' # 演出の最後に表示させる おまけ (card or item or gacha_point or virtual_money
+    lot:
+      # rarity番号 : 確率
+      30: 89
+      40: 9.7
+      50: 1.1
+      60: 0.2
+    #specific_interrup_card:
+      #230018: 25  #忠実なる騎士フローレンス R   25.0%
+      #230030: 25  #秘密を守るスノーホワイト R   25.0%
+      #330025: 25  #深き森のグレーテル       R   25.0%
+      #330059: 8   #于禁                     R   8.0%
+      #340056: 7   #アマゾネスアーチャー     HR  7.0%
+      #240014: 7   #未来の啓示スクルド       HR  7.0%
+      #150004: 3   #戦闘天使カマエル         SR  3.0%
+
+
+
+
+# ■ 属性召喚 関連
+#
+
+#== 火属性
+  #rare2_attr_sei_6:
+  rare2_attr_hi_1:
+    start: "2012-12-01 00:00:00"
+    end:   "2012-12-09 23:59:59"
+    purchase_money: 100
+    card_num: 1
+    time_count:
+      key: event_1_count
+      #num: 3
+      num: 1
+    open_time:  "00:00:00"
+    close_time: "23:59:59"
+    category_id: 3
+    effect_id: 2
+    lot:
+      # rarity番号 : 確率
+      30: 96
+      40: 3.55
+      50: 0.4
+      60: 0.05
+
+
+#== 魔属性
+#== 水属性
+  #rare2_attr_yami_6:
+  rare2_attr_mizu_1:
+    start: "2012-12-01 00:00:00"
+    end:   "2012-12-09 23:59:59"
+    purchase_money: 100
+    card_num: 1
+    time_count:
+      key: event_1_count
+      #num: 3
+      num: 1
+    open_time:  "00:00:00"
+    close_time: "23:59:59"
+    category_id: 4
+    effect_id: 2
+    lot:
+      # rarity番号 : 確率
+      30: 96
+      40: 3.55
+      50: 0.4
+      60: 0.05
+
+
+
+#== 人属性
+#== 風属性
+  #rare2_attr_hito_6:
+  rare2_attr_kaze_1:
+    start: "2012-12-01 00:00:00"
+    end:   "2012-12-09 23:59:59"
+    purchase_money: 100
+    card_num: 1
+    time_count:
+      key: event_1_count
+      #num: 3
+      num: 1
+    open_time:  "00:00:00"
+    close_time: "23:59:59"
+    category_id: 5
+    effect_id: 2
+    lot:
+      # rarity番号 : 確率
+      30: 96
+      40: 3.55
+      50: 0.4
+      60: 0.05

@@ -1,0 +1,109 @@
+# ガーバトイベント設定
+rvr:
+  # RVR戦
+  one_time_battle:
+    # イベント期間指定　他のイベントパラメータと同じなのでガチャあたりを参照してください
+    # startは本編開始日時
+    start: "2014-03-17 00:00"
+    end: "2014-03-24 23:59"
+    # disp_startは予告開始日時
+    disp_start: "2014-03-17 00:00"
+    disp_end: "2014-03-24 23:59"
+    # GVGへの反映フラグ
+    gvg_battle_enable: true
+    #ロキ
+    festival_rvr_a_img: "stage_rvr_a"
+    #オーディン
+    festival_rvr_b_img: "stage_rvr_b"
+    gvg_today_times_count: 1
+    # 集計中表示時間
+    processing_time:
+      hours: 1
+      minutes: 0
+    # 結果発表表示時間
+    result_time:
+      hours: 12
+      minutes: 0
+    # 上位騎士団表示数
+    pickup_guild_num: 5
+    # 報酬受け取り期限(一週間）
+    present_receive_limit: " 23:59:59"
+    # プレゼントユニークＩＤ（他のお知らせ経由プレゼントとかぶらないようにしてね）
+    present_unique_id: 01
+    # ランキング報酬
+    # -
+    #   rank: ランキング順位ぴったり賞
+    #   rank_over: ランキング順位範囲指定上限　（rank_under とセットで指定）
+    #   rank_under: ランキング順位範囲指定下限　（rank_over とセットで指定）
+    #   shogo: プレゼント称号指定
+    #     -
+    #       id: 称号マスタID
+    #   yakusyoku: プレゼント役職
+    #     -
+    #       id: 役職マスタID
+    #   card: プレゼントカード　パラメータは勝ち点報酬と同じ
+    #   item: プレゼントアイテム　パラメータは勝ち点報酬と同じ
+    ranking_present_title: 'ガーディアンバトル～聖邪大激突～ランキング報酬です。'
+    ranking_win_list:
+      -
+        text: 'ガーディアンバトル～聖邪大激突～ ランキング1～10位の報酬です。'
+        rank_over: 1
+        rank_under: 10
+        item:
+          8:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～聖邪大激突～ ランキング11～50位の報酬です。'
+        rank_over: 11
+        rank_under: 50
+        item:
+          7:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～聖邪大激突戦～ ランキング51～100位の報酬です。'
+        rank_over: 51
+        rank_under: 100
+        item:
+          1:
+            # 個数
+            1
+    ranking_lose_list:
+      -
+        text: 'ガーディアンバトル～聖邪大激突～ ランキング1～10位の報酬です。'
+        rank_over: 1
+        rank_under: 10
+        item:
+          7:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～聖邪大激突～ ランキング11～50位の報酬です。'
+        rank_over: 11
+        rank_under: 50
+        item:
+          1:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～聖邪大激突戦～ ランキング51～100位の報酬です。'
+        rank_over: 51
+        rank_under: 100
+        item:
+          4:
+            # 個数
+            3
+    victory_present_title: 'ガーディアンバトル～聖邪大激突～勝利報酬です。'
+    victory_list:
+        rvr_win:
+            present_unique_id: 02
+            text: 'ガーディアンバトル～聖邪大激突戦～ 勝利の報酬です。'
+            virtual_money: 30000
+            gacha_point: 2000
+            item:
+              4:
+                5
+            card:
+              614:
+                1

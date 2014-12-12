@@ -1,0 +1,460 @@
+grow_event:
+
+  #################################################################
+  # Active Time
+  #################################################################
+  # Event Active Time start-end
+  start: '2013-09-11 14:00:00'
+  end:   '2013-10-13 23:59:59'
+
+  # Event Page (Preview, ending screen, etc.) display period start-end
+  disp_start: '2013-09-11 14:00:00'
+  disp_end:   '2013-10-13 23:59:59'
+
+  #################################################################
+  # Growth Settings
+  #################################################################
+  # Growth Fusion
+  grow_merge:
+    # Number of materials cards granted at once
+    material_max_num: 20
+    # 与えられる最低レア度
+    material_under_rarity: 30 # R+ (Exclude R final form)
+    # Friendship Points/EXP Gain Rate (Multiplier for rate of EXP gain)
+    grow_love_exp_rate: 0.1
+
+    merge_per_rate: 1.3
+
+    # EXP required for gaining a level after reaching final level
+    one_level_up_need_exp: 120000
+
+#    need_exp_level_range:
+#      1000: 1000000
+
+    # Special Growth Card ID: EXP acquired
+    # card_mst_id: exp
+    grow_special_card_exp:
+      701: 1200
+      702: 3600
+      703: 12000
+
+
+    # Cards that cannot be used as growth materials
+    not_use_material_card_ids:
+      #
+      - 612
+      - 613
+      - 614
+      - 777
+      - 330900
+      - 331900
+      - 332900
+      - 333900
+      - 334900
+      - 339900
+      - 341900
+      - 342900
+      - 343900
+      - 344900
+      - 349900
+      - 351900
+      - 352900
+      - 353900
+      - 354900
+      - 355900
+      - 356900
+      - 357900
+      - 359900
+
+
+    # mst_id of HR or lower cards with special growth usage
+    can_use_under_rare_card:
+    - 701
+    - 120119
+    - 121119
+    - 122119
+    - 129119
+    - 120120
+    - 121120
+    - 122120
+    - 129120
+    - 310131
+    - 311131
+    - 312131
+    - 319131
+    - 210120
+    - 211120
+    - 212120
+    - 219120
+    - 110121
+    - 111121
+    - 112121
+    - 119121
+
+
+
+    # Growth bonus cards
+    material_bonus:
+      # Bonus based on quantity owned
+      # up_type within material_bonus:
+      #   Qty. of cards owned corresponding to all clans
+      #     Bonus
+      up_type:
+        1:
+          1:
+            2
+          5:
+            2.2
+          10:
+            2.5
+          19:
+            3
+
+      # Growth Bonus Target Cards
+      # type: - Corresponding type indicated by up_type
+      #   card_mst_id: cnt (How many cards can one card apply to)
+      up_card:
+        1:
+          -
+            # Dusk Queen
+            240900: 1
+            241900: 2
+            242900: 3
+            243900: 4
+            244900: 5
+            249900: 6
+            251900: 7
+            252900: 8
+            253900: 9
+            254900: 10
+            259900: 11
+            261900: 12
+            262900: 13
+            264900: 14
+            265900: 15
+            266900: 16
+            267900: 17
+            268900: 18
+            263900: 19
+
+#  # Growth Character Friendship Points
+#  grow_love_point:
+#    # Friendship Points
+#    1:
+#      # Accumulated EXP
+#      0
+#    2:
+#      2000
+#    3:
+#      7800
+#    4:
+#      20000
+#    5:
+#      40000
+#    6:
+#      75000
+#    7:
+#      100000
+#    8:
+#      130000
+#    9:
+#      165000
+#    10:
+#      200000
+
+
+  #################################################################
+  # Raising Rewards
+  #################################################################
+  reward_list:
+    # Growth Rewards
+    grow_reward:
+      category_type: 1
+      reward_comment: 'Growth (Evolved into $chara_name) Reward'
+      disp_card_mst_id: 330900
+      reward:
+        once:
+          # Growth Character Level
+          # Amandra LV40
+          40:
+            -
+              type: virtual_money
+              id: 0
+              cnt: 30000
+              img: 9
+              title: 'Newborn Amandra +'
+              color: red
+          # Amandra +LV40
+          80:
+            -
+              type: card
+              id: 330900
+              cnt: 1
+              img: 11
+              title: 'Newborn Amandra ++'
+              color: red
+          # Amandra ++LV40
+          120:
+            -
+              type: gacha_p
+              id: 0
+              cnt: 5000
+              img: 10
+              title: 'Newborn Amandra +3'
+              color: red
+          # Amandra +3LV40
+          160:
+            -
+              type: card
+              id: 330900
+              cnt: 1
+              img: 11
+              title: 'Newborn Amandra +4'
+              color: red
+          # Amandra +4LV40
+          200:
+            -
+              type: item
+              id: 4
+              cnt: 1
+              img: 1
+              title: 'Dame Amandra '
+              color: red
+          # Eucharis Amandra LV50
+          250:
+            -
+              type: card
+              id: 330900
+              cnt: 1
+              img: 11
+              title: 'Dame Amandra +'
+              color: green
+          # Eucharis Amandra +LV50
+          300:
+            -
+              type: card
+              id: 701
+              cnt: 3
+              img: 500
+              title: 'Dame Amandra ++'
+              color: green
+          # Eucharis Amandra ++LV50
+          350:
+            -
+              type: card
+              id: 330900
+              cnt: 1
+              img: 11
+              title: 'Dame Amandra +3'
+              color: green
+          # Eucharis Amandra +3LV50
+          400:
+            -
+              type: item
+              id: 4
+              cnt: 2
+              img: 2
+              title: 'Dame Amandra +4'
+              color: green
+          # Eucharis Amandra +4LV50
+          450:
+            -
+              type: card
+              id: 330900
+              cnt: 1
+              img: 11
+              title: 'Chevalier Amandra '
+              color: green
+          # Cavalier Amandra LV60
+          510:
+            -
+              type: card
+              id: 701
+              cnt: 3
+              img: 500
+              title: 'Chevalier Amandra +'
+              color: purple
+          # Cavalier Amandra +LV60
+          570:
+            -
+              type: card
+              id: 330900
+              cnt: 1
+              img: 11
+              title: 'Chevalier Amandra ++'
+              color: purple
+          # Cavalier Amandra ++LV60
+          630:
+            -
+              type: item
+              id: 4
+              cnt: 3
+              img: 3
+              title: 'Chevalier Amandra +3'
+              color: purple
+          # Cavalier Amandra +3LV60
+          690:
+            -
+              type: card
+              id: 330900
+              cnt: 1
+              img: 11
+              title: 'Chevalier Amandra +4'
+              color: purple
+          # Cavalier Amandra +4LV60
+          750:
+            -
+              type: card
+              id: 701
+              cnt: 3
+              img: 500
+              title: 'Chevalier Amandra +5'
+              color: purple
+          # Cavalier Amandra +5LV60
+          810:
+            -
+              type: card
+              id: 330900
+              cnt: 1
+              img: 11
+              title: 'Chevalier Amandra +6'
+              color: purple
+          # Cavalier Amandra +6LV60
+          870:
+            -
+              type: item
+              id: 4
+              cnt: 4
+              img: 4
+              title: 'Chevalier Amandra +7'
+              color: purple
+          # Cavalier Amandra +7LV60
+          930:
+            -
+              type: card
+              id: 330900
+              cnt: 1
+              img: 8
+              title: 'Valkyrie Amandra '
+              color: purple
+            -
+              type: item
+              id: 7
+              cnt: 1
+              img: 8
+              title: 'Valkyrie Amandra '
+              color: purple
+
+        repeat:
+          # Interval:
+          interval: 30
+          items:
+            -
+              type: card
+              id: 701
+              cnt: 2
+              img: 6
+              title: 'Valkyrie Amandra '
+
+    # Friendship Points Rewards
+    love_reward:
+      category_type: 2
+      reward_comment: 'Reward for Reaching Friendship Points $love_point'
+      disp_card_mst_id: 1272
+      reward:
+        # Friendship PointsLv
+        2:
+          -
+            # Amandra 
+            type: card
+            id: 330900
+            cnt: 1
+        3:
+          -
+            # Amandra 
+            type: card
+            id: 330900
+            cnt: 1
+          -
+            # Personal Use Stamina Potion 
+            type: item
+            id : 4
+            cnt : 1
+        4:
+          -
+            # Amandra 
+            type: card
+            id: 330900
+            cnt: 2
+          -
+            # Dark God's Beans
+            type: card
+            id : 701
+            cnt : 3
+        5:
+          -
+            # Amandra 
+            type: card
+            id: 330900
+            cnt: 1
+          -
+            # Power Crystal Lv1
+            type: card
+            id: 612
+            cnt: 1
+        6:
+          -
+            # Amandra 
+            type: card
+            id: 330900
+            cnt: 1
+          -
+            # Personal Use Stamina Potion x2
+            type: item
+            id : 4
+            cnt : 2
+        7:
+          -
+            # Amandra 
+            type: card
+            id: 330900
+            cnt: 1
+          -
+            # Dark god's beans
+            type: card
+            id : 701
+            cnt : 3
+        8:
+          -
+            # Amandra 
+            type: card
+            id: 330900
+            cnt: 1
+          -
+            # Power Crystal Lv2
+            type: card
+            id: 613
+            cnt: 1
+        9:
+          -
+            # Amandra 
+            type: card
+            id: 330900
+            cnt: 1
+          -
+            # Personal Use Stamina Potion x3
+            type: item
+            id : 4
+            cnt : 3
+        10:
+          -
+            # Amandra x2
+            type: card
+            id: 330900
+            cnt: 1
+          -
+            # Dark god's beans
+            type: card
+            id : 701
+            cnt : 3
+

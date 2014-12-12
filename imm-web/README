@@ -1,0 +1,38 @@
+Immortalis
+==========
+
+Welcome to Immortalis, Aeria's greatest mobile success. 
+
+Immortalis is a multiplayer mobile card game originally developed by a Japanese game company called “Pokelabo”. It is currently deployed in 4 territories.
+
+# TODO / Work in progress about this repository
+
+This repo will be organized in a similar fashion to the BAM repository (https://gitlab.aeriagames.com/bam/bam-server). We will separate all assets originally on app/www/img and add them to a separate repo called imm-assets. This way deployment will only update game files and all the assets will be already stored on AWS automatically.
+
+In order to accomplish this we need to:
+- Create jenkins jobs that support these operations
+- Have our server architecture migrated to AWS (outsourced)
+- Create all repos in a similar fashion to BAM 
+
+# Useful links
+
+- Main hub of documentation, the internal Wiki
+https://sites.google.com/a/aeriagames.com/aeria51-eu/immortalis-home/imm-engineering
+
+- Engineering know-how
+https://docs.google.com/a/aeriagames.com/document/d/1LmQdO95kuvpBP3LcNYdV4QGIAb18-uit9FZ8oIzfc4M/edit#heading=h.ufxw8yikv8ik
+
+- Known architectural issues
+https://docs.google.com/a/aeriagames.com/document/d/1qq79slCGnl0O25BrTblRRHQfeXsaLJC1yezRsoEljuY/edit
+
+- Configuration files
+<root>/app/config/development/<language>/ - development configuration files (they work together with QA)
+<root>/app/config/production/<language>/ - production configuration files
+
+# Engineering contacts
+
+- robert.stangel@aeriagames.com - Robert Stangel
+- matjaz.trcek@aeriagames.com - Matjaz Trcek
+- vitalii.bondarenko@aeriagames.com - Vitaliy Bondarenko
+- joao.pereira@aeriagames.com - João Pereira
+- oleg.fischer@aeriagames.com - Oleg Fischer

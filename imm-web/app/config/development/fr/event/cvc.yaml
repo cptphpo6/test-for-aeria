@@ -1,0 +1,2049 @@
+# ガーバトイベント設定
+cvc:
+
+  # Default parameters for CMS tool. We can control everything here from CMS.
+  default:
+    start: "2013-03-06 12:15"
+    end: "2013-03-08 12:30"
+    disp_start: "2013-03-06 12:15"
+    disp_end: "2013-03-08 12:30"
+    # 報酬受け取り期限
+    present_receive_limit: "2013/03/22 23:59:59"
+    # プレゼントユニークＩＤ（他のお知らせ経由プレゼントとかぶらないようにしてね）
+    present_unique_id: 12120603
+    # 勝ち点
+    # N試合目：勝ち点
+    win_point:
+      1: 1
+      2: 2
+      3: 3
+      4: 2
+      5: 1
+    # name of card in opening movie. 
+    # "" designates no card will be shown
+    card_name: ""
+    #   item: アイテムプレゼント
+    #     -
+    #       id: アイテムマスタID
+    #       num: 付与数
+    #   card: カードプレゼント
+    #     -
+    #       id: カードマスタID
+    #       num: 付与数    
+    point_list:
+      9:
+        text: 'Selection Battle Reward: 9 Victory Points'
+        gacha_point: 1000
+      12:
+        text: 'Selection Battle Reward: 12 Victory Points'
+        virtual_money: 5000
+      15:
+        text: 'Selection Battle Reward: 15 Victory Points'
+        item:
+          -
+            id: 4
+            num: 1
+      18:
+        text: 'Selection Battle Reward: 18 Victory Points'
+        card:
+          -
+            id: 612
+            num: 1
+      21:
+        text: 'Selection Battle Reward: 21 Victory Points'
+        item:
+          -
+            id: 1
+            num: 1
+      24:
+        text: 'Selection Battle Reward: 24 Victory Points'
+        item:
+          -
+            id: 4
+            num: 1
+      27:
+        text: 'Selection Battle Reward: 27 Victory Points'
+        virtual_money: 10000
+      30:
+        text: 'Selection Battle Reward: 30 Victory Points'
+        card:
+          -
+            id: 612
+            num: 1
+      33:
+        text: 'Selection Battle Reward: 33 Victory Points'
+        item:
+          -
+            id: 4
+            num: 1
+      36:
+        text: 'Selection Battle Reward: 36 Victory Points'
+        yakusyoku:
+          26:
+            2
+      39:
+        text: 'Selection Battle Reward: 39 Victory Points'
+        card:
+          -
+            id: 613
+            num: 1
+      42:
+        text: 'Selection Battle Reward: 42 Victory Points'
+        item:
+          -
+            id: 4
+            num: 1
+      45:
+        text: 'Selection Battle Reward: 45 Victory Points'
+        yakusyoku:
+          27:
+            1
+      48:
+        text: 'Selection Battle Reward: 48 Victory Points'
+        card:
+          -
+            id: 614
+            num: 1
+      51:
+        text: 'Selection Battle Reward: 51 Victory Points'
+        item:
+          -
+            id: 1
+            num: 1
+      54:
+        text: 'Selection Battle Reward: 54 Victory Points'
+        common_shogo:
+          -
+            9000
+    # ランキング報酬
+    # -
+    #   rank: ランキング順位ぴったり賞
+    #   rank_over: ランキング順位範囲指定上限　（rank_under とセットで指定）
+    #   rank_under: ランキング順位範囲指定下限　（rank_over とセットで指定）
+    #   shogo: プレゼント称号指定
+    #     -
+    #       id: 称号マスタID
+    #   yakusyoku: プレゼント役職
+    #     -
+    #       id: 役職マスタID
+    #   card: プレゼントカード　パラメータは勝ち点報酬と同じ
+    #   item: プレゼントアイテム　パラメータは勝ち点報酬と同じ
+    ranking_present_title: 'Selection Battle Rewards'
+    ranking_list:
+      -
+        text: 'Selection Battle: Rewards for Ranks 1-10'
+        rank_over: 1
+        rank_under: 10
+        limit_cp: 50000
+        common_shogo:
+          -
+            9001
+        item:
+          1:
+            # 個数
+            1
+        card:
+          # トリストン
+          160001:
+            # 個数
+            1
+      -
+        text: 'Selection Battle: Rewards for Ranks 11-20'
+        rank_over: 11
+        rank_under: 20
+        limit_cp: 50000
+        common_shogo:
+          -
+            9002
+        item:
+          1:
+            # 個数
+            1
+        card:
+          # トリストン
+          160001:
+            # 個数
+            1
+      -
+        text: 'Selection Battle: Rewards for Ranks 21-30'
+        rank_over: 21
+        rank_under: 30
+        limit_cp: 50000
+        common_shogo:
+          -
+            9003
+        item:
+          1:
+            # 個数
+            1
+        card:
+          # トリストン
+          160001:
+            # 個数
+            1
+      -
+        text: 'Selection Battle: Rewards for Ranks 31-50'
+        rank_over: 31
+        rank_under: 50
+        limit_cp: 50000
+        common_shogo:
+          -
+            9004
+        item:
+          1:
+            # 個数
+            1
+        card:
+          # トリストン
+          160001:
+            # 個数
+            1
+      -
+        text: 'Selection Battle: Rewards for Ranks 51-100'
+        rank_over: 51
+        rank_under: 100
+        limit_cp: 20000
+        common_shogo:
+          -
+            9005
+        item:
+          1:
+            # 個数
+            1
+        card:
+          # アレス
+          250058:
+            # 個数
+            1
+      -
+        text: 'Selection Battle: Rewards for Ranks 101-300'
+        rank_over: 101
+        rank_under: 300
+        limit_cp: 10000
+        common_shogo:
+          -
+            9006
+        item:
+          1:
+            # 個数
+            1
+        card:
+          # ハイランサー
+          140060:
+            # 個数
+            1
+      -
+        text: 'Selection Battle: Rewards for Ranks 301-500'
+        rank_over: 301
+        rank_under: 500
+        limit_cp: 5000
+        common_shogo:
+          -
+            9007
+        item:
+          1:
+            # 個数
+            1
+      -
+        text: 'Selection Battle: Rewards for Ranks 501-1000'
+        rank_over: 501
+        rank_under: 1000
+        common_shogo:
+          -
+            9008           
+
+  # 1st Selection Battle
+  1st:
+    # イベント期間指定　他のイベントパラメータと同じなのでガチャあたりを参照してください
+    start: "2013-01-18 07:00"
+    end: "2013-01-26 23:59"
+    disp_start: "2013-01-18 07:00"
+    disp_end: "2013-01-26 22:00"
+    # 報酬受け取り期限
+    present_receive_limit: "2013/02/09 23:59:59"
+    # プレゼントユニークＩＤ（他のお知らせ経由プレゼントとかぶらないようにしてね）
+    present_unique_id: 12120801
+    # 勝ち点
+    # N試合目：勝ち点
+    win_point:
+      1: 1
+      2: 2
+      3: 3
+      4: 3
+    # 勝ち点報酬
+    # N以上: もの指定
+    #   item: アイテムプレゼント
+    #     -
+    #       id: アイテムマスタID
+    #       num: 付与数
+    #   card: カードプレゼント
+    #     -
+    #       id: カードマスタID
+    #       num: 付与数    
+    point_list:
+      9:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点9の報酬です。'
+        gacha_point: 1000
+      12:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点12の報酬です。'
+        item:
+          -
+            id: 1
+            num: 1
+      15:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点15の報酬です。'
+        item:
+          -
+            id: 4
+            num: 1
+      18:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点18の報酬です。'
+        card:
+          -
+            id: 612
+            num: 1
+      21:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点21の報酬です。'
+        item:
+          -
+            id: 1
+            num: 1
+      24:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点24の報酬です。'
+        item:
+          -
+            id: 4
+            num: 1
+      27:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点27の報酬です。'
+        virtual_money: 10000
+      30:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点30の報酬です。'
+        card:
+          -
+            id: 612
+            num: 1
+      33:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点33の報酬です。'
+        item:
+          -
+            id: 4
+            num: 1
+      36:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点36の報酬です。'
+        yakusyoku:
+          20:
+            100
+      39:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点39の報酬です。'
+        card:
+          -
+            id: 613
+            num: 1
+      42:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点42の報酬です。'
+        item:
+          -
+            id: 4
+            num: 1
+      45:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点45の報酬です。'
+        yakusyoku:
+          21:
+            100
+      48:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点48の報酬です。'
+        card:
+          -
+            id: 614
+            num: 1
+      51:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点51の報酬です。'
+        item:
+          -
+            id: 1
+            num: 1
+      54:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点54の報酬です。'
+        common_shogo:
+          -
+            2
+    # ランキング報酬
+    # -
+    #   rank: ランキング順位ぴったり賞
+    #   rank_over: ランキング順位範囲指定上限　（rank_under とセットで指定）
+    #   rank_under: ランキング順位範囲指定下限　（rank_over とセットで指定）
+    #   shogo: プレゼント称号指定
+    #     -
+    #       id: 称号マスタID
+    #   yakusyoku: プレゼント役職
+    #     -
+    #       id: 役職マスタID
+    #   card: プレゼントカード　パラメータは勝ち点報酬と同じ
+    #   item: プレゼントアイテム　パラメータは勝ち点報酬と同じ
+    ranking_present_title: 'ガーバトイベント～絆編～報酬です。'
+    ranking_list:
+      -
+        text: 'ガーバトイベント～絆編～ ランキング1位の報酬です。'
+        rank: 1
+        limit_cp: 20000
+        shogo:
+          -
+            3
+        yakusyoku:
+          36:
+            100
+        card:
+          # ジャンヌダルク
+          395:
+            # 個数
+            1
+      -
+        text: 'ガーバトイベント～絆編～ ランキング2位の報酬です。'
+        rank: 2
+        limit_cp: 20000
+        shogo:
+          -
+            4
+        yakusyoku:
+          35:
+            100
+        card:
+          # ジャンヌダルク
+          395:
+            # 個数
+            1
+      -
+        text: 'ガーバトイベント～絆編～ ランキング3位の報酬です。'
+        rank: 3
+        limit_cp: 20000
+        shogo:
+          -
+            5
+        yakusyoku:
+          34:
+            100
+        card:
+          # ジャンヌダルク
+          395:
+            # 個数
+            1
+      -
+        text: 'ガーバトイベント～絆編～ ランキング4～10位の報酬です。'
+        rank_over: 4
+        rank_under: 10
+        limit_cp: 20000
+        shogo:
+          -
+            6
+        yakusyoku:
+          33:
+            100
+        card:
+          # ジャンヌダルク
+          395:
+            # 個数
+            1
+      -
+        text: 'ガーバトイベント～絆編～ ランキング11～20位の報酬です。'
+        rank_over: 11
+        rank_under: 20
+        limit_cp: 20000
+        shogo:
+          -
+            7
+        yakusyoku:
+          32:
+            100
+        card:
+          # ジャンヌダルク
+          395:
+            # 個数
+            1
+      -
+        text: 'ガーバトイベント～絆編～ ランキング21～30位の報酬です。'
+        rank_over: 21
+        rank_under: 30
+        limit_cp: 20000
+        shogo:
+          -
+            8
+        yakusyoku:
+          31:
+            100
+        card:
+          # ヴィーナス
+          85:
+            # 個数
+            1
+      -
+        text: 'ガーバトイベント～絆編～ ランキング31～150位の報酬です。'
+        rank_over: 31
+        rank_under: 150
+        limit_cp: 20000
+        shogo:
+          -
+            9
+        yakusyoku:
+          30:
+            100
+        card:
+          # ヴィーナス
+          85:
+            # 個数
+            1
+      -
+        text: 'ガーバトイベント～絆編～ ランキング151～500位の報酬です。'
+        rank_over: 151
+        rank_under: 500
+        limit_cp: 3000
+        shogo:
+          -
+            10
+        yakusyoku:
+          29:
+            100
+        card:
+          # オデュッセウス
+          564:
+            # 個数
+            1
+      -
+        text: 'ガーバトイベント～絆編～ ランキング501～1000位の報酬です。'
+        rank_over: 501
+        rank_under: 1000
+        limit_cp: 3000
+        shogo:
+          -
+            11
+        yakusyoku:
+          28:
+            100
+        card:
+          # オデュッセウス
+          564:
+            # 個数
+            1
+      -
+        text: 'ガーバトイベント～絆編～ ランキング1001～2000位の報酬です。'
+        rank_over: 1001
+        rank_under: 2000
+        limit_cp: 3000
+        shogo:
+          -
+            12
+        yakusyoku:
+          27:
+            100
+        card:
+          # ディアオボロス
+          250:
+            # 個数
+            1
+      -
+        text: 'ガーバトイベント～絆編～ ランキング2001～3000位の報酬です。'
+        rank_over: 2001
+        rank_under: 3000
+        limit_cp: 3000
+        shogo:
+          -
+            13
+        yakusyoku:
+          26:
+            100
+        card:
+          # ディアオボロス
+          250:
+            # 個数
+            1
+      -
+        rank_over: 3001
+        rank_under: 4000
+        limit_cp: 3000
+        shogo:
+          -
+            14
+        yakusyoku:
+          25:
+            100
+      -
+        rank_over: 4001
+        rank_under: 5000
+        limit_cp: 3000
+        shogo:
+          -
+            15
+        yakusyoku:
+          24:
+            100
+      -
+        rank_over: 5001
+        rank_under: 6000
+        limit_cp: 3000
+        shogo:
+          -
+            16
+        yakusyoku:
+          23:
+            100
+      -
+        rank_over: 6001
+        rank_under: 8000
+        limit_cp: 3000
+        shogo:
+          -
+            17
+        yakusyoku:
+          22:
+            100
+      -
+        rank_over: 8001
+        rank_under: 12000
+        limit_cp: 3000
+        shogo:
+          -
+            18
+        yakusyoku:
+          21:
+            100
+      -
+        rank_over: 12001
+        limit_cp: 1
+        shogo:
+          -
+            19
+        yakusyoku:
+          20:
+            100
+  # 2nd Selection Battle
+  2nd:
+    # the key string used for folder name of templates
+    key: "2nd"
+    # イベント期間指定　他のイベントパラメータと同じなのでガチャあたりを参照してください
+    start: "2013-01-31 20:15"
+    end: "2013-02-07 23:30"
+    disp_start: "2013-01-31 20:15"
+    disp_end: "2013-02-07 23:30"
+    # 報酬受け取り期限
+    present_receive_limit: "2013/02/16 23:59:59"
+    # プレゼントユニークＩＤ（他のお知らせ経由プレゼントとかぶらないようにしてね）
+    present_unique_id: 12123101
+    # 勝ち点
+    # N試合目：勝ち点
+    win_point:
+      1: 1
+      2: 2
+      3: 3
+      4: 2
+      5: 1
+    # 勝ち点報酬
+    # N以上: もの指定
+    #   item: アイテムプレゼント
+    #     -
+    #       id: アイテムマスタID
+    #       num: 付与数
+    #   card: カードプレゼント
+    #     -
+    #       id: カードマスタID
+    #       num: 付与数    
+    point_list:
+      9:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点9の報酬です。'
+        gacha_point: 1000
+      12:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点12の報酬です。'
+        virtual_money: 5000
+      15:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点15の報酬です。'
+        item:
+          -
+            id: 5
+            num: 1
+      18:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点18の報酬です。'
+        card:
+          -
+            id: 612
+            num: 1
+      21:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点21の報酬です。'
+        item:
+          -
+            id: 1
+            num: 1
+      24:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点24の報酬です。'
+        item:
+          -
+            id: 4
+            num: 1
+      27:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点27の報酬です。'
+        virtual_money: 10000
+      30:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点30の報酬です。'
+        card:
+          -
+            id: 612
+            num: 1
+      33:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点33の報酬です。'
+        item:
+          -
+            id: 4
+            num: 1
+      36:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点36の報酬です。'
+        yakusyoku:
+          22:
+            2
+      39:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点39の報酬です。'
+        card:
+          -
+            id: 613
+            num: 1
+      42:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点42の報酬です。'
+        item:
+          -
+            id: 4
+            num: 1
+      45:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点45の報酬です。'
+        yakusyoku:
+          23:
+            1
+      48:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点48の報酬です。'
+        card:
+          -
+            id: 614
+            num: 1
+      51:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点51の報酬です。'
+        item:
+          -
+            id: 1
+            num: 1
+      54:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点54の報酬です。'
+        common_shogo:
+          -
+            4
+    # ランキング報酬
+    # -
+    #   rank: ランキング順位ぴったり賞
+    #   rank_over: ランキング順位範囲指定上限　（rank_under とセットで指定）
+    #   rank_under: ランキング順位範囲指定下限　（rank_over とセットで指定）
+    #   shogo: プレゼント称号指定
+    #     -
+    #       id: 称号マスタID
+    #   yakusyoku: プレゼント役職
+    #     -
+    #       id: 役職マスタID
+    #   card: プレゼントカード　パラメータは勝ち点報酬と同じ
+    #   item: プレゼントアイテム　パラメータは勝ち点報酬と同じ
+    ranking_present_title: 'ガーディアンバトル～選抜戦～報酬です。'
+    ranking_list:
+      -
+        text: 'ガーディアンバトル～選抜戦～ ランキング1〜50位の報酬です。'
+        rank_over: 1
+        rank_under: 50
+        limit_cp: 30000
+        common_shogo:
+          -
+            5
+        item:
+          1:
+            # 個数
+            1
+        card:
+          # ジャンヌダルク
+          260062:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦～ ランキング51〜100位の報酬です。'
+        rank_over: 51
+        rank_under: 100
+        limit_cp: 20000
+        common_shogo:
+          -
+            6
+        item:
+          1:
+            # 個数
+            1
+        card:
+          # ジャンヌダルク
+          150062:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦～ ランキング101〜300位の報酬です。'
+        rank_over: 101
+        rank_under: 300
+        limit_cp: 10000
+        common_shogo:
+          -
+            7
+        item:
+          1:
+            # 個数
+            1
+        card:
+          # ジャンヌダルク
+          340066:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦～ ランキング301〜500位の報酬です。'
+        rank_over: 301
+        rank_under: 500
+        limit_cp: 5000
+        common_shogo:
+          -
+            8
+        item:
+          1:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦～ ランキング501〜1000位の報酬です。'
+        rank_over: 501
+        rank_under: 1000
+        common_shogo:
+          -
+            9
+            
+  # 3rd Selection Battle
+  3rd:
+    # the key string used for folder name of templates
+    key: "3rd"
+    # イベント期間指定　他のイベントパラメータと同じなのでガチャあたりを参照してください
+    start: "2013-02-10 20:15"
+    end: "2013-02-15 23:30"
+    disp_start: "2013-02-10 20:15"
+    disp_end: "2013-02-15 23:30"
+    # 報酬受け取り期限
+    present_receive_limit: "2013/02/22 23:59:59"
+    # プレゼントユニークＩＤ（他のお知らせ経由プレゼントとかぶらないようにしてね）
+    present_unique_id: 12121102
+    # 勝ち点
+    # N試合目：勝ち点
+    win_point:
+      1: 1
+      2: 2
+      3: 3
+      4: 2
+      5: 1
+    # 勝ち点報酬
+    # N以上: もの指定
+    #   item: アイテムプレゼント
+    #     -
+    #       id: アイテムマスタID
+    #       num: 付与数
+    #   card: カードプレゼント
+    #     -
+    #       id: カードマスタID
+    #       num: 付与数    
+    point_list:
+      9:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点9の報酬です。'
+        gacha_point: 1000
+      12:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点12の報酬です。'
+        virtual_money: 5000
+      15:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点15の報酬です。'
+        item:
+          -
+            id: 5
+            num: 1
+      18:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点18の報酬です。'
+        card:
+          -
+            id: 612
+            num: 1
+      21:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点21の報酬です。'
+        item:
+          -
+            id: 1
+            num: 1
+      24:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点24の報酬です。'
+        item:
+          -
+            id: 4
+            num: 1
+      27:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点27の報酬です。'
+        virtual_money: 10000
+      30:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点30の報酬です。'
+        card:
+          -
+            id: 612
+            num: 1
+      33:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点33の報酬です。'
+        item:
+          -
+            id: 4
+            num: 1
+      36:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点36の報酬です。'
+        yakusyoku:
+          24:
+            2
+      39:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点39の報酬です。'
+        card:
+          -
+            id: 613
+            num: 1
+      42:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点42の報酬です。'
+        item:
+          -
+            id: 4
+            num: 1
+      45:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点45の報酬です。'
+        yakusyoku:
+          25:
+            1
+      48:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点48の報酬です。'
+        card:
+          -
+            id: 614
+            num: 1
+      51:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点51の報酬です。'
+        item:
+          -
+            id: 1
+            num: 1
+      54:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点54の報酬です。'
+        common_shogo:
+          -
+            10
+    # ランキング報酬
+    # -
+    #   rank: ランキング順位ぴったり賞
+    #   rank_over: ランキング順位範囲指定上限　（rank_under とセットで指定）
+    #   rank_under: ランキング順位範囲指定下限　（rank_over とセットで指定）
+    #   shogo: プレゼント称号指定
+    #     -
+    #       id: 称号マスタID
+    #   yakusyoku: プレゼント役職
+    #     -
+    #       id: 役職マスタID
+    #   card: プレゼントカード　パラメータは勝ち点報酬と同じ
+    #   item: プレゼントアイテム　パラメータは勝ち点報酬と同じ
+    ranking_present_title: 'ガーディアンバトル～選抜戦～報酬です。'
+    ranking_list:
+      -
+        text: 'ガーディアンバトル～選抜戦～ ランキング1〜10位の報酬です。'
+        rank_over: 1
+        rank_under: 10
+        limit_cp: 50000
+        common_shogo:
+          -
+            11
+        item:
+          1:
+            # 個数
+            1
+        card:
+          # トリストン
+          160074:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦～ ランキング11〜20位の報酬です。'
+        rank_over: 11
+        rank_under: 20
+        limit_cp: 50000
+        common_shogo:
+          -
+            12
+        item:
+          1:
+            # 個数
+            1
+        card:
+          # トリストン
+          160074:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦～ ランキング21〜30位の報酬です。'
+        rank_over: 21
+        rank_under: 30
+        limit_cp: 50000
+        common_shogo:
+          -
+            13
+        item:
+          1:
+            # 個数
+            1
+        card:
+          # トリストン
+          160074:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦～ ランキング31〜50位の報酬です。'
+        rank_over: 31
+        rank_under: 50
+        limit_cp: 30000
+        common_shogo:
+          -
+            14
+        item:
+          1:
+            # 個数
+            1
+        card:
+          # トリストン
+          160074:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦～ ランキング51〜100位の報酬です。'
+        rank_over: 51
+        rank_under: 100
+        limit_cp: 20000
+        common_shogo:
+          -
+            15
+        item:
+          1:
+            # 個数
+            1
+        card:
+          # アレス
+          350077:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦～ ランキング101〜300位の報酬です。'
+        rank_over: 101
+        rank_under: 300
+        limit_cp: 10000
+        common_shogo:
+          -
+            16
+        item:
+          1:
+            # 個数
+            1
+        card:
+          # ハイランサー
+          240070:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦～ ランキング301〜500位の報酬です。'
+        rank_over: 301
+        rank_under: 500
+        limit_cp: 5000
+        common_shogo:
+          -
+            17
+        item:
+          1:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦～ ランキング501〜1000位の報酬です。'
+        rank_over: 501
+        rank_under: 1000
+        common_shogo:
+          -
+            18
+            
+            
+  # 4th Selection Battle
+  4th:
+    # the key string used for folder name of templates
+    key: "4th"
+    # イベント期間指定　他のイベントパラメータと同じなのでガチャあたりを参照してください
+    start: "2013-03-06 12:15"
+    end: "2013-03-08 12:30"
+    disp_start: "2013-03-06 12:15"
+    disp_end: "2013-03-08 12:30"
+    # 報酬受け取り期限
+    present_receive_limit: "2013/03/22 23:59:59"
+    # プレゼントユニークＩＤ（他のお知らせ経由プレゼントとかぶらないようにしてね）
+    present_unique_id: 12120603
+    # 勝ち点
+    # N試合目：勝ち点
+    win_point:
+      1: 1
+      2: 2
+      3: 3
+      4: 2
+      5: 1
+    # 勝ち点報酬
+    # N以上: もの指定
+    #   item: アイテムプレゼント
+    #     -
+    #       id: アイテムマスタID
+    #       num: 付与数
+    #   card: カードプレゼント
+    #     -
+    #       id: カードマスタID
+    #       num: 付与数    
+    point_list:
+      9:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点9の報酬です。'
+        gacha_point: 1000
+      12:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点12の報酬です。'
+        virtual_money: 5000
+      15:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点15の報酬です。'
+        item:
+          -
+            id: 4
+            num: 1
+      18:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点18の報酬です。'
+        card:
+          -
+            id: 612
+            num: 1
+      21:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点21の報酬です。'
+        item:
+          -
+            id: 1
+            num: 1
+      24:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点24の報酬です。'
+        item:
+          -
+            id: 4
+            num: 1
+      27:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点27の報酬です。'
+        virtual_money: 10000
+      30:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点30の報酬です。'
+        card:
+          -
+            id: 612
+            num: 1
+      33:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点33の報酬です。'
+        item:
+          -
+            id: 4
+            num: 1
+      36:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点36の報酬です。'
+        yakusyoku:
+          26:
+            2
+      39:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点39の報酬です。'
+        card:
+          -
+            id: 613
+            num: 1
+      42:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点42の報酬です。'
+        item:
+          -
+            id: 4
+            num: 1
+      45:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点45の報酬です。'
+        yakusyoku:
+          27:
+            1
+      48:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点48の報酬です。'
+        card:
+          -
+            id: 614
+            num: 1
+      51:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点51の報酬です。'
+        item:
+          -
+            id: 1
+            num: 1
+      54:
+        text: 'ガーディアンバトル～選抜戦～ 勝ち点54の報酬です。'
+        common_shogo:
+          -
+            19
+    # ランキング報酬
+    # -
+    #   rank: ランキング順位ぴったり賞
+    #   rank_over: ランキング順位範囲指定上限　（rank_under とセットで指定）
+    #   rank_under: ランキング順位範囲指定下限　（rank_over とセットで指定）
+    #   shogo: プレゼント称号指定
+    #     -
+    #       id: 称号マスタID
+    #   yakusyoku: プレゼント役職
+    #     -
+    #       id: 役職マスタID
+    #   card: プレゼントカード　パラメータは勝ち点報酬と同じ
+    #   item: プレゼントアイテム　パラメータは勝ち点報酬と同じ
+    ranking_present_title: 'ガーディアンバトル～選抜戦～報酬です。'
+    ranking_list:
+      -
+        text: 'ガーディアンバトル～選抜戦～ ランキング1〜10位の報酬です。'
+        rank_over: 1
+        rank_under: 10
+        limit_cp: 50000
+        common_shogo:
+          -
+            20
+        item:
+          1:
+            # 個数
+            1
+        card:
+          # トリストン
+          160001:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦～ ランキング11〜20位の報酬です。'
+        rank_over: 11
+        rank_under: 20
+        limit_cp: 50000
+        common_shogo:
+          -
+            21
+        item:
+          1:
+            # 個数
+            1
+        card:
+          # トリストン
+          160001:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦～ ランキング21〜30位の報酬です。'
+        rank_over: 21
+        rank_under: 30
+        limit_cp: 50000
+        common_shogo:
+          -
+            22
+        item:
+          1:
+            # 個数
+            1
+        card:
+          # トリストン
+          160001:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦～ ランキング31〜50位の報酬です。'
+        rank_over: 31
+        rank_under: 50
+        limit_cp: 50000
+        common_shogo:
+          -
+            23
+        item:
+          1:
+            # 個数
+            1
+        card:
+          # トリストン
+          160001:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦～ ランキング51〜100位の報酬です。'
+        rank_over: 51
+        rank_under: 100
+        limit_cp: 20000
+        common_shogo:
+          -
+            24
+        item:
+          1:
+            # 個数
+            1
+        card:
+          # アレス
+          250058:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦～ ランキング101〜300位の報酬です。'
+        rank_over: 101
+        rank_under: 300
+        limit_cp: 10000
+        common_shogo:
+          -
+            25
+        item:
+          1:
+            # 個数
+            1
+        card:
+          # ハイランサー
+          140060:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦～ ランキング301〜500位の報酬です。'
+        rank_over: 301
+        rank_under: 500
+        limit_cp: 5000
+        common_shogo:
+          -
+            26
+        item:
+          1:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦～ ランキング501〜1000位の報酬です。'
+        rank_over: 501
+        rank_under: 1000
+        common_shogo:
+          -
+            27           
+daily:
+  # 後夜祭
+#  post_night_1st:
+#    # 報酬受け取り期限 -> 毎日変わるので時間のみの定義にしておく
+#    #present_receive_limit: "2012/07/12 23:59:59"
+#    present_receive_limit: " 23:59:59"
+#    # プレゼントユニークＩＤ（他のお知らせ経由プレゼントとかぶらないようにしてね）
+#    # -> 毎日変わる為、PHP側で date('Ymd')を生成して date('Ymd').present_unique_id として結合した
+#    present_unique_id: 01
+#    # ランキング報酬
+#    # -
+#    #   rank: ランキング順位ぴったり賞
+#    #   rank_over: ランキング順位範囲指定上限　（rank_under とセットで指定）
+#    #   rank_under: ランキング順位範囲指定下限　（rank_over とセットで指定）
+#    #   shogo: プレゼント称号指定
+#    #     -
+#    #       id: 称号マスタID
+#    #   yakusyoku: プレゼント役職
+#    #     -
+#    #       id: 役職マスタID
+#    #   card: プレゼントカード　パラメータは勝ち点報酬と同じ
+#    #   item: プレゼントアイテム　パラメータは勝ち点報酬と同じ
+#    ranking_present_title: 'ガーバトイベント～後夜祭～報酬です'
+#    ranking_list:
+#      -
+#        text: 'ガーバトイベント～後夜祭～ ランキング1～3位の報酬です。'
+#        rank: 3
+#        rank_over: 1
+#        rank_under: 3
+#        card:
+#          # ダンディクラ鳩
+#          612:
+#            # 個数
+#            1
+#          # マダムクラ鳩
+#          613:
+#            # 個数
+#            1
+#          # ユフィ―
+#          589:
+#            # 個数
+#            1
+#        gacha_point:
+#          -
+#            5000
+#        item:
+#          1:
+#            # 個数
+#            2
+#      -
+#        text: 'ガーバトイベント～後夜祭～ ランキング4～10位の報酬です。'
+#        rank: 10
+#        rank_over: 4
+#        rank_under: 10
+#        card:
+#          # ダンディクラ鳩
+#          612:
+#            # 個数
+#            1
+#          # ユフィ―
+#          589:
+#            # 個数
+#            1
+#        gacha_point:
+#          -
+#            5000
+#        item:
+#          1:
+#            # 個数
+#            2
+#      -
+#        text: 'ガーバトイベント～後夜祭～ ランキング11～50位の報酬です。'
+#        rank: 50
+#        rank_over: 11
+#        rank_under: 50
+#        card:
+#          # ダンディクラ鳩
+#          612:
+#            # 個数
+#            1
+#          # ユフィ―
+#          589:
+#            # 個数
+#            1
+#        gacha_point:
+#          -
+#            5000
+#        item:
+#          1:
+#            # 個数
+#            1
+#      -
+#        text: 'ガーバトイベント～後夜祭～ ランキング51～100位の報酬です。'
+#        rank: 100
+#        rank_over: 51
+#        rank_under: 100
+#        card:
+#          # ダンディクラ鳩
+#          612:
+#            # 個数
+#            1
+#          # ユフィ―
+#          589:
+#            # 個数
+#            1
+#        gacha_point:
+#          -
+#            3000
+#        item:
+#          1:
+#            # 個数
+#            1
+#      -
+#        text: 'ガーバトイベント～後夜祭～ ランキング101～500位の報酬です。'
+#        rank: 500
+#        rank_over: 101
+#        rank_under: 500
+#        card:
+#          # ユフィ―
+#          589:
+#            # 個数
+#            1
+#        gacha_point:
+#          -
+#            3000
+#        item:
+#          1:
+#            # 個数
+#            1
+#      -
+#        text: 'ガーバトイベント～後夜祭～ ランキング501～1000位の報酬です。'
+#        rank: 1000
+#        rank_over: 501
+#        rank_under: 1000
+#        gacha_point:
+#          -
+#            2000
+#        item:
+#          2:
+#            # 個数
+#            2
+#      -
+#        text: 'ガーバトイベント～後夜祭～ ランキング1001～3000位の報酬です。'
+#        rank: 3000
+#        rank_over: 1001
+#        rank_under: 3000
+#        item:
+#          2:
+#            # 個数
+#            2
+#      -
+#        text: 'ガーバトイベント～後夜祭～ ランキング3001～10000位の報酬です。'
+#        rank: 10000
+#        rank_over: 3001
+#        rank_under: 10000
+#        item:
+#          2:
+#            # 個数
+#            1
+ 
+  
+  # クリスタルウォー前夜祭
+  
+  #Preselection/Daily ranking battles
+  
+  
+  #first preselection battle
+  daily_1st:
+    # 報酬受け取り期限 -> 毎日変わるので時間のみの定義にしておく
+    #present_receive_limit: "2012/07/12 23:59:59"
+    disp_start: "2013-06-03 00:01"
+    disp_end: "2013-06-12 23:59"
+    present_receive_limit: " 23:59:59"
+    # プレゼントユニークＩＤ（他のお知らせ経由プレゼントとかぶらないようにしてね）
+    # -> 毎日変わる為、PHP側で date('Ymd')を生成して date('Ymd').present_unique_id として結合した
+    
+    #present_unique_id 01 = knights training, 02 = preselection    
+    present_unique_id: 02
+    # ランキング報酬
+    # -
+    #   rank: ランキング順位ぴったり賞
+    #   rank_over: ランキング順位範囲指定上限　（rank_under とセットで指定）
+    #   rank_under: ランキング順位範囲指定下限　（rank_over とセットで指定）
+    #   shogo: プレゼント称号指定
+    #     -
+    #       id: 称号マスタID
+    #   yakusyoku: プレゼント役職
+    #     -
+    #       id: 役職マスタID
+    #   card: プレゼントカード　パラメータは勝ち点報酬と同じ
+    #   item: プレゼントアイテム　パラメータは勝ち点報酬と同じ
+    ranking_present_title: 'ガーディアンバトル～選抜戦前夜祭～報酬です'
+    ranking_list:
+      -
+        text: 'ガーディアンバトル～選抜戦前夜祭～ ランキング1～10位の報酬です。'
+        rank: 10
+        rank_over: 1
+        rank_under: 10
+        card:
+          # 強化クリスタルLv.1
+          612:
+            # 個数
+            2
+          # 強化クリスタルLv.2
+          613:
+            # 個数
+            2
+          # 可憐なるアンピトリテ
+          230051:
+            # 個数
+            1
+        gacha_point:
+          -
+            3000
+        item:
+          1:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦前夜祭～ ランキング11～50位の報酬です。'
+        rank: 50
+        rank_over: 11
+        rank_under: 50
+        card:
+          # 強化クリスタルLv.1
+          612:
+            # 個数
+            2
+          # 強化クリスタルLv.2
+          613:
+            # 個数
+            1    
+          # 可憐なるアンピトリテ
+          230051:
+            # 個数
+            1
+        gacha_point:
+          -
+            1500
+        item:
+          1:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦前夜祭～ ランキング51～100位の報酬です。'
+        rank: 100
+        rank_over: 51
+        rank_under: 100
+        card:
+          # 強化クリスタルLv.1
+          612:
+            # 個数
+            2
+          # 可憐なるアンピトリテ
+          230051:
+            # 個数
+            1
+        gacha_point:
+          -
+            1500
+        item:
+          1:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦前夜祭～ ランキング101～300位の報酬です。'
+        rank: 300
+        rank_over: 101
+        rank_under: 300
+        card:
+          # 強化クリスタルLv.1
+          612:
+            # 個数
+            1
+        gacha_point:
+          -
+            1000
+        item:
+          1:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦前夜祭～ ランキング301～500位の報酬です。'
+        rank: 500
+        rank_over: 301
+        rank_under: 500
+        card:
+          # ダンディクラ鳩
+          612:
+            # 個数
+            1
+        gacha_point:
+          -
+            500
+        item:
+          1:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦前夜祭～ ランキング501～1000位の報酬です。'
+        rank: 1000
+        rank_over: 501
+        rank_under: 1000
+        card:
+          # ダンディクラ鳩
+          612:
+            # 個数
+            1
+        gacha_point:
+          -
+            500
+      -
+        text: 'ガーディアンバトル～選抜戦前夜祭～ ランキング1001～3000位の報酬です。'
+        rank: 3000
+        rank_over: 1001
+        rank_under: 3000
+        gacha_point:
+          -
+            500
+  # クリスタルウォー前夜祭配布ミス補てん
+  post_night_2nd_miss:
+    # 報酬受け取り期限 -> 毎日変わるので時間のみの定義にしておく
+    #present_receive_limit: "2012/07/12 23:59:59"
+    disp_start: "2013-01-01 23:59"
+    disp_end: "2013-01-01 23:59"
+    present_receive_limit: " 23:59:59"
+    # プレゼントユニークＩＤ（他のお知らせ経由プレゼントとかぶらないようにしてね）
+    # -> 毎日変わる為、PHP側で date('Ymd')を生成して date('Ymd').present_unique_id として結合した
+    
+    #present_unique_id 01 = knights training, 02 = preselection
+    present_unique_id: 02
+    # ランキング報酬
+    # -
+    #   rank: ランキング順位ぴったり賞
+    #   rank_over: ランキング順位範囲指定上限　（rank_under とセットで指定）
+    #   rank_under: ランキング順位範囲指定下限　（rank_over とセットで指定）
+    #   shogo: プレゼント称号指定
+    #     -
+    #       id: 称号マスタID
+    #   yakusyoku: プレゼント役職
+    #     -
+    #       id: 役職マスタID
+    #   card: プレゼントカード　パラメータは勝ち点報酬と同じ
+    #   item: プレゼントアイテム　パラメータは勝ち点報酬と同じ
+    ranking_present_title: 'ガーバトイベント～クリスタルウォー前夜祭～報酬、未配布分です'
+    ranking_list:
+      -
+        text: 'ガーバトイベント～クリスタルウォー前夜祭～ ランキング1～3位の報酬です。'
+        rank: 3
+        rank_over: 1
+        rank_under: 3
+        card:
+          # ダンディクラ鳩
+          612:
+            # 個数
+            1
+      -
+        text: 'ガーバトイベント～クリスタルウォー前夜祭～ ランキング4～10位の報酬です。'
+        rank: 10
+        rank_over: 4
+        rank_under: 10
+        card:
+          # ダンディクラ鳩
+          612:
+            # 個数
+            1
+      -
+        text: 'ガーバトイベント～クリスタルウォー前夜祭～ ランキング11～50位の報酬です。'
+        rank: 50
+        rank_over: 11
+        rank_under: 50
+        card:
+          # ダンディクラ鳩
+          612:
+            # 個数
+            1
+  #2nd preselection/daily ranking battle
+  daily_2nd:
+    # 報酬受け取り期限 -> 毎日変わるので時間のみの定義にしておく
+    #present_receive_limit: "2012/07/12 23:59:59"
+    #start: "2013-02-11 16:00"
+    #end: "2013-03-19 23:59"
+    disp_start: "2013-03-18 15:00"
+    disp_end: "2013-03-22 23:59"
+    present_receive_limit: " 23:59:59"
+    # プレゼントユニークＩＤ（他のお知らせ経由プレゼントとかぶらないようにしてね）
+    # -> 毎日変わる為、PHP側で date('Ymd')を生成して date('Ymd').present_unique_id として結合した
+    
+    #present_unique_id 01 = knights training, 02 = preselection
+    present_unique_id: 02
+    # ランキング報酬
+    # -
+    #   rank: ランキング順位ぴったり賞
+    #   rank_over: ランキング順位範囲指定上限　（rank_under とセットで指定）
+    #   rank_under: ランキング順位範囲指定下限　（rank_over とセットで指定）
+    #   shogo: プレゼント称号指定
+    #     -
+    #       id: 称号マスタID
+    #   yakusyoku: プレゼント役職
+    #     -
+    #       id: 役職マスタID
+    #   card: プレゼントカード　パラメータは勝ち点報酬と同じ
+    #   item: プレゼントアイテム　パラメータは勝ち点報酬と同じ
+    ranking_present_title: 'ガーディアンバトル～選抜戦前夜祭～報酬です'
+    ranking_list:
+      -
+        text: 'ガーディアンバトル～選抜戦前夜祭～ ランキング1～10位の報酬です。'
+        rank: 10
+        rank_over: 1
+        rank_under: 10
+        card:
+          # 強化クリスタルLv.1
+          612:
+            # 個数
+            2
+          # 強化クリスタルLv.2
+          614:
+            # 個数
+            2
+          # 可憐なるアンピトリテ
+          250502:
+            # 個数
+            1
+        gacha_point:
+          -
+            3000
+        item:
+          1:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦前夜祭～ ランキング11～50位の報酬です。'
+        rank: 50
+        rank_over: 11
+        rank_under: 50
+        card:
+          # 強化クリスタルLv.1
+          612:
+            # 個数
+            2
+          # 強化クリスタルLv.2
+          614:
+            # 個数
+            1    
+          # 可憐なるアンピトリテ
+          250502:
+            # 個数
+            1
+        gacha_point:
+          -
+            1500
+        item:
+          1:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦前夜祭～ ランキング51～100位の報酬です。'
+        rank: 100
+        rank_over: 51
+        rank_under: 100
+        card:
+          # 強化クリスタルLv.1
+          612:
+            # 個数
+            2
+          # 可憐なるアンピトリテ
+          140501:
+            # 個数
+            1
+        gacha_point:
+          -
+            1500
+        item:
+          1:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦前夜祭～ ランキング101～300位の報酬です。'
+        rank: 300
+        rank_over: 101
+        rank_under: 300
+        card:
+          # 強化クリスタルLv.1
+          612:
+            # 個数
+            1
+          330065:
+            1
+        gacha_point:
+          -
+            1000
+        item:
+          1:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦前夜祭～ ランキング301～500位の報酬です。'
+        rank: 500
+        rank_over: 301
+        rank_under: 500
+        card:
+          # ダンディクラ鳩
+          612:
+            # 個数
+            1
+        gacha_point:
+          -
+            500
+        item:
+          1:
+            # 個数
+            1
+      -
+        text: 'ガーディアンバトル～選抜戦前夜祭～ ランキング501～1000位の報酬です。'
+        rank: 1000
+        rank_over: 501
+        rank_under: 1000
+        card:
+          # ダンディクラ鳩
+          612:
+            # 個数
+            1
+        gacha_point:
+          -
+            500
+      -
+        text: 'ガーディアンバトル～選抜戦前夜祭～ ランキング1001～3000位の報酬です。'
+        rank: 3000
+        rank_over: 1001
+        rank_under: 3000
+        gacha_point:
+          -
+            500          
+            
+            
+  #Knights training
+  # ガーバト強化週間
+  strengthening_week:
+    # 報酬受け取り期限 -> 毎日変わるので時間のみの定義にしておく
+    #present_receive_limit: "2012/07/12 23:59:59"
+    start: "2013-08-20 16:00"
+    end: "2013-08-25 23:59"
+    disp_start: "2013-08-20 15:00"
+    disp_end: "2013-08-25 23:59"
+    present_receive_limit: " 23:59:59"
+    # プレゼントユニークＩＤ（他のお知らせ経由プレゼントとかぶらないようにしてね）
+    # -> 毎日変わる為、PHP側で date('Ymd')を生成して date('Ymd').present_unique_id として結合した
+    
+    #present_unique_id 01 = knights training, 02 = preselection
+    present_unique_id: 01
+    # ランキング報酬
+    # -
+    #   rank: ランキング順位ぴったり賞
+    #   rank_over: ランキング順位範囲指定上限　（rank_under とセットで指定）
+    #   rank_under: ランキング順位範囲指定下限　（rank_over とセットで指定）
+    #   shogo: プレゼント称号指定
+    #     -
+    #       id: 称号マスタID
+    #   yakusyoku: プレゼント役職
+    #     -
+    #       id: 役職マスタID
+    #   card: プレゼントカード　パラメータは勝ち点報酬と同じ
+    #   item: プレゼントアイテム　パラメータは勝ち点報酬と同じ
+    ranking_present_title: 'ナイトレの報酬が届いています'
+    ranking_list:
+      -
+        text: '～ナイトレ～ ランキング1～10位の報酬です。'
+        rank: 10
+        rank_over: 1
+        rank_under: 10
+        card:
+          # 強化クリスタルLv.3
+          614:
+            # 個数
+            2
+          # 強化クリスタルLv.2
+          613:
+            # 個数
+            2
+        gacha_point:
+          -
+            3000
+        item:
+            #SR以上確定
+          8:
+            # 個数
+            1
+            #クリスタル
+          12:
+            # 個数
+            3
+      -
+        text: '～ナイトレ～ ランキング11～100位の報酬です。'
+        rank: 100
+        rank_over: 11
+        rank_under: 100
+        card:
+          # 強化クリスタルLv.3
+          614:
+            # 個数
+            1
+          # 強化クリスタルLv.2
+          613:
+            # 個数
+            2
+        gacha_point:
+          -
+            2000
+        item:
+            #HR以上確定
+          7:
+            # 個数
+            1
+            #クリスタル
+          12:
+            # 個数
+            3
+      -
+        text: '～ナイトレ～ ランキング101～250位の報酬です。'
+        rank: 250
+        rank_over: 101
+        rank_under: 250
+        card:
+          # 強化クリスタルLv.2
+          613:
+            # 個数
+            1
+          # 強化クリスタルLv.1
+          612:
+            # 個数
+            2
+        gacha_point:
+          -
+            2000
+        item:
+          #HR以上確定
+          7:
+            # 個数
+            1
+          12:
+            # 個数
+            3
+      -
+        text: '～ナイトレ～ ランキング251～400位の報酬です。'
+        rank: 400
+        rank_over: 251
+        rank_under: 400
+        card:
+          # 強化クリスタルLv.2
+          613:
+            # 個数
+            1
+        gacha_point:
+          -
+            1500
+        item:
+          1:
+            # 個数
+            3
+          12:
+            # 個数
+            2
+      -
+        text: '～ナイトレ～ ランキング401～800位の報酬です。'
+        rank: 800
+        rank_over: 401
+        rank_under: 800
+        card:
+          # 強化クリスタルLv.1
+          612:
+            # 個数
+            2
+        gacha_point:
+          -
+            1500
+        item:
+          1:
+            # 個数
+            2
+          12:
+            # 個数
+            1
+      -
+        text: '～ナイトレ～ ランキング801～1000位の報酬です。'
+        rank: 1000
+        rank_over: 801
+        rank_under: 1000
+        card:
+          # 強化クリスタルLv.1
+          612:
+            # 個数
+            1
+        gacha_point:
+          -
+            1000
+        item:
+          1:
+            # 個数
+            1
+      -
+        text: '～ナイトレ～ ランキング1001～2000位の報酬です。'
+        rank: 2000
+        rank_over: 1001
+        rank_under: 2000
+        gacha_point:
+          -
+            500
+        item:
+          1:
+            # 個数
+            1
+      -
+        text: '～ナイトレ～ ランキング2001～15000位の報酬です。'
+        rank: 15000
+        rank_over: 2001
+        rank_under: 15000
+        card:
+          # 強化クリスタルLv.1
+          612:
+            # 個数
+            1
+        gacha_point:
+          -
+            500

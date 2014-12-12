@@ -1,0 +1,67 @@
+---
+application:
+  app_name: default
+  priority_post: true
+  default_sigauth: true
+  debug: false
+  internal_encoding: UTF-8
+  timezone: America/Los_Angeles
+  locale: en_US
+  uuid_crypt_salt: 29cfc829815c37b0
+  session:
+    cookie_lifetime: 31536000 # 31536000 = 60 x 60 x 24 x 365 second = 1 year
+    save_handler: memcache
+    save_path:
+      - tcp://memcache1
+      - tcp://memcache2
+    gc_maxlifetime: 604800 # 604800 = 60 x 60 x 24 x 7 second = 1 week, default => 1440
+    gc_probability: 1
+    gc_divisor: 8000 # default => 1000
+  log:
+    common_config:
+      timeFormat: '%Y-%m-%d %H:%M:%S'
+      ident: pokefw
+    error_log:
+      name: PEAR_LOG_TYPE_SYSTEM
+      level: notice
+  access_log:
+    host: localhost
+    port: 24224
+    tag: ios.access.production
+  output_encoding:
+    default: UTF-8
+    docomo: SJIS
+    softbank: UTF-8
+    au: SJIS
+    android: UTF-8
+  combine_scripts:
+    enabled: false
+    cache_dir: cache
+  preregister_url: "preregister_url"
+  preregister_verify_url: "preregister_verify_url"
+  itunes_url: "https://buy.itunes.apple.com/verifyReceipt"
+  fallbacked_itunes_url: "https://sandbox.itunes.apple.com/verifyReceipt"
+  receipt_dir: "/var/tmp/receipt2/"
+  platform_url: "platform_url"
+  platform_api_url: "platform_api_url"
+  platform_app_id: 11
+opensocialapp:
+  platform: poke
+  app_id: 12006691
+  app_host: app_host_ip
+  api_host: api_host_ip
+  app_host_: sb.sp.pf.mbga.jp
+  api_host_: sb.sp.app.mbga.jp
+  consumer_key: b779ba3aa944e2681f1c
+  consumer_secret: 918b3602b8c0faf207f31aefa3c18ad91ce16e1d
+  host_: dummyapp.pokedev.jp
+  host: host_ip
+twitter:
+  key:
+    consumer: NP0j8jRoMmYgxXGtkm4A
+    consumer_secret: qDPSLhBfBKzro5AwtPkW4sJhdw26YDc06MDPRmLFAQ
+facebook:
+  key:
+    consumer: 548576415159182
+    consumer_secret: 8117115a313b6469880d32f901f0f116
+...

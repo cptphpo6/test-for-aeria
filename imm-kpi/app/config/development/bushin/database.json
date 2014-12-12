@@ -1,0 +1,76 @@
+{
+    "database" :
+    {
+        "dbhosts":
+        {
+            "A" :
+            {
+                "hostname" : "localhost",
+                "dbname"   : "db_name",
+                "dbuser"   : "db_user",
+                "dbpass"   : "db_pass"
+            }
+        },
+        "tables" :
+        {
+            "boss"                      : "A",
+            "defense_team"              : "A",
+
+            "gender"                    : "A",
+            "guild"                     : "A",
+            "guild_bbs"                 : "A",
+            "guild_information"         : "A",
+            "guild_information_type"    : "A",
+            "guild_invite"              : "A",
+            "guild_level"               : "A",
+
+            "element"                   : "A",
+            "item"                      : "A",
+            "level"                     : "A",
+
+            "mission"                   : "A",
+            "mission_map"               : "A",
+            "mission_reward"            : "A",
+            "mission_stage"             : "A",
+            "market"                    : "A",
+            "market_point"              : "A",
+
+            "official_information"      : "A",
+            "official_information_type" : "A",
+            "offense_team"              : "A",
+
+            "personal_information"      : "A",
+            "personal_information_type" : "A",
+            "purchase_history"          : "A",
+            "purchase_status"           : "A",
+
+            "reward_type"               : "A",
+
+            "shop_item"                 : "A",
+            "slot"                      : "A",
+            "slot_unit"                 : "A",
+
+            "term_of_payment"           : "A",
+            "treasure"                  : "A",
+            "treasure_group"            : "A",
+
+            "unit"                      : "A",
+            "unit_effect"               : "A",
+            "unit_level"                : "A",
+            "unit_type"                 : "A",
+
+            "user"                      : "A",
+            "user_bbs"                  : "A",
+            "user_data"                 : "A",
+            "user_item"                 : "A",
+            "user_mission"              : "A",
+            "user_mission_map"          : "A",
+            "user_mission_reward_log"   : "A",
+            "user_mission_stage"        : "A",
+            "user_point"                : "A",
+            "user_treasure"             : "A",
+            "user_unit"                 : "A",
+            "user_unit_log"             : "A"
+        }
+    }
+}

@@ -1,0 +1,369 @@
+﻿# レイド報酬有効？
+enable: 1 
+
+# 配布番号
+compensation:
+  # 個人ランキング
+  type_personal_ranker: 121228100 
+  # 個人キリ番
+  type_personal_just: 121228101 
+  # クランランキング
+  type_guild_ranker: 121228102 
+  # 神水変換
+  type_item_change: 121228104 
+  # 受け取り有効期間
+  valid_time: '2013/01/10 23:59'
+  
+display_card_ids:
+  # Jade
+  - 360500 
+  # Divina
+  - 150501 
+  # Rielle
+  - 340500 
+display_card_ids_personal:
+  # Jade
+  - 360500 
+  # Divina
+  - 150501 
+  # Rielle
+  - 340500 
+display_card_ids_guild:
+  # Divina
+  - 150501 
+  # Rielle
+  - 340500 
+
+# 個人
+
+# 報酬配布時コメントの置換に使用
+# コメント内のs$event_nameが置き換わる
+event_name: 'Война Зодиака'
+
+personal:
+  ranker:
+    # 1~10位
+    10:
+      rank_title: '1-10'
+      subject: '$event_name: Личный рейтинг 1-10 '
+      body: '$event_name: Личный рейтинг 1-10 '
+      comment: '$event_name: Личный рейтинг 1-10 '
+      items:
+        # Jade
+        - type: карта 
+          id: 360500 
+          cnt: 1 
+        # SR以上確定レアチケ
+        - type: предмет 
+          id : 8 
+          cnt : 1 
+      img: 1 
+    # 11-50位
+    50:
+      rank_title: '11-50 '
+      subject: '$event_name: Личный рейтинг 11-50 '
+      body: '$event_name: Личный рейтинг 11-50 '
+      comment: '$event_name: Личный рейтинг 11-50 '
+      items:
+        # Jade
+        - type: карта 
+          id: 360500 
+          cnt: 1 
+        # HR以上確定レアチケ
+        - type: предмет 
+          id : 7 
+          cnt : 1 
+      img: 2 
+    # 51-200位
+    200:
+      rank_title: '51-200 '
+      subject: '$event_name: Личный рейтинг 51-200 '
+      body: '$event_name: Личный рейтинг 51-200 '
+      comment: '$event_name: Личный рейтинг 51-200 '
+      items:
+        # Divina
+        - type: карта 
+          id: 150501 
+          cnt: 1 
+        # HR以上確定レアチケ
+        - type: предмет 
+          id : 7 
+          cnt : 1 
+      img: 3 
+    # 201-500位
+    500:
+      rank_title: '201-500 '
+      subject: '$event_name: Личный рейтинг 201-500 '
+      body: '$event_name: Личный рейтинг 201-500 '
+      comment: '$event_name: Личный рейтинг 201-500 '
+      items:
+        # Divina
+        - type: карта 
+          id: 150501 
+          cnt: 1 
+        # レアチケ
+        - type: предмет 
+          id : 1 
+          cnt : 2 
+      img: 4 
+    # 501-1000位
+    1000:
+      rank_title: '501-1000 '
+      subject: '$event_name: Личный рейтинг 501-1000 '
+      body: '$event_name: Личный рейтинг 501-1000 '
+      comment: '$event_name: Личный рейтинг 501-1000 '
+      items:
+        # Rielle
+        - type: карта 
+          id: 340500 
+          cnt: 1 
+        # レアチケ
+        - type: предмет 
+          id : 1 
+          cnt : 2 
+      img: 5 
+    # 1001-2000位
+    2000:
+      rank_title: '1001-2000 '
+      subject: '$event_name: Личный рейтинг 1001-2000 '
+      body: '$event_name: Личный рейтинг 1001-2000 '
+      comment: '$event_name: Личный рейтинг 1001-2000 '
+      items:
+        # Rielle
+        - type: карта 
+          id: 340500 
+          cnt: 1 
+        # レアチケ
+        - type: предмет 
+          id : 1 
+          cnt : 1 
+      img: 6 
+    # 2001-5000位
+    5000:
+      rank_title: '2001-5000 '
+      subject: '$event_name: Личный рейтинг 2001-5000 '
+      body: '$event_name: Личный рейтинг 2001-5000 '
+      comment: '$event_name: Личный рейтинг 2001-5000 '
+      items:
+        # レアチケ
+        - type: предмет 
+          id : 1 
+          cnt : 1 
+        # 「自分用」進撃P全チャージ
+        - type: предмет 
+          id : 4 
+          cnt : 3 
+    # 5001-10000位
+    10000:
+      rank_title: '5001-10000 '
+      subject: '$event_name: Личный рейтинг 5001-10000 '
+      body: '$event_name: Личный рейтинг 5001-10000 '
+      comment: '$event_name: Личный рейтинг 5001-10000 '
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: предмет 
+          id : 4 
+          cnt : 3 
+    # 10001-30000位
+    30000:
+      rank_title: '10001-30000 '
+      subject: '$event_name: Личный рейтинг 10001-30000 '
+      body: '$event_name: Личный рейтинг 10001-30000 '
+      comment: '$event_name: Личный рейтинг 10001-30000 '
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: предмет 
+          id : 4 
+          cnt : 2 
+    # 30001-50000位
+    50000:
+      rank_title: '30001-50000 '
+      subject: '$event_name: Личный рейтинг 30001-50000 '
+      body: '$event_name: Личный рейтинг 30001-50000 '
+      comment: '$event_name: Личный рейтинг 30001-50000 '
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: предмет 
+          id : 4 
+          cnt : 1 
+#     # 50001位以下
+#    -1:
+#      rank_title: '50001以下'
+#      subject: '$event_name 個人ランキング50001位以下報酬'
+#      body: '$event_name 個人ランキング50001位以下報酬です。'
+#      comment: '$event_name 個人ランキング50001位以下報酬です。'
+#      items:
+#        # ギル
+#        - type: virtual_money
+#          id : 0
+#          cnt : 10000
+
+#個人ランキング キリ番
+  just:
+    333:
+      subject: '$event_name: Счастливое 333 место '
+      body: '$event_name: Счастливое 333 место '
+      comment: '$event_name: Счастливое 333 место '
+      items:
+        # Divina (was Jade)
+        - type: карта 
+          id: 150501 
+          cnt: 1 
+      img: 7 
+    555:
+      subject: '$event_name: Счастливое 555 место '
+      body: '$event_name: Счастливое 555 место '
+      comment: '$event_name: Счастливое 555 место '
+      items:
+        # Divina (was Jade)
+        - type: карта 
+          id: 150501 
+          cnt: 1 
+      img: 7 
+    1111:
+      subject: '$event_name: Счастливое 1111 место '
+      body: '$event_name: Счастливое 1111 место '
+      comment: '$event_name: Счастливое 1111 место '
+      items:
+        # Divina (was Jade)
+        - type: карта 
+          id: 150501 
+          cnt: 1 
+      img: 7 
+    2222:
+      subject: '$event_name: Счастливое 2222 место '
+      body: '$event_name: Счастливое 2222 место '
+      comment: '$event_name: Счастливое 2222 место '
+      items:
+        # Divina (was Jade)
+        - type: карта 
+          id: 150501 
+          cnt: 1 
+      img: 7 
+    3333:
+      subject: '$event_name: Счастливое 3333 место '
+      body: '$event_name: Счастливое 3333 место '
+      comment: '$event_name: Счастливое 3333 место '
+      items:
+        # Divina (was Jade)
+        - type: карта 
+          id: 150501 
+          cnt: 1 
+      img: 7 
+# クラン
+guild:
+  ranker:
+    # 1~10位
+    10:
+      #bottom: 100000
+      rank_title: '1-10 '
+      subject: '$event_name: Рейтинг гильдии 1-10 '
+      body: '$event_name: Рейтинг гильдии 1-10 '
+      comment: '$event_name: Рейтинг гильдии 1-10 '
+      items:
+        # Divina
+        - type: карта 
+          id: 150501 
+          cnt: 1 
+        # 強化クリスタルLv.3
+        - type: карта 
+          id: 614 
+          cnt: 1 
+        # 強化クリスタルLv.2
+        - type: карта 
+          id: 613 
+          cnt: 1 
+        # 強化クリスタルLv.1
+        - type: карта 
+          id: 612 
+          cnt: 1 
+      img: 8 
+    # 11~50位
+    50:
+      #bottom: 100000
+      rank_title: '11-50 '
+      subject: '$event_name: Рейтинг гильдии 11-50 '
+      body: '$event_name: Рейтинг гильдии 11-50 '
+      comment: '$event_name: Рейтинг гильдии 11-50 '
+      items:
+        # Divina
+        - type: карта 
+          id: 150501 
+          cnt: 1 
+        # Power Crystal Lv2
+        - type: карта 
+          id: 613 
+          cnt: 1 
+        # Power Crystal Lv1
+        - type: карта 
+          id: 612 
+          cnt: 1 
+      img: 9 
+    # 51~100位
+    100:
+      #bottom: 100000
+      rank_title: '51-100 '
+      subject: '$event_name: Рейтинг гильдии 51-100 '
+      body: '$event_name: Рейтинг гильдии 51-100 '
+      comment: '$event_name: Рейтинг гильдии 51-100 '
+      items:
+        # Rielle
+        - type: карта 
+          id: 340500 
+          cnt: 1 
+        # Power Crystal Lv2
+        - type: карта 
+          id: 613 
+          cnt: 1 
+      img: 10 
+    # 101~300位
+    300:
+      #bottom: 100000
+      rank_title: '101-300 '
+      subject: '$event_name: Рейтинг гильдии 101-300 '
+      body: '$event_name: Рейтинг гильдии 101-300 '
+      comment: '$event_name: Рейтинг гильдии 101-300 '
+      items:
+        # Rielle
+        - type: карта 
+          id: 340500 
+          cnt: 1 
+        # Power Crystal Lv1
+        - type: карта 
+          id: 612 
+          cnt: 1 
+      img: 11 
+    # 301~1000位
+    1000:
+      #bottom: 100000
+      rank_title: '301-1000 '
+      subject: '$event_name: Рейтинг гильдии 301-1000 '
+      body: '$event_name: Рейтинг гильдии 301-1000 '
+      comment: '$event_name: Рейтинг гильдии 301-1000 '
+      items:
+        # Power Crystal Lv1
+        - type: карта 
+          id: 612 
+          cnt: 1 
+#    # 3001〜
+#    -1:
+#      rank_title: '3001以下'
+#      subject: '$event_name 騎士団ランキング3001位以下報酬'
+#      body: '$event_name 騎士団ランキング3001位以下報酬です。'
+#      comment: '$event_name 騎士団ランキング3001位以下報酬です。'
+#      items:
+#        # レアチケ
+#        - type: item
+#          id: 1
+#          cnt: 1
+    
+#秘薬を霊水へ変更
+change:
+  subject: 'Фейерверк превращен в Зелье выносливости '
+  body: 'Фейерверк превращен в Зелье выносливости '
+  comment: 'Фейерверк превращен в Зелье выносливости '
+  items:
+    - type: предмет 
+      id: 2 
+      cnt: 1 
+      # cnt を入れるべし

@@ -1,0 +1,401 @@
+# テーマ召喚設定
+theme_summons:
+  # 定義名:
+  #  start: 開始日時
+  #  end: 終了日時
+  #     詳細仕様は gacha.yaml を参照してください
+  #
+  #
+  #
+
+
+  # 天魔の宴
+  # TODO ほとんどの値が雷神の鉄槌状態　要検証＆チューニング
+  # Poly: This event is not necessary for launch, so disabled for now. 
+  theme_summons1:
+    name: "天魔の宴"
+    # TODO ステージングアップする際は本番用日時に修正すること
+    #start: "2012-12-10 18:00"
+    #end: "2012-12-14 23:59:59"
+    start: "2013-01-28 22:00:00"
+    end: "2013-02-03 23:59:59"
+    # css ベースID
+    base_id: "crystal_break1"
+    # 箱画像パス
+    box_img_path: "/img/event/crystal_break1/"
+    # ガチャページ追加バナー
+    add_gacha_banner:
+      # TODO ガチャページ追加バナーアドレスを頂いて修正する
+      img: '/img/event/16_geve_theme_summons3/bana_gacha_1.jpg'
+      link: '/gacha_event/theme_summons_index/'
+    # 期間中の追加ログインボーナス設定
+    login_bonus:
+      # TODO ステージングアップする際は本番用日時に修正すること
+      #start: "2012-12-10 18:00"
+      start: "2013-01-28 22:00"
+      # 終了は一緒なので省略
+      end: "2013-02-03 21:59"
+      comment: '天魔の宴イベントで使用する剣です。'
+      bonus_list:
+        -
+          type: 'item'
+          # アイテムマスタID
+          id: 15
+          # 付与数
+          num: 5
+    # 期間中の11連召喚連動ボーナス設定
+    11ren_summons_bonus:
+      # TODO ステージングアップする際は本番用日時に修正すること
+      #start: "2012-12-10 18:00"
+      start: "2013-01-28 22:00"
+      # 終了は一緒なので省略
+#      end: "2012-10-03 21:59"
+      comment: '11連召喚のおまけです。'
+      bonus_list:
+        -
+          type: 'item'
+          # アイテムマスタID
+          id: 15
+          # 付与数
+          num: 2
+    # イベント用剣ItemMstIdリスト
+    sword_item_list:
+      # 鉄の剣
+      - 15
+      # エクスカリバー
+      - 16
+    # データタイプ　付与アイテムの設定とかに使う
+    data_type:
+      virtual_money: 1
+      #purchase_money: 2
+      item_mst: 3
+      card_mst: 4
+      #card_data: 5
+      gacha_point: 6
+    # クリスタル（宝箱）設定
+    box_type:
+      0:
+        name: "ブルークリスタル"
+        # 防御クリスタルの数  (旧 鎖の数
+        chain_num: 5
+        # クリスタル画像名  (旧 箱画像名
+        box_img: "b"
+        # クリスタル（宝箱）ステップアップ失敗最大数
+        # これを超える場合は確実にステップアップさせる
+        miss_count: 4
+        # 次のクリスタル（宝箱）確率
+        # 種類: 確率（100% = 100）
+        next_box_type:
+          # 銅
+          0: 70
+          # 銀
+          1: 30
+          # 金
+          2: 0
+        # ↓の剣あげる条件
+        # 　複数指定した場合は、全てを満たす場合のみ付与
+        get_sword_condition:
+          -
+            # ステップアップしなかった場合に付与（0 or 未定義の場合は無視）
+            no_level_up: 1
+            # 剣の所持数が↓の数以下の場合に付与（未定義の場合は無視）
+            sword_num: 2
+        # 割った後の剣の獲得（剣以外も上げれます）
+        get_sword:
+          -
+            # アイテムマスタ
+            id: 15
+            # 獲得数
+            num: 1
+            # 確率
+            lot_per: 80
+          -
+            id: 15
+            num: 2
+            lot_per: 15
+          -
+            id: 15
+            num: 3
+            lot_per: 5
+        # 鎖表示設定
+        disp_chain:
+          -
+            num: 0
+            step: 0
+            no_img: 1
+          -
+            num: 1
+            step: 1
+            no_img: 2
+          -
+            num: 2
+            step: 2
+            no_img: 3
+          -
+            num: 3
+            step: 3
+            no_img: 4
+          -
+            num: 4
+            step: 4
+            no_img: 5
+          -
+            num: 5
+            step: 5
+            no_img: 6
+        # ブレイクチャンス突入確率
+        bonus_time_per:
+          # 剣の種類: 確率
+          1: 30
+          2: 100
+      1:
+        name: "シルバークリスタル"
+        # 防御クリスタルの数  (旧 鎖の数
+        chain_num: 14
+        box_img: "s"
+        # クリスタルステップアップ失敗最大数
+        # これを超える場合は確実にステップアップさせる
+        miss_count: 4
+        # 次のクリスタル（宝箱）確率
+        # 種類: 確率（100% = 100）
+        next_box_type:
+          # 銀
+          1: 80
+          # 金
+          2: 20
+        # ↓の剣あげる条件
+        # 　複数指定した場合は、全てを満たす場合のみ付与
+        get_sword_condition:
+          -
+            # ステップアップしなかった場合に付与（0 or 未定義の場合は無視）
+            no_level_up: 1
+            # 剣の所持数が↓の数以下の場合に付与（未定義の場合は無視）
+            sword_num: 2
+        # 割った後の剣獲得（剣以外も上げれます）
+        get_sword:
+          -
+            # アイテムマスタ
+            id: 15
+            # 獲得数
+            num: 1
+            # 確率
+            lot_per: 70
+          -
+            id: 15
+            num: 2
+            lot_per: 20
+          -
+            id: 15
+            num: 3
+            lot_per: 10
+        # 鎖表示設定
+        disp_chain:
+          -
+            num: 0
+            step: 0
+            no_img: 1
+          -
+            num: 1
+            step: 1
+            no_img: 2
+          -
+            num: 4
+            step: 2
+            no_img: 3
+          -
+            num: 7
+            step: 3
+            no_img: 4
+          -
+            num: 11
+            step: 4
+            no_img: 5
+          -
+            num: 14
+            step: 5
+            no_img: 6
+        # ブレイクチャンス突入確率
+        bonus_time_per:
+          # 剣の種類: 確率
+          1: 50
+          2: 100
+      2:
+        name: "ゴールドクリスタル"
+        # 防御クリスタルの数  (旧 鎖の数
+        chain_num: 29
+        box_img: "g"
+        # 次のクリスタル（宝箱）確率
+        # 種類: 確率（100% = 100）
+        next_box_type:
+          # 銅
+          0: 100
+        # ↓の剣あげる条件
+        # 　複数指定した場合は、全てを満たす場合のみ付与
+        get_sword_condition:
+          -
+            # 剣の所持数が↓の数以下の場合に付与（未定義の場合は無視）
+            sword_num: 2
+        # 割った後の剣獲得（剣以外も上げれます）
+        get_sword:
+          -
+            # アイテムマスタ
+            id: 15
+            # 獲得数
+            num: 1
+            # 確率
+            lot_per: 70
+          -
+            id: 15
+            num: 2
+            lot_per: 20
+          -
+            id: 15
+            num: 3
+            lot_per: 10
+        # 鎖表示設定
+        disp_chain:
+          -
+            num: 0
+            step: 0
+            no_img: 1
+          -
+            num: 1
+            step: 1
+            no_img: 2
+          -
+            num: 5
+            step: 2
+            no_img: 3
+          -
+            num: 12
+            step: 3
+            no_img: 4
+          -
+            num: 20
+            step: 4
+            no_img: 5
+          -
+            num: 29
+            step: 5
+            no_img: 6
+        # ブレイクチャンス突入確率
+        bonus_time_per:
+          # 剣の種類: 確率
+          1: 100
+          2: 100
+    # ガチャでのカードレアリティに応じて剣をプレゼント
+    gacha_present:
+      # レアリティ
+      30:
+        # アイテムマスタID
+        id: 15
+        # 付与数
+        num: 1
+      40:
+        # アイテムマスタID
+        id: 15
+        # 付与数
+        num: 3
+      50:
+        # アイテムマスタID
+        id: 15
+        # 付与数
+        num: 11
+      60:
+        # アイテムマスタID
+        id: 16
+        # 付与数
+        num: 1
+    # 箱開封ボーナス
+    break_box_bonus:
+      # 箱タイプ
+      2:
+        # 報酬配列
+        -
+          # 開封数　指定毎に付与されるので 数 % n == 0 の時に毎回付与されます
+          cycle_num: 5
+          # 報酬データの持ち方は、ＤＢの宝箱中身マスタと同じ形式
+          # 報酬の種類 data_type のもの（上記で定義）
+          # 4はcard_mst
+          type: 4
+          # TODO 特別報酬のカードマスタIDを指定する事
+          # マスタIDとか
+          data_id: 160054
+          # 付与数
+          num: 1
+    # TODO 属性召喚対応するのか確認する
+    # ブレイクチャンス中ガチャ確率
+    # SR, SSR ２倍だよ
+    bonus_time_gacha_rate:
+        -
+          # 通常課金
+          rare2:
+            lot:
+              # rarity番号 : 確率
+              30: 89
+              40: 8.4
+              50: 2.2
+              60: 0.4
+            theme_summons_event: 1
+            overwrite: 1
+          # 初課金
+          rare2_1st:
+            lot:
+              # rarity番号 : 確率
+              40: 97.4
+              50: 2.2
+              60: 0.4
+            theme_summons_event: 1
+            overwrite: 1
+          # 連動１１連
+          rare2_11time_present:
+            bg_img: '/img/event/16_geve_theme_summons3/bana_gacha_5.jpg'
+            lot:
+              # rarity番号 : 確率
+              30: 89
+              40: 8.4
+              50: 2.2
+              60: 0.4
+            theme_summons_event: 1
+          # 属性ガチャ火
+          rare2_attr_hi_1:
+            lot:
+              # rarity番号 : 確率
+              30: 96
+              40: 3.55
+              50: 0.4
+              60: 0.05
+            theme_summons_event: 1
+          # 属性ガチャ風
+          rare2_attr_kaze_1:
+            lot:
+              # rarity番号 : 確率
+              30: 96
+              40: 3.55
+              50: 0.4
+              60: 0.05
+            theme_summons_event: 1
+          # 属性ガチャ水
+          rare2_attr_mizu_1:
+            lot:
+              # rarity番号 : 確率
+              30: 96
+              40: 3.55
+              50: 0.4
+              60: 0.05
+            theme_summons_event: 1
+    # 報酬ページの表示用(今回の使用しない）
+    # TODO 天魔の宴用に直して下さい
+    card_list:
+      # アスタロト
+      - 160054
+      # ヘイムダル
+      - 350057
+      # マルコシアス
+      - 240054
+      # マルドゥーク
+      - 240053
+      # オーズ
+      - 130055
+      # バティン
+      - 330058

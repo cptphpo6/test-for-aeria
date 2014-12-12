@@ -1,0 +1,75 @@
+------------------------------------------------------------------------------------------------------------------------------------------
+Relevant directories and useful info:
+------------------------------------------------------------------------------------------------------------------------------------------
+
+- /path/to/trunk/app/config/production/ru, /path/to/trunk/app/config/development/ru, /path/to/trunk/app/config/qa/ru - contain the files specific to the russian language per
+environment. At the moment the development and production folders are the only ones used but we would like to have a separation between QA (Staging) and Dev
+environment on AWS
+
+- The SQLDump_RU_DB1.sql and SQLDump_RU_DB2.sql reflect the Database specified in /path/to/trunk/app/config/production/ru/database.yaml with minimum content, the Staging and Dev should be equivalent
+
+- We will rename QA environment to "Staging"
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Setup example of Immortalis:
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Requirements
+- PHP 5.3
+- mysql
+- memcache
+- lighttpd or apache
+- gettext
+- php extensions ( all found at MacPort )
+- php5-mcrypt
+- php5-memcache (NOT php-memcached)
+- php5-gettext
+- php5-mbstring
+- php5-mysql
+- php5-curl
+- php5-yaml
+
+Setup mysql
+- Create database and user and change on /path/to/trunk/app/config/production/ru/database.yaml
+Run memcached 
+- Change in /path/to/trunk/app/config/production/ru/cache.yaml pointing to the server instances
+
+PHP extensions
+- php -r "print_r(get_loaded_extensions());"
+- install an extension
+- sudo port install [extension name]
+- add the the following lines to php.ini to make them available
+  extension_dir=/opt/local/lib/php/extensions/no-debug-non-zts-20090626
+  extension = memcache.so
+  extension = mcrypt.so
+  extension = ...
+
+The date might be different. Check your extension folder.
+Change configuration
+Modify files under /path/to/trunk/app/config/development/ according to your local environment. (In most case, you only need to modify database.yaml)
+
+This script compile po file into mo file, expand t tags in JavaScript and copy translated JavaScript into app/www/js-i18n folder.
+You can edit your web server rewrite rule so that all /js/*.js urls will point to /js-i18n/en_US/*.js
+	<example> lighttpd
+    "^/js([\/^.?].*)\.(js)\?(.*)$"  => "/js-i18n/en_US$1.$2?$3",
+    "^/js([\/^.?].*)\.(js)$"        => "/js-i18n/en_US$1.$2",
+
+Access to http://imm-local.aeriagames.com/account/ 
+
+- If using Apache, add an environment variable named APPLICATION_ON to development in apache's httpd.conf as the following example
+<VirtualHost *:80>
+        ServerName imm-local.aeriagames.com
+        DocumentRoot "/path/to/trunk/app/www"
+        SetEnv APPLICATION_ON development (or production)
+        <Directory "/path/to/trunk/app/www">
+                Options Indexes Includes FollowSymLinks
+                AllowOverride All
+                Order allow,deny
+                Allow from all
+        </Directory>
+</VirtualHost>
+
+
+
+
+

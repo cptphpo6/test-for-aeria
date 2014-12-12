@@ -1,0 +1,363 @@
+#####################################
+###########<<  前半報酬  >>############
+#####################################
+
+# レイド報酬有効？
+enable: 1
+
+# 配布番号
+compensation:
+  # Total Personal Ranking
+  type_personal_ranker: 130621100
+  # Total First Half Personal Kiriban
+  type_personal_just: 130621101
+  # Total Guild Ranking
+  type_guild_ranker: 130621102
+  # God Water Exchange
+  type_item_change: 130621103
+  # Acquirable Time Frame
+  valid_time: '2013/06/27 23:59'
+  
+display_card_ids:
+  # Dark Heart Alice (SSR)
+  - 260132
+  # The White Queen(SR)
+  - 250133
+  # Knave of Hearts (HR)
+  - 240134
+  # Mad Hatter (SSR)
+  - 160129
+  # Strange Hatter (SR)
+  - 350140
+  # Black Rabbit Conspiracy (SSR)
+  - 360139
+  # Jabberwock(SR)
+  - 150130
+display_card_ids_personal:
+  # Dark Heart Alice (SSR)
+  - 260132
+  # The White Queen(SR)
+  - 250133
+  # Knave of Hearts (HR)
+  - 240134
+  # Mad Hatter (SSR)
+  - 160129
+  # Strange Hatter (SR)
+  - 350140
+  # Black Rabbit Conspiracy (SSR)
+  - 360139
+  # Jabberwock(SR)
+  - 150130
+display_card_ids_guild:
+  # Dark Heart Alice (SSR)
+  - 260132
+  # The White Queen(SR)
+  - 250133
+  # Knave of Hearts (HR)
+  - 240134
+  # Mad Hatter (SSR)
+  - 160129
+  # Strange Hatter (SR)
+  - 350140
+  # Black Rabbit Conspiracy (SSR)
+  - 360139
+  # Jabberwock(SR)
+  - 150130
+
+# 報酬配布時コメントの置換に使用
+event_name: 'Bleak Wonderland'
+
+# 総合個人
+personal:
+  ranker:
+    # 1~10位
+    10:
+      rank_title: 'Ranks 1-10'
+      subject: 'Bleak Wonderland First Half Individual Rankings 1~10'
+      body: 'Bleak Wonderland First Half Individual Rankings 1~10'
+      comment: 'Bleak Wonderland First Half Individual Rankings 1~10'
+      items:
+        # Mad Hatter (SSR)
+        - type: item
+          id: 305
+          cnt: 2
+        # SR+ Guaranteed Rare Ticket
+        - type: card
+          id : 777
+          cnt : 1
+    # 11-50位
+    50:
+      rank_title: 'Ranks 11-50'
+      subject: 'Bleak Wonderland First Half Individual Rankings 11~50'
+      body: 'Bleak Wonderland First Half Individual Rankings 11~50'
+      comment: 'Bleak Wonderland First Half Individual Rankings 11~50'
+      items:
+        # Mad Hatter (SSR)
+        - type: item
+          id: 305
+          cnt: 1
+        # HR+ Guaranteed Rare Ticket
+        - type: card
+          id : 777
+          cnt : 1
+    # Ranks 51-100
+    100:
+      rank_title: 'Ranks 51-100'
+      subject: 'Bleak Wonderland First Half Individual Rankings 51~100'
+      body: 'Bleak Wonderland First Half Individual Rankings 51~100'
+      comment: 'Bleak Wonderland First Half Individual Rankings 51~100'
+      items:
+        # Mad Hatter (SSR)
+        - type: card
+          id: 350140
+          cnt: 3
+        # HR+ Guaranteed Rare Ticket
+        - type: card
+          id : 777
+          cnt : 1
+    # 51-200位
+    200:
+      rank_title: 'Ranks 101-200'
+      subject: 'Bleak Wonderland First Half Individual Rankings 101~200'
+      body: 'Bleak Wonderland First Half Individual Rankings 101~200'
+      comment: 'Bleak Wonderland First Half Individual Rankings 101~200'
+      items:
+        # Strange Hatter (SR)
+        - type: card
+          id: 350140
+          cnt: 2
+        # HR+ Guaranteed Rare Ticket
+        - type: card
+          id : 777
+          cnt : 1
+    # 201-300位
+    300:
+      rank_title: 'Ranks 201-300'
+      subject: 'Bleak Wonderland First Half Individual Rankings 201~300'
+      body: 'Bleak Wonderland First Half Individual Rankings 201~300'
+      comment: 'Bleak Wonderland First Half Individual Rankings 201~300'
+      items:
+        # Strange Hatter (SR)
+        - type: card
+          id: 350140
+          cnt: 1
+        # Rare Tickets
+        - type: card
+          id : 777
+          cnt : 1
+    # Ranks 301-500
+    500:
+      rank_title: 'Ranks 301-500'
+      subject: 'Bleak Wonderland First Half Individual Rankings 301~500'
+      body: 'Bleak Wonderland First Half Individual Rankings 301~500'
+      comment: 'Bleak Wonderland First Half Individual Rankings 301~500'
+      items:
+        # Strange Hatter (SR)
+        - type: card
+          id: 240134
+          cnt: 2
+        # Rare Tickets
+        - type: card
+          id : 777
+          cnt : 1
+    # Ranks 501-700
+    700:
+      rank_title: 'Ranks 501-700'
+      subject: 'Bleak Wonderland First Half Individual Rankings 501~700'
+      body: 'Bleak Wonderland First Half Individual Rankings 501~700'
+      comment: 'Bleak Wonderland First Half Individual Rankings 501~700'
+      items:
+        # Strange Hatter (SR)
+        - type: card
+          id: 240134
+          cnt: 2
+    # 701-1000位
+    1000:
+      rank_title: 'Ranks 701-1000'
+      subject: 'Bleak Wonderland First Half Individual Rankings 701~1000'
+      body: 'Bleak Wonderland First Half Individual Rankings 701~1000'
+      comment: 'Bleak Wonderland First Half Individual Rankings 701~1000'
+      items:
+        # Knave of Hearts (HR)
+        - type: card
+          id: 240134
+          cnt: 1
+    # 1001-3000位
+    3000:
+      rank_title: 'Ranks 1001-3000'
+      subject: 'Bleak Wonderland First Half Individual Rankings 1001~3000'
+      body: 'Bleak Wonderland First Half Individual Rankings 1001~3000'
+      comment: 'Bleak Wonderland First Half Individual Rankings 1001~3000'
+      items:
+        - type: item
+          id : 1
+          cnt : 2
+        - type: item
+          id : 4
+          cnt : 1
+    # 3001-30000位
+    30000:
+      rank_title: 'Ranks 3001-30000'
+      subject: 'Bleak Wonderland First Half Individual Rankings 3001~30000'
+      body: 'Bleak Wonderland First Half Individual Rankings 3001~30000'
+      comment: 'Bleak Wonderland First Half Individual Rankings 3001~30000'
+      items:
+        - type: item
+          id : 1
+          cnt : 1
+        - type: item
+          id : 4
+          cnt : 1
+
+#Personal Rankings Lucky Number
+  just:
+    333:
+      subject: 'Bleak Wonderland First Half Lucky 333'
+      body: 'Bleak Wonderland First Half Lucky 333'
+      comment: 'Bleak Wonderland First Half Lucky 333'
+      items:
+        # Mad Hatter (SSR)
+        - type: card
+          id: 350140
+          cnt: 1
+    555:
+      subject: 'Bleak Wonderland First Half Lucky 555'
+      body: 'Bleak Wonderland First Half Lucky 555'
+      comment: 'Bleak Wonderland First Half Lucky 555'
+      items:
+        # Mad Hatter (SSR)
+        - type: card
+          id: 350140
+          cnt: 1
+    1111:
+      subject: 'Bleak Wonderland First Half Lucky 1111'
+      body: 'Bleak Wonderland First Half Lucky 1111'
+      comment: 'Bleak Wonderland First Half Lucky 1111'
+      items:
+        # Mad Hatter (SSR)
+        - type: card
+          id: 350140
+          cnt: 1
+    2222:
+      subject: 'Bleak Wonderland First Half Lucky 2222'
+      body: 'Bleak Wonderland First Half Lucky 2222'
+      comment: 'Bleak Wonderland First Half Lucky 2222'
+      items:
+        # Mad Hatter (SSR)
+        - type: card
+          id: 350140
+          cnt: 1
+    3333:
+      subject: 'Bleak Wonderland First Half Lucky 3333'
+      body: 'Bleak Wonderland First Half Lucky 3333'
+      comment: 'Bleak Wonderland First Half Lucky 3333'
+      items:
+        # Mad Hatter (SSR)
+        - type: card
+          id: 350140
+          cnt: 1
+# クラン
+guild:
+  ranker:
+    # 1~10位
+    10:
+      bottom: 100000
+      rank_title: 'Ranks 1-10'
+      subject: 'Bleak Wonderland First Half Guilds 1~10'
+      body: 'Bleak Wonderland First Half Guilds 1~10'
+      comment: 'Bleak Wonderland First Half Guilds 1~10'
+      items:
+        # Mad Hatter (SSR)
+        - type: card
+          id: 350140
+          cnt: 1
+        # Power Crystal Lv.3
+        - type: card
+          id: 614
+          cnt: 1
+        # Power Crystal Lv.2
+        - type: card
+          id: 613
+          cnt: 1
+        # Power Crystal Lv.1
+        - type: card
+          id: 612
+          cnt: 1
+    # 11~50位
+    50:
+      bottom: 50000
+      rank_title: 'Ranks 11-50'
+      subject: 'Bleak Wonderland First Half Guilds 11~50'
+      body: 'Bleak Wonderland First Half Guilds 11~50'
+      comment: 'Bleak Wonderland First Half Guilds 11~50'
+      items:
+        # Strange Hatter (SR)
+        - type: card
+          id: 350140
+          cnt: 1
+    # 51~100位
+    100:
+      bottom: 30000
+      rank_title: 'Ranks 51-100'
+      subject: 'Bleak Wonderland First Half Guilds 51~100'
+      body: 'Bleak Wonderland First Half Guilds 51~100'
+      comment: 'Bleak Wonderland First Half Guilds 51~100'
+      items:
+        # Strange Hatter (SR)
+        - type: card
+          id: 240134
+          cnt: 1
+        # Power Crystal Lv.2
+        - type: card
+          id: 613
+          cnt: 1
+    # 101~300位
+    300:
+      bottom: 10000
+      rank_title: 'Ranks 101-300'
+      subject: 'Bleak Wonderland First Half Guilds 101~300'
+      body: 'Bleak Wonderland First Half Guilds 101~300'
+      comment: 'Bleak Wonderland First Half Guilds 101~300'
+      items:
+        # Knave of Hearts (HR)
+        - type: item
+          id: 1
+          cnt: 1
+        # Power Crystal Lv.1
+        - type: card
+          id: 612
+          cnt: 1
+    # 301~1000位
+    1000:
+      bottom: 5000
+      rank_title: 'Ranks 301-1000'
+      subject: 'Bleak Wonderland First Half Guilds 301~1000'
+      body: 'Bleak Wonderland First Half Guilds 301~1000'
+      comment: 'Bleak Wonderland First Half Guilds 301~1000'
+      items:
+        # Power Crystal Lv.1
+        - type: card
+          id: 612
+          cnt: 1
+#    # 3001〜
+#    -1:
+#      rank_title: '3001以下'
+#      subject: '蘇る邪神～光と闇の闘い～ 騎士団ランキング3001位以下報酬'
+#      body: '蘇る邪神～光と闇の闘い～ 騎士団ランキング3001位以下報酬です'
+#      comment: '蘇る邪神～光と闇の闘い～ 騎士団ランキング3001位以下報酬です'
+#      items:
+#        # レアチケ
+#        - type: item
+#          id: 1
+#          cnt: 1
+
+#秘薬を霊水へ変更
+change:
+  subject: 'Exchange Immortal Tome for Stamina Potion'
+  body: 'Exchange Immortal Tome for Stamina Potion.'
+  comment: 'Exchange Immortal Tome for Stamina Potion.'
+  items:
+    - type: item
+      id: 2
+      cnt: 1
+      # cnt obtained

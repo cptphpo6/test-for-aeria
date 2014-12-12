@@ -1,0 +1,519 @@
+#####################################
+###########<<  総合報酬  >>############
+#####################################
+
+# レイド報酬有効？
+enable: 1
+
+# 配布番号
+# 【注意点】：後半のキーとかぶっちゃだめよ！
+compensation:
+  # 総合個人ランキング
+  type_personal_ranker: 140130104
+  # 総合個人キリ番
+  type_personal_just: 140130105
+  # 総合騎士団ランキング
+  type_guild_ranker: 140130106
+  # 神水変換
+  type_item_change: 140130107
+  # 受け取り有効期間
+  valid_time: '2014/02/06 23:59'
+  
+display_card_ids:
+  # 大陸警備団長トゥナイト(SSR)
+  - 360224
+  # 勇援の堕天使イポス(SSR)
+  - 160210
+  # 黒衣の千年卿ガダーヴル(SR)
+  - 350223
+  # タール・シュロフ(SR)
+  - 140209
+  # マグネス・ベルネット(SR)
+  - 150208
+  # 狂気に満ちし殺戮者 J(HR)
+  - 240205
+  
+display_card_ids_personal:
+  # 大陸警備団長トゥナイト(SSR)
+  - 360224
+  # 勇援の堕天使イポス(SSR)
+  - 160210
+  # 黒衣の千年卿ガダーヴル(SR)
+  - 350223
+  # タール・シュロフ(SR)
+  - 140209
+  # マグネス・ベルネット(SR)
+  - 150208
+  # 狂気に満ちし殺戮者 J(HR)
+  - 240205
+  
+display_card_ids_guild:
+  # 大陸警備団長トゥナイト(SSR)
+  - 360224
+  # 勇援の堕天使イポス(SSR)
+  - 160210
+  # 黒衣の千年卿ガダーヴル(SR)
+  - 350223
+  # タール・シュロフ(SR)
+  - 140209
+  # マグネス・ベルネット(SR)
+  - 150208
+  # 狂気に満ちし殺戮者 J(HR)
+  - 240205
+
+# 報酬配布時コメントの置換に使用
+event_name: '選勇たちの血戦'
+
+# 総合個人
+personal:
+  ranker:
+    # 1~10位
+    10:
+      rank_title: '1~10位'
+      subject: '選勇たちの血戦 総合総合個人ランキング1~10位報酬'
+      body: '選勇たちの血戦 <br/>総合個人ランキング1~10位報酬です。'
+      comment: '選勇たちの血戦 総合個人ランキング1~10位報酬です。'
+      items:
+        # SSR以上確定レアチケ
+        - type: item
+          id : 59
+          cnt : 1
+        # SR以上確定レアチケ
+        - type: item
+          id : 8
+          cnt : 1
+    # 11-100位
+    100:
+      rank_title: '11〜100位'
+      subject: '選勇たちの血戦 総合個人ランキング11〜100位報酬'
+      body: '選勇たちの血戦 <br/>総合個人ランキング11〜100位報酬です。'
+      comment: '選勇たちの血戦 総合個人ランキング11〜100位報酬です。'
+      items:
+        # SSR以上確定レアチケ
+        - type: item
+          id : 59
+          cnt : 1
+        # HR以上確定レアチケ
+        - type: item
+          id : 7
+          cnt : 3
+    # 101-200位
+    200:
+      rank_title: '101-200位'
+      subject: '選勇たちの血戦 総合個人ランキング101-200位報酬'
+      body: '選勇たちの血戦 <br/>総合個人ランキング101-200位報酬です。'
+      comment: '選勇たちの血戦 総合個人ランキング101-200位報酬です。'
+      items:
+        # 黒衣の千年卿ガダーヴル(SR)
+        - type: card
+          id: 350223
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id : 7
+          cnt : 2
+    # 201-500位
+    500:
+      rank_title: '201-500位'
+      subject: '選勇たちの血戦 総合個人ランキング201-500位報酬'
+      body: '選勇たちの血戦 <br/>総合個人ランキング201-500位報酬です。'
+      comment: '選勇たちの血戦 総合個人ランキング201-500位報酬です。'
+      items:
+        # マグネス・ベルネット(SR)
+        - type: card
+          id: 150208
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id : 7
+          cnt : 1
+    # 501-1000位
+    1000:
+      rank_title: '501-1000位'
+      subject: '選勇たちの血戦 総合個人ランキング501-1000位報酬'
+      body: '選勇たちの血戦 <br/>総合個人ランキング501-1000位報酬です。'
+      comment: '選勇たちの血戦 総合個人ランキング501-1000位報酬です。'
+      items:
+        # タール・シュロフ(SR)
+        - type: card
+          id: 140209
+          cnt: 1
+        # レアチケ
+        - type: item
+          id : 1
+          cnt : 3
+    # 1001-2000位
+    2000:
+      rank_title: '1001-2000位'
+      subject: '選勇たちの血戦 総合個人ランキング1001-2000位報酬'
+      body: '選勇たちの血戦 <br/>総合個人ランキング1001-2000位報酬です。'
+      comment: '選勇たちの血戦 総合個人ランキング1001-2000位報酬です。'
+      items:
+        # 狂気に満ちし殺戮者 J(HR)
+        - type: card
+          id: 240205
+          cnt: 1
+        # レアチケ
+        - type: item
+          id : 1
+          cnt : 2
+    # 2001-5000位
+    5000:
+      rank_title: '2001-5000位'
+      subject: '選勇たちの血戦 総合個人ランキング2001-5000位報酬'
+      body: '選勇たちの血戦 <br/>総合個人ランキング2001-5000位報酬です。'
+      comment: '選勇たちの血戦 総合個人ランキング2001-5000位報酬です。'
+      items:
+        # レアチケ
+        - type: item
+          id : 1
+          cnt : 1
+        # 「自分用」進撃P全チャージ
+        - type: item
+          id : 4
+          cnt : 3
+    # 5001-10000位
+    10000:
+      rank_title: '5001-10000位'
+      subject: '選勇たちの血戦 総合個人ランキング5001-10000位報酬'
+      body: '選勇たちの血戦 <br/>総合個人ランキング5001-10000位報酬です。'
+      comment: '選勇たちの血戦 総合個人ランキング5001-10000位報酬です。'
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: item
+          id : 4
+          cnt : 3
+    # 10001-30000位
+    30000:
+      rank_title: '10001-30000位'
+      subject: '選勇たちの血戦 総合個人ランキング10001-30000位報酬'
+      body: '選勇たちの血戦 <br/>総合個人ランキング10001-30000位報酬です。'
+      comment: '選勇たちの血戦 総合個人ランキング10001-30000位報酬です。'
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: item
+          id : 4
+          cnt : 2
+    # 30001-50000位
+    50000:
+      rank_title: '30001-50000位'
+      subject: '選勇たちの血戦 総合個人ランキング30001-50000位報酬'
+      body: '選勇たちの血戦 <br/>総合個人ランキング30001-50000位報酬です。'
+      comment: '選勇たちの血戦 総合個人ランキング30001-50000位報酬です。'
+      items:
+        # 「自分用」進撃P全チャージ
+        - type: item
+          id : 4
+          cnt : 1
+#     # 50001位以下
+#    -1:
+#      rank_title: '50001以下'
+#      subject: '選勇たちの血戦 総合個人ランキング50001位以下報酬'
+#      body: '選勇たちの血戦 総合個人ランキング50001位以下報酬です。'
+#      comment: '選勇たちの血戦 総合個人ランキング50001位以下報酬です。'
+#      items:
+#        # ギル
+#        - type: virtual_money
+#          id : 0
+#          cnt : 10000
+
+#総合個人ランキング キリ番
+  just:
+    333:
+      subject: '選勇たちの血戦 総合個人ランキングキリ番333位報酬'
+      body: '選勇たちの血戦 <br/>総合個人ランキングキリ番333位報酬です。'
+      comment: '選勇たちの血戦 総合個人ランキングキリ番333位報酬です。'
+      items:
+        # SSR以上確定レアチケ
+        - type: item
+          id : 59
+          cnt : 1
+    555:
+      subject: '選勇たちの血戦 総合個人ランキングキリ番555位報酬'
+      body: '選勇たちの血戦 <br/>総合個人ランキングキリ番555位報酬です。'
+      comment: '選勇たちの血戦 総合個人ランキングキリ番555位報酬です。'
+      items:
+        # SSR以上確定レアチケ
+        - type: item
+          id : 59
+          cnt : 1
+    1111:
+      subject: '選勇たちの血戦 総合個人ランキングキリ番1111位報酬'
+      body: '選勇たちの血戦 <br/>総合個人ランキングキリ番1111位報酬です。'
+      comment: '選勇たちの血戦 総合個人ランキングキリ番1111位報酬です。'
+      items:
+        # SSR以上確定レアチケ
+        - type: item
+          id : 59
+          cnt : 1
+    2222:
+      subject: '選勇たちの血戦 総合個人ランキングキリ番2222位報酬'
+      body: '選勇たちの血戦 <br/>総合個人ランキングキリ番2222位報酬です。'
+      comment: '選勇たちの血戦 総合個人ランキングキリ番2222位報酬です。'
+      items:
+        # SSR以上確定レアチケ
+        - type: item
+          id : 59
+          cnt : 1
+    3333:
+      subject: '選勇たちの血戦 総合個人ランキングキリ番3333位報酬'
+      body: '選勇たちの血戦 <br/>総合個人ランキングキリ番3333位報酬です。'
+      comment: '選勇たちの血戦 総合個人ランキングキリ番3333位報酬です。'
+      items:
+        # SSR以上確定レアチケ
+        - type: item
+          id : 59
+          cnt : 1
+# クラン
+guild:
+  ranker:
+    # 1~10位
+    10:
+      bottom: 100000
+      rank_title: '1~10位'
+      subject: '選勇たちの血戦 総合総合騎士団ランキング1~10位報酬'
+      body: '選勇たちの血戦 <br/>総合騎士団ランキング1~10位報酬です。'
+      comment: '選勇たちの血戦 総合騎士団ランキング1~10位報酬です。'
+      items:
+        # SSR以上確定レアチケ
+        - type: item
+          id : 59
+          cnt : 1
+        # 強化クリスタルLv.3
+        - type: card
+          id: 614
+          cnt: 1
+        # 強化クリスタルLv.2
+        - type: card
+          id: 613
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id : 7
+          cnt : 2
+    # 11~50位
+    50:
+      bottom: 100000
+      rank_title: '11~50位'
+      subject: '選勇たちの血戦 総合騎士団ランキング11~50位報酬'
+      body: '選勇たちの血戦 <br/>総合騎士団ランキング11~50位報酬です。'
+      comment: '選勇たちの血戦 総合騎士団ランキング11~50位報酬です。'
+      items:
+        # 黒衣の千年卿ガダーヴル(SR)
+        - type: card
+          id: 350223
+          cnt: 1
+        # 強化クリスタルLv.2
+        - type: card
+          id: 613
+          cnt: 1
+        # HR以上確定レアチケ
+        - type: item
+          id : 7
+          cnt : 1
+    # 51~100位
+    100:
+      bottom: 100000
+      rank_title: '51~100位'
+      subject: '選勇たちの血戦 総合騎士団ランキング51~100位報酬'
+      body: '選勇たちの血戦 <br/>総合騎士団ランキング51~100位報酬です。'
+      comment: '選勇たちの血戦 総合騎士団ランキング51~100位報酬です。'
+      items:
+        # 黒衣の千年卿ガダーヴル(SR)
+        - type: card
+          id: 350223
+          cnt: 1
+        # 強化クリスタルLv.2
+        - type: card
+          id: 613
+          cnt: 1
+        # レアチケ
+        - type: item
+          id : 1
+          cnt : 3
+    # 101~300位
+    300:
+      bottom: 1000
+      rank_title: '101~300位'
+      subject: '選勇たちの血戦 総合騎士団ランキング101~300位報酬'
+      body: '選勇たちの血戦 <br/>総合騎士団ランキング101~300位報酬です。'
+      comment: '選勇たちの血戦 総合騎士団ランキング101~300位報酬です。'
+      items:
+        # マグネス・ベルネット(SR)
+        - type: card
+          id: 150208
+          cnt: 1
+        # レアチケ
+        - type: item
+          id : 1
+          cnt : 2
+    # 301~1000位
+    1000:
+      bottom: 1000
+      rank_title: '301~1000位'
+      subject: '選勇たちの血戦 総合騎士団ランキング301~1000位報酬'
+      body: '選勇たちの血戦 <br/>総合騎士団ランキング301~1000位報酬です。'
+      comment: '選勇たちの血戦 総合騎士団ランキング301~1000位報酬です。'
+      items:
+        # レアチケ
+        - type: item
+          id : 1
+          cnt : 1
+#    # 3001〜
+#    -1:
+#      rank_title: '3001以下'
+#      subject: '選勇たちの血戦 総合騎士団ランキング3001位以下報酬'
+#      body: '選勇たちの血戦 総合騎士団ランキング3001位以下報酬です'
+#      comment: '選勇たちの血戦 総合騎士団ランキング3001位以下報酬です'
+#      items:
+#        # レアチケ
+#        - type: item
+#          id: 1
+#          cnt: 1
+
+#秘薬を霊水へ変更
+change:
+  subject: '勇士の結晶から進撃Pチャージへの変換'
+  body: '勇士の結晶から進撃Pチャージへの変換しました。'
+  comment: '勇士の結晶から進撃Pチャージへの変換しました。'
+  items:
+    - type: item
+      id: 2
+      cnt: 1
+      # cnt を入れるべし
+
+#宝箱が作られてないユーザーの一括報酬配布
+trouble_reward:
+  reward_mst: 
+    #boss_type:0 レアボス
+    0:
+      #reward_type:1 最多ダメージ
+      1:
+        type: item
+        id: 5
+        cnt: 1
+      #reward_type:2 攻撃者
+      2:
+        type: card
+        id: 612
+        cnt: 1
+      #reward_type:3 発見者
+      3:
+        type: item
+        id: 5
+        cnt: 1
+      #reward_type:4 撃破者
+      4:
+        type: item
+        id: 6
+        cnt: 1
+    #boss_type:1 ノーマルボス
+    1:
+      #reward_type:1 最多ダメージ
+      1:
+        type: item
+        id: 5
+        cnt: 1
+      #reward_type:2 攻撃者
+      2:
+        type: gacha_p
+        id: 0
+        cnt: 200
+      #reward_type:3 発見者
+      3:
+        type: virtual_money
+        id: 0
+        cnt: 2000
+      #reward_type:4 撃破者
+      4:
+        type: item
+        id: 6
+        cnt: 1
+    #boss_type:2 ノーマルボス
+    2:
+      #reward_type:1 最多ダメージ
+      1:
+        type: item
+        id: 5
+        cnt: 1
+      #reward_type:2 攻撃者
+      2:
+        type: gacha_p
+        id: 0
+        cnt: 200
+      #reward_type:3 発見者
+      3:
+        type: virtual_money
+        id: 0
+        cnt: 2000
+      #reward_type:4 撃破者
+      4:
+        type: item
+        id: 6
+        cnt: 1
+    #boss_type:3 ノーマルボス
+    3:
+      #reward_type:1 最多ダメージ
+      1:
+        type: item
+        id: 5
+        cnt: 1
+      #reward_type:2 攻撃者
+      2:
+        type: gacha_p
+        id: 0
+        cnt: 200
+      #reward_type:3 発見者
+      3:
+        type: virtual_money
+        id: 0
+        cnt: 2000
+      #reward_type:4 撃破者
+      4:
+        type: item
+        id: 6
+        cnt: 1
+    #boss_type:4 裏ボス
+    4:
+      #reward_type:1 最多ダメージ
+      1:
+        type: item
+        id: 7
+        cnt: 1
+      #reward_type:2 攻撃者
+      2:
+        type: card
+        id: 613
+        cnt: 1
+      #reward_type:3 発見者
+      3:
+        type: item
+        id: 4
+        cnt: 1
+      #reward_type:4 撃破者
+      4:
+        type: item
+        id: 36
+        cnt: 1
+    #boss_type:5 ボーナスボス
+    5:
+      #reward_type:1 最多ダメージ
+      1:
+        type: item
+        id: 1
+        cnt: 1
+      #reward_type:2 攻撃者
+      2:
+        type: card
+        id: 612
+        cnt: 1
+      #reward_type:3 発見者
+      3:
+        type: item
+        id: 5
+        cnt: 1
+      #reward_type:4 撃破者
+      4:
+        type: item
+        id: 6
+        cnt: 1

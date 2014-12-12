@@ -1,0 +1,10 @@
+event:
+  # リングメニューに表示するか？
+  flag: 1
+  # メニューの先頭におく
+  first: 1
+  # タッチした先。なければ灰色アイコン
+  link: '/raid_event/'
+  #
+#  center_img: '/img/event/4_reido_kyouen/mypage_7.jpg'
+  center_img: '/img/event/4_reido_kyouen/mypage_7_open.jpg'
