@@ -1,11 +1,12 @@
 <?php
-
+echo 'This is for Deployment test - Aeria Games';
+error_reporting(E_ALL);
 require_once dirname(__DIR__) . '/bootstrap.php';
 
 use pokelab\framework\core\Dispatcher;
 use pokelab\framework\core\view\ViewManager;
 use pokelab\framework\Log;
-
+echo 'This is for Deployment test - Aeria Games';
 $vm = ViewManager::getInstance();
 $vm->init(CONFIG_DIR . 'view.' . CONFIG_TYPE);
 
