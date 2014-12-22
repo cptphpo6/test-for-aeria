@@ -1,12 +1,12 @@
 <?php
-echo phpinfo();
+//echo phpinfo();
 echo 'This is for Deployment test - Aeria Games1';
 $destLink = mysqli_connect('immdevdb.ciguidpxtyhi.eu-west-1.rds.amazonaws.com', 'AeriaDBUser', 'B3r1!n(0g4me$');
 	if (!$destLink) {
 		die('Not connected : ' . mysqli_error());
 	}
 	$dest_db_selected = mysqli_select_db('ImmDev', $destLink);
-	if (!$dest_db_selected) {
+	if (mysqli_connect_errno()) {
 		die ('Can\'t use foo : ' . mysqli_error());
 	}else{
 		echo "Selected";
