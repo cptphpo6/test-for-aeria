@@ -4,10 +4,10 @@ driver_options:
 database:
   dbhosts:
     yggdrasill:
-      hostname: 172.17.0.178
-      dbname: dev_monster_real2_ru_RU
-      dbuser: root
-      dbpass: root
+      hostname: immdevdb.ciguidpxtyhi.eu-west-1.rds.amazonaws.com
+      dbname: ImmDev
+      dbuser: AeriaDBUser
+      dbpass: B3r1!n(0g4me$
     yggdrasill2:
       hostname: host_ip
       dbname: db_name
