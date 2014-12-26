@@ -1,6 +1,6 @@
 <?php
 //echo phpinfo();
-echo 'This is for Deployment test - Aeria Games3';
+echo 'This is for Deployment test - Aeria Games4';
 $destLink = mysqli_connect('immdevdb.ciguidpxtyhi.eu-west-1.rds.amazonaws.com', 'AeriaDBUser', 'B3r1!n(0g4me$');
 	if (!$destLink) {
 		die('Not connected : ' . mysqli_error());
