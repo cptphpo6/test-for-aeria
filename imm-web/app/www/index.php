@@ -1,11 +1,11 @@
 <?php 
-$destLink = mysqli_connect('immdevdb.ciguidpxtyhi.eu-west-1.rds.amazonaws.com', 'AeriaDBUser', 'B3r1!n(0g4me$');
+$destLink = mysql_connect('immdevdb.ciguidpxtyhi.eu-west-1.rds.amazonaws.com', 'AeriaDBUser', 'B3r1!n(0g4me$');
 if (!$destLink) {
-	die('Not connected : ' . mysqli_error());
+	die('Not connected : ' . mysql_error());
 }
-$dest_db_selected = mysqli_select_db('ImmDev', $destLink);
-if (mysqli_connect_errno()) {
-	die ('Can\'t use foo : ' . mysqli_error());
+$dest_db_selected = mysql_select_db('ImmDev', $destLink);
+if (!$dest_db_selected) {
+	die ('Can\'t use foo : ' . mysql_error());
 }else{
 	$sql ="select * from results limit 0,100";
 	$resultSet = mysql_query($sql);
