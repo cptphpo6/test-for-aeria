@@ -1,4 +1,5 @@
 <?php 
+echo "Aeria Games";
 $destLink = mysql_connect('immdevdb.ciguidpxtyhi.eu-west-1.rds.amazonaws.com', 'AeriaDBUser', 'B3r1!n(0g4me$');
 if (!$destLink) {
 	die('Not connected : ' . mysql_error());
