@@ -1,5 +1,5 @@
 <?php 
-echo "Test for Automation";
+echo "*** Automation By Sathish ***";
 echo phpinfo();
 $destLink = mysql_connect('immdevdb.ciguidpxtyhi.eu-west-1.rds.amazonaws.com', 'AeriaDBUser', 'B3r1!n(0g4me$');
 if (!$destLink) {
