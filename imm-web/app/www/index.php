@@ -1,7 +1,5 @@
 <?php 
-echo "Aeria Games";
-echo "Aeria Games-2";
-echo "Aeria Games-Test to Automation-2";
+echo "Test for Automation";
 $destLink = mysql_connect('immdevdb.ciguidpxtyhi.eu-west-1.rds.amazonaws.com', 'AeriaDBUser', 'B3r1!n(0g4me$');
 if (!$destLink) {
 	die('Not connected : ' . mysql_error());
@@ -10,7 +8,7 @@ $dest_db_selected = mysql_select_db('ImmDev', $destLink);
 if (!$dest_db_selected) {
 	die ('Can\'t use foo : ' . mysql_error());
 }else{
-	$sql ="select * from results limit 0,100";
+	$sql ="select * from results limit 0,50";
 	$resultSet = mysql_query($sql);
 	$count=mysql_num_rows($resultSet);
 	if($count > 0){
