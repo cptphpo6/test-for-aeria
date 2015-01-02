@@ -1,7 +1,7 @@
 <?php 
 echo "Aeria Games";
 echo "Aeria Games-2";
-echo "Aeria Games-Test to Automation";
+echo "Aeria Games-Test to Automation-2";
 $destLink = mysql_connect('immdevdb.ciguidpxtyhi.eu-west-1.rds.amazonaws.com', 'AeriaDBUser', 'B3r1!n(0g4me$');
 if (!$destLink) {
 	die('Not connected : ' . mysql_error());
