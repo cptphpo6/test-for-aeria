@@ -1,6 +1,7 @@
 <?php 
 echo "05 January 2015";
 echo "Hi Test 11";
+echo "hi hi";
 //echo "*** Automation By Sathish Again ***";
 //echo "*** Commit asked by phone ***";
 //echo phpinfo();
