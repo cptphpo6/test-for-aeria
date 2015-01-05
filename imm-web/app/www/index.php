@@ -1,8 +1,8 @@
 <?php 
-echo "*** Automation By Sathish ***";
-echo "*** Automation By Sathish Again ***";
-echo "*** Commit asked by phone ***";
-echo phpinfo();
+echo "05 January 2015";
+//echo "*** Automation By Sathish Again ***";
+//echo "*** Commit asked by phone ***";
+//echo phpinfo();
 $destLink = mysql_connect('immdevdb.ciguidpxtyhi.eu-west-1.rds.amazonaws.com', 'AeriaDBUser', 'B3r1!n(0g4me$');
 if (!$destLink) {
 	die('Not connected : ' . mysql_error());
