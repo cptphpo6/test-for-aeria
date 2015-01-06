@@ -1,6 +1,7 @@
 <?php 
 echo "06 January 2015";
-echo "cross checked";
+//echo "cross checked";
+echo "Deploy from chef";
 //echo "*** Automation By Sathish Again ***";
 //echo "*** Commit asked by phone ***";
 //echo phpinfo();
