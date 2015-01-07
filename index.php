@@ -1,4 +1,4 @@
 <?php
 //phpinfo();
-echo 'Hi test stage';
+echo 'Stage server jenkin to app';
 ?>
