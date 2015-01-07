@@ -1,4 +1,4 @@
 <?php
 //phpinfo();
-echo 'This is for Github test';
+echo 'Hi test stage';
 ?>
