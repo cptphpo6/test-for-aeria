@@ -1,6 +1,5 @@
 <?php 
-echo "06 January 2015";
-
+echo "07 January 2015";
 echo "==========depo============="
 //echo "*** Automation By Sathish Again ***";
 //echo "*** Commit asked by phone ***";
