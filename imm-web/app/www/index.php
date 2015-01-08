@@ -1,8 +1,6 @@
 <?php 
-echo "07 January 2015";
-echo "==========depo============="
-//echo "*** Automation By Sathish Again ***";
-//echo "*** Commit asked by phone ***";
+echo "08 January 2015";
+
 //echo phpinfo();
 $destLink = mysql_connect('immdevdb.ciguidpxtyhi.eu-west-1.rds.amazonaws.com', 'AeriaDBUser', 'B3r1!n(0g4me$');
 if (!$destLink) {
